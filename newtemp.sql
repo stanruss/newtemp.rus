@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 05 2017 г., 14:35
+-- Время создания: Июн 06 2017 г., 08:34
 -- Версия сервера: 5.5.53
 -- Версия PHP: 5.5.38
 
@@ -1794,7 +1794,37 @@ INSERT INTO `new_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `
 (345, 1, '2017-06-05 14:32:26', 'chunk_update', 'modChunk', '24'),
 (346, 1, '2017-06-05 14:32:26', 'propertyset_update_from_element', 'modChunk', '24'),
 (347, 1, '2017-06-05 14:32:40', 'chunk_update', 'modChunk', '24'),
-(348, 1, '2017-06-05 14:32:40', 'propertyset_update_from_element', 'modChunk', '24');
+(348, 1, '2017-06-05 14:32:40', 'propertyset_update_from_element', 'modChunk', '24'),
+(349, 1, '2017-06-05 20:16:17', 'login', 'modContext', 'mgr'),
+(350, 1, '2017-06-06 07:30:45', 'login', 'modContext', 'mgr'),
+(351, 1, '2017-06-06 07:32:40', 'chunk_update', 'modChunk', '24'),
+(352, 1, '2017-06-06 07:32:41', 'propertyset_update_from_element', 'modChunk', '24'),
+(353, 1, '2017-06-06 07:54:02', 'chunk_update', 'modChunk', '24'),
+(354, 1, '2017-06-06 07:54:03', 'propertyset_update_from_element', 'modChunk', '24'),
+(355, 1, '2017-06-06 07:55:09', 'chunk_update', 'modChunk', '24'),
+(356, 1, '2017-06-06 07:55:10', 'propertyset_update_from_element', 'modChunk', '24'),
+(357, 1, '2017-06-06 07:56:49', 'chunk_update', 'modChunk', '24'),
+(358, 1, '2017-06-06 07:56:50', 'propertyset_update_from_element', 'modChunk', '24'),
+(359, 1, '2017-06-06 08:02:44', 'chunk_update', 'modChunk', '24'),
+(360, 1, '2017-06-06 08:02:44', 'propertyset_update_from_element', 'modChunk', '24'),
+(361, 1, '2017-06-06 08:06:26', 'chunk_update', 'modChunk', '24'),
+(362, 1, '2017-06-06 08:06:26', 'propertyset_update_from_element', 'modChunk', '24'),
+(363, 1, '2017-06-06 08:07:26', 'chunk_update', 'modChunk', '24'),
+(364, 1, '2017-06-06 08:07:26', 'propertyset_update_from_element', 'modChunk', '24'),
+(365, 1, '2017-06-06 08:08:26', 'chunk_update', 'modChunk', '24'),
+(366, 1, '2017-06-06 08:08:26', 'propertyset_update_from_element', 'modChunk', '24'),
+(367, 1, '2017-06-06 08:22:14', 'chunk_update', 'modChunk', '24'),
+(368, 1, '2017-06-06 08:22:15', 'propertyset_update_from_element', 'modChunk', '24'),
+(369, 1, '2017-06-06 08:22:32', 'chunk_update', 'modChunk', '24'),
+(370, 1, '2017-06-06 08:22:32', 'propertyset_update_from_element', 'modChunk', '24'),
+(371, 1, '2017-06-06 08:24:11', 'chunk_update', 'modChunk', '24'),
+(372, 1, '2017-06-06 08:24:11', 'propertyset_update_from_element', 'modChunk', '24'),
+(373, 1, '2017-06-06 08:24:48', 'chunk_update', 'modChunk', '24'),
+(374, 1, '2017-06-06 08:24:48', 'propertyset_update_from_element', 'modChunk', '24'),
+(375, 1, '2017-06-06 08:25:10', 'chunk_update', 'modChunk', '24'),
+(376, 1, '2017-06-06 08:25:10', 'propertyset_update_from_element', 'modChunk', '24'),
+(377, 1, '2017-06-06 08:27:32', 'chunk_update', 'modChunk', '24'),
+(378, 1, '2017-06-06 08:27:33', 'propertyset_update_from_element', 'modChunk', '24');
 
 -- --------------------------------------------------------
 
@@ -2290,7 +2320,7 @@ CREATE TABLE `new_session` (
 --
 
 INSERT INTO `new_session` (`id`, `access`, `data`) VALUES
-('l890e82gf5i2of8a0flgqondb4', 1496662443, 'modx.user.contextTokens|a:0:{}');
+('u88ag7ufk0ucrta3k4gf9vucn2', 1496727143, 'modx.user.contextTokens|a:0:{}');
 
 -- --------------------------------------------------------
 
@@ -2415,7 +2445,7 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (21, 1, 0, 'Head', '', 0, 21, 0, '<!DOCTYPE html>\n<html lang=\"ru\">\n\n<head>\n    \n    <base href=\"[[++site_url]]\" />\n	<meta charset=\"[[++modx_charset]]\" />\n\n	<title>[[*longtitle:default=`[[*pagetitle]]`]] - [[++site_url]]</title>\n	<meta name=\"description\" content=\"\">\n\n	<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">\n\n	<meta property=\"og:image\" content=\"path/to/image.jpg\">\n	<link rel=\"shortcut icon\" href=\"[[++assets_url]]templates/Stas/app/img/favicon/favicon.ico\" type=\"image/x-icon\">\n	<link rel=\"apple-touch-icon\" href=\"[[++assets_url]]templates/Stas/app/img/favicon/apple-touch-icon.png\">\n	<link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"[[++assets_url]]templates/Stas/app/img/favicon/apple-touch-icon-72x72.png\">\n	<link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"[[++assets_url]]templates/Stas/app/img/favicon/apple-touch-icon-114x114.png\">\n\n	<!-- Chrome, Firefox OS and Opera -->\n	<meta name=\"theme-color\" content=\"#000\">\n	<!-- Windows Phone -->\n	<meta name=\"msapplication-navbutton-color\" content=\"#000\">\n	<!-- iOS Safari -->\n	<meta name=\"apple-mobile-web-app-status-bar-style\" content=\"#000\">\n\n	<!--<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #151515; }</style>-->\n\n</head>', 0, 'a:0:{}', 0, ''),
 (22, 1, 0, 'Scripts', '', 0, 21, 0, '<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/css/bootstrap.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/css/bootstrap-theme.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/font-awesome/css/font-awesome.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/mmenu/css/jquery.mmenu.all.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/css-hamburgers/hamburgers.css\">\n\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/css/main.min.css\">\n<script src=\"[[++assets_url]]templates/Stas/app/libs/jquery/dist/jquery.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/js/bootstrap.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/mmenu/js/jquery.mmenu.all.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/js/common.js\"></script>\n', 0, 'a:0:{}', 0, ''),
 (23, 1, 0, 'Header', '', 0, 21, 0, '<div id=\"my-header\">\n			\n			<header class=\"site-header\">\n				\n				<div class=\"top-line\">\n\n					\n\n					\n\n					<a href=\"#my-menu\" class=\"hamburger hamburger--emphatic visible-xs\">\n						<span class=\"hamburger-box\"><span class=\"hamburger-inner\"></span></span>\n					</a>\n					<nav id=\"my-menu\">\n						[[Wayfinder?\n						&startId=`0`\n						&level=`1`\n						&outerTpl=`tpl.Wayfinder.outer`\n						&parentRowTpl=`tpl.Wayfinder.row.parent`\n						&innerRowTpl=`tpl.Wayfinder.row.inner`\n						&rowTpl=`tpl.Wayfinder.row`\n						\n					]]\n					</nav>\n					\n				</div>\n\n				\n				\n\n				\n\n			</header>\n\n		</div>', 0, 'a:0:{}', 0, ''),
-(24, 1, 0, 'Content', '', 0, 21, 0, '<header>\n    <div class=\"top-line hidden-xs\">\n        <div class=\"container\">\n            <div class=\"row\">\n               <div class=\"col-lg-3 col-md-4 col-sm-4\">\n                   <div class=\"Logo\"><i class=\"fa fa-free-code-camp\" aria-hidden=\"true\"></i>Logotype</div>\n               </div>\n               <div class=\"col-lg-6 col-md-6 col-sm-8\">\n                    <nav class=\"my-menu\">\n						[[Wayfinder?\n						&startId=`0`\n						&level=`1`\n						&outerTpl=`tpl.Wayfinder.outer`\n						&parentRowTpl=`tpl.Wayfinder.row.parent`\n						&innerRowTpl=`tpl.Wayfinder.row.inner`\n						&rowTpl=`tpl.Wayfinder.row`\n						&outerClass=`list-inline`\n					    ]]\n					</nav>\n				</div>\n					\n					<div class=\"col-lg-3 col-md-2 col-sm-hidden\">\n					    <i class=\"fa fa-bell-o\" aria-hidden=\"true\"></i>\n					    <i class=\"fa fa-cart-arrow-down\" aria-hidden=\"true\"></i>\n					</div>\n	        </div> \n        </div>\n    </div>\n    \n</header>', 0, 'a:0:{}', 0, '');
+(24, 1, 0, 'Content', '', 0, 21, 0, '<header>\n    <div class=\"top-line hidden-xs\">\n        <div class=\"container\">\n            <div class=\"row\">\n               <div class=\"col-lg-3 col-md-3 col-sm-3\">\n                   <div class=\"Logo\"><i class=\"fa fa-free-code-camp\" aria-hidden=\"true\"></i>Logotype</div>\n               </div>\n               <div class=\"col-lg-6 col-md-7 col-sm-9\">\n                   <div class=\"center\">\n                    <nav class=\"my-menu\">\n						[[Wayfinder?\n						&startId=`0`\n						&level=`1`\n						&outerTpl=`tpl.Wayfinder.outer`\n						&parentRowTpl=`tpl.Wayfinder.row.parent`\n						&innerRowTpl=`tpl.Wayfinder.row.inner`\n						&rowTpl=`tpl.Wayfinder.row`\n						&outerClass=`list-inline`\n					    ]]\n					</nav>\n				</div>\n			</div>\n					\n					<div class=\"col-lg-3 col-md-2 col-sm-hidden social\">\n					    <p> Соц. сети</p>\n					   <i class=\"fa fa-vk\" aria-hidden=\"true\"></i>\n                    <i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>\n<i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i>\n<i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>\n\n					    \n					</div>\n	        </div> \n        </div>\n    </div>\n    \n</header>', 0, 'a:0:{}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -3648,7 +3678,7 @@ CREATE TABLE `new_user_attributes` (
 --
 
 INSERT INTO `new_user_attributes` (`id`, `internalKey`, `fullname`, `email`, `phone`, `mobilephone`, `blocked`, `blockeduntil`, `blockedafter`, `logincount`, `lastlogin`, `thislogin`, `failedlogincount`, `sessionid`, `dob`, `gender`, `address`, `country`, `city`, `state`, `zip`, `fax`, `photo`, `comment`, `website`, `extended`) VALUES
-(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 17, 1496411467, 1496651814, 0, 'l8nsmb0v1nq54cqu02b9192f74', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
+(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 19, 1496682977, 1496723445, 0, 'ha0dvkdgrhkoh9tqq97sqet191', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
 (3, 3, '', 'platonov_stan@mail.ru', '', '', 0, 0, 0, 7, 1491287477, 1491302110, 0, 'pinq7vkq5q6r7f8adtj2m64550', 0, 0, '', '', '', '', '', '', '', '', '', '[]');
 
 -- --------------------------------------------------------
@@ -4785,7 +4815,7 @@ ALTER TABLE `new_lexicon_entries`
 -- AUTO_INCREMENT для таблицы `new_manager_log`
 --
 ALTER TABLE `new_manager_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=349;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=379;
 --
 -- AUTO_INCREMENT для таблицы `new_media_sources`
 --
