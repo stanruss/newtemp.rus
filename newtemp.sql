@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 06 2017 г., 13:21
+-- Время создания: Июн 06 2017 г., 16:47
 -- Версия сервера: 5.5.53
 -- Версия PHP: 5.5.38
 
@@ -1851,7 +1851,34 @@ INSERT INTO `new_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `
 (402, 1, '2017-06-06 13:12:30', 'chunk_update', 'modChunk', '23'),
 (403, 1, '2017-06-06 13:12:30', 'propertyset_update_from_element', 'modChunk', '23'),
 (404, 1, '2017-06-06 13:14:14', 'chunk_update', 'modChunk', '23'),
-(405, 1, '2017-06-06 13:14:15', 'propertyset_update_from_element', 'modChunk', '23');
+(405, 1, '2017-06-06 13:14:15', 'propertyset_update_from_element', 'modChunk', '23'),
+(406, 1, '2017-06-06 15:17:25', 'login', 'modContext', 'mgr'),
+(407, 1, '2017-06-06 15:37:12', 'chunk_update', 'modChunk', '22'),
+(408, 1, '2017-06-06 15:37:13', 'propertyset_update_from_element', 'modChunk', '22'),
+(409, 1, '2017-06-06 15:39:11', 'chunk_update', 'modChunk', '22'),
+(410, 1, '2017-06-06 15:39:11', 'propertyset_update_from_element', 'modChunk', '22'),
+(411, 1, '2017-06-06 15:41:38', 'chunk_update', 'modChunk', '22'),
+(412, 1, '2017-06-06 15:41:38', 'propertyset_update_from_element', 'modChunk', '22'),
+(413, 1, '2017-06-06 15:42:47', 'chunk_update', 'modChunk', '26'),
+(414, 1, '2017-06-06 15:42:48', 'propertyset_update_from_element', 'modChunk', '26'),
+(415, 1, '2017-06-06 15:54:47', 'chunk_update', 'modChunk', '26'),
+(416, 1, '2017-06-06 15:54:48', 'propertyset_update_from_element', 'modChunk', '26'),
+(417, 1, '2017-06-06 15:57:42', 'chunk_update', 'modChunk', '26'),
+(418, 1, '2017-06-06 15:57:43', 'propertyset_update_from_element', 'modChunk', '26'),
+(419, 1, '2017-06-06 15:58:27', 'chunk_update', 'modChunk', '22'),
+(420, 1, '2017-06-06 15:58:27', 'propertyset_update_from_element', 'modChunk', '22'),
+(421, 1, '2017-06-06 16:10:06', 'chunk_update', 'modChunk', '26'),
+(422, 1, '2017-06-06 16:10:06', 'propertyset_update_from_element', 'modChunk', '26'),
+(423, 1, '2017-06-06 16:20:15', 'chunk_update', 'modChunk', '26'),
+(424, 1, '2017-06-06 16:20:15', 'propertyset_update_from_element', 'modChunk', '26'),
+(425, 1, '2017-06-06 16:38:26', 'chunk_update', 'modChunk', '26'),
+(426, 1, '2017-06-06 16:38:26', 'propertyset_update_from_element', 'modChunk', '26'),
+(427, 1, '2017-06-06 16:40:04', 'chunk_update', 'modChunk', '26'),
+(428, 1, '2017-06-06 16:40:04', 'propertyset_update_from_element', 'modChunk', '26'),
+(429, 1, '2017-06-06 16:41:21', 'chunk_update', 'modChunk', '26'),
+(430, 1, '2017-06-06 16:41:21', 'propertyset_update_from_element', 'modChunk', '26'),
+(431, 1, '2017-06-06 16:42:54', 'chunk_update', 'modChunk', '26'),
+(432, 1, '2017-06-06 16:42:55', 'propertyset_update_from_element', 'modChunk', '26');
 
 -- --------------------------------------------------------
 
@@ -2347,7 +2374,7 @@ CREATE TABLE `new_session` (
 --
 
 INSERT INTO `new_session` (`id`, `access`, `data`) VALUES
-('9sds758mdqm2pfgoftbaotmh54', 1496744354, 'modx.user.contextTokens|a:0:{}');
+('98trev9nc80vfujgvqgr429gs1', 1496756659, 'modx.user.contextTokens|a:0:{}');
 
 -- --------------------------------------------------------
 
@@ -2470,11 +2497,11 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (19, 0, 0, 'lgnResetPassChangePassTpl', '', 0, 12, 0, '[[!+logcp.error_message:notempty=`<p style=\"color: red;\">[[+logcp.error_message]]</p>`]]\n\n<form class=\"form inline\" action=\"\" method=\"post\">\n    <input type=\"hidden\" name=\"nospam:blank\" value=\"\" />\n\n    <div class=\"ff\">\n        <label for=\"password_new\">[[!%login.password_new]]\n            <span class=\"error\">[[+logcp.error.password_new]]</span>\n        </label>\n        <input type=\"password\" name=\"password_new:required\" id=\"password_new\" value=\"[[+logcp.password_new]]\" />\n    </div>\n\n    <div class=\"ff\">\n        <label for=\"password_new_confirm\">[[!%login.password_new_confirm]]\n            <span class=\"error\">[[+logcp.error.password_new_confirm]]</span>\n        </label>\n        <input type=\"password\" name=\"password_new_confirm:required\" id=\"password_new_confirm\" value=\"[[+logcp.password_new_confirm]]\" />\n    </div>\n\n    <br class=\"clear\" />\n\n    <div class=\"form-buttons\">\n        <input type=\"submit\" name=\"logcp-submit\" value=\"[[!%login.change_password]]\" />\n    </div>\n</form>', 0, 'a:0:{}', 0, ''),
 (20, 0, 0, 'lgnExpiredTpl', '', 0, 12, 0, '<p><strong>Password Reset Information</strong></p>\n<p>Your password has already been reset or the link expired. If you need to reset your password again, click <a href=\"#\">here</a>.</p>', 0, 'a:0:{}', 0, ''),
 (21, 1, 0, 'Head', '', 0, 21, 0, '<!DOCTYPE html>\n<html lang=\"ru\">\n\n<head>\n    \n    <base href=\"[[++site_url]]\" />\n	<meta charset=\"[[++modx_charset]]\" />\n\n	<title>[[*longtitle:default=`[[*pagetitle]]`]] - [[++site_url]]</title>\n	<meta name=\"description\" content=\"\">\n\n	<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">\n\n	<meta property=\"og:image\" content=\"path/to/image.jpg\">\n	<link rel=\"shortcut icon\" href=\"[[++assets_url]]templates/Stas/app/img/favicon/favicon.ico\" type=\"image/x-icon\">\n	<link rel=\"apple-touch-icon\" href=\"[[++assets_url]]templates/Stas/app/img/favicon/apple-touch-icon.png\">\n	<link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"[[++assets_url]]templates/Stas/app/img/favicon/apple-touch-icon-72x72.png\">\n	<link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"[[++assets_url]]templates/Stas/app/img/favicon/apple-touch-icon-114x114.png\">\n\n	<!-- Chrome, Firefox OS and Opera -->\n	<meta name=\"theme-color\" content=\"#000\">\n	<!-- Windows Phone -->\n	<meta name=\"msapplication-navbutton-color\" content=\"#000\">\n	<!-- iOS Safari -->\n	<meta name=\"apple-mobile-web-app-status-bar-style\" content=\"#000\">\n\n	<!--<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #151515; }</style>-->\n\n</head>', 0, 'a:0:{}', 0, ''),
-(22, 1, 0, 'Scripts', '', 0, 21, 0, '<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/css/bootstrap.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/css/bootstrap-theme.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/font-awesome/css/font-awesome.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/mmenu/css/jquery.mmenu.all.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/css-hamburgers/hamburgers.css\">\n\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/css/main.min.css\">\n<script src=\"[[++assets_url]]templates/Stas/app/libs/jquery/dist/jquery.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/js/bootstrap.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/mmenu/js/jquery.mmenu.all.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/js/common.js\"></script>\n', 0, 'a:0:{}', 0, ''),
+(22, 1, 0, 'Scripts', '', 0, 21, 0, '<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/css/bootstrap.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/css/bootstrap-theme.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/font-awesome/css/font-awesome.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/mmenu/css/jquery.mmenu.all.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/css-hamburgers/hamburgers.css\">\n    <link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/animate/animate.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/OwlCarousel/dist/assets/owl.carousel.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/OwlCarousel/dist/assets/owl.theme.default.min.css\">\n\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/css/main.min.css\">\n<script src=\"[[++assets_url]]templates/Stas/app/libs/jquery/dist/jquery.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/js/bootstrap.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/mmenu/js/jquery.mmenu.all.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/OwlCarousel/dist/owl.carousel.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/js/common.js\"></script>\n', 0, 'a:0:{}', 0, ''),
 (23, 1, 0, 'Header', '', 0, 21, 0, '<div id=\"my-header\">\n			\n			<header class=\"site-header\">\n				\n				<div class=\"top\">\n<div class=\"Logo visible-xs\"><i class=\"fa fa-free-code-camp\" aria-hidden=\"true\"></i>Logotype</div>\n					<a href=\"#my-menu\" class=\"hamburger hamburger--emphatic visible-xs\">\n						<span class=\"hamburger-box\"><span class=\"hamburger-inner\"></span></span>\n					</a>\n					<nav id=\"my-menu\">\n						[[Wayfinder?\n						&startId=`0`\n						&level=`1`\n						&outerTpl=`tpl.Wayfinder.outer`\n						&parentRowTpl=`tpl.Wayfinder.row.parent`\n						&innerRowTpl=`tpl.Wayfinder.row.inner`\n						&rowTpl=`tpl.Wayfinder.row`\n						\n					]]\n					</nav>\n					\n				</div>\n\n				\n				\n\n				\n\n			</header>\n\n		</div>', 0, 'a:0:{}', 0, ''),
 (24, 1, 0, 'Content', '', 0, 21, 0, '[[$Navbar]]', 0, 'a:0:{}', 0, ''),
 (25, 0, 0, 'Navbar', '', 0, 21, 0, '<header>\n    <div class=\"top-line hidden-xs\">\n        <div class=\"container\">\n            <div class=\"row\">\n               <div class=\"col-lg-3 col-md-3 col-sm-3\">\n                   <div class=\"Logo\"><i class=\"fa fa-free-code-camp\" aria-hidden=\"true\"></i>Logotype</div>\n               </div>\n               <div class=\"col-lg-6 col-md-7 col-sm-9\">\n                   <div class=\"center\">\n                    <nav class=\"my-menu\">\n						[[Wayfinder?\n						&startId=`0`\n						&level=`1`\n						&outerTpl=`tpl.Wayfinder.outer`\n						&parentRowTpl=`tpl.Wayfinder.row.parent`\n						&innerRowTpl=`tpl.Wayfinder.row.inner`\n						&rowTpl=`tpl.Wayfinder.row`\n						&outerClass=`list-inline`\n					    ]]\n					</nav>\n				</div>\n			</div>\n					\n					<div class=\"col-lg-3 col-md-2 col-sm-hidden social\">\n					    <p> Соц. сети</p>\n					   <i class=\"fa fa-vk\" aria-hidden=\"true\"></i>\n                    <i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>\n<i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i>\n<i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>\n\n					    \n					</div>\n	        </div> \n        </div>\n    </div>\n    \n[[$Carousel]]\n    \n</header>', 0, 'a:0:{}', 0, ''),
-(26, 0, 0, 'Carousel', '', 0, 21, 0, '<div class=\"carousel-main\">\n    \n</div>', 0, NULL, 0, '');
+(26, 0, 0, 'Carousel', '', 0, 21, 0, '<div class=\"carousel-main\">\n    <div class=\"owl-carousel\">\n      <div class=\"photo1\"> Your Content1 </div>\n      <div class=\"photo1\"> Your Content2 </div>\n      <div class=\"photo1\"> Your Content3 </div>\n      <div class=\"photo1\"> Your Content4 </div>\n      <div class=\"photo1\"> Your Content5 </div>\n      <div class=\"photo1\"> Your Content6 </div>\n      <div class=\"photo1\"> Your Content7 </div>\n       \n    </div>\n    <div class=\"owl-controls\">\n        <div class=\"owl-nav\">\n            <div class=\"owl-prev\"></div>\n            <div class=\"owl-next\"></div>\n       </div>\n        <div class=\"owl-dots\">\n            <div class=\"owl-dot active\"><span></span></div>\n            <div class=\"owl-dot\"><span></span></div>\n            <div class=\"owl-dot\"><span></span></div>\n        </div>\n    </div>\n</div>', 0, 'a:0:{}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -3707,7 +3734,7 @@ CREATE TABLE `new_user_attributes` (
 --
 
 INSERT INTO `new_user_attributes` (`id`, `internalKey`, `fullname`, `email`, `phone`, `mobilephone`, `blocked`, `blockeduntil`, `blockedafter`, `logincount`, `lastlogin`, `thislogin`, `failedlogincount`, `sessionid`, `dob`, `gender`, `address`, `country`, `city`, `state`, `zip`, `fax`, `photo`, `comment`, `website`, `extended`) VALUES
-(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 20, 1496723445, 1496741460, 0, '51fuu6268on0mkbtjg9hjdtvl1', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
+(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 21, 1496741460, 1496751445, 0, 'gn8s0krfi7q691m2c9cv29gau1', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
 (3, 3, '', 'platonov_stan@mail.ru', '', '', 0, 0, 0, 7, 1491287477, 1491302110, 0, 'pinq7vkq5q6r7f8adtj2m64550', 0, 0, '', '', '', '', '', '', '', '', '', '[]');
 
 -- --------------------------------------------------------
@@ -4844,7 +4871,7 @@ ALTER TABLE `new_lexicon_entries`
 -- AUTO_INCREMENT для таблицы `new_manager_log`
 --
 ALTER TABLE `new_manager_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=406;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=433;
 --
 -- AUTO_INCREMENT для таблицы `new_media_sources`
 --

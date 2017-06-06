@@ -16,5 +16,12 @@ $(function() {
 	}).bind('closed', function () {
 		$('.hamburger').removeClass('is-active');
 	});
-
+$(".owl-carousel").owlCarousel({
+  	animateOut: 'fadeOut',
+    nav: true,
+    items:1,
+    smartSpeed:2000
+  });
 	});
+
+
