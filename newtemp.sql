@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 06 2017 г., 16:47
+-- Время создания: Июн 08 2017 г., 08:08
 -- Версия сервера: 5.5.53
 -- Версия PHP: 5.5.38
 
@@ -1878,7 +1878,34 @@ INSERT INTO `new_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `
 (429, 1, '2017-06-06 16:41:21', 'chunk_update', 'modChunk', '26'),
 (430, 1, '2017-06-06 16:41:21', 'propertyset_update_from_element', 'modChunk', '26'),
 (431, 1, '2017-06-06 16:42:54', 'chunk_update', 'modChunk', '26'),
-(432, 1, '2017-06-06 16:42:55', 'propertyset_update_from_element', 'modChunk', '26');
+(432, 1, '2017-06-06 16:42:55', 'propertyset_update_from_element', 'modChunk', '26'),
+(433, 1, '2017-06-06 17:59:08', 'login', 'modContext', 'mgr'),
+(434, 1, '2017-06-06 18:19:53', 'chunk_update', 'modChunk', '26'),
+(435, 1, '2017-06-06 18:19:53', 'propertyset_update_from_element', 'modChunk', '26'),
+(436, 1, '2017-06-06 18:20:21', 'chunk_update', 'modChunk', '26'),
+(437, 1, '2017-06-06 18:20:21', 'propertyset_update_from_element', 'modChunk', '26'),
+(438, 1, '2017-06-06 18:27:07', 'chunk_update', 'modChunk', '26'),
+(439, 1, '2017-06-06 18:27:08', 'propertyset_update_from_element', 'modChunk', '26'),
+(440, 1, '2017-06-06 18:28:04', 'chunk_update', 'modChunk', '26'),
+(441, 1, '2017-06-06 18:28:04', 'propertyset_update_from_element', 'modChunk', '26'),
+(442, 1, '2017-06-06 18:37:18', 'chunk_update', 'modChunk', '26'),
+(443, 1, '2017-06-06 18:37:19', 'propertyset_update_from_element', 'modChunk', '26'),
+(444, 1, '2017-06-06 18:42:41', 'chunk_update', 'modChunk', '26'),
+(445, 1, '2017-06-06 18:42:41', 'propertyset_update_from_element', 'modChunk', '26'),
+(446, 1, '2017-06-06 21:04:58', 'login', 'modContext', 'mgr'),
+(447, 1, '2017-06-07 07:59:58', 'login', 'modContext', 'mgr'),
+(448, 1, '2017-06-07 08:01:02', 'login', 'modContext', 'mgr'),
+(449, 1, '2017-06-07 08:02:40', 'chunk_update', 'modChunk', '26'),
+(450, 1, '2017-06-07 08:02:40', 'propertyset_update_from_element', 'modChunk', '26'),
+(451, 1, '2017-06-07 08:41:22', 'chunk_update', 'modChunk', '26'),
+(452, 1, '2017-06-07 08:41:22', 'propertyset_update_from_element', 'modChunk', '26'),
+(453, 1, '2017-06-08 07:22:56', 'login', 'modContext', 'mgr'),
+(454, 1, '2017-06-08 07:24:02', 'chunk_update', 'modChunk', '26'),
+(455, 1, '2017-06-08 07:24:02', 'propertyset_update_from_element', 'modChunk', '26'),
+(456, 1, '2017-06-08 07:51:19', 'chunk_update', 'modChunk', '26'),
+(457, 1, '2017-06-08 07:51:19', 'propertyset_update_from_element', 'modChunk', '26'),
+(458, 1, '2017-06-08 07:55:35', 'chunk_update', 'modChunk', '26'),
+(459, 1, '2017-06-08 07:55:35', 'propertyset_update_from_element', 'modChunk', '26');
 
 -- --------------------------------------------------------
 
@@ -2374,7 +2401,7 @@ CREATE TABLE `new_session` (
 --
 
 INSERT INTO `new_session` (`id`, `access`, `data`) VALUES
-('98trev9nc80vfujgvqgr429gs1', 1496756659, 'modx.user.contextTokens|a:0:{}');
+('icqcbph6ep65e6s5lo8u43nh25', 1496898460, 'modx.user.contextTokens|a:0:{}');
 
 -- --------------------------------------------------------
 
@@ -2501,7 +2528,7 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (23, 1, 0, 'Header', '', 0, 21, 0, '<div id=\"my-header\">\n			\n			<header class=\"site-header\">\n				\n				<div class=\"top\">\n<div class=\"Logo visible-xs\"><i class=\"fa fa-free-code-camp\" aria-hidden=\"true\"></i>Logotype</div>\n					<a href=\"#my-menu\" class=\"hamburger hamburger--emphatic visible-xs\">\n						<span class=\"hamburger-box\"><span class=\"hamburger-inner\"></span></span>\n					</a>\n					<nav id=\"my-menu\">\n						[[Wayfinder?\n						&startId=`0`\n						&level=`1`\n						&outerTpl=`tpl.Wayfinder.outer`\n						&parentRowTpl=`tpl.Wayfinder.row.parent`\n						&innerRowTpl=`tpl.Wayfinder.row.inner`\n						&rowTpl=`tpl.Wayfinder.row`\n						\n					]]\n					</nav>\n					\n				</div>\n\n				\n				\n\n				\n\n			</header>\n\n		</div>', 0, 'a:0:{}', 0, ''),
 (24, 1, 0, 'Content', '', 0, 21, 0, '[[$Navbar]]', 0, 'a:0:{}', 0, ''),
 (25, 0, 0, 'Navbar', '', 0, 21, 0, '<header>\n    <div class=\"top-line hidden-xs\">\n        <div class=\"container\">\n            <div class=\"row\">\n               <div class=\"col-lg-3 col-md-3 col-sm-3\">\n                   <div class=\"Logo\"><i class=\"fa fa-free-code-camp\" aria-hidden=\"true\"></i>Logotype</div>\n               </div>\n               <div class=\"col-lg-6 col-md-7 col-sm-9\">\n                   <div class=\"center\">\n                    <nav class=\"my-menu\">\n						[[Wayfinder?\n						&startId=`0`\n						&level=`1`\n						&outerTpl=`tpl.Wayfinder.outer`\n						&parentRowTpl=`tpl.Wayfinder.row.parent`\n						&innerRowTpl=`tpl.Wayfinder.row.inner`\n						&rowTpl=`tpl.Wayfinder.row`\n						&outerClass=`list-inline`\n					    ]]\n					</nav>\n				</div>\n			</div>\n					\n					<div class=\"col-lg-3 col-md-2 col-sm-hidden social\">\n					    <p> Соц. сети</p>\n					   <i class=\"fa fa-vk\" aria-hidden=\"true\"></i>\n                    <i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>\n<i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i>\n<i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>\n\n					    \n					</div>\n	        </div> \n        </div>\n    </div>\n    \n[[$Carousel]]\n    \n</header>', 0, 'a:0:{}', 0, ''),
-(26, 0, 0, 'Carousel', '', 0, 21, 0, '<div class=\"carousel-main\">\n    <div class=\"owl-carousel\">\n      <div class=\"photo1\"> Your Content1 </div>\n      <div class=\"photo1\"> Your Content2 </div>\n      <div class=\"photo1\"> Your Content3 </div>\n      <div class=\"photo1\"> Your Content4 </div>\n      <div class=\"photo1\"> Your Content5 </div>\n      <div class=\"photo1\"> Your Content6 </div>\n      <div class=\"photo1\"> Your Content7 </div>\n       \n    </div>\n    <div class=\"owl-controls\">\n        <div class=\"owl-nav\">\n            <div class=\"owl-prev\"></div>\n            <div class=\"owl-next\"></div>\n       </div>\n        <div class=\"owl-dots\">\n            <div class=\"owl-dot active\"><span></span></div>\n            <div class=\"owl-dot\"><span></span></div>\n            <div class=\"owl-dot\"><span></span></div>\n        </div>\n    </div>\n</div>', 0, 'a:0:{}', 0, '');
+(26, 0, 0, 'Carousel', '', 0, 21, 0, '<div class=\"carousel-main\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n            <div class=\"owl-carousel\">\n      <div class=\"photo1\"> \n      \n      </div>\n      <div class=\"photo2\"> \n      \n      </div>\n      <div class=\"photo3\"> \n      \n      </div>\n    </div>\n    </div> \n        </div>\n    </div>\n   \n   \n   \n</div>', 0, 'a:0:{}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -3734,7 +3761,7 @@ CREATE TABLE `new_user_attributes` (
 --
 
 INSERT INTO `new_user_attributes` (`id`, `internalKey`, `fullname`, `email`, `phone`, `mobilephone`, `blocked`, `blockeduntil`, `blockedafter`, `logincount`, `lastlogin`, `thislogin`, `failedlogincount`, `sessionid`, `dob`, `gender`, `address`, `country`, `city`, `state`, `zip`, `fax`, `photo`, `comment`, `website`, `extended`) VALUES
-(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 21, 1496741460, 1496751445, 0, 'gn8s0krfi7q691m2c9cv29gau1', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
+(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 26, 1496811662, 1496895776, 0, 'j4f4rl5ctthknd58nd1l6ds9b6', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
 (3, 3, '', 'platonov_stan@mail.ru', '', '', 0, 0, 0, 7, 1491287477, 1491302110, 0, 'pinq7vkq5q6r7f8adtj2m64550', 0, 0, '', '', '', '', '', '', '', '', '', '[]');
 
 -- --------------------------------------------------------
@@ -4871,7 +4898,7 @@ ALTER TABLE `new_lexicon_entries`
 -- AUTO_INCREMENT для таблицы `new_manager_log`
 --
 ALTER TABLE `new_manager_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=433;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=460;
 --
 -- AUTO_INCREMENT для таблицы `new_media_sources`
 --

@@ -21,9 +21,12 @@
 
 
 /* Medium Devices, Desktops */
-@media (min-width : 768px) and (max-width : 992px)
+@media (min-width : 768px) and (max-width : 991px)
 	html 
 		header
+			.carousel-main
+				.col-sm-12
+					top: -71px
 			.top-line
 				.my-menu
 					li
@@ -74,4 +77,26 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
 	/**/
-
+@media (min-width : 240px) and (max-width : 991px)
+	html 
+		header
+			.carousel-main
+				size: 100% 320px
+				position: relative
+				.photo1
+					size: 100% 320px 
+				.photo2
+					size: 100% 320px 
+				.photo3
+					size: 100% 320px 
+				.owl-prev
+					height: 320px
+					width: 40px
+					img
+						padding-top: 140px
+				.owl-next
+					height: 320px
+					width: 40px
+					img
+						padding-top: 140px
+					

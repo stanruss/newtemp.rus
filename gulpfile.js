@@ -14,7 +14,7 @@ var browserSync  = require('browser-sync');
 gulp.task('browser-sync', function() {
 	browserSync({
 		proxy: 
-		"newclear.rus",
+		"newtemp.rus",
 		notify: false
 	
 	});
