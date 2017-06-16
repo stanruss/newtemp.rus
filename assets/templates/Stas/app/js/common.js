@@ -25,7 +25,7 @@ $(".owl-carousel").owlCarousel({
     autoplay:true,
 		autoplayTimeout:5000,
 		loop:true,
-    margin:100,
+    margin:0,
 		autoplayHoverPause:false,
     smartSpeed:2000
   });
