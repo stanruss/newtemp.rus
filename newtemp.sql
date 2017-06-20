@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 19 2017 г., 14:53
+-- Время создания: Июн 20 2017 г., 15:45
 -- Версия сервера: 5.5.53
 -- Версия PHP: 5.5.38
 
@@ -2051,7 +2051,25 @@ INSERT INTO `new_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `
 (602, 1, '2017-06-19 14:50:46', 'propertyset_update_from_element', 'modTemplate', '4'),
 (603, 1, '2017-06-19 14:51:01', 'chunk_create', 'modChunk', '31'),
 (604, 1, '2017-06-19 14:51:30', 'chunk_update', 'modChunk', '31'),
-(605, 1, '2017-06-19 14:51:30', 'propertyset_update_from_element', 'modChunk', '31');
+(605, 1, '2017-06-19 14:51:30', 'propertyset_update_from_element', 'modChunk', '31'),
+(606, 1, '2017-06-19 17:54:08', 'login', 'modContext', 'mgr'),
+(607, 1, '2017-06-19 17:55:20', 'login', 'modContext', 'web'),
+(608, 1, '2017-06-19 17:56:42', 'login', 'modContext', 'web'),
+(609, 1, '2017-06-19 17:58:45', 'login', 'modContext', 'web'),
+(610, 1, '2017-06-19 18:02:24', 'login', 'modContext', 'web'),
+(611, 1, '2017-06-19 18:05:48', 'login', 'modContext', 'web'),
+(612, 1, '2017-06-19 18:06:19', 'login', 'modContext', 'web'),
+(613, 1, '2017-06-20 13:34:19', 'login', 'modContext', 'mgr'),
+(614, 1, '2017-06-20 13:34:42', 'login', 'modContext', 'web'),
+(615, 1, '2017-06-20 13:34:57', 'login', 'modContext', 'web'),
+(616, 1, '2017-06-20 14:22:04', 'login', 'modContext', 'mgr'),
+(617, 1, '2017-06-20 14:37:04', 'login', 'modContext', 'web'),
+(618, 1, '2017-06-20 15:27:20', 'chunk_update', 'modChunk', '9'),
+(619, 1, '2017-06-20 15:27:20', 'propertyset_update_from_element', 'modChunk', '9'),
+(620, 1, '2017-06-20 15:32:43', 'login', 'modContext', 'web'),
+(621, 1, '2017-06-20 15:40:22', 'login', 'modContext', 'web'),
+(622, 1, '2017-06-20 15:42:10', 'login', 'modContext', 'web'),
+(623, 1, '2017-06-20 15:42:44', 'login', 'modContext', 'web');
 
 -- --------------------------------------------------------
 
@@ -2547,7 +2565,12 @@ CREATE TABLE `new_session` (
 --
 
 INSERT INTO `new_session` (`id`, `access`, `data`) VALUES
-('7m5mod8oj290fma7bitmhjvgv7', 1497873158, 'modx.user.contextTokens|a:0:{}');
+('7m5mod8oj290fma7bitmhjvgv7', 1497873158, 'modx.user.contextTokens|a:0:{}'),
+('uq1l4ebfubmijef8vg5soh5d10', 1497884033, 'modx.user.contextTokens|a:0:{}'),
+('3umaolnh0nm4leil16si14al43', 1497884786, 'modx.user.contextTokens|a:1:{s:3:\"mgr\";i:1;}modx.mgr.user.token|s:52:\"modx58de58ab522034.60981441_15947e590558d74.59893342\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}'),
+('o519db6npim8g9fq8541hhvm14', 1497954904, 'modx.user.contextTokens|a:1:{s:3:\"mgr\";i:1;}modx.mgr.user.token|s:52:\"modx58de58ab522034.60981441_15948fa2b9bcb51.12702348\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}'),
+('bmpvo1nbn1ta3e72p4jb616aa4', 1497954860, 'modx.user.contextTokens|a:0:{}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}'),
+('07m2gqt3vhpn4pkaku4q9k1dv2', 1497962574, 'modx.user.contextTokens|a:1:{s:3:\"mgr\";i:1;}modx.mgr.user.token|s:52:\"modx58de58ab522034.60981441_15949055c4360d9.88127354\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}');
 
 -- --------------------------------------------------------
 
@@ -2657,7 +2680,7 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (6, 0, 0, 'blogit.taglist', 'Blogit - Created by MPThemes http://mpthemes.com', 0, 7, 0, '[[++blogit.use_tags:isequalto=`1`:then=`\r\n<h4>[[%blogit.tags_header]]</h4>\r\n[[TaggerGetTags? &rowTpl=`blogit.tag_links_tpl` &separator=`, `]]\r\n`]]', 0, 'a:0:{}', 0, ''),
 (7, 0, 0, 'galAlbumRowTpl', '', 0, 10, 0, '<li[[+cls:notempty=` class=\"[[+cls]]\"`]]><a href=\"[[~[[*id]]? &[[+albumRequestVar]]=`[[+id]]`]]\">[[+showName:notempty=`[[+name]]`]]</a></li>', 0, '', 0, ''),
 (8, 0, 0, 'galItemThumb', '', 0, 10, 0, '<div class=\"[[+cls]]\">\n    <a href=\"[[+linkToImage:if=`[[+linkToImage]]`:is=`1`:then=`[[+image_absolute]]`:else=`[[~[[*id]]?\n            &[[+imageGetParam]]=`[[+id]]`\n            &[[+albumRequestVar]]=`[[+album]]`\n            &[[+tagRequestVar]]=`[[+tag]]` ]]`]]\" title=\"[[+name]]\" [[+link_attributes]]>\n\n        <img class=\"[[+imgCls]]\" src=\"[[+thumbnail]]\" alt=\"[[+name]]\" [[+image_attributes]] />\n    </a>\n</div>', 0, '', 0, ''),
-(9, 0, 0, 'lgnLoginTpl', '', 0, 12, 0, '<div class=\"loginForm\">\n    <div class=\"loginMessage\">[[+errors]]</div>\n    <div class=\"loginLogin\">\n        <form class=\"loginLoginForm\" action=\"[[~[[*id]]]]\" method=\"post\">\n            \n            <fieldset class=\"loginLoginFieldset\">\n                \n                <label class=\"loginUsernameLabel\">\n                    <input class=\"loginUsername\" type=\"text\" name=\"username\" placeholder=\"Логин\" />\n                </label>\n                \n                <label class=\"loginPasswordLabel\">\n                    <input class=\"loginPassword\" type=\"password\" name=\"password\" placeholder=\"Пароль\" />\n                </label>\n                <input class=\"returnUrl\" type=\"hidden\" name=\"returnUrl\" value=\"[[+request_uri]]\" />\n\n                [[+login.recaptcha_html]]\n                \n                <input class=\"loginLoginValue\" type=\"hidden\" name=\"service\" value=\"login\" />\n                <span class=\"loginLoginButton\"><button class=\"btn-primary\" type=\"submit\" name=\"Login\">Войти</button></span>\n<span><a class=\"left\" href=\"[[~8]]\">Забыли пароль?</a></span><span> / </span><span> <a class=\"right\" href=\"[[~10]]\"> Регистрация </a ></span>\n            </fieldset>\n        </form>\n    </div>\n</div>', 0, 'a:0:{}', 0, ''),
+(9, 0, 0, 'lgnLoginTpl', '', 0, 12, 0, '<div class=\"loginForm\">\n    <div class=\"loginMessage\">[[+errors]]</div>\n    <div class=\"loginLogin\">\n        <form class=\"loginLoginForm\" action=\"[[~[[*id]]]]\" method=\"post\">\n            \n            <fieldset class=\"loginLoginFieldset\">\n                \n                <label class=\"loginUsernameLabel\">\n                    <input class=\"loginUsername\" type=\"text\" name=\"username\" placeholder=\"Логин\" />\n                </label>\n                \n                <label class=\"loginPasswordLabel\">\n                    <input class=\"loginPassword\" type=\"password\" name=\"password\" placeholder=\"Пароль\" />\n                </label>\n                <input class=\"returnUrl\" type=\"hidden\" name=\"returnUrl\" value=\"[[+request_uri]]\" />\n\n                [[+login.recaptcha_html]]\n                \n                <input class=\"loginLoginValue\" type=\"hidden\" name=\"service\" value=\"login\" />\n                <span class=\"loginLoginButton\"><button class=\"btn-primary\" type=\"submit\" name=\"Login\">Войти</button></span>\n\n<div class=\"forg\"><span><a class=\"left\" href=\"[[~8]]\">Забыли пароль?</a></span><span> / </span><span> <a class=\"right\" href=\"[[~10]]\"> Регистрация </a ></span></div>\n            </fieldset>\n        </form>\n    </div>\n</div>', 0, 'a:0:{}', 0, ''),
 (10, 0, 0, 'lgnLogoutTpl', '', 0, 12, 0, '<div class=\"loginMessage\">[[+errors]]</div>\n<br />\n<div class=\"loginLogin\">\n    <div class=\"loginRegister\">\n        <div class=\"butt\"><a href=\"[[+logoutUrl]]\" title=\"[[+actionMsg]]\"><button class=\"btn-primary out\">Выйти</button></a>\n       <span> Добро пожаловать <b>[[+modx.user.id:userinfo=`username`]]</b></span></div>\n        \n    </div>\n</div>', 0, 'a:0:{}', 0, ''),
 (11, 0, 0, 'lgnErrTpl', '', 0, 12, 0, '<p class=\"error\">[[+msg]]</p>', 0, 'a:0:{}', 0, ''),
 (12, 0, 0, 'lgnForgotPassEmail', '', 0, 12, 0, '<p>[[+username]],</p>\n\n<p>Для активации аккаунта, нажмите пожалуйста на ссылку снизу:</p>\n\n<p><a href=\"[[+confirmUrl]]\">[[+confirmUrl]]</a></p>\n\n<p>Если все прошло удачно, можете уже авторизоваться в системе:</p>\n\n<p><strong>Password:</strong> [[+password]]</p>\n\n<p>Если вы не заказывали активацию, проигнорируйте это письмо.</p>\n\n<p>Спасибо,<br />\n<em>Администратор сайта [[+sname]]</em></p>', 0, 'a:0:{}', 0, ''),
@@ -3912,7 +3935,7 @@ CREATE TABLE `new_user_attributes` (
 --
 
 INSERT INTO `new_user_attributes` (`id`, `internalKey`, `fullname`, `email`, `phone`, `mobilephone`, `blocked`, `blockeduntil`, `blockedafter`, `logincount`, `lastlogin`, `thislogin`, `failedlogincount`, `sessionid`, `dob`, `gender`, `address`, `country`, `city`, `state`, `zip`, `fax`, `photo`, `comment`, `website`, `extended`) VALUES
-(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 43, 1497861622, 1497872528, 0, 'fu93va90r6f2knp018f0v989i0', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
+(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 59, 1497962530, 1497962564, 0, '07m2gqt3vhpn4pkaku4q9k1dv2', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
 (3, 3, '', 'platonov_stan@mail.ru', '', '', 0, 0, 0, 7, 1491287477, 1491302110, 0, 'pinq7vkq5q6r7f8adtj2m64550', 0, 0, '', '', '', '', '', '', '', '', '', '[]');
 
 -- --------------------------------------------------------
@@ -5049,7 +5072,7 @@ ALTER TABLE `new_lexicon_entries`
 -- AUTO_INCREMENT для таблицы `new_manager_log`
 --
 ALTER TABLE `new_manager_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=606;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=624;
 --
 -- AUTO_INCREMENT для таблицы `new_media_sources`
 --
