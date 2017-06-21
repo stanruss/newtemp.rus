@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 21 2017 г., 09:24
+-- Время создания: Июн 21 2017 г., 16:00
 -- Версия сервера: 5.5.53
 -- Версия PHP: 5.5.38
 
@@ -2084,7 +2084,107 @@ INSERT INTO `new_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `
 (635, 1, '2017-06-21 09:04:17', 'propertyset_update_from_element', 'modTemplate', '6'),
 (636, 1, '2017-06-21 09:04:51', 'user_delete', 'modUser', '5'),
 (637, 6, '2017-06-21 09:10:37', 'login', 'modContext', 'web'),
-(638, 1, '2017-06-21 09:21:15', 'user_delete', 'modUser', '6');
+(638, 1, '2017-06-21 09:21:15', 'user_delete', 'modUser', '6'),
+(639, 1, '2017-06-21 13:44:40', 'login', 'modContext', 'mgr'),
+(640, 1, '2017-06-21 13:46:11', 'chunk_update', 'modChunk', '16'),
+(641, 1, '2017-06-21 13:46:12', 'propertyset_update_from_element', 'modChunk', '16'),
+(642, 1, '2017-06-21 13:48:57', 'chunk_update', 'modChunk', '16'),
+(643, 1, '2017-06-21 13:48:57', 'propertyset_update_from_element', 'modChunk', '16'),
+(644, 1, '2017-06-21 13:49:01', 'chunk_update', 'modChunk', '16'),
+(645, 1, '2017-06-21 13:49:01', 'propertyset_update_from_element', 'modChunk', '16'),
+(646, 1, '2017-06-21 13:49:29', 'chunk_update', 'modChunk', '16'),
+(647, 1, '2017-06-21 13:49:29', 'propertyset_update_from_element', 'modChunk', '16'),
+(648, 1, '2017-06-21 13:49:56', 'chunk_update', 'modChunk', '16'),
+(649, 1, '2017-06-21 13:49:57', 'propertyset_update_from_element', 'modChunk', '16'),
+(650, 1, '2017-06-21 13:52:40', 'chunk_update', 'modChunk', '16'),
+(651, 1, '2017-06-21 13:52:40', 'propertyset_update_from_element', 'modChunk', '16'),
+(652, 1, '2017-06-21 13:55:44', 'chunk_update', 'modChunk', '30'),
+(653, 1, '2017-06-21 13:55:44', 'propertyset_update_from_element', 'modChunk', '30'),
+(654, 1, '2017-06-21 13:57:13', 'chunk_update', 'modChunk', '30'),
+(655, 1, '2017-06-21 13:57:13', 'propertyset_update_from_element', 'modChunk', '30'),
+(656, 1, '2017-06-21 13:57:23', 'chunk_update', 'modChunk', '30'),
+(657, 1, '2017-06-21 13:57:24', 'propertyset_update_from_element', 'modChunk', '30'),
+(658, 1, '2017-06-21 13:57:52', 'chunk_update', 'modChunk', '30'),
+(659, 1, '2017-06-21 13:57:52', 'propertyset_update_from_element', 'modChunk', '30'),
+(660, 1, '2017-06-21 13:58:36', 'chunk_update', 'modChunk', '30'),
+(661, 1, '2017-06-21 13:58:36', 'propertyset_update_from_element', 'modChunk', '30'),
+(662, 1, '2017-06-21 13:59:05', 'chunk_update', 'modChunk', '30'),
+(663, 1, '2017-06-21 13:59:05', 'propertyset_update_from_element', 'modChunk', '30'),
+(664, 1, '2017-06-21 13:59:36', 'chunk_update', 'modChunk', '30'),
+(665, 1, '2017-06-21 13:59:37', 'propertyset_update_from_element', 'modChunk', '30'),
+(666, 1, '2017-06-21 14:04:25', 'chunk_create', 'modChunk', '32'),
+(667, 1, '2017-06-21 14:04:40', 'chunk_update', 'modChunk', '32'),
+(668, 1, '2017-06-21 14:04:40', 'propertyset_update_from_element', 'modChunk', '32'),
+(669, 1, '2017-06-21 14:05:33', 'user_delete', 'modUser', '7'),
+(670, 1, '2017-06-21 14:05:49', 'login', 'modContext', 'web'),
+(671, 1, '2017-06-21 14:56:12', 'chunk_create', 'modChunk', '33'),
+(672, 1, '2017-06-21 14:56:57', 'chunk_update', 'modChunk', '33'),
+(673, 1, '2017-06-21 14:56:57', 'propertyset_update_from_element', 'modChunk', '33'),
+(674, 1, '2017-06-21 14:58:27', 'resource_create', 'modDocument', '16'),
+(675, 1, '2017-06-21 14:58:32', 'resource_update', 'modResource', '16'),
+(676, 1, '2017-06-21 14:59:31', 'template_create', 'modTemplate', '8'),
+(677, 1, '2017-06-21 15:00:27', 'template_update', 'modTemplate', '8'),
+(678, 1, '2017-06-21 15:00:50', 'template_update', 'modTemplate', '8'),
+(679, 1, '2017-06-21 15:01:26', 'template_update', 'modTemplate', '8'),
+(680, 1, '2017-06-21 15:01:26', 'propertyset_update_from_element', 'modTemplate', '8'),
+(681, 1, '2017-06-21 15:02:08', 'chunk_update', 'modChunk', '33');
+INSERT INTO `new_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `item`) VALUES
+(682, 1, '2017-06-21 15:02:08', 'propertyset_update_from_element', 'modChunk', '33'),
+(683, 1, '2017-06-21 15:03:11', 'chunk_update', 'modChunk', '29'),
+(684, 1, '2017-06-21 15:03:11', 'propertyset_update_from_element', 'modChunk', '29'),
+(685, 1, '2017-06-21 15:03:23', 'chunk_update', 'modChunk', '33'),
+(686, 1, '2017-06-21 15:03:23', 'propertyset_update_from_element', 'modChunk', '33'),
+(687, 1, '2017-06-21 15:03:32', 'login', 'modContext', 'web'),
+(688, 1, '2017-06-21 15:06:36', 'chunk_update', 'modChunk', '29'),
+(689, 1, '2017-06-21 15:06:37', 'propertyset_update_from_element', 'modChunk', '29'),
+(690, 1, '2017-06-21 15:06:53', 'login', 'modContext', 'web'),
+(691, 1, '2017-06-21 15:07:11', 'chunk_update', 'modChunk', '29'),
+(692, 1, '2017-06-21 15:07:11', 'propertyset_update_from_element', 'modChunk', '29'),
+(693, 1, '2017-06-21 15:07:38', 'chunk_update', 'modChunk', '29'),
+(694, 1, '2017-06-21 15:07:38', 'propertyset_update_from_element', 'modChunk', '29'),
+(695, 1, '2017-06-21 15:08:02', 'chunk_update', 'modChunk', '28'),
+(696, 1, '2017-06-21 15:08:03', 'propertyset_update_from_element', 'modChunk', '28'),
+(697, 1, '2017-06-21 15:08:17', 'chunk_update', 'modChunk', '28'),
+(698, 1, '2017-06-21 15:08:18', 'propertyset_update_from_element', 'modChunk', '28'),
+(699, 1, '2017-06-21 15:09:03', 'resource_update', 'modResource', '16'),
+(700, 1, '2017-06-21 15:09:39', 'chunk_update', 'modChunk', '28'),
+(701, 1, '2017-06-21 15:09:39', 'propertyset_update_from_element', 'modChunk', '28'),
+(702, 1, '2017-06-21 15:12:43', 'resource_update', 'modResource', '16'),
+(703, 1, '2017-06-21 15:16:44', 'chunk_update', 'modChunk', '28'),
+(704, 1, '2017-06-21 15:16:44', 'propertyset_update_from_element', 'modChunk', '28'),
+(705, 1, '2017-06-21 15:16:58', 'login', 'modContext', 'web'),
+(706, 1, '2017-06-21 15:17:43', 'chunk_update', 'modChunk', '28'),
+(707, 1, '2017-06-21 15:17:43', 'propertyset_update_from_element', 'modChunk', '28'),
+(708, 1, '2017-06-21 15:18:25', 'chunk_update', 'modChunk', '28'),
+(709, 1, '2017-06-21 15:18:25', 'propertyset_update_from_element', 'modChunk', '28'),
+(710, 1, '2017-06-21 15:19:33', 'chunk_update', 'modChunk', '28'),
+(711, 1, '2017-06-21 15:19:33', 'propertyset_update_from_element', 'modChunk', '28'),
+(712, 1, '2017-06-21 15:22:12', 'chunk_update', 'modChunk', '33'),
+(713, 1, '2017-06-21 15:22:12', 'propertyset_update_from_element', 'modChunk', '33'),
+(714, 1, '2017-06-21 15:22:50', 'chunk_create', 'modChunk', '34'),
+(715, 1, '2017-06-21 15:23:30', 'chunk_update', 'modChunk', '34'),
+(716, 1, '2017-06-21 15:23:31', 'propertyset_update_from_element', 'modChunk', '34'),
+(717, 1, '2017-06-21 15:23:56', 'chunk_create', 'modChunk', '35'),
+(718, 1, '2017-06-21 15:24:27', 'chunk_create', 'modChunk', '36'),
+(719, 1, '2017-06-21 15:24:53', 'chunk_create', 'modChunk', '37'),
+(720, 1, '2017-06-21 15:25:21', 'chunk_create', 'modChunk', '38'),
+(721, 1, '2017-06-21 15:25:49', 'chunk_update', 'modChunk', '28'),
+(722, 1, '2017-06-21 15:25:49', 'propertyset_update_from_element', 'modChunk', '28'),
+(723, 1, '2017-06-21 15:25:56', 'login', 'modContext', 'web'),
+(724, 1, '2017-06-21 15:26:19', 'chunk_update', 'modChunk', '28'),
+(725, 1, '2017-06-21 15:26:20', 'propertyset_update_from_element', 'modChunk', '28'),
+(726, 1, '2017-06-21 15:26:29', 'chunk_update', 'modChunk', '29'),
+(727, 1, '2017-06-21 15:26:29', 'propertyset_update_from_element', 'modChunk', '29'),
+(728, 1, '2017-06-21 15:26:38', 'login', 'modContext', 'web'),
+(729, 1, '2017-06-21 15:39:02', 'chunk_update', 'modChunk', '34'),
+(730, 1, '2017-06-21 15:39:02', 'propertyset_update_from_element', 'modChunk', '34'),
+(731, 1, '2017-06-21 15:39:25', 'chunk_update', 'modChunk', '34'),
+(732, 1, '2017-06-21 15:39:25', 'propertyset_update_from_element', 'modChunk', '34'),
+(733, 1, '2017-06-21 15:52:56', 'login', 'modContext', 'web'),
+(734, 1, '2017-06-21 15:53:27', 'chunk_update', 'modChunk', '29'),
+(735, 1, '2017-06-21 15:53:27', 'propertyset_update_from_element', 'modChunk', '29'),
+(736, 1, '2017-06-21 15:54:01', 'chunk_update', 'modChunk', '29'),
+(737, 1, '2017-06-21 15:54:02', 'propertyset_update_from_element', 'modChunk', '29');
 
 -- --------------------------------------------------------
 
@@ -2580,7 +2680,7 @@ CREATE TABLE `new_session` (
 --
 
 INSERT INTO `new_session` (`id`, `access`, `data`) VALUES
-('f6b8v5uahjr5iniu1oc4uftra4', 1498026213, 'modx.user.contextTokens|a:0:{}');
+('omsf1brp2vk5l3agbs7pmf89e1', 1498049948, 'modx.user.contextTokens|a:0:{}');
 
 -- --------------------------------------------------------
 
@@ -2653,7 +2753,8 @@ INSERT INTO `new_site_content` (`id`, `type`, `contentType`, `pagetitle`, `longt
 (12, 'document', 'text/html', 'Активация регистрации', '', '', 'activation', '', 1, 0, 0, 0, 0, '', '', 1, 7, 9, 1, 1, 1, 1491233985, 1, 1491234330, 0, 0, 0, 1491233940, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'activation.html', 0, 0, 1, NULL),
 (13, 'document', 'text/html', 'Новости', '', '', 'novosti', '', 1, 0, 0, 0, 0, '', '', 1, 1, 10, 1, 1, 1, 1496655305, 1, 1496655425, 0, 0, 0, 1496655300, 1, '', 0, 0, 0, 0, 0, 'modDocument', 'web', 1, 'novosti.html', 0, 0, 1, NULL),
 (14, 'document', 'text/html', 'Контакты', '', '', 'kontaktyi', '', 1, 0, 0, 0, 0, '', '', 1, 1, 11, 1, 1, 1, 1496655536, 0, 0, 0, 0, 0, 1496655536, 1, '', 0, 0, 0, 0, 0, 'modDocument', 'web', 1, 'kontaktyi.html', 0, 0, 1, NULL),
-(15, 'document', 'text/html', 'О нас', '', '', 'o-nas', '', 1, 0, 0, 0, 0, '', '', 1, 1, 12, 1, 1, 1, 1496655562, 0, 0, 0, 0, 0, 1496655562, 1, '', 0, 0, 0, 0, 0, 'modDocument', 'web', 1, 'o-nas.html', 0, 0, 1, NULL);
+(15, 'document', 'text/html', 'О нас', '', '', 'o-nas', '', 1, 0, 0, 0, 0, '', '', 1, 1, 12, 1, 1, 1, 1496655562, 0, 0, 0, 0, 0, 1496655562, 1, '', 0, 0, 0, 0, 0, 'modDocument', 'web', 1, 'o-nas.html', 0, 0, 1, NULL),
+(16, 'document', 'text/html', 'Результаты поиска', '', '', 'result-search', '', 1, 0, 0, 0, 0, '', '', 1, 8, 13, 1, 1, 1, 1498046307, 1, 1498047163, 0, 0, 0, 1498046280, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'result-search.html', 0, 0, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -2697,7 +2798,7 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (13, 0, 0, 'lgnForgotPassSentTpl', '', 0, 12, 0, '\n<h2 class=\"center\">Уважаемый пользователь!</h2>\n<p class=\"center\">Ваши данные были посланы на ваш почтовый ящик [[+email]].</p>\n\n\n\n\n\n', 0, 'a:0:{}', 0, ''),
 (14, 0, 0, 'lgnForgotPassTpl', '', 0, 12, 0, '<div class=\"loginFPErrors\">[[+loginfp.errors]]</div>\n<div class=\"loginFP\">\n    <form class=\"loginFPForm\" action=\"[[~[[*id]]]]\" method=\"post\">\n        <fieldset class=\"loginFPFieldset\">\n            <legend class=\"loginFPLegend\">[[%login.forgot_password]]</legend>\n            <label class=\"loginFPUsernameLabel\">[[%login.username]] <br/>\n                <input class=\"loginFPUsername\" type=\"text\" name=\"username\" value=\"[[+loginfp.post.username]]\" />\n            </label>\n            \n            <p>[[%login.or_forgot_username]]</p>\n            \n            <label class=\"loginFPEmailLabel\">[[%login.email]]\n                <input class=\"loginFPEmail\" type=\"text\" name=\"email\" value=\"[[+loginfp.post.email]]\" />\n            </label>\n            \n            <input class=\"returnUrl\" type=\"hidden\" name=\"returnUrl\" value=\"[[+loginfp.request_uri]]\" />\n            \n            <input class=\"loginFPService\" type=\"hidden\" name=\"login_fp_service\" value=\"forgotpassword\" />\n            <span class=\"loginFPButton\"><input type=\"submit\" name=\"login_fp\" value=\"[[%login.reset_password]]\" /></span>\n        </fieldset>\n    </form>\n</div>', 0, 'a:0:{}', 0, ''),
 (15, 0, 0, 'lgnResetPassTpl', '', 0, 12, 0, '<!DOCTYPE html>\n<html lang=\"ru\">\n	<head>\n		[[$Head]]\n        <style>\n body{background-color:#192626;color: #fff;} \n .loginResetPass a{text-decoration: underline; color: red;}\nsection.pwbreak{width:320px;margin:40px auto;}\nsection.pwbreak p{font-size: 18px}\n.fa-arrow-circle-right {margin-right: 5px;}\n</style>\n	</head>\n	<body>\n	    \n\n\n\n<section class=\"pwbreak\">\n\n<div class=\"loginResetPass\">\n<p class=\"loginResetPassHeader\">[[+username]],</p>\n\n<p class=\"loginResetPassText center\">Ваш пароль был сброшен. Возвратитесь <a href=\"[[+loginUrl]]\"><i class=\"fa fa-arrow-circle-right\" aria-hidden=\"true\"></i>сюда</a> для авторизации.</p>  \n</div>\n</section>\n[[$Scripts?]]\n        \n	</body>\n</html>', 0, 'a:0:{}', 0, ''),
-(16, 0, 0, 'lgnRegisterFormTpl', '', 0, 12, 0, '<div class=\"register\">\n    <div class=\"registerMessage\">[[+error.message]]</div>\n    \n    <form class=\"form\" action=\"[[~[[*id]]]]\" method=\"post\">\n        <input type=\"hidden\" name=\"nospam:blank\" value=\"\" />\n        \n        <label for=\"username\">[[%register.username? &namespace=`login` &topic=`register`]]\n            <span class=\"error\">[[+error.username]]</span>\n        </label>\n        <input type=\"text\" name=\"username:required:minLength=6\" id=\"username\" value=\"[[+username]]\" />\n        \n        <label for=\"password\">[[%register.password]]\n            <span class=\"error\">[[+error.password]]</span>\n        </label>\n        <input type=\"password\" name=\"password:required:minLength=6\" id=\"password\" value=\"[[+password]]\" />\n        \n        <label for=\"password_confirm\">[[%register.password_confirm]]\n            <span class=\"error\">[[+error.password_confirm]]</span>\n        </label>\n        <input type=\"password\" name=\"password_confirm:password_confirm=`password`\" id=\"password_confirm\" value=\"[[+password_confirm]]\" />\n        \n        <label for=\"fullname\">[[%register.fullname]]\n            <span class=\"error\">[[+error.fullname]]</span>\n        </label>\n        <input type=\"text\" name=\"fullname:required\" id=\"fullname\" value=\"[[+fullname]]\" />\n        \n        <label for=\"email\">[[%register.email]]\n            <span class=\"error\">[[+error.email]]</span>\n        </label>\n        <input type=\"text\" name=\"email:email\" id=\"email\" value=\"[[+email]]\" />\n        \n        <br class=\"clear\" />\n\n        [[+register.recaptcha_html]]\n        [[+error.recaptcha]]\n        \n        <div class=\"form-buttons\">\n            <input type=\"submit\" name=\"login-register-btn\" value=\"Register\" />\n        </div>\n    </form>\n</div>', 0, 'a:0:{}', 0, ''),
+(16, 0, 0, 'lgnRegisterFormTpl', '', 0, 12, 0, '<div class=\"register\">\n    <div class=\"registerMessage\">[[+error.message]]</div>\n    \n    <form class=\"form\" action=\"[[~[[*id]]]]\" method=\"post\">\n        <input type=\"hidden\" name=\"nospam:blank\" value=\"\" />\n        \n        <label for=\"username\">[[%register.username? &namespace=`login` &topic=`register`]]\n            <span class=\"error\">[[+error.username]]</span>\n        </label>\n        <input type=\"text\" name=\"username:required:minLength=6\" id=\"username\" value=\"[[+username]]\" placeholder=\"Обязательно\" />\n        \n        <label for=\"password\">[[%register.password]]\n            <span class=\"error\">[[+error.password]]</span>\n        </label>\n        <input type=\"password\" name=\"password:required:minLength=6\" id=\"password\" value=\"[[+password]]\" placeholder=\"Обязательно\"/>\n        \n        <label for=\"password_confirm\">[[%register.password_confirm]]\n            <span class=\"error\">[[+error.password_confirm]]</span>\n        </label>\n        <input type=\"password\" name=\"password_confirm:password_confirm=`password`\" id=\"password_confirm\" value=\"[[+password_confirm]]\" placeholder=\"Обязательно\"  />\n        \n        <label for=\"fullname\">[[%register.fullname]]\n            <span class=\"error\">[[+error.fullname]]</span>\n        </label>\n        <input type=\"text\" name=\"fullname:required\" id=\"fullname\" value=\"[[+fullname]]\" />\n        \n        <label for=\"email\">[[%register.email]]\n            <span class=\"error\">[[+error.email]]</span>\n        </label>\n        <input type=\"text\" name=\"email:email\" id=\"email\" value=\"[[+email]]\" />\n        \n        <br class=\"clear\" />\n\n        [[+register.recaptcha_html]]\n        [[+error.recaptcha]]\n        \n        <div class=\"form-buttons\">\n            <input type=\"submit\" name=\"login-register-btn\" value=\"Register\" />\n        </div>\n    </form>\n</div>', 0, 'a:0:{}', 0, ''),
 (17, 0, 0, 'lgnActivateEmailTpl', '', 0, 12, 0, '<p>[[+username]],</p>\n\n<p>Спасибо за регистрацию и интерес к нашему сайту [[+sname]], для активации аккаунта нажмите на ссылку:</p>\n\n<p><a href=\"[[+confirmUrl]]\">[[+confirmUrl]]</a></p>\n\n<p>После активации аккаунта, вы можете использовать свои логин и пароль:</p>\n\n<p>\nЛогин: <strong>[[+username]]</strong><br />\nПароль: <strong>[[+password]]</strong></p>\n\n<p>Если вы не регистрировались на сайте [[+sname]], проигнорируйте это письмо.</p>\n\n<p>Спасибо,<br />\n<em>Администратор сайта [[+sname]] </em></p>', 0, 'a:0:{}', 0, ''),
 (18, 0, 0, 'lgnActiveUser', '', 0, 12, 0, '<li>[[+username]]</li>', 0, 'a:0:{}', 0, ''),
 (19, 0, 0, 'lgnResetPassChangePassTpl', '', 0, 12, 0, '[[!+logcp.error_message:notempty=`<p style=\"color: red;\">[[+logcp.error_message]]</p>`]]\n\n<form class=\"form inline\" action=\"\" method=\"post\">\n    <input type=\"hidden\" name=\"nospam:blank\" value=\"\" />\n\n    <div class=\"ff\">\n        <label for=\"password_new\">[[!%login.password_new]]\n            <span class=\"error\">[[+logcp.error.password_new]]</span>\n        </label>\n        <input type=\"password\" name=\"password_new:required\" id=\"password_new\" value=\"[[+logcp.password_new]]\" />\n    </div>\n\n    <div class=\"ff\">\n        <label for=\"password_new_confirm\">[[!%login.password_new_confirm]]\n            <span class=\"error\">[[+logcp.error.password_new_confirm]]</span>\n        </label>\n        <input type=\"password\" name=\"password_new_confirm:required\" id=\"password_new_confirm\" value=\"[[+logcp.password_new_confirm]]\" />\n    </div>\n\n    <br class=\"clear\" />\n\n    <div class=\"form-buttons\">\n        <input type=\"submit\" name=\"logcp-submit\" value=\"[[!%login.change_password]]\" />\n    </div>\n</form>', 0, 'a:0:{}', 0, ''),
@@ -2709,10 +2810,17 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (25, 0, 0, 'Navbar', '', 0, 21, 0, '<header>\n    <div class=\"top-line hidden-xs\">\n        <div class=\"container\">\n            <div class=\"row\">\n               <div class=\"col-lg-3 col-md-3 col-sm-3\">\n                   <div class=\"Logo\"><i class=\"fa fa-free-code-camp\" aria-hidden=\"true\"></i>Logotype</div>\n               </div>\n               <div class=\"col-lg-6 col-md-7 col-sm-9\">\n                   <div class=\"center\">\n                    <nav class=\"my-menu\">\n						[[Wayfinder?\n						&startId=`0`\n						&level=`1`\n						&outerTpl=`tpl.Wayfinder.outer`\n						&parentRowTpl=`tpl.Wayfinder.row.parent`\n						&innerRowTpl=`tpl.Wayfinder.row.inner`\n						&rowTpl=`tpl.Wayfinder.row`\n						&outerClass=`list-inline`\n					    ]]\n					</nav>\n				</div>\n			</div>\n					\n					<div class=\"col-lg-3 col-md-2 col-sm-hidden\">\n					    <div class=\"social\">\n					         <p> Соц. сети</p>\n					   <i class=\"fa fa-vk\" aria-hidden=\"true\"></i>\n                    <i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>\n<i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i>\n<i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>\n\n					    \n					    </div>\n					   \n					</div>\n	        </div> \n        </div>\n    </div>\n    \n[[$Carousel]]\n    \n</header>', 0, 'a:0:{}', 0, ''),
 (26, 0, 0, 'Carousel', '', 0, 21, 0, '<div class=\"carousel-main\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n            <div class=\"owl-carousel\">\n      <div class=\"photo1\"> \n      \n      </div>\n      <div class=\"photo2\"> \n      \n      </div>\n      <div class=\"photo3\"> \n      \n      </div>\n    </div>\n    </div> \n        </div>\n    </div>\n   \n   \n   \n</div>', 0, 'a:0:{}', 0, ''),
 (27, 1, 0, 'Login', '', 0, 21, 0, '<div class=\"clearfix\"></div>\n<section class=\"main-login\">\n    <div class=\"container clearfix\">\n        <div class=\"row\">\n            <div class=\"col-xs-12\">[[!Login? &loginTpl=`lgnLoginTpl` &logoutTpl=`lgnLogoutTpl` &errTpl=`lgnErrTpl` &loginResourceId=`1` &logoutResourceId=`1`]]</div>\n        </div>\n    </div>\n    \n\n</section>', 0, 'a:0:{}', 0, ''),
-(28, 0, 0, 'Main', '', 0, 21, 0, '[[$Navbar]]\r\n[[$Login]]', 0, 'a:0:{}', 0, ''),
-(29, 0, 0, 'Main unreg', '', 0, 21, 0, '[[$Navbar]]\n[[$Login]]', 0, NULL, 0, ''),
-(30, 0, 0, 'Registr', '', 0, 21, 0, ' <div class=\"clearfix\"></div>\n <section class=\"reg\">\n     <div class=\"container\">\n         <div class=\"row\">\n             <div class=\"col-xs-12\">\n                  <h3>Регистрация пользователя.</h3>\n      [[!Register?\n        &submitVar=`registerbtn`\n        &activationResourceId=`12`\n        &activationEmailTpl=`myActivationEmailTpl`\n        &activationEmailSubject=`Спасибо за регистрацию!`\n        &submittedResourceId=`11`\n        &usergroups=`Пользователь`\n        &validate=`nospam:blank,\n          username:required:minLength=^3^,\n          password:required:minLength=^6^,\n          password_confirm:password_confirm=^password^,\n          email:required:email`\n        &placeholderPrefix=`reg.`\n      ]]\n      <div class=\"register\">\n        <div class=\"registerMessage\">[[!+reg.error.message]]</div>\n        <form class=\"form\" action=\"[[~[[*id]]]]\" method=\"post\">\n          <input type=\"hidden\" name=\"nospam\" value=\"[[!+reg.nospam]]\" />\n          <label for=\"username\">[[%register.username? &namespace=`login` &topic=`register`]]\n          <span class=\"error\">[[!+reg.error.username]]</span>\n          </label>\n          <input type=\"text\" name=\"username\"  id=\"username\" value=\"[[!+reg.username]]\" />\n          <label for=\"password\">[[%register.password]]\n          <span class=\"error\">[[!+reg.error.password]]</span>\n          </label>\n          <input type=\"password\" name=\"password\" id=\"password\" value=\"[[!+reg.password]]\" />\n          <label for=\"password_confirm\">[[%register.password_confirm]]\n          <span class=\"error\">[[!+reg.error.password_confirm]]</span>\n          </label>\n          <input type=\"password\" name=\"password_confirm\" id=\"password_confirm\" value=\"[[!+reg.password_confirm]]\" />\n          <label for=\"fullname\">[[%register.fullname]]\n          <span class=\"error\">[[!+reg.error.fullname]]</span>\n          </label>\n          <input type=\"text\" name=\"fullname\" id=\"fullname\" value=\"[[!+reg.fullname]]\" />\n          <label for=\"email\">[[%register.email]]\n          <span class=\"error\">[[!+reg.error.email]]</span>\n          </label>\n          <input type=\"text\" name=\"email\" id=\"email\" value=\"[[!+reg.email]]\" />\n        <br class=\"clear\" />\n          <div class=\"form-buttons\">\n            <input class=\"sub\" type=\"submit\" name=\"registerbtn\" value=\"Зарегистрироваться\" />\n          </div>\n        </form>\n      </div>\n             </div>\n         </div>\n     </div>  \n     \n    </section>     \n   ', 0, 'a:0:{}', 0, ''),
-(31, 1, 0, 'Forgp', '', 0, 21, 0, ' <div class=\"clearfix\"></div>\n <section class=\"forgot\">\n     <div class=\"container\">\n         <div class=\"row\">\n             <div class=\"col-xs-12\"> [[!ForgotPassword? &resetResourceId=`9` &tpl=`lgnForgotPassTpl`]]</div>\n         </div>\n     </div>\n     \n    </section>', 0, 'a:0:{}', 0, '');
+(28, 0, 0, 'Main', '', 0, 21, 0, '[[$Navbar]]\n[[$Login]]\n\n', 0, 'a:0:{}', 0, ''),
+(29, 0, 0, 'Main unreg', '', 0, 21, 0, '[[$Navbar]]\n[[$Login]]\n[[$SimSearch]]\n\n\n\n', 0, 'a:0:{}', 0, ''),
+(30, 0, 0, 'Registr', '', 0, 21, 0, ' <div class=\"clearfix\"></div>\n <section class=\"reg\">\n     <div class=\"container\">\n         <div class=\"row\">\n             <div class=\"col-xs-12\">\n                  <h3>Регистрация пользователя.</h3>\n      [[!Register?\n        &submitVar=`registerbtn`\n        &activationResourceId=`12`\n        &activationEmailTpl=`myActivationEmailTpl`\n        &activationEmailSubject=`Спасибо за регистрацию!`\n        &submittedResourceId=`11`\n        &usergroups=`Пользователь`\n        &validate=`nospam:blank,\n          username:required:minLength=^3^,\n          password:required:minLength=^6^,\n          password_confirm:password_confirm=^password^,\n          email:required:email`\n        &placeholderPrefix=`reg.`\n      ]]\n      <div class=\"register\">\n        <div class=\"registerMessage\">[[!+reg.error.message]]</div>\n        <form class=\"form\" action=\"[[~[[*id]]]]\" method=\"post\">\n          <input type=\"hidden\" name=\"nospam\" value=\"[[!+reg.nospam]]\" />\n          <label for=\"username\">[[%register.username? &namespace=`login` &topic=`register`]]\n          <span class=\"error\">[[!+reg.error.username]]</span>\n          </label>\n          <input type=\"text\" name=\"username\"  id=\"username\" value=\"[[!+reg.username]]\" placeholder=\"Мин. 3 символа\"  />\n          <label for=\"password\">[[%register.password]]\n          <span class=\"error\">[[!+reg.error.password]]</span>\n          </label>\n          <input type=\"password\" name=\"password\" id=\"password\" value=\"[[!+reg.password]]\" placeholder=\"Мин. 6 символов\" />\n          <label for=\"password_confirm\">[[%register.password_confirm]]\n          <span class=\"error\">[[!+reg.error.password_confirm]]</span>\n          </label>\n          <input type=\"password\" name=\"password_confirm\" id=\"password_confirm\" value=\"[[!+reg.password_confirm]]\" placeholder=\"Подтвердите пароль\"  />\n          <label for=\"fullname\">[[%register.fullname]]\n          <span class=\"error\">[[!+reg.error.fullname]]</span>\n          </label>\n          <input type=\"text\" name=\"fullname\" id=\"fullname\" value=\"[[!+reg.fullname]]\"placeholder=\"Не обязательно\" />\n          <label for=\"email\">[[%register.email]]\n          <span class=\"error\">[[!+reg.error.email]]</span>\n          </label>\n          <input type=\"text\" name=\"email\" id=\"email\" value=\"[[!+reg.email]]\" placeholder=\"Обязательно\" />\n        <br class=\"clear\" />\n          <div class=\"form-buttons\">\n            <input class=\"sub\" type=\"submit\" name=\"registerbtn\" value=\"Зарегистрироваться\" />\n          </div>\n        </form>\n      </div>\n             </div>\n         </div>\n     </div>  \n     \n    </section>     \n   ', 0, 'a:0:{}', 0, ''),
+(31, 1, 0, 'Forgp', '', 0, 21, 0, ' <div class=\"clearfix\"></div>\n <section class=\"forgot\">\n     <div class=\"container\">\n         <div class=\"row\">\n             <div class=\"col-xs-12\"> [[!ForgotPassword? &resetResourceId=`9` &tpl=`lgnForgotPassTpl`]]</div>\n         </div>\n     </div>\n     \n    </section>', 0, 'a:0:{}', 0, ''),
+(32, 1, 0, 'myActivationEmailTpl', '', 0, 12, 0, '<p>[[+username]],</p>\n\n<p>Спасибо за регистрацию и интерес к нашему сайту [[+sname]], для активации аккаунта нажмите на ссылку:</p>\n\n<p><a href=\"[[+confirmUrl]]\">[[+confirmUrl]]</a></p>\n\n<p>После активации аккаунта, вы можете использовать свои логин и пароль:</p>\n\n<p>\nЛогин: <strong>[[+username]]</strong><br />\nПароль: <strong>[[+password]]</strong></p>\n\n<p>Если вы не регистрировались на сайте [[+sname]], проигнорируйте это письмо.</p>\n\n<p>Спасибо,<br />\n<em>Администратор сайта [[+sname]] </em></p>', 0, 'a:0:{}', 0, ''),
+(33, 1, 0, 'SimSearch', '', 0, 21, 0, '<section class=\"search\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n                 [[!SimpleSearchForm? &landing=`16` &tpl=`search`]]\n            </div>\n        </div>\n    </div>\n</section>', 0, 'a:0:{}', 0, ''),
+(34, 1, 0, 'search', '', 0, 18, 0, '<form class=\"sisea-search-form\" action=\"[[~[[+landing]]]]\" method=\"[[+method]]\"> \n<fieldset>   \n\n    <input type=\"text\" name=\"[[+searchIndex]]\" id=\"[[+searchIndex]]\" placeholder=\"Поиск по сайту\" value=\"[[+searchValue]]\" />   \n<input type=\"hidden\" name=\"id\" value=\"[[+landing]]\" />\n    <button class=\"btn-primary\" type=\"submit\" > <i class=\"fa fa-search\" aria-hidden=\"true\"></i>Поиск</button>\n</fieldset>\n</form>', 0, 'a:0:{}', 0, ''),
+(35, 1, 0, 'SimpleSearchOuter', '', 0, 18, 0, '<p class=\"sisea-results\">[[+resultInfo]]</p>\n<div class=\"sisea-paging\"><span class=\"sisea-result-pages\">[[%sisea.result_pages? &namespace=`sisea` &topic=`default`]]</span>[[+paging]]</div>\n<div class=\"sisea-results-list\">\n    [[+results]]\n</div>\n<div class=\"sisea-paging\"><span class=\"sisea-result-pages\">[[%sisea.result_pages? &namespace=`sisea` &topic=`default`]]</span>[[+paging]]</div>', 0, 'a:0:{}', 0, ''),
+(36, 1, 0, 'SimpleSearchPageTpl', '', 0, 18, 0, '<span class=\"sisea-page\"><a href=\"[[+link]]\">[[+text]]</a>[[+separator]]</span>', 0, 'a:0:{}', 0, ''),
+(37, 1, 0, 'SimpleSearchPageTplActive', '', 0, 18, 0, '<span class=\"sisea-page sisea-current-page\">[[+text]]</span>', 0, 'a:0:{}', 0, ''),
+(38, 1, 0, 'SimpleSearchResult', '', 0, 18, 0, '<div class=\"sisea-result\">\n    <h3>[[+idx]]. <a href=\"[[+link:is=``:then=`[[~[[+id]]]]`:else=`[[+link]]`]]\" title=\"[[+longtitle]]\">[[+pagetitle]]</a></h3>\n    <div class=\"extract\"><p>[[+extract]]</p></div>\n</div>', 0, 'a:0:{}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -2981,7 +3089,8 @@ INSERT INTO `new_site_templates` (`id`, `source`, `property_preprocess`, `templa
 (4, 1, 0, 'Forgot Password', '', 0, 20, '', 0, '[[$Head]]\n<body>\n    <div id=\"my-page\">\n[[$Header]]\n        <div id=\"my-content\">\n            [[$Navbar]]\n		    [[$Forgp]]\n        </div>\n\n		<div id=\"my-footer\">\n			[[$Footer]]\n		</div>\n\n\n</div>\n[[$Scripts]]\n</body>\n</html>\n\n      	\n  ', 0, 'a:0:{}', 0, ''),
 (5, 1, 0, 'Регистрация', '', 0, 20, '', 0, '[[$Head]]\n<body>\n    <div id=\"my-page\">\n[[$Header]]\n        <div id=\"my-content\">\n            [[$Navbar]]\n		    [[$Registr]]\n        </div>\n\n		<div id=\"my-footer\">\n			[[$Footer]]\n		</div>\n\n\n</div>\n[[$Scripts]]\n</body>\n</html>\n', 0, 'a:0:{}', 0, ''),
 (6, 1, 0, 'Подтверждение регистрации', '', 0, 20, '', 0, '[[$Head]]\n<body>\n    <div id=\"my-page\">\n[[$Header]]\n        <div id=\"my-content\">\n            [[$Navbar]]\n            <div class=\"clearfix\"></div>\n		     <p style=\"text-align:center\"> Подтвердите свою регистрацию на почте </p>\n        </div>\n\n		<div id=\"my-footer\">\n			[[$Footer]]\n		</div>\n\n\n</div>\n[[$Scripts]]\n</body>\n</html>\n\n     \n    \n    \n    ', 0, 'a:0:{}', 0, ''),
-(7, 1, 0, 'confirm reg', '', 0, 20, '', 0, '[[$Head]]\n<body>\n\n\n\n<section class=\"confirmreg\">  \n      [[!ConfirmRegister? &redirectTo=`1`]]\n      <p class=\"center\">Теперь вы можете войти в свою учетную запись <a href=\"http://[[Host]]\"> Здесь</a></p>\n    </section>   \n \n[[$Scripts]]\n</body>\n</html>    \n       \n    ', 0, 'a:0:{}', 0, '');
+(7, 1, 0, 'confirm reg', '', 0, 20, '', 0, '[[$Head]]\n<body>\n\n\n\n<section class=\"confirmreg\">  \n      [[!ConfirmRegister? &redirectTo=`1`]]\n      <p class=\"center\">Теперь вы можете войти в свою учетную запись <a href=\"http://[[Host]]\"> Здесь</a></p>\n    </section>   \n \n[[$Scripts]]\n</body>\n</html>    \n       \n    ', 0, 'a:0:{}', 0, ''),
+(8, 1, 0, 'Результаты поиска', '', 0, 0, '', 0, '[[$Head]]\n<body>\n    <div id=\"my-page\">\n[[$Header]]\n        <div id=\"my-content\">\n            [[$Navbar]]\n<section class=\"search-all\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-md-12\">\n	[[!SimpleSearch? &tpl=`SimpleSearchResult` &containerTpl=`SimpleSearchOuter` &pageTpl=`SimpleSearchPageTpl` &currentPageTpl=`SimpleSearchPageTplActive` &includeTVs=`1` &processTVs=`1`]]\n	[[!SimpleSearchForm? &landing=`16` &tpl=`search`]]\n		   	\n</div></div></div></section>\n</div>\n\n		<div id=\"my-footer\">\n			[[$Footer]]\n		</div>\n\n\n</div>\n[[$Scripts]]\n</body>\n</html>', 0, 'a:0:{}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -3945,7 +4054,7 @@ CREATE TABLE `new_user_attributes` (
 --
 
 INSERT INTO `new_user_attributes` (`id`, `internalKey`, `fullname`, `email`, `phone`, `mobilephone`, `blocked`, `blockeduntil`, `blockedafter`, `logincount`, `lastlogin`, `thislogin`, `failedlogincount`, `sessionid`, `dob`, `gender`, `address`, `country`, `city`, `state`, `zip`, `fax`, `photo`, `comment`, `website`, `extended`) VALUES
-(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 62, 1498021649, 1498022034, 0, 'ft7g9kogaqlc73igu82mbit467', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
+(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 70, 1498047998, 1498049576, 0, 'dc7ohm8s0a9m7b73gn7lecjrq5', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
 (3, 3, '', 'platonov_stan@mail.ru', '', '', 0, 0, 0, 7, 1491287477, 1491302110, 0, 'pinq7vkq5q6r7f8adtj2m64550', 0, 0, '', '', '', '', '', '', '', '', '', '[]');
 
 -- --------------------------------------------------------
@@ -5082,7 +5191,7 @@ ALTER TABLE `new_lexicon_entries`
 -- AUTO_INCREMENT для таблицы `new_manager_log`
 --
 ALTER TABLE `new_manager_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=639;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=738;
 --
 -- AUTO_INCREMENT для таблицы `new_media_sources`
 --
@@ -5097,7 +5206,7 @@ ALTER TABLE `new_membergroup_names`
 -- AUTO_INCREMENT для таблицы `new_member_groups`
 --
 ALTER TABLE `new_member_groups`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT для таблицы `new_migx_configs`
 --
@@ -5152,12 +5261,12 @@ ALTER TABLE `new_register_topics`
 -- AUTO_INCREMENT для таблицы `new_site_content`
 --
 ALTER TABLE `new_site_content`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT для таблицы `new_site_htmlsnippets`
 --
 ALTER TABLE `new_site_htmlsnippets`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 --
 -- AUTO_INCREMENT для таблицы `new_site_plugins`
 --
@@ -5172,7 +5281,7 @@ ALTER TABLE `new_site_snippets`
 -- AUTO_INCREMENT для таблицы `new_site_templates`
 --
 ALTER TABLE `new_site_templates`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT для таблицы `new_site_tmplvars`
 --
@@ -5212,12 +5321,12 @@ ALTER TABLE `new_transport_providers`
 -- AUTO_INCREMENT для таблицы `new_users`
 --
 ALTER TABLE `new_users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT для таблицы `new_user_attributes`
 --
 ALTER TABLE `new_user_attributes`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT для таблицы `new_user_group_roles`
 --
