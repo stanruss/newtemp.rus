@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 20 2017 г., 15:45
+-- Время создания: Июн 21 2017 г., 09:24
 -- Версия сервера: 5.5.53
 -- Версия PHP: 5.5.38
 
@@ -2069,7 +2069,22 @@ INSERT INTO `new_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `
 (620, 1, '2017-06-20 15:32:43', 'login', 'modContext', 'web'),
 (621, 1, '2017-06-20 15:40:22', 'login', 'modContext', 'web'),
 (622, 1, '2017-06-20 15:42:10', 'login', 'modContext', 'web'),
-(623, 1, '2017-06-20 15:42:44', 'login', 'modContext', 'web');
+(623, 1, '2017-06-20 15:42:44', 'login', 'modContext', 'web'),
+(624, 1, '2017-06-21 08:07:12', 'login', 'modContext', 'mgr'),
+(625, 1, '2017-06-21 08:07:29', 'login', 'modContext', 'web'),
+(626, 1, '2017-06-21 08:13:54', 'login', 'modContext', 'web'),
+(627, 1, '2017-06-21 08:46:46', 'chunk_update', 'modChunk', '31'),
+(628, 1, '2017-06-21 08:46:46', 'propertyset_update_from_element', 'modChunk', '31'),
+(629, 1, '2017-06-21 08:57:12', 'chunk_update', 'modChunk', '30'),
+(630, 1, '2017-06-21 08:57:13', 'propertyset_update_from_element', 'modChunk', '30'),
+(631, 1, '2017-06-21 09:00:14', 'user_delete', 'modUser', '4'),
+(632, 1, '2017-06-21 09:02:28', 'template_update', 'modTemplate', '6'),
+(633, 1, '2017-06-21 09:02:29', 'propertyset_update_from_element', 'modTemplate', '6'),
+(634, 1, '2017-06-21 09:04:16', 'template_update', 'modTemplate', '6'),
+(635, 1, '2017-06-21 09:04:17', 'propertyset_update_from_element', 'modTemplate', '6'),
+(636, 1, '2017-06-21 09:04:51', 'user_delete', 'modUser', '5'),
+(637, 6, '2017-06-21 09:10:37', 'login', 'modContext', 'web'),
+(638, 1, '2017-06-21 09:21:15', 'user_delete', 'modUser', '6');
 
 -- --------------------------------------------------------
 
@@ -2565,12 +2580,7 @@ CREATE TABLE `new_session` (
 --
 
 INSERT INTO `new_session` (`id`, `access`, `data`) VALUES
-('7m5mod8oj290fma7bitmhjvgv7', 1497873158, 'modx.user.contextTokens|a:0:{}'),
-('uq1l4ebfubmijef8vg5soh5d10', 1497884033, 'modx.user.contextTokens|a:0:{}'),
-('3umaolnh0nm4leil16si14al43', 1497884786, 'modx.user.contextTokens|a:1:{s:3:\"mgr\";i:1;}modx.mgr.user.token|s:52:\"modx58de58ab522034.60981441_15947e590558d74.59893342\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}'),
-('o519db6npim8g9fq8541hhvm14', 1497954904, 'modx.user.contextTokens|a:1:{s:3:\"mgr\";i:1;}modx.mgr.user.token|s:52:\"modx58de58ab522034.60981441_15948fa2b9bcb51.12702348\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}'),
-('bmpvo1nbn1ta3e72p4jb616aa4', 1497954860, 'modx.user.contextTokens|a:0:{}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}'),
-('07m2gqt3vhpn4pkaku4q9k1dv2', 1497962574, 'modx.user.contextTokens|a:1:{s:3:\"mgr\";i:1;}modx.mgr.user.token|s:52:\"modx58de58ab522034.60981441_15949055c4360d9.88127354\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}');
+('f6b8v5uahjr5iniu1oc4uftra4', 1498026213, 'modx.user.contextTokens|a:0:{}');
 
 -- --------------------------------------------------------
 
@@ -2701,8 +2711,8 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (27, 1, 0, 'Login', '', 0, 21, 0, '<div class=\"clearfix\"></div>\n<section class=\"main-login\">\n    <div class=\"container clearfix\">\n        <div class=\"row\">\n            <div class=\"col-xs-12\">[[!Login? &loginTpl=`lgnLoginTpl` &logoutTpl=`lgnLogoutTpl` &errTpl=`lgnErrTpl` &loginResourceId=`1` &logoutResourceId=`1`]]</div>\n        </div>\n    </div>\n    \n\n</section>', 0, 'a:0:{}', 0, ''),
 (28, 0, 0, 'Main', '', 0, 21, 0, '[[$Navbar]]\r\n[[$Login]]', 0, 'a:0:{}', 0, ''),
 (29, 0, 0, 'Main unreg', '', 0, 21, 0, '[[$Navbar]]\n[[$Login]]', 0, NULL, 0, ''),
-(30, 0, 0, 'Registr', '', 0, 21, 0, ' <div class=\"clearfix\"></div>\n <section class=\"reg\">  \n      <h3>Регистрация пользователя.</h3>\n      [[!Register?\n        &submitVar=`registerbtn`\n        &activationResourceId=`12`\n        &activationEmailTpl=`myActivationEmailTpl`\n        &activationEmailSubject=`Спасибо за регистрацию!`\n        &submittedResourceId=`11`\n        &usergroups=`Пользователь`\n        &validate=`nospam:blank,\n          username:required:minLength=^3^,\n          password:required:minLength=^6^,\n          password_confirm:password_confirm=^password^,\n          email:required:email`\n        &placeholderPrefix=`reg.`\n      ]]\n      <div class=\"register\">\n        <div class=\"registerMessage\">[[!+reg.error.message]]</div>\n        <form class=\"form\" action=\"[[~[[*id]]]]\" method=\"post\">\n          <input type=\"hidden\" name=\"nospam\" value=\"[[!+reg.nospam]]\" />\n          <label for=\"username\">[[%register.username? &namespace=`login` &topic=`register`]]\n          <span class=\"error\">[[!+reg.error.username]]</span>\n          </label>\n          <input type=\"text\" name=\"username\"  id=\"username\" value=\"[[!+reg.username]]\" />\n          <label for=\"password\">[[%register.password]]\n          <span class=\"error\">[[!+reg.error.password]]</span>\n          </label>\n          <input type=\"password\" name=\"password\" id=\"password\" value=\"[[!+reg.password]]\" />\n          <label for=\"password_confirm\">[[%register.password_confirm]]\n          <span class=\"error\">[[!+reg.error.password_confirm]]</span>\n          </label>\n          <input type=\"password\" name=\"password_confirm\" id=\"password_confirm\" value=\"[[!+reg.password_confirm]]\" />\n          <label for=\"fullname\">[[%register.fullname]]\n          <span class=\"error\">[[!+reg.error.fullname]]</span>\n          </label>\n          <input type=\"text\" name=\"fullname\" id=\"fullname\" value=\"[[!+reg.fullname]]\" />\n          <label for=\"email\">[[%register.email]]\n          <span class=\"error\">[[!+reg.error.email]]</span>\n          </label>\n          <input type=\"text\" name=\"email\" id=\"email\" value=\"[[!+reg.email]]\" />\n        <br class=\"clear\" />\n          <div class=\"form-buttons\">\n            <input class=\"sub\" type=\"submit\" name=\"registerbtn\" value=\"Зарегистрироваться\" />\n          </div>\n        </form>\n      </div>\n    </section>     \n   ', 0, 'a:0:{}', 0, ''),
-(31, 1, 0, 'Forgp', '', 0, 21, 0, ' <div class=\"clearfix\"></div>\n <section class=\"forgot\">\n      [[!ForgotPassword? &resetResourceId=`9` &tpl=`lgnForgotPassTpl`]]\n    </section>', 0, 'a:0:{}', 0, '');
+(30, 0, 0, 'Registr', '', 0, 21, 0, ' <div class=\"clearfix\"></div>\n <section class=\"reg\">\n     <div class=\"container\">\n         <div class=\"row\">\n             <div class=\"col-xs-12\">\n                  <h3>Регистрация пользователя.</h3>\n      [[!Register?\n        &submitVar=`registerbtn`\n        &activationResourceId=`12`\n        &activationEmailTpl=`myActivationEmailTpl`\n        &activationEmailSubject=`Спасибо за регистрацию!`\n        &submittedResourceId=`11`\n        &usergroups=`Пользователь`\n        &validate=`nospam:blank,\n          username:required:minLength=^3^,\n          password:required:minLength=^6^,\n          password_confirm:password_confirm=^password^,\n          email:required:email`\n        &placeholderPrefix=`reg.`\n      ]]\n      <div class=\"register\">\n        <div class=\"registerMessage\">[[!+reg.error.message]]</div>\n        <form class=\"form\" action=\"[[~[[*id]]]]\" method=\"post\">\n          <input type=\"hidden\" name=\"nospam\" value=\"[[!+reg.nospam]]\" />\n          <label for=\"username\">[[%register.username? &namespace=`login` &topic=`register`]]\n          <span class=\"error\">[[!+reg.error.username]]</span>\n          </label>\n          <input type=\"text\" name=\"username\"  id=\"username\" value=\"[[!+reg.username]]\" />\n          <label for=\"password\">[[%register.password]]\n          <span class=\"error\">[[!+reg.error.password]]</span>\n          </label>\n          <input type=\"password\" name=\"password\" id=\"password\" value=\"[[!+reg.password]]\" />\n          <label for=\"password_confirm\">[[%register.password_confirm]]\n          <span class=\"error\">[[!+reg.error.password_confirm]]</span>\n          </label>\n          <input type=\"password\" name=\"password_confirm\" id=\"password_confirm\" value=\"[[!+reg.password_confirm]]\" />\n          <label for=\"fullname\">[[%register.fullname]]\n          <span class=\"error\">[[!+reg.error.fullname]]</span>\n          </label>\n          <input type=\"text\" name=\"fullname\" id=\"fullname\" value=\"[[!+reg.fullname]]\" />\n          <label for=\"email\">[[%register.email]]\n          <span class=\"error\">[[!+reg.error.email]]</span>\n          </label>\n          <input type=\"text\" name=\"email\" id=\"email\" value=\"[[!+reg.email]]\" />\n        <br class=\"clear\" />\n          <div class=\"form-buttons\">\n            <input class=\"sub\" type=\"submit\" name=\"registerbtn\" value=\"Зарегистрироваться\" />\n          </div>\n        </form>\n      </div>\n             </div>\n         </div>\n     </div>  \n     \n    </section>     \n   ', 0, 'a:0:{}', 0, ''),
+(31, 1, 0, 'Forgp', '', 0, 21, 0, ' <div class=\"clearfix\"></div>\n <section class=\"forgot\">\n     <div class=\"container\">\n         <div class=\"row\">\n             <div class=\"col-xs-12\"> [[!ForgotPassword? &resetResourceId=`9` &tpl=`lgnForgotPassTpl`]]</div>\n         </div>\n     </div>\n     \n    </section>', 0, 'a:0:{}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -2970,7 +2980,7 @@ INSERT INTO `new_site_templates` (`id`, `source`, `property_preprocess`, `templa
 (3, 0, 0, 'Blogit post', 'Blogit - Created by MPThemes http://mpthemes.com', 0, 7, '', 0, '<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n	<base href=\"[[++site_url]]\" />\r\n        <meta charset=\"[[++modx_charset:lcase]]\" />\r\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\r\n        <title>[[*longtitle:strip_tags:empty=`[[*pagetitle:strip_tags]]`]] | [[++site_name:strip_tags]]</title>\r\n        <meta name=\"description\" content=\"[[*description:notempty=`[[*description]]`:default=`[[+content:ellipsis=`155`]]`]]\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n</head>\r\n<body>\r\n	[[blogit.lexicon_load]]\r\n	<p><a href=\"[[~[[*parent]]]]\">[[%blogit.back_to_overview]]</a></p>\r\n	<article>\r\n		<header>\r\n			<h1>[[*longtitle:strip_tags:empty=`[[*pagetitle:strip_tags]]`]]</h1>\r\n		</header>\r\n		[[*blogit.post_main_image:isnot=``:then=`<img src=\"[[*blogit.post_main_image:phpthumbof=`w=[[++blogit.main_image_width]]`]]\" alt=\"[[*blogit.post_main_image_alt]]\">`]]\r\n		[[*content]]\r\n		<footer>\r\n			<small>[[%blogit.published_on]]: <time datetime=\"[[*publishedon:strtotime:date=`%y-%m-%d`]]\">[[*publishedon:strtotime:date=`%b %d %Y`]]</time></small><br>\r\n			<small>[[%blogit.created_by]]: [[*createdby:userinfo=`username`]]</small><br>\r\n			[[++blogit.use_tags:isequalto=`1`:then=`\r\n			<small>Tags: [[!TaggerGetTags? &resources=`[[*id]]` &rowTpl=`blogit.tag_links_tpl` &separator=`, ` &target=`[[++blogit.blog_container_id]]`]]</small>\r\n			`]]\r\n		</footer>\r\n	</article>\r\n</body>\r\n</html>', 0, NULL, 0, ''),
 (4, 1, 0, 'Forgot Password', '', 0, 20, '', 0, '[[$Head]]\n<body>\n    <div id=\"my-page\">\n[[$Header]]\n        <div id=\"my-content\">\n            [[$Navbar]]\n		    [[$Forgp]]\n        </div>\n\n		<div id=\"my-footer\">\n			[[$Footer]]\n		</div>\n\n\n</div>\n[[$Scripts]]\n</body>\n</html>\n\n      	\n  ', 0, 'a:0:{}', 0, ''),
 (5, 1, 0, 'Регистрация', '', 0, 20, '', 0, '[[$Head]]\n<body>\n    <div id=\"my-page\">\n[[$Header]]\n        <div id=\"my-content\">\n            [[$Navbar]]\n		    [[$Registr]]\n        </div>\n\n		<div id=\"my-footer\">\n			[[$Footer]]\n		</div>\n\n\n</div>\n[[$Scripts]]\n</body>\n</html>\n', 0, 'a:0:{}', 0, ''),
-(6, 1, 0, 'Подтверждение регистрации', '', 0, 20, '', 0, '[[$Head]]\n<body>\n\n<section class=\"podreg\">  \n      <p> Подтвердите свою регистрацию на почте </p>\n    </section>\n[[$Scripts]]\n\n</body>\n</html>    \n    \n    ', 0, 'a:0:{}', 0, ''),
+(6, 1, 0, 'Подтверждение регистрации', '', 0, 20, '', 0, '[[$Head]]\n<body>\n    <div id=\"my-page\">\n[[$Header]]\n        <div id=\"my-content\">\n            [[$Navbar]]\n            <div class=\"clearfix\"></div>\n		     <p style=\"text-align:center\"> Подтвердите свою регистрацию на почте </p>\n        </div>\n\n		<div id=\"my-footer\">\n			[[$Footer]]\n		</div>\n\n\n</div>\n[[$Scripts]]\n</body>\n</html>\n\n     \n    \n    \n    ', 0, 'a:0:{}', 0, ''),
 (7, 1, 0, 'confirm reg', '', 0, 20, '', 0, '[[$Head]]\n<body>\n\n\n\n<section class=\"confirmreg\">  \n      [[!ConfirmRegister? &redirectTo=`1`]]\n      <p class=\"center\">Теперь вы можете войти в свою учетную запись <a href=\"http://[[Host]]\"> Здесь</a></p>\n    </section>   \n \n[[$Scripts]]\n</body>\n</html>    \n       \n    ', 0, 'a:0:{}', 0, '');
 
 -- --------------------------------------------------------
@@ -3935,7 +3945,7 @@ CREATE TABLE `new_user_attributes` (
 --
 
 INSERT INTO `new_user_attributes` (`id`, `internalKey`, `fullname`, `email`, `phone`, `mobilephone`, `blocked`, `blockeduntil`, `blockedafter`, `logincount`, `lastlogin`, `thislogin`, `failedlogincount`, `sessionid`, `dob`, `gender`, `address`, `country`, `city`, `state`, `zip`, `fax`, `photo`, `comment`, `website`, `extended`) VALUES
-(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 59, 1497962530, 1497962564, 0, '07m2gqt3vhpn4pkaku4q9k1dv2', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
+(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 62, 1498021649, 1498022034, 0, 'ft7g9kogaqlc73igu82mbit467', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
 (3, 3, '', 'platonov_stan@mail.ru', '', '', 0, 0, 0, 7, 1491287477, 1491302110, 0, 'pinq7vkq5q6r7f8adtj2m64550', 0, 0, '', '', '', '', '', '', '', '', '', '[]');
 
 -- --------------------------------------------------------
@@ -5072,7 +5082,7 @@ ALTER TABLE `new_lexicon_entries`
 -- AUTO_INCREMENT для таблицы `new_manager_log`
 --
 ALTER TABLE `new_manager_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=624;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=639;
 --
 -- AUTO_INCREMENT для таблицы `new_media_sources`
 --
@@ -5087,7 +5097,7 @@ ALTER TABLE `new_membergroup_names`
 -- AUTO_INCREMENT для таблицы `new_member_groups`
 --
 ALTER TABLE `new_member_groups`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT для таблицы `new_migx_configs`
 --
@@ -5202,12 +5212,12 @@ ALTER TABLE `new_transport_providers`
 -- AUTO_INCREMENT для таблицы `new_users`
 --
 ALTER TABLE `new_users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT для таблицы `new_user_attributes`
 --
 ALTER TABLE `new_user_attributes`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT для таблицы `new_user_group_roles`
 --
