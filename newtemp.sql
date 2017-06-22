@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 22 2017 г., 10:12
+-- Время создания: Июн 22 2017 г., 12:32
 -- Версия сервера: 5.5.53
 -- Версия PHP: 5.5.38
 
@@ -2218,7 +2218,180 @@ INSERT INTO `new_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `
 (768, 1, '2017-06-22 09:46:00', 'chunk_update', 'modChunk', '34'),
 (769, 1, '2017-06-22 09:46:00', 'propertyset_update_from_element', 'modChunk', '34'),
 (770, 1, '2017-06-22 10:05:00', 'login', 'modContext', 'web'),
-(771, 1, '2017-06-22 10:11:03', 'login', 'modContext', 'web');
+(771, 1, '2017-06-22 10:11:03', 'login', 'modContext', 'web'),
+(772, 1, '2017-06-22 10:19:59', 'chunk_update', 'modChunk', '25'),
+(773, 1, '2017-06-22 10:19:59', 'propertyset_update_from_element', 'modChunk', '25'),
+(774, 1, '2017-06-22 10:20:56', 'chunk_update', 'modChunk', '25'),
+(775, 1, '2017-06-22 10:20:56', 'propertyset_update_from_element', 'modChunk', '25'),
+(776, 1, '2017-06-22 10:22:35', 'chunk_update', 'modChunk', '25'),
+(777, 1, '2017-06-22 10:22:35', 'propertyset_update_from_element', 'modChunk', '25'),
+(778, 1, '2017-06-22 10:24:02', 'chunk_update', 'modChunk', '25'),
+(779, 1, '2017-06-22 10:24:02', 'propertyset_update_from_element', 'modChunk', '25'),
+(780, 1, '2017-06-22 10:26:21', 'chunk_update', 'modChunk', '25'),
+(781, 1, '2017-06-22 10:26:21', 'propertyset_update_from_element', 'modChunk', '25'),
+(782, 1, '2017-06-22 10:27:48', 'login', 'modContext', 'web'),
+(783, 1, '2017-06-22 10:31:11', 'chunk_update', 'modChunk', '25'),
+(784, 1, '2017-06-22 10:31:11', 'propertyset_update_from_element', 'modChunk', '25'),
+(785, 1, '2017-06-22 10:42:30', 'chunk_update', 'modChunk', '25'),
+(786, 1, '2017-06-22 10:42:31', 'propertyset_update_from_element', 'modChunk', '25'),
+(787, 1, '2017-06-22 10:43:47', 'chunk_update', 'modChunk', '25'),
+(788, 1, '2017-06-22 10:43:47', 'propertyset_update_from_element', 'modChunk', '25'),
+(789, 1, '2017-06-22 10:44:07', 'chunk_update', 'modChunk', '25'),
+(790, 1, '2017-06-22 10:44:07', 'propertyset_update_from_element', 'modChunk', '25'),
+(791, 1, '2017-06-22 10:44:35', 'chunk_update', 'modChunk', '25'),
+(792, 1, '2017-06-22 10:44:35', 'propertyset_update_from_element', 'modChunk', '25'),
+(793, 1, '2017-06-22 10:45:13', 'chunk_update', 'modChunk', '25'),
+(794, 1, '2017-06-22 10:45:13', 'propertyset_update_from_element', 'modChunk', '25'),
+(795, 1, '2017-06-22 10:45:50', 'chunk_update', 'modChunk', '29'),
+(796, 1, '2017-06-22 10:45:50', 'propertyset_update_from_element', 'modChunk', '29'),
+(797, 1, '2017-06-22 10:47:00', 'chunk_update', 'modChunk', '29'),
+(798, 1, '2017-06-22 10:47:00', 'propertyset_update_from_element', 'modChunk', '29'),
+(799, 1, '2017-06-22 10:47:22', 'chunk_update', 'modChunk', '29'),
+(800, 1, '2017-06-22 10:47:22', 'propertyset_update_from_element', 'modChunk', '29'),
+(801, 1, '2017-06-22 10:47:53', 'chunk_update', 'modChunk', '29'),
+(802, 1, '2017-06-22 10:47:53', 'propertyset_update_from_element', 'modChunk', '29'),
+(803, 1, '2017-06-22 10:53:24', 'chunk_update', 'modChunk', '34'),
+(804, 1, '2017-06-22 10:53:24', 'propertyset_update_from_element', 'modChunk', '34'),
+(805, 1, '2017-06-22 10:54:28', 'chunk_update', 'modChunk', '34'),
+(806, 1, '2017-06-22 10:54:28', 'propertyset_update_from_element', 'modChunk', '34'),
+(807, 1, '2017-06-22 10:55:42', 'chunk_update', 'modChunk', '34'),
+(808, 1, '2017-06-22 10:55:42', 'propertyset_update_from_element', 'modChunk', '34'),
+(809, 1, '2017-06-22 10:56:11', 'chunk_update', 'modChunk', '34'),
+(810, 1, '2017-06-22 10:56:11', 'propertyset_update_from_element', 'modChunk', '34'),
+(811, 1, '2017-06-22 11:04:38', 'chunk_update', 'modChunk', '29'),
+(812, 1, '2017-06-22 11:04:39', 'propertyset_update_from_element', 'modChunk', '29'),
+(813, 1, '2017-06-22 11:06:46', 'chunk_update', 'modChunk', '29'),
+(814, 1, '2017-06-22 11:06:46', 'propertyset_update_from_element', 'modChunk', '29'),
+(815, 1, '2017-06-22 11:07:02', 'login', 'modContext', 'web'),
+(816, 1, '2017-06-22 11:08:25', 'chunk_update', 'modChunk', '34'),
+(817, 1, '2017-06-22 11:08:26', 'propertyset_update_from_element', 'modChunk', '34'),
+(818, 1, '2017-06-22 11:09:00', 'login', 'modContext', 'web'),
+(819, 1, '2017-06-22 11:09:15', 'chunk_update', 'modChunk', '34'),
+(820, 1, '2017-06-22 11:09:16', 'propertyset_update_from_element', 'modChunk', '34'),
+(821, 1, '2017-06-22 11:09:30', 'chunk_update', 'modChunk', '9'),
+(822, 1, '2017-06-22 11:09:31', 'propertyset_update_from_element', 'modChunk', '9'),
+(823, 1, '2017-06-22 11:11:16', 'chunk_update', 'modChunk', '9'),
+(824, 1, '2017-06-22 11:11:16', 'propertyset_update_from_element', 'modChunk', '9'),
+(825, 1, '2017-06-22 11:11:30', 'chunk_update', 'modChunk', '9'),
+(826, 1, '2017-06-22 11:11:30', 'propertyset_update_from_element', 'modChunk', '9'),
+(827, 1, '2017-06-22 11:12:23', 'chunk_update', 'modChunk', '9'),
+(828, 1, '2017-06-22 11:12:23', 'propertyset_update_from_element', 'modChunk', '9'),
+(829, 1, '2017-06-22 11:12:51', 'chunk_update', 'modChunk', '9'),
+(830, 1, '2017-06-22 11:12:51', 'propertyset_update_from_element', 'modChunk', '9'),
+(831, 1, '2017-06-22 11:13:08', 'chunk_update', 'modChunk', '9'),
+(832, 1, '2017-06-22 11:13:09', 'propertyset_update_from_element', 'modChunk', '9'),
+(833, 1, '2017-06-22 11:14:26', 'chunk_update', 'modChunk', '9'),
+(834, 1, '2017-06-22 11:14:26', 'chunk_update', 'modChunk', '9'),
+(835, 1, '2017-06-22 11:14:26', 'propertyset_update_from_element', 'modChunk', '9'),
+(836, 1, '2017-06-22 11:14:26', 'propertyset_update_from_element', 'modChunk', '9'),
+(837, 1, '2017-06-22 11:14:37', 'login', 'modContext', 'web'),
+(838, 1, '2017-06-22 11:15:31', 'chunk_update', 'modChunk', '9'),
+(839, 1, '2017-06-22 11:15:31', 'propertyset_update_from_element', 'modChunk', '9'),
+(840, 1, '2017-06-22 11:19:21', 'chunk_update', 'modChunk', '9'),
+(841, 1, '2017-06-22 11:19:21', 'propertyset_update_from_element', 'modChunk', '9'),
+(842, 1, '2017-06-22 11:20:12', 'chunk_update', 'modChunk', '9'),
+(843, 1, '2017-06-22 11:20:12', 'propertyset_update_from_element', 'modChunk', '9'),
+(844, 1, '2017-06-22 11:20:28', 'chunk_update', 'modChunk', '9'),
+(845, 1, '2017-06-22 11:20:28', 'propertyset_update_from_element', 'modChunk', '9'),
+(846, 1, '2017-06-22 11:20:46', 'chunk_update', 'modChunk', '9'),
+(847, 1, '2017-06-22 11:20:46', 'propertyset_update_from_element', 'modChunk', '9'),
+(848, 1, '2017-06-22 11:21:27', 'login', 'modContext', 'web'),
+(849, 1, '2017-06-22 11:22:03', 'login', 'modContext', 'web'),
+(850, 1, '2017-06-22 11:23:59', 'login', 'modContext', 'web'),
+(851, 1, '2017-06-22 11:24:35', 'chunk_update', 'modChunk', '9'),
+(852, 1, '2017-06-22 11:24:35', 'propertyset_update_from_element', 'modChunk', '9'),
+(853, 1, '2017-06-22 11:24:58', 'chunk_update', 'modChunk', '9'),
+(854, 1, '2017-06-22 11:24:58', 'propertyset_update_from_element', 'modChunk', '9'),
+(855, 1, '2017-06-22 11:25:16', 'chunk_update', 'modChunk', '9'),
+(856, 1, '2017-06-22 11:25:17', 'propertyset_update_from_element', 'modChunk', '9'),
+(857, 1, '2017-06-22 11:25:49', 'login', 'modContext', 'web'),
+(858, 1, '2017-06-22 11:26:22', 'chunk_update', 'modChunk', '9'),
+(859, 1, '2017-06-22 11:26:22', 'propertyset_update_from_element', 'modChunk', '9'),
+(860, 1, '2017-06-22 11:26:55', 'chunk_update', 'modChunk', '10'),
+(861, 1, '2017-06-22 11:26:55', 'propertyset_update_from_element', 'modChunk', '10'),
+(862, 1, '2017-06-22 11:27:02', 'login', 'modContext', 'web'),
+(863, 1, '2017-06-22 11:27:09', 'login', 'modContext', 'web'),
+(864, 1, '2017-06-22 11:27:51', 'chunk_update', 'modChunk', '29'),
+(865, 1, '2017-06-22 11:27:51', 'propertyset_update_from_element', 'modChunk', '29'),
+(866, 1, '2017-06-22 11:28:33', 'login', 'modContext', 'web'),
+(867, 1, '2017-06-22 11:33:03', 'chunk_update', 'modChunk', '10'),
+(868, 1, '2017-06-22 11:33:03', 'propertyset_update_from_element', 'modChunk', '10'),
+(869, 1, '2017-06-22 11:33:13', 'login', 'modContext', 'web'),
+(870, 1, '2017-06-22 11:35:29', 'chunk_update', 'modChunk', '34'),
+(871, 1, '2017-06-22 11:35:29', 'propertyset_update_from_element', 'modChunk', '34'),
+(872, 1, '2017-06-22 11:37:21', 'chunk_update', 'modChunk', '34'),
+(873, 1, '2017-06-22 11:37:22', 'propertyset_update_from_element', 'modChunk', '34'),
+(874, 1, '2017-06-22 11:37:58', 'chunk_update', 'modChunk', '34'),
+(875, 1, '2017-06-22 11:37:58', 'propertyset_update_from_element', 'modChunk', '34'),
+(876, 1, '2017-06-22 11:38:18', 'chunk_update', 'modChunk', '34'),
+(877, 1, '2017-06-22 11:38:18', 'propertyset_update_from_element', 'modChunk', '34'),
+(878, 1, '2017-06-22 11:38:47', 'chunk_update', 'modChunk', '34'),
+(879, 1, '2017-06-22 11:38:47', 'propertyset_update_from_element', 'modChunk', '34'),
+(880, 1, '2017-06-22 11:48:44', 'chunk_update', 'modChunk', '29'),
+(881, 1, '2017-06-22 11:48:45', 'propertyset_update_from_element', 'modChunk', '29'),
+(882, 1, '2017-06-22 11:50:00', 'chunk_create', 'modChunk', '39'),
+(883, 1, '2017-06-22 11:50:12', 'chunk_update', 'modChunk', '39'),
+(884, 1, '2017-06-22 11:50:13', 'propertyset_update_from_element', 'modChunk', '39'),
+(885, 1, '2017-06-22 11:50:57', 'chunk_update', 'modChunk', '39'),
+(886, 1, '2017-06-22 11:50:58', 'propertyset_update_from_element', 'modChunk', '39'),
+(887, 1, '2017-06-22 11:51:36', 'chunk_update', 'modChunk', '39'),
+(888, 1, '2017-06-22 11:51:37', 'propertyset_update_from_element', 'modChunk', '39'),
+(889, 1, '2017-06-22 11:52:09', 'chunk_update', 'modChunk', '39'),
+(890, 1, '2017-06-22 11:52:09', 'propertyset_update_from_element', 'modChunk', '39'),
+(891, 1, '2017-06-22 11:53:22', 'chunk_update', 'modChunk', '39'),
+(892, 1, '2017-06-22 11:53:22', 'propertyset_update_from_element', 'modChunk', '39'),
+(893, 1, '2017-06-22 11:56:21', 'chunk_update', 'modChunk', '39'),
+(894, 1, '2017-06-22 11:56:22', 'propertyset_update_from_element', 'modChunk', '39'),
+(895, 1, '2017-06-22 11:57:16', 'chunk_update', 'modChunk', '39'),
+(896, 1, '2017-06-22 11:57:16', 'propertyset_update_from_element', 'modChunk', '39'),
+(897, 1, '2017-06-22 11:58:02', 'chunk_update', 'modChunk', '39'),
+(898, 1, '2017-06-22 11:58:02', 'propertyset_update_from_element', 'modChunk', '39'),
+(899, 1, '2017-06-22 11:58:51', 'chunk_update', 'modChunk', '39'),
+(900, 1, '2017-06-22 11:58:51', 'propertyset_update_from_element', 'modChunk', '39'),
+(901, 1, '2017-06-22 11:59:36', 'chunk_update', 'modChunk', '39'),
+(902, 1, '2017-06-22 11:59:36', 'propertyset_update_from_element', 'modChunk', '39'),
+(903, 1, '2017-06-22 11:59:58', 'chunk_update', 'modChunk', '39'),
+(904, 1, '2017-06-22 11:59:59', 'propertyset_update_from_element', 'modChunk', '39'),
+(905, 1, '2017-06-22 12:00:04', 'chunk_update', 'modChunk', '39'),
+(906, 1, '2017-06-22 12:00:04', 'propertyset_update_from_element', 'modChunk', '39'),
+(907, 1, '2017-06-22 12:00:49', 'chunk_update', 'modChunk', '39'),
+(908, 1, '2017-06-22 12:00:49', 'propertyset_update_from_element', 'modChunk', '39'),
+(909, 1, '2017-06-22 12:01:05', 'chunk_update', 'modChunk', '39'),
+(910, 1, '2017-06-22 12:01:05', 'propertyset_update_from_element', 'modChunk', '39'),
+(911, 1, '2017-06-22 12:01:16', 'chunk_update', 'modChunk', '39'),
+(912, 1, '2017-06-22 12:01:17', 'propertyset_update_from_element', 'modChunk', '39'),
+(913, 1, '2017-06-22 12:01:54', 'chunk_update', 'modChunk', '39'),
+(914, 1, '2017-06-22 12:01:54', 'propertyset_update_from_element', 'modChunk', '39'),
+(915, 1, '2017-06-22 12:02:15', 'chunk_update', 'modChunk', '39'),
+(916, 1, '2017-06-22 12:02:15', 'propertyset_update_from_element', 'modChunk', '39'),
+(917, 1, '2017-06-22 12:02:56', 'chunk_update', 'modChunk', '39'),
+(918, 1, '2017-06-22 12:02:56', 'propertyset_update_from_element', 'modChunk', '39'),
+(919, 1, '2017-06-22 12:07:33', 'chunk_update', 'modChunk', '39'),
+(920, 1, '2017-06-22 12:07:33', 'propertyset_update_from_element', 'modChunk', '39'),
+(921, 1, '2017-06-22 12:08:33', 'chunk_update', 'modChunk', '39'),
+(922, 1, '2017-06-22 12:08:33', 'propertyset_update_from_element', 'modChunk', '39'),
+(923, 1, '2017-06-22 12:15:22', 'login', 'modContext', 'web'),
+(924, 1, '2017-06-22 12:15:58', 'login', 'modContext', 'web'),
+(925, 1, '2017-06-22 12:19:19', 'chunk_update', 'modChunk', '39'),
+(926, 1, '2017-06-22 12:19:20', 'propertyset_update_from_element', 'modChunk', '39'),
+(927, 1, '2017-06-22 12:19:29', 'chunk_update', 'modChunk', '39'),
+(928, 1, '2017-06-22 12:19:29', 'propertyset_update_from_element', 'modChunk', '39'),
+(929, 1, '2017-06-22 12:21:18', 'chunk_update', 'modChunk', '39'),
+(930, 1, '2017-06-22 12:21:18', 'propertyset_update_from_element', 'modChunk', '39'),
+(931, 1, '2017-06-22 12:22:04', 'chunk_update', 'modChunk', '39'),
+(932, 1, '2017-06-22 12:22:04', 'propertyset_update_from_element', 'modChunk', '39'),
+(933, 1, '2017-06-22 12:22:42', 'chunk_update', 'modChunk', '39'),
+(934, 1, '2017-06-22 12:22:43', 'propertyset_update_from_element', 'modChunk', '39'),
+(935, 1, '2017-06-22 12:24:34', 'chunk_update', 'modChunk', '39'),
+(936, 1, '2017-06-22 12:24:35', 'propertyset_update_from_element', 'modChunk', '39'),
+(937, 1, '2017-06-22 12:25:16', 'chunk_update', 'modChunk', '39'),
+(938, 1, '2017-06-22 12:25:16', 'propertyset_update_from_element', 'modChunk', '39'),
+(939, 1, '2017-06-22 12:26:57', 'chunk_update', 'modChunk', '39'),
+(940, 1, '2017-06-22 12:26:57', 'propertyset_update_from_element', 'modChunk', '39'),
+(941, 1, '2017-06-22 12:27:15', 'chunk_update', 'modChunk', '39'),
+(942, 1, '2017-06-22 12:27:15', 'propertyset_update_from_element', 'modChunk', '39'),
+(943, 1, '2017-06-22 12:28:03', 'chunk_update', 'modChunk', '39'),
+(944, 1, '2017-06-22 12:28:04', 'propertyset_update_from_element', 'modChunk', '39');
 
 -- --------------------------------------------------------
 
@@ -2715,8 +2888,8 @@ CREATE TABLE `new_session` (
 
 INSERT INTO `new_session` (`id`, `access`, `data`) VALUES
 ('omsf1brp2vk5l3agbs7pmf89e1', 1498049948, 'modx.user.contextTokens|a:0:{}'),
-('vaqirvl6g4albv873su1k82pp6', 1498108498, 'modx.user.contextTokens|a:0:{}'),
-('94m5f4ils8q2rv3hob8rrfpgr0', 1498115463, 'modx.user.contextTokens|a:2:{s:3:\"mgr\";i:1;s:3:\"web\";i:1;}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}modx.mgr.user.token|s:52:\"modx58de58ab522034.60981441_1594b526f7d3bb2.99840293\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}modx.web.user.token|s:52:\"modx58de58ab522034.60981441_1594b6d87332f70.13450350\";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}');
+('vaqirvl6g4albv873su1k82pp6', 1498115789, 'modx.user.contextTokens|a:0:{}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}'),
+('9b5m0nrdnbsvecaq14q8uq6h14', 1498122958, 'modx.user.contextTokens|a:2:{s:3:\"mgr\";i:1;s:3:\"web\";i:1;}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}modx.mgr.user.token|s:52:\"modx58de58ab522034.60981441_1594b526f7d3bb2.99840293\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}modx.web.user.token|s:52:\"modx58de58ab522034.60981441_1594b8acec69437.01405105\";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}');
 
 -- --------------------------------------------------------
 
@@ -2827,8 +3000,8 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (6, 0, 0, 'blogit.taglist', 'Blogit - Created by MPThemes http://mpthemes.com', 0, 7, 0, '[[++blogit.use_tags:isequalto=`1`:then=`\r\n<h4>[[%blogit.tags_header]]</h4>\r\n[[TaggerGetTags? &rowTpl=`blogit.tag_links_tpl` &separator=`, `]]\r\n`]]', 0, 'a:0:{}', 0, ''),
 (7, 0, 0, 'galAlbumRowTpl', '', 0, 10, 0, '<li[[+cls:notempty=` class=\"[[+cls]]\"`]]><a href=\"[[~[[*id]]? &[[+albumRequestVar]]=`[[+id]]`]]\">[[+showName:notempty=`[[+name]]`]]</a></li>', 0, '', 0, ''),
 (8, 0, 0, 'galItemThumb', '', 0, 10, 0, '<div class=\"[[+cls]]\">\n    <a href=\"[[+linkToImage:if=`[[+linkToImage]]`:is=`1`:then=`[[+image_absolute]]`:else=`[[~[[*id]]?\n            &[[+imageGetParam]]=`[[+id]]`\n            &[[+albumRequestVar]]=`[[+album]]`\n            &[[+tagRequestVar]]=`[[+tag]]` ]]`]]\" title=\"[[+name]]\" [[+link_attributes]]>\n\n        <img class=\"[[+imgCls]]\" src=\"[[+thumbnail]]\" alt=\"[[+name]]\" [[+image_attributes]] />\n    </a>\n</div>', 0, '', 0, ''),
-(9, 0, 0, 'lgnLoginTpl', '', 0, 12, 0, '<div class=\"loginForm\">\n    <div class=\"loginMessage\">[[+errors]]</div>\n    <div class=\"loginLogin\">\n        <form class=\"loginLoginForm\" action=\"[[~[[*id]]]]\" method=\"post\">\n            \n            <fieldset class=\"loginLoginFieldset\">\n                \n                <label class=\"loginUsernameLabel\">\n                    <input class=\"loginUsername\" type=\"text\" name=\"username\" placeholder=\"Логин\" />\n                </label>\n                \n                <label class=\"loginPasswordLabel\">\n                    <input class=\"loginPassword\" type=\"password\" name=\"password\" placeholder=\"Пароль\" />\n                </label>\n                <input class=\"returnUrl\" type=\"hidden\" name=\"returnUrl\" value=\"[[+request_uri]]\" />\n\n                [[+login.recaptcha_html]]\n                \n                <input class=\"loginLoginValue\" type=\"hidden\" name=\"service\" value=\"login\" />\n                <span class=\"loginLoginButton\"><button class=\"btn-primary\" type=\"submit\" name=\"Login\">Войти</button></span>\n\n<div class=\"forg\"><span><a class=\"left\" href=\"[[~8]]\">Забыли пароль?</a></span><span> / </span><span> <a class=\"right\" href=\"[[~10]]\"> Регистрация </a ></span></div>\n            </fieldset>\n        </form>\n    </div>\n</div>', 0, 'a:0:{}', 0, ''),
-(10, 0, 0, 'lgnLogoutTpl', '', 0, 12, 0, '<div class=\"loginMessage\">[[+errors]]</div>\n<br />\n<div class=\"loginLogin\">\n    <div class=\"loginRegister\">\n        <div class=\"butt\"><a href=\"[[+logoutUrl]]\" title=\"[[+actionMsg]]\"><button class=\"btn-primary out\">Выйти</button></a>\n       <span> Добро пожаловать <b>[[+modx.user.id:userinfo=`username`]]</b></span></div>\n        \n    </div>\n</div>', 0, 'a:0:{}', 0, ''),
+(9, 0, 0, 'lgnLoginTpl', '', 0, 12, 0, '<div class=\"loginForm\">\n    <div class=\"loginMessage\">[[+errors]]</div>\n    <div class=\"loginLogin\">\n        <form class=\"loginLoginForm\" action=\"[[~[[*id]]]]\" method=\"post\">\n            \n            <fieldset class=\"loginLoginFieldset\">\n                \n                <label class=\"loginUsernameLabel\">\n                    <input class=\"loginUsername form-control\" type=\"text\" name=\"username\" placeholder=\"Логин\"required autofocus />\n                </label>\n                \n                <label class=\"loginPasswordLabel\">\n                    <input class=\"loginPassword form-control\" id=\"inputPassword\"  type=\"password\" name=\"password\" placeholder=\"Пароль\"required />\n                </label>\n                <input class=\"returnUrl\" type=\"hidden\" name=\"returnUrl\" value=\"[[+request_uri]]\" />\n\n                [[+login.recaptcha_html]]\n                \n                <input class=\"loginLoginValue\" type=\"hidden\" name=\"service\" value=\"login\" />\n                <span class=\"loginLoginButton\"><button class=\"btn-sm btn-primary\" type=\"submit\">Войти</button></span>\n\n<div class=\"forg\"><span><a class=\"left\" href=\"[[~8]]\">Забыли пароль?</a></span><span> / </span><span> <a class=\"right\" href=\"[[~10]]\"> Регистрация </a ></span></div>\n            </fieldset>\n        </form>\n    </div>\n</div>', 0, 'a:0:{}', 0, ''),
+(10, 0, 0, 'lgnLogoutTpl', '', 0, 12, 0, '<div class=\"loginMessage\">[[+errors]]</div>\n<br />\n<div class=\"loginLogin\">\n    <div class=\"loginRegister\">\n        <div class=\"butt\"><a href=\"[[+logoutUrl]]\" title=\"[[+actionMsg]]\"><button class=\"btn-sm btn-primary out\" type=\"submit\">Выйти</button></a>\n       <span> Добро пожаловать <b>[[+modx.user.id:userinfo=`username`]]</b></span></div>\n        \n    </div>\n</div>', 0, 'a:0:{}', 0, ''),
 (11, 0, 0, 'lgnErrTpl', '', 0, 12, 0, '<p class=\"error\">[[+msg]]</p>', 0, 'a:0:{}', 0, ''),
 (12, 0, 0, 'lgnForgotPassEmail', '', 0, 12, 0, '<p>[[+username]],</p>\n\n<p>Для активации аккаунта, нажмите пожалуйста на ссылку снизу:</p>\n\n<p><a href=\"[[+confirmUrl]]\">[[+confirmUrl]]</a></p>\n\n<p>Если все прошло удачно, можете уже авторизоваться в системе:</p>\n\n<p><strong>Password:</strong> [[+password]]</p>\n\n<p>Если вы не заказывали активацию, проигнорируйте это письмо.</p>\n\n<p>Спасибо,<br />\n<em>Администратор сайта [[+sname]]</em></p>', 0, 'a:0:{}', 0, ''),
 (13, 0, 0, 'lgnForgotPassSentTpl', '', 0, 12, 0, '\n<h2 class=\"center\">Уважаемый пользователь!</h2>\n<p class=\"center\">Ваши данные были посланы на ваш почтовый ящик [[+email]].</p>\n\n\n\n\n\n', 0, 'a:0:{}', 0, ''),
@@ -2847,16 +3020,17 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (26, 0, 0, 'Carousel', '', 0, 21, 0, '<div class=\"carousel-main\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n            <div class=\"owl-carousel\">\n      <div class=\"photo1\"> \n      \n      </div>\n      <div class=\"photo2\"> \n      \n      </div>\n      <div class=\"photo3\"> \n      \n      </div>\n    </div>\n    </div> \n        </div>\n    </div>\n   \n   \n   \n</div>', 0, 'a:0:{}', 0, ''),
 (27, 1, 0, 'Login', '', 0, 21, 0, '<div class=\"clearfix\"></div>\n<section class=\"main-login\">\n    <div class=\"container clearfix\">\n        <div class=\"row\">\n            <div class=\"col-xs-12\">[[!Login? &loginTpl=`lgnLoginTpl` &logoutTpl=`lgnLogoutTpl` &errTpl=`lgnErrTpl` &loginResourceId=`1` &logoutResourceId=`1`]]</div>\n        </div>\n    </div>\n    \n\n</section>', 0, 'a:0:{}', 0, ''),
 (28, 0, 0, 'Main', '', 0, 21, 0, '[[$Navbar]]\n[[$Login]]\n\n', 0, 'a:0:{}', 0, ''),
-(29, 0, 0, 'Main unreg', '', 0, 21, 0, '[[$Navbar]]\n[[$Login]]\n[[$SimSearch]]\n\n\n\n', 0, 'a:0:{}', 0, ''),
+(29, 0, 0, 'Main unreg', '', 0, 21, 0, '[[$Navbar]]\n[[$Login]]\n[[$SimSearch]]\n[[$Dropdown]]\n\n\n\n\n\n', 0, 'a:0:{}', 0, ''),
 (30, 0, 0, 'Registr', '', 0, 21, 0, ' <div class=\"clearfix\"></div>\n <section class=\"reg\">\n     <div class=\"container\">\n         <div class=\"row\">\n             <div class=\"col-xs-12\">\n                  <h3>Регистрация пользователя.</h3>\n      [[!Register?\n        &submitVar=`registerbtn`\n        &activationResourceId=`12`\n        &activationEmailTpl=`myActivationEmailTpl`\n        &activationEmailSubject=`Спасибо за регистрацию!`\n        &submittedResourceId=`11`\n        &usergroups=`Пользователь`\n        &validate=`nospam:blank,\n          username:required:minLength=^3^,\n          password:required:minLength=^6^,\n          password_confirm:password_confirm=^password^,\n          email:required:email`\n        &placeholderPrefix=`reg.`\n      ]]\n      <div class=\"register\">\n        <div class=\"registerMessage\">[[!+reg.error.message]]</div>\n        <form class=\"form\" action=\"[[~[[*id]]]]\" method=\"post\">\n          <input type=\"hidden\" name=\"nospam\" value=\"[[!+reg.nospam]]\" />\n          <label for=\"username\">[[%register.username? &namespace=`login` &topic=`register`]]\n          <span class=\"error\">[[!+reg.error.username]]</span>\n          </label>\n          <input type=\"text\" name=\"username\"  id=\"username\" value=\"[[!+reg.username]]\" placeholder=\"Мин. 3 символа\"  />\n          <label for=\"password\">[[%register.password]]\n          <span class=\"error\">[[!+reg.error.password]]</span>\n          </label>\n          <input type=\"password\" name=\"password\" id=\"password\" value=\"[[!+reg.password]]\" placeholder=\"Мин. 6 символов\" />\n          <label for=\"password_confirm\">[[%register.password_confirm]]\n          <span class=\"error\">[[!+reg.error.password_confirm]]</span>\n          </label>\n          <input type=\"password\" name=\"password_confirm\" id=\"password_confirm\" value=\"[[!+reg.password_confirm]]\" placeholder=\"Подтвердите пароль\"  />\n          <label for=\"fullname\">[[%register.fullname]]\n          <span class=\"error\">[[!+reg.error.fullname]]</span>\n          </label>\n          <input type=\"text\" name=\"fullname\" id=\"fullname\" value=\"[[!+reg.fullname]]\"placeholder=\"Не обязательно\" />\n          <label for=\"email\">[[%register.email]]\n          <span class=\"error\">[[!+reg.error.email]]</span>\n          </label>\n          <input type=\"text\" name=\"email\" id=\"email\" value=\"[[!+reg.email]]\" placeholder=\"Обязательно\" />\n        <br class=\"clear\" />\n          <div class=\"form-buttons\">\n            <input class=\"sub\" type=\"submit\" name=\"registerbtn\" value=\"Зарегистрироваться\" />\n          </div>\n        </form>\n      </div>\n             </div>\n         </div>\n     </div>  \n     \n    </section>     \n   ', 0, 'a:0:{}', 0, ''),
 (31, 1, 0, 'Forgp', '', 0, 21, 0, ' <div class=\"clearfix\"></div>\n <section class=\"forgot\">\n     <div class=\"container\">\n         <div class=\"row\">\n             <div class=\"col-xs-12\"> [[!ForgotPassword? &resetResourceId=`9` &tpl=`lgnForgotPassTpl`]]</div>\n         </div>\n     </div>\n     \n    </section>', 0, 'a:0:{}', 0, ''),
 (32, 1, 0, 'myActivationEmailTpl', '', 0, 12, 0, '<p>[[+username]],</p>\n\n<p>Спасибо за регистрацию и интерес к нашему сайту [[+sname]], для активации аккаунта нажмите на ссылку:</p>\n\n<p><a href=\"[[+confirmUrl]]\">[[+confirmUrl]]</a></p>\n\n<p>После активации аккаунта, вы можете использовать свои логин и пароль:</p>\n\n<p>\nЛогин: <strong>[[+username]]</strong><br />\nПароль: <strong>[[+password]]</strong></p>\n\n<p>Если вы не регистрировались на сайте [[+sname]], проигнорируйте это письмо.</p>\n\n<p>Спасибо,<br />\n<em>Администратор сайта [[+sname]] </em></p>', 0, 'a:0:{}', 0, ''),
 (33, 1, 0, 'SimSearch', '', 0, 21, 0, '<section class=\"search\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n                 [[!SimpleSearchForm? &landing=`16` &tpl=`search`]]\n            </div>\n        </div>\n    </div>\n</section>', 0, 'a:0:{}', 0, ''),
-(34, 1, 0, 'search', '', 0, 18, 0, '<form class=\"sisea-search-form center-block\" action=\"[[~[[+landing]]]]\" method=\"[[+method]]\"> \n<fieldset>   \n\n    <input type=\"search\" name=\"[[+searchIndex]]\" id=\"[[+searchIndex]]\" placeholder=\"Поиск по сайту\" value=\"[[+searchValue]]\" />   \n<input type=\"hidden\" name=\"id\" value=\"[[+landing]]\" />\n    <button class=\"btn-primary\" type=\"submit\" > <i class=\"fa fa-search\" aria-hidden=\"true\"></i>Поиск</button>\n</fieldset>\n</form>', 0, 'a:0:{}', 0, ''),
+(34, 1, 0, 'search', '', 0, 18, 0, '<form class=\"sisea-search-form center-block\" action=\"[[~[[+landing]]]]\" method=\"[[+method]]\"> \n<fieldset>   \n<div class=\"input-group\">\n    <input type=\"text\" class=\"form-control\"name=\"[[+searchIndex]]\" id=\"[[+searchIndex]]\" placeholder=\"Поиск по сайту\" value=\"[[+searchValue]]\">\n    <input type=\"hidden\" name=\"id\" value=\"[[+landing]]\" />\n     <span class=\"input-group-btn\">\n        <button class=\"btn btn-primary\" type=\"submit\"><i class=\"fa fa-search\" aria-hidden=\"true\"></i>Поиск</button>\n      </span>\n</div>\n      \n\n   \n</fieldset>\n</form>', 0, 'a:0:{}', 0, ''),
 (35, 1, 0, 'SimpleSearchOuter', '', 0, 18, 0, '<p class=\"sisea-results\">[[+resultInfo]]</p>\n<div class=\"sisea-paging\"><span class=\"sisea-result-pages\">[[%sisea.result_pages? &namespace=`sisea` &topic=`default`]]</span>[[+paging]]</div>\n<div class=\"sisea-results-list\">\n    [[+results]]\n</div>\n<div class=\"sisea-paging\"><span class=\"sisea-result-pages\">[[%sisea.result_pages? &namespace=`sisea` &topic=`default`]]</span>[[+paging]]</div>', 0, 'a:0:{}', 0, ''),
 (36, 1, 0, 'SimpleSearchPageTpl', '', 0, 18, 0, '<span class=\"sisea-page\"><a href=\"[[+link]]\">[[+text]]</a>[[+separator]]</span>', 0, 'a:0:{}', 0, ''),
 (37, 1, 0, 'SimpleSearchPageTplActive', '', 0, 18, 0, '<span class=\"sisea-page sisea-current-page\">[[+text]]</span>', 0, 'a:0:{}', 0, ''),
-(38, 1, 0, 'SimpleSearchResult', '', 0, 18, 0, '<div class=\"sisea-result\">\n    <h3>[[+idx]]. <a href=\"[[+link:is=``:then=`[[~[[+id]]]]`:else=`[[+link]]`]]\" title=\"[[+longtitle]]\">[[+pagetitle]]</a></h3>\n    <div class=\"extract\"><p>[[+extract]]</p></div>\n</div>', 0, 'a:0:{}', 0, '');
+(38, 1, 0, 'SimpleSearchResult', '', 0, 18, 0, '<div class=\"sisea-result\">\n    <h3>[[+idx]]. <a href=\"[[+link:is=``:then=`[[~[[+id]]]]`:else=`[[+link]]`]]\" title=\"[[+longtitle]]\">[[+pagetitle]]</a></h3>\n    <div class=\"extract\"><p>[[+extract]]</p></div>\n</div>', 0, 'a:0:{}', 0, ''),
+(39, 1, 0, 'Dropdown', '', 0, 21, 0, '<section class=\"dropdown\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <h1>Dropdown</h1>\n            <div class=\"col-sm-4\">\n                \n                <div class=\"dropup\">\n  <button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"dropdownMenu2\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n    Dropup\n    <span class=\"caret\"></span>\n  </button>\n  <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu2\">\n    <li><a href=\"#\">Action</a></li>\n    <li><a href=\"#\">Another action</a></li>\n    <li><a href=\"#\">Something else here</a></li>\n    <li role=\"separator\" class=\"divider\"></li>\n    <li><a href=\"#\">Separated link</a></li>\n  </ul>\n</div>\n            </div>\n            <div class=\"col-sm-4\">\n                <div class=\"dropdown\">\n  <button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n    Dropdown\n    <span class=\"caret\"></span>\n  </button>\n  <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">\n    <li><a href=\"#\">Action</a></li>\n    <li><a href=\"#\">Another action</a></li>\n    <li><a href=\"#\">Something else here</a></li>\n    <li role=\"separator\" class=\"divider\"></li>\n    <li><a href=\"#\">Separated link</a></li>\n  </ul>\n</div>\n            </div>\n            <div class=\"col-sm-4\">\n                <div class=\"dropdown\">\n  <button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"dropdownMenu3\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n    Dropdown header\n    <span class=\"caret\"></span>\n  </button>\n  <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu3\">\n  <li class=\"dropdown-header\">Dropdown header</li>\n  <li><a href=\"#\">Action</a></li>\n    <li><a href=\"#\">Another action</a></li>\n    <li><a href=\"#\">Something else here</a></li>\n    <li role=\"separator\" class=\"divider\"></li>\n    <li><a href=\"#\">Separated link</a></li>\n</ul>\n</div>\n            </div>\n        </div>\n    <div class=\"row\">\n        <div class=\"col-sm-4\">\n            <div class=\"dropdown\">\n  <button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"dropdownMenu3\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n    Dropdown divider\n    <span class=\"caret\"></span>\n  </button>\n  <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu3\">\n  <li><a href=\"#\">Action</a></li>\n  <li role=\"separator\" class=\"divider\"></li>\n    <li><a href=\"#\">Another action</a></li>\n    <li><a href=\"#\">Something else here</a></li>\n    <li role=\"separator\" class=\"divider\"></li>\n    <li><a href=\"#\">Separated link</a></li>\n</ul>\n</div> \n        </div>\n        <div class=\"col-sm-4\">\n            <div class=\"dropdown\">\n  <button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n    Dropdown disabled\n    <span class=\"caret\"></span>\n  </button>\n  <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">\n    <li><a href=\"#\">Action</a></li>\n    <li><a href=\"#\">Another action</a></li>\n    <li class=\"disabled\"><a href=\"#\">Disabled link</a></li>\n    <li><a href=\"#\">Something else here</a></li>\n    <li role=\"separator\" class=\"divider\"></li>\n    <li><a href=\"#\">Separated link</a></li>\n  </ul>\n</div>\n        </div>\n        <div class=\"col-sm-4\">\n            \n        </div>\n    </div>\n    </div>\n</section>', 0, 'a:0:{}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -4090,7 +4264,7 @@ CREATE TABLE `new_user_attributes` (
 --
 
 INSERT INTO `new_user_attributes` (`id`, `internalKey`, `fullname`, `email`, `phone`, `mobilephone`, `blocked`, `blockeduntil`, `blockedafter`, `logincount`, `lastlogin`, `thislogin`, `failedlogincount`, `sessionid`, `dob`, `gender`, `address`, `country`, `city`, `state`, `zip`, `fax`, `photo`, `comment`, `website`, `extended`) VALUES
-(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 80, 1498115100, 1498115463, 0, '94m5f4ils8q2rv3hob8rrfpgr0', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
+(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 94, 1498122922, 1498122958, 0, '9b5m0nrdnbsvecaq14q8uq6h14', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
 (3, 3, '', 'platonov_stan@mail.ru', '', '', 0, 0, 0, 7, 1491287477, 1491302110, 0, 'pinq7vkq5q6r7f8adtj2m64550', 0, 0, '', '', '', '', '', '', '', '', '', '[]');
 
 -- --------------------------------------------------------
@@ -5227,7 +5401,7 @@ ALTER TABLE `new_lexicon_entries`
 -- AUTO_INCREMENT для таблицы `new_manager_log`
 --
 ALTER TABLE `new_manager_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=772;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=945;
 --
 -- AUTO_INCREMENT для таблицы `new_media_sources`
 --
@@ -5302,7 +5476,7 @@ ALTER TABLE `new_site_content`
 -- AUTO_INCREMENT для таблицы `new_site_htmlsnippets`
 --
 ALTER TABLE `new_site_htmlsnippets`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 --
 -- AUTO_INCREMENT для таблицы `new_site_plugins`
 --

@@ -59,8 +59,7 @@ header
 		color: #fff $main-color
 		height: 71px
 		width: 100%
-		top: 0
-		position: relative
+		
 		.Logo
 			height: 71px
 			display: block
@@ -217,19 +216,17 @@ header
 	img
 		height: 19px
 section
+	position: relative
+	display: block
+	top: -28px
+	z-index: 2
+	background-color: $main-color
 	&.main-login
-		position: relative
-		display: block
-		top: -28px
-		z-index: 2
-		background-color: $main-color
 		border-top: 1px #fff solid
 		border-bottom: 1px #fff solid
 		button
 			width: 70px
 			font-size: 16px
-			border-radius: 4px
-			border: 1px #333 solid
 		p
 			color: #fff
 		span
@@ -247,9 +244,10 @@ section
 				margin-left: 15px
 		.loginUsernameLabel, .loginPasswordLabel, .loginLoginButton
 			margin-top: 5px
+
 	&.forgot
-		position: relative
-		top: -28px
+		border-top: 1px #fff solid
+		border-bottom: 1px #fff solid
 		.loginFP
 			min-width: 300px
 			max-width: 700px
@@ -273,6 +271,7 @@ section
 					width: 300px
 					margin: 30px auto
 					color: #192626
+
 	&.reg
 		.register
 			min-width: 300px
@@ -292,43 +291,27 @@ section
 				margin-top: 30px
 		h3
 			text-align: center
+
 	&.search-all
-		
-		position: relative
-		background-color: $main-color
+		border-top: 1px #fff solid
+		border-bottom: 1px #fff solid
 		color: #fff
 		.sisea-search-form
-			width: 290px
 			padding: 5px 0
-			button
-				border-radius: 4px
-				border: 1px #333 solid
-				padding: 1px 12px
 			.fa
 				margin-right: 10px
-			input
-				padding: 0 5px
-				margin-right: 5px
-				color: #333
-				width: 185px
+				
 	&.search
-		position: relative
-		top: -28px
-		background-color: $main-color
+		border-top: 1px #fff solid
+		border-bottom: 1px #fff solid
 		.sisea-search-form
-			width: 290px
 			padding: 5px 0
-			button
-				border-radius: 4px
-				border: 1px #333 solid
-				padding: 1px 12px
 			.fa
 				margin-right: 10px
-			input
-				padding: 0 5px
-				margin-right: 5px
-				color: #333
-				width: 185px
+			
+	&.dropdown
+		border-top: 1px #fff solid
+		border-bottom: 1px #fff solid
 .loginLoginFieldset
 	width: 751px	
 	float: right
