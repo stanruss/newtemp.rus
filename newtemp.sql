@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 21 2017 г., 16:00
+-- Время создания: Июн 22 2017 г., 10:12
 -- Версия сервера: 5.5.53
 -- Версия PHP: 5.5.38
 
@@ -2184,7 +2184,41 @@ INSERT INTO `new_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `
 (734, 1, '2017-06-21 15:53:27', 'chunk_update', 'modChunk', '29'),
 (735, 1, '2017-06-21 15:53:27', 'propertyset_update_from_element', 'modChunk', '29'),
 (736, 1, '2017-06-21 15:54:01', 'chunk_update', 'modChunk', '29'),
-(737, 1, '2017-06-21 15:54:02', 'propertyset_update_from_element', 'modChunk', '29');
+(737, 1, '2017-06-21 15:54:02', 'propertyset_update_from_element', 'modChunk', '29'),
+(738, 1, '2017-06-21 21:41:43', 'login', 'modContext', 'web'),
+(739, 1, '2017-06-22 08:15:27', 'login', 'modContext', 'mgr'),
+(740, 1, '2017-06-22 08:15:52', 'login', 'modContext', 'web'),
+(741, 1, '2017-06-22 09:06:13', 'chunk_update', 'modChunk', '34'),
+(742, 1, '2017-06-22 09:06:14', 'propertyset_update_from_element', 'modChunk', '34'),
+(743, 1, '2017-06-22 09:06:43', 'chunk_update', 'modChunk', '34'),
+(744, 1, '2017-06-22 09:06:43', 'propertyset_update_from_element', 'modChunk', '34'),
+(745, 1, '2017-06-22 09:07:05', 'chunk_update', 'modChunk', '34'),
+(746, 1, '2017-06-22 09:07:05', 'propertyset_update_from_element', 'modChunk', '34'),
+(747, 1, '2017-06-22 09:19:00', 'chunk_update', 'modChunk', '25'),
+(748, 1, '2017-06-22 09:19:00', 'propertyset_update_from_element', 'modChunk', '25'),
+(749, 1, '2017-06-22 09:23:34', 'chunk_update', 'modChunk', '34'),
+(750, 1, '2017-06-22 09:23:34', 'propertyset_update_from_element', 'modChunk', '34'),
+(751, 1, '2017-06-22 09:25:22', 'login', 'modContext', 'web'),
+(752, 1, '2017-06-22 09:29:16', 'chunk_update', 'modChunk', '34'),
+(753, 1, '2017-06-22 09:29:16', 'propertyset_update_from_element', 'modChunk', '34'),
+(754, 1, '2017-06-22 09:30:48', 'chunk_update', 'modChunk', '9'),
+(755, 1, '2017-06-22 09:30:49', 'propertyset_update_from_element', 'modChunk', '9'),
+(756, 1, '2017-06-22 09:31:40', 'chunk_update', 'modChunk', '9'),
+(757, 1, '2017-06-22 09:31:41', 'propertyset_update_from_element', 'modChunk', '9'),
+(758, 1, '2017-06-22 09:36:22', 'chunk_update', 'modChunk', '9'),
+(759, 1, '2017-06-22 09:36:23', 'propertyset_update_from_element', 'modChunk', '9'),
+(760, 1, '2017-06-22 09:37:41', 'login', 'modContext', 'web'),
+(761, 1, '2017-06-22 09:38:37', 'login', 'modContext', 'web'),
+(762, 1, '2017-06-22 09:40:49', 'chunk_update', 'modChunk', '9'),
+(763, 1, '2017-06-22 09:40:49', 'propertyset_update_from_element', 'modChunk', '9'),
+(764, 1, '2017-06-22 09:40:57', 'login', 'modContext', 'web'),
+(765, 1, '2017-06-22 09:42:23', 'chunk_update', 'modChunk', '9'),
+(766, 1, '2017-06-22 09:42:24', 'propertyset_update_from_element', 'modChunk', '9'),
+(767, 1, '2017-06-22 09:43:05', 'login', 'modContext', 'web'),
+(768, 1, '2017-06-22 09:46:00', 'chunk_update', 'modChunk', '34'),
+(769, 1, '2017-06-22 09:46:00', 'propertyset_update_from_element', 'modChunk', '34'),
+(770, 1, '2017-06-22 10:05:00', 'login', 'modContext', 'web'),
+(771, 1, '2017-06-22 10:11:03', 'login', 'modContext', 'web');
 
 -- --------------------------------------------------------
 
@@ -2680,7 +2714,9 @@ CREATE TABLE `new_session` (
 --
 
 INSERT INTO `new_session` (`id`, `access`, `data`) VALUES
-('omsf1brp2vk5l3agbs7pmf89e1', 1498049948, 'modx.user.contextTokens|a:0:{}');
+('omsf1brp2vk5l3agbs7pmf89e1', 1498049948, 'modx.user.contextTokens|a:0:{}'),
+('vaqirvl6g4albv873su1k82pp6', 1498108498, 'modx.user.contextTokens|a:0:{}'),
+('94m5f4ils8q2rv3hob8rrfpgr0', 1498115463, 'modx.user.contextTokens|a:2:{s:3:\"mgr\";i:1;s:3:\"web\";i:1;}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}modx.mgr.user.token|s:52:\"modx58de58ab522034.60981441_1594b526f7d3bb2.99840293\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}modx.web.user.token|s:52:\"modx58de58ab522034.60981441_1594b6d87332f70.13450350\";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}');
 
 -- --------------------------------------------------------
 
@@ -2807,7 +2843,7 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (22, 1, 0, 'Scripts', '', 0, 21, 0, '<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/css/bootstrap.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/css/bootstrap-theme.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/font-awesome/css/font-awesome.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/mmenu/css/jquery.mmenu.all.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/css-hamburgers/hamburgers.css\">\n    <link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/animate/animate.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/OwlCarousel/dist/assets/owl.carousel.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/OwlCarousel/dist/assets/owl.theme.default.min.css\">\n\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/css/main.min.css\">\n<script src=\"[[++assets_url]]templates/Stas/app/libs/jquery/dist/jquery.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/js/bootstrap.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/mmenu/js/jquery.mmenu.all.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/OwlCarousel/dist/owl.carousel.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/js/common.js\"></script>\n', 0, 'a:0:{}', 0, ''),
 (23, 1, 0, 'Header', '', 0, 21, 0, '<div id=\"my-header\">\n			\n			<header class=\"site-header\">\n				\n				<div class=\"top\">\n<div class=\"Logo visible-xs\"><i class=\"fa fa-free-code-camp\" aria-hidden=\"true\"></i>Logotype</div>\n					<a href=\"#my-menu\" class=\"hamburger hamburger--emphatic visible-xs\">\n						<span class=\"hamburger-box\"><span class=\"hamburger-inner\"></span></span>\n					</a>\n					<nav id=\"my-menu\">\n						[[Wayfinder?\n						&startId=`0`\n						&level=`1`\n						&outerTpl=`tpl.Wayfinder.outer`\n						&parentRowTpl=`tpl.Wayfinder.row.parent`\n						&innerRowTpl=`tpl.Wayfinder.row.inner`\n						&rowTpl=`tpl.Wayfinder.row`\n						\n					]]\n					</nav>\n					\n				</div>\n\n				\n				\n\n				\n\n			</header>\n\n		</div>', 0, 'a:0:{}', 0, ''),
 (24, 1, 0, 'Content', '', 0, 21, 0, '[[!Personalize?\n    &yesChunk=`Main unreg`\n    &noChunk=`Main`\n    &ph=`personalize.name`\n]]\n\n', 0, 'a:0:{}', 0, ''),
-(25, 0, 0, 'Navbar', '', 0, 21, 0, '<header>\n    <div class=\"top-line hidden-xs\">\n        <div class=\"container\">\n            <div class=\"row\">\n               <div class=\"col-lg-3 col-md-3 col-sm-3\">\n                   <div class=\"Logo\"><i class=\"fa fa-free-code-camp\" aria-hidden=\"true\"></i>Logotype</div>\n               </div>\n               <div class=\"col-lg-6 col-md-7 col-sm-9\">\n                   <div class=\"center\">\n                    <nav class=\"my-menu\">\n						[[Wayfinder?\n						&startId=`0`\n						&level=`1`\n						&outerTpl=`tpl.Wayfinder.outer`\n						&parentRowTpl=`tpl.Wayfinder.row.parent`\n						&innerRowTpl=`tpl.Wayfinder.row.inner`\n						&rowTpl=`tpl.Wayfinder.row`\n						&outerClass=`list-inline`\n					    ]]\n					</nav>\n				</div>\n			</div>\n					\n					<div class=\"col-lg-3 col-md-2 col-sm-hidden\">\n					    <div class=\"social\">\n					         <p> Соц. сети</p>\n					   <i class=\"fa fa-vk\" aria-hidden=\"true\"></i>\n                    <i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>\n<i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i>\n<i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>\n\n					    \n					    </div>\n					   \n					</div>\n	        </div> \n        </div>\n    </div>\n    \n[[$Carousel]]\n    \n</header>', 0, 'a:0:{}', 0, ''),
+(25, 0, 0, 'Navbar', '', 0, 21, 0, '<header>\n    <div class=\"top-line hidden-xs\">\n        <div class=\"container\">\n            <div class=\"row\">\n               <div class=\"col-lg-3 col-md-3 col-sm-3\">\n                   <div class=\"Logo\"><i class=\"fa fa-free-code-camp\" aria-hidden=\"true\"></i>Logotype</div>\n               </div>\n               <div class=\"col-lg-6 col-md-7 col-sm-9\">\n                   <div class=\"center\">\n                    <nav class=\"my-menu center-block\">\n						[[Wayfinder?\n						&startId=`0`\n						&level=`1`\n						&outerTpl=`tpl.Wayfinder.outer`\n						&parentRowTpl=`tpl.Wayfinder.row.parent`\n						&innerRowTpl=`tpl.Wayfinder.row.inner`\n						&rowTpl=`tpl.Wayfinder.row`\n						&outerClass=`list-inline`\n					    ]]\n					</nav>\n				</div>\n			</div>\n					\n					<div class=\"col-lg-3 col-md-2 col-sm-hidden\">\n					    <div class=\"social\">\n					         <p> Соц. сети</p>\n					   <i class=\"fa fa-vk\" aria-hidden=\"true\"></i>\n                    <i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>\n<i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i>\n<i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>\n\n					    \n					    </div>\n					   \n					</div>\n	        </div> \n        </div>\n    </div>\n    \n[[$Carousel]]\n    \n</header>', 0, 'a:0:{}', 0, ''),
 (26, 0, 0, 'Carousel', '', 0, 21, 0, '<div class=\"carousel-main\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n            <div class=\"owl-carousel\">\n      <div class=\"photo1\"> \n      \n      </div>\n      <div class=\"photo2\"> \n      \n      </div>\n      <div class=\"photo3\"> \n      \n      </div>\n    </div>\n    </div> \n        </div>\n    </div>\n   \n   \n   \n</div>', 0, 'a:0:{}', 0, ''),
 (27, 1, 0, 'Login', '', 0, 21, 0, '<div class=\"clearfix\"></div>\n<section class=\"main-login\">\n    <div class=\"container clearfix\">\n        <div class=\"row\">\n            <div class=\"col-xs-12\">[[!Login? &loginTpl=`lgnLoginTpl` &logoutTpl=`lgnLogoutTpl` &errTpl=`lgnErrTpl` &loginResourceId=`1` &logoutResourceId=`1`]]</div>\n        </div>\n    </div>\n    \n\n</section>', 0, 'a:0:{}', 0, ''),
 (28, 0, 0, 'Main', '', 0, 21, 0, '[[$Navbar]]\n[[$Login]]\n\n', 0, 'a:0:{}', 0, ''),
@@ -2816,7 +2852,7 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (31, 1, 0, 'Forgp', '', 0, 21, 0, ' <div class=\"clearfix\"></div>\n <section class=\"forgot\">\n     <div class=\"container\">\n         <div class=\"row\">\n             <div class=\"col-xs-12\"> [[!ForgotPassword? &resetResourceId=`9` &tpl=`lgnForgotPassTpl`]]</div>\n         </div>\n     </div>\n     \n    </section>', 0, 'a:0:{}', 0, ''),
 (32, 1, 0, 'myActivationEmailTpl', '', 0, 12, 0, '<p>[[+username]],</p>\n\n<p>Спасибо за регистрацию и интерес к нашему сайту [[+sname]], для активации аккаунта нажмите на ссылку:</p>\n\n<p><a href=\"[[+confirmUrl]]\">[[+confirmUrl]]</a></p>\n\n<p>После активации аккаунта, вы можете использовать свои логин и пароль:</p>\n\n<p>\nЛогин: <strong>[[+username]]</strong><br />\nПароль: <strong>[[+password]]</strong></p>\n\n<p>Если вы не регистрировались на сайте [[+sname]], проигнорируйте это письмо.</p>\n\n<p>Спасибо,<br />\n<em>Администратор сайта [[+sname]] </em></p>', 0, 'a:0:{}', 0, ''),
 (33, 1, 0, 'SimSearch', '', 0, 21, 0, '<section class=\"search\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n                 [[!SimpleSearchForm? &landing=`16` &tpl=`search`]]\n            </div>\n        </div>\n    </div>\n</section>', 0, 'a:0:{}', 0, ''),
-(34, 1, 0, 'search', '', 0, 18, 0, '<form class=\"sisea-search-form\" action=\"[[~[[+landing]]]]\" method=\"[[+method]]\"> \n<fieldset>   \n\n    <input type=\"text\" name=\"[[+searchIndex]]\" id=\"[[+searchIndex]]\" placeholder=\"Поиск по сайту\" value=\"[[+searchValue]]\" />   \n<input type=\"hidden\" name=\"id\" value=\"[[+landing]]\" />\n    <button class=\"btn-primary\" type=\"submit\" > <i class=\"fa fa-search\" aria-hidden=\"true\"></i>Поиск</button>\n</fieldset>\n</form>', 0, 'a:0:{}', 0, ''),
+(34, 1, 0, 'search', '', 0, 18, 0, '<form class=\"sisea-search-form center-block\" action=\"[[~[[+landing]]]]\" method=\"[[+method]]\"> \n<fieldset>   \n\n    <input type=\"search\" name=\"[[+searchIndex]]\" id=\"[[+searchIndex]]\" placeholder=\"Поиск по сайту\" value=\"[[+searchValue]]\" />   \n<input type=\"hidden\" name=\"id\" value=\"[[+landing]]\" />\n    <button class=\"btn-primary\" type=\"submit\" > <i class=\"fa fa-search\" aria-hidden=\"true\"></i>Поиск</button>\n</fieldset>\n</form>', 0, 'a:0:{}', 0, ''),
 (35, 1, 0, 'SimpleSearchOuter', '', 0, 18, 0, '<p class=\"sisea-results\">[[+resultInfo]]</p>\n<div class=\"sisea-paging\"><span class=\"sisea-result-pages\">[[%sisea.result_pages? &namespace=`sisea` &topic=`default`]]</span>[[+paging]]</div>\n<div class=\"sisea-results-list\">\n    [[+results]]\n</div>\n<div class=\"sisea-paging\"><span class=\"sisea-result-pages\">[[%sisea.result_pages? &namespace=`sisea` &topic=`default`]]</span>[[+paging]]</div>', 0, 'a:0:{}', 0, ''),
 (36, 1, 0, 'SimpleSearchPageTpl', '', 0, 18, 0, '<span class=\"sisea-page\"><a href=\"[[+link]]\">[[+text]]</a>[[+separator]]</span>', 0, 'a:0:{}', 0, ''),
 (37, 1, 0, 'SimpleSearchPageTplActive', '', 0, 18, 0, '<span class=\"sisea-page sisea-current-page\">[[+text]]</span>', 0, 'a:0:{}', 0, ''),
@@ -4054,7 +4090,7 @@ CREATE TABLE `new_user_attributes` (
 --
 
 INSERT INTO `new_user_attributes` (`id`, `internalKey`, `fullname`, `email`, `phone`, `mobilephone`, `blocked`, `blockeduntil`, `blockedafter`, `logincount`, `lastlogin`, `thislogin`, `failedlogincount`, `sessionid`, `dob`, `gender`, `address`, `country`, `city`, `state`, `zip`, `fax`, `photo`, `comment`, `website`, `extended`) VALUES
-(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 70, 1498047998, 1498049576, 0, 'dc7ohm8s0a9m7b73gn7lecjrq5', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
+(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 80, 1498115100, 1498115463, 0, '94m5f4ils8q2rv3hob8rrfpgr0', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
 (3, 3, '', 'platonov_stan@mail.ru', '', '', 0, 0, 0, 7, 1491287477, 1491302110, 0, 'pinq7vkq5q6r7f8adtj2m64550', 0, 0, '', '', '', '', '', '', '', '', '', '[]');
 
 -- --------------------------------------------------------
@@ -5191,7 +5227,7 @@ ALTER TABLE `new_lexicon_entries`
 -- AUTO_INCREMENT для таблицы `new_manager_log`
 --
 ALTER TABLE `new_manager_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=738;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=772;
 --
 -- AUTO_INCREMENT для таблицы `new_media_sources`
 --
