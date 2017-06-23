@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Чистый сайт",
   "main": "index.js",
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stanruss/newclear.loc.git"
@@ -27,6 +26,7 @@
     "postcss-assets": "^4.1.0",
     "postcss-cssnext": "^2.11.0",
     "postcss-nested": "^2.0.2",
-    "postcss-short": "^3.0.3"
+    "postcss-short": "^3.0.3",
+    "scss": "^0.2.4"
   }
 }

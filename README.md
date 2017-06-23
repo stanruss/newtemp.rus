@@ -6,3 +6,6 @@
 Сделал поиск (исправлено).<br>
 Начал bootstrap elements.<br>
 Сделал buttons, nav, inputs, dropdown.<br>
+Pagination, Labels, Badges, Jumbotron,<br>
+Page header, Thumbnails, Alerts, Progress bars,<br>
+Media object, List group, Panels.
