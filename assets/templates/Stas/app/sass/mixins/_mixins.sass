@@ -15,3 +15,27 @@
 	@else if $position == 'top-bottom'
 		border-top: $size solid $color
 		border-bottom: $size solid $color
+@mixin rotate ($rot)
+	-webkit-transform: rotate($rot) //Chrome, Safari
+	-moz-transform: rotate($rot) //Firefox
+	-o-transform: rotate($rot) //Opera
+	-ms-transform: rotate($rot) //IE
+	transform: rotate($rot) //браузеры без префексов
+
+@mixin border-radius($br, $position)
+	@if $position == 'all'
+		border-radius: $br
+	@else if $position == 'left-top'
+		border-top-left-radius: $br
+	@else if $position == 'left-bottom'
+		border-bottom-left-radius: $br
+	@else if $position == 'right-top'
+		border-top-right-radius: $br
+	@else if $position == 'right-bottom'
+		border-bottom-right-radius: $br
+	@else if $position == 'right-left-top'
+		border-top-left-radius: $br
+		border-top-right-radius: $br
+	@else if $position == 'right-left-bottom'
+		border-bottom-left-radius: $br
+		border-bottom-right-radius: $br

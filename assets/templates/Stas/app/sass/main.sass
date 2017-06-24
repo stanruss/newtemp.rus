@@ -33,8 +33,7 @@ body
 	line-height: 1.75
 	font-family: $default-font
 	overflow-x: hidden
-	opacity: 1
-	
+		
 header
 	width: 100%
 	.top
@@ -240,7 +239,7 @@ section
 				line-height: 39px
 			span
 				margin-right: 0
-				margin-left: 15px
+				margin-left: 10px
 		.loginUsernameLabel, .loginPasswordLabel, .loginLoginButton
 			margin-top: 5px
 
@@ -373,4 +372,27 @@ table
   border-spacing: 0
 .clearfix
 	clear: both
+input
+	position: relative
+	opacity: .99
+#upbutton 
+	height: 39px
+	width: 120px
+	bottom: 80px
+	right: -40px
+	background-color: #333
+	cursor: pointer
+	display: none
+	position: fixed
+	z-index: 20000
+	color: $accent
+	opacity: 1
+	span
+		margin-left: 10px
+		font-size: 22px
+	.fa
+		margin-left: 12px
+		font-size: 20px
+	@include border-radius(8px, 'right-left-top')	
+	@include rotate(-90deg)
 @import "media" 
