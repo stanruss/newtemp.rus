@@ -163,8 +163,8 @@ header
 			background-size: cover
 		.owl-dots
 			text-align: center
-			position: relative
-			bottom: 35px
+			position: absolute
+			bottom: 1px
 			width: 100%
 			-webkit-backface-visibility: hidden
 			-moz-backface-visibility: hidden
@@ -214,7 +214,6 @@ header
 		height: 19px
 section
 	position: relative
-	top: -28px
 	&.main-login
 		border-top: 1px #fff solid
 		border-bottom: 1px #fff solid
@@ -235,7 +234,10 @@ section
 			position: relative
 			top: -14px
 		.loginLoginFieldset
-			float: right	
+			float: right
+			.forg	
+				float: right
+				line-height: 39px
 			span
 				margin-right: 0
 				margin-left: 15px
@@ -293,6 +295,7 @@ section
 		border-top: 1px #fff solid
 		border-bottom: 1px #fff solid
 		color: #fff
+		background-color: $main-color
 		.sisea-search-form
 			padding: 5px 0
 			.fa
@@ -329,12 +332,13 @@ section
 	&.breadcrumbs
 		border-top: 1px #333 solid
 		border-bottom: 1px #333 solid
-.loginLoginFieldset
-	width: 751px	
+	&.responsive
+		border-top: 1px #333 solid
+		border-bottom: 1px #333 solid
+			
+
+
 	
-
-
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
   margin: 0
   padding: 0

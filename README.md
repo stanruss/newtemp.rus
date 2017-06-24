@@ -8,4 +8,5 @@
 Сделал buttons, nav, inputs, dropdown.<br>
 Pagination, Labels, Badges, Jumbotron,<br>
 Page header, Thumbnails, Alerts, Progress bars,<br>
-Media object, List group, Panels.
+Media object, List group, Panels,<br>
+Model windows.
