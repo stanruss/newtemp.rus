@@ -11,4 +11,5 @@ Page header, Thumbnails, Alerts, Progress bars,<br>
 Media object, List group, Panels,<br>
 Model windows.<br>
 Сделал кнопку Наверх.<br>
-Bootstrap готовый с кнопкой наверх.
+Bootstrap готовый с кнопкой наверх.<br><br>
+Pluton carousel done.
