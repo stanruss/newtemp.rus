@@ -6,15 +6,13 @@
   font-style: normal
 
 
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it.
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be
-/*
- *@media screen and (-webkit-min-device-pixel-ratio:0) {
- *  @font-face {
- *    font-family: 'porta';
- *    src: url('../font/porta.svg?49924914#porta') format('svg');
- *  }
- *}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) 
+  @font-face 
+    font-family: 'porta'
+    src: url('../font/porta.svg?49924914#porta') format('svg')
+ 
+
 
 [class^="icon-"]:before, [class*=" icon-"]:before
   font-family: "porta"
@@ -24,213 +22,319 @@
   display: inline-block
   text-decoration: inherit
   text-align: center
-  /* opacity: .8;
-  /* For safety - reset parent styles, that can break glyph codes
+  opacity: .8
+  
   font-variant: normal
   text-transform: none
-  /* fix buttons height, for twitter bootstrap
-  /* you can be more comfortable with increased icons size
-  /*font-size: 120%;
-  /* Uncomment for 3D effect
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+  
+  font-size: 120%
+  
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3)
 
 .icon-plus:before
   content: '\e826'
 
-/* ''
+''
 
 .icon-email:before
   content: '\e825'
 
-/* ''
+''
 
 .icon-cog:before
   content: '\e823'
 
-/* ''
+''
 
 .icon-ok:before
   content: '\e80a'
 
-/* ''
+''
 
 .icon-cancel:before
   content: '\e80b'
 
-/* ''
+''
 
 .icon-calendar:before
   content: '\e10b'
 
-/* ''
+''
 
 .icon-help-circled:before
   content: '\e81a'
 
-/* ''
+''
 
 .icon-location:before
   content: '\e81b'
 
-/* ''
+''
 
 .icon-left-open:before
   content: '\e804'
 
-/* ''
+''
 
 .icon-right-open:before
   content: '\e803'
 
-/* ''
+''
 
 .icon-up-open:before
   content: '\e805'
 
-/* ''
+''
 
 .icon-menu-1:before
   content: '\e800'
 
-/* ''
+''
 
 .icon-link-ext:before
   content: '\e822'
 
-/* ''
+''
 
 .icon-menu:before
   content: '\e801'
 
-/* ''
+''
 
 .icon-mail-alt:before
   content: '\e81c'
 
-/* ''
+''
 
 .icon-angle-left:before
   content: '\e81e'
 
-/* ''
+''
 
 .icon-angle-right:before
   content: '\e81f'
 
-/* ''
+''
 
 .icon-angle-up:before
   content: '\e820'
 
-/* ''
+''
 
 .icon-angle-down:before
   content: '\e821'
 
-/* ''
+''
 
 .icon-desktop:before
   content: '\e814'
 
-/* ''
+''
 
 .icon-mobile:before
   content: '\e81d'
 
-/* ''
+''
 
 .icon-calendar-empty:before
   content: '\e802'
 
-/* ''
+''
 
 .icon-github-circled:before
   content: '\e811'
 
-/* ''
+''
 
 .icon-vimeo-circled:before
   content: '\e808'
 
-/* ''
+''
 
 .icon-twitter-circled:before
   content: '\e807'
 
-/* ''
+''
 
 .icon-facebook-circled:before
   content: '\e80e'
 
-/* ''
+''
 
 .icon-gplus-circled:before
   content: '\e80d'
 
-/* ''
+''
 
 .icon-pinterest-circled:before
   content: '\e809'
 
-/* ''
+''
 
 .icon-linkedin-circled:before
   content: '\e806'
 
-/* ''
+''
 
 .icon-dribbble-circled:before
   content: '\e80f'
 
-/* ''
+''
 
 .icon-stumbleupon-circled:before
   content: '\e810'
 
-/* ''
+''
 
 .icon-lastfm-circled:before
   content: '\e812'
 
-/* ''
+''
 
 .icon-skype-circled:before
   content: '\e813'
 
-/* ''
+''
 
 .icon-globe:before
   content: '\e815'
 
-/* ''
+''
 
 .icon-award:before
   content: '\e816'
 
-/* ''
+''
 
 .icon-user:before
   content: '\e818'
 
-/* ''
+''
 
 .icon-users:before
   content: '\e819'
 
-/* ''
+''
 
 .icon-chart-bar:before
   content: '\e80c'
 
-/* ''
+''
 
 .icon-phone:before
   content: '\e824'
 
-/* ''
+''
 
 .icon-megaphone:before
   content: '\e817'
 
-/* ''
+''
 
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+
+
+#container
+  position: relative
+  width: 940px
+  &:after
+    content: ""
+    display: block
+    clear: both
+    height: 0
+
+#menu
+  position: relative
+  float: left
+  width: 100%
+  padding: 0 20px
+  border-radius: 3px
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.15)
+  background: #ccc
+  list-style: none
+  ul
+    list-style: none
+  > li
+    float: left
+    position: relative
+    border-right: 1px solid rgba(0, 0, 0, 0.1)
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25)
+    perspective: 1000px
+    &:first-child
+      border-left: 1px solid rgba(255, 255, 255, 0.25)
+      box-shadow: -1px 0 0 rgba(0, 0, 0, 0.1), 1px 0 0 rgba(255, 255, 255, 0.25)
+  a
+    display: block
+    position: relative
+    z-index: 10
+    padding: 13px 20px 13px 20px
+    text-decoration: none
+    color: rgba(75, 75, 75, 1)
+    line-height: 1
+    font-weight: 600
+    font-size: 12px
+    letter-spacing: -.05em
+    background: transparent
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9)
+    transition: all .25s ease-in-out
+  > li:hover > a
+    background: #333
+    color: rgba(0, 223, 252, 1)
+    text-shadow: none
+  li
+    ul
+      position: absolute
+      left: 0
+      z-index: 1
+      width: 200px
+      padding: 0
+      opacity: 0
+      visibility: hidden
+      border-bottom-left-radius: 4px
+      border-bottom-right-radius: 4px
+      background: transparent
+      overflow: hidden
+      transform-origin: 50% 0%
+    &:hover ul
+      padding: 15px 0
+      background: #333
+      opacity: 1
+      visibility: visible
+      box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5)
+      animation-name: swingdown
+      animation-duration: 1s
+      animation-timing-function: ease
+    li a
+      padding-left: 15px
+      font-weight: 400
+      color: #ddd
+      text-shadow: none
+      border-top: dotted 1px transparent
+      border-bottom: dotted 1px transparent
+      transition: all .15s linear
+      &:hover
+        color: rgba(0, 223, 252, 1)
+        border-top: dotted 1px rgba(255, 255, 255, 0.15)
+        border-bottom: dotted 1px rgba(255, 255, 255, 0.15)
+        background: rgba(0, 223, 252, 0.02)
+
+@keyframes swingdown
+  0%
+    opacity: .99999
+    transform: rotateX(90deg)
+
+  30%
+    transform: rotateX(-20deg) rotateY(5deg)
+    animation-timing-function: ease-in-out
+
+  65%
+    transform: rotateX(20deg) rotateY(-3deg)
+    animation-timing-function: ease-in-out
+
+  100%
+    transform: rotateX(0)
+    animation-timing-function: ease-in-out

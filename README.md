@@ -12,4 +12,6 @@ Media object, List group, Panels,<br>
 Model windows.<br>
 Сделал кнопку Наверх.<br>
 Bootstrap готовый с кнопкой наверх.<br><br>
-Pluton carousel done.
+Pluton carousel done.<br>
+Pluton animate menu css.<br>
+Animate.css fix Jqwery.

@@ -6,6 +6,11 @@
  * Author URL: http://graphberry.com
  * License: http://graphberry.com/pages/license
  */
+ 
+
+
+
+
  jQuery(document).ready(function ($) {
 
     var lastId,
@@ -22,23 +27,14 @@
                     return item;
                 }
             }
-        });
 
-    //Get width of container
-    var containerWidth = $('.section .container').width();
-    //Resize animated triangle
-    $(".triangle").css({
-        "border-left": containerWidth / 2 + 'px outset transparent',
-        "border-right": containerWidth / 2 + 'px outset transparent'
-    });
-    $(window).resize(function () {
-        containerWidth = $('.container').width();
-        $(".triangle").css({
-            "border-left": containerWidth / 2 + 'px outset transparent',
-            "border-right": containerWidth / 2 + 'px outset transparent'
         });
-    });
+$(document).ready(function() {
 
+    $(".triangle").animated("fadeInDown", "fadeOutUp");
+
+});
+   
 
     //Initialize header slider.
     $('#da-slider').cslider();
@@ -245,14 +241,7 @@ $("#send-mail").click(function () {
         }
     });
 
-    //Animate triangles
-    jQuery('.triangle').bind('inview', function (event, visible) {
-        if (visible == true) {
-            jQuery(this).addClass("animated fadeInDown");
-        } else {
-            jQuery(this).removeClass("animated fadeInDown");
-        }
-    });
+    
     
     //animate first team member
     jQuery('#first-person').bind('inview', function (event, visible) {
