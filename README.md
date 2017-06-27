@@ -14,4 +14,5 @@ Model windows.<br>
 Bootstrap готовый с кнопкой наверх.<br><br>
 Pluton carousel done.<br>
 Pluton animate menu css.<br>
-Animate.css fix Jqwery.
+Animate.css fix Jqwery.<br>
+Pluton Carousel migx done.
