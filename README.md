@@ -17,3 +17,4 @@ Pluton animate menu css.<br>
 Animate.css fix Jqwery.<br>
 Pluton Carousel migx done.<br>
 Pluton animate menu css fixed.<br>
+Pluton team&skiils done.<br>
