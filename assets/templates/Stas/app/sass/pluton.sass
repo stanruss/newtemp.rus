@@ -658,5 +658,96 @@
       background-color: #FFF
       color: #181A1C
 .error
-  color: #fff
+  color: red
   display: none
+.contact
+  background: #FECE1A
+  h1, h2, h3, h4, h5, h6, .section .title > p, .social > li > a
+    color: #181A1C
+  textarea
+    padding: 10px
+    line-height: 20px
+    height: auto
+    width: 100%
+  input
+    &[type="text"], &[type="email"]
+      width: 100%
+      line-height: 20px
+      height: auto
+  textarea
+    height: 120px
+
+.contacts, .contact .social
+  color: #fff
+  list-style: none
+  margin-left: 10px
+
+.contacts > li
+  margin-top: 15px
+  > a
+    color: #fff
+
+.contact-info
+  margin-top: 10px
+  margin-bottom: 10px
+  p
+    font-weight: normal
+  .icon
+    margin: 10px auto
+    font-size: 30px
+
+.map-wrapper
+  position: relative
+  height: 400px
+
+
+
+.contact .social
+  
+  margin-left: 0
+  li
+    line-height: 32px
+    padding: 10px 10px
+    font-family: 'Porta'
+    font-size: 50px
+    transition: margin 0.4s
+    -webkit-transition: margin 0.4s
+    display: inline-block
+    a
+      color: #fff
+      &:hover
+        color: #181A1C
+
+.contact-form
+  background: #fff
+  background: rgba(255, 255, 255, 0.9)
+  z-index: 110
+  position: relative
+  margin-top: 0
+  padding: 20px
+  h3
+    color: #838589
+    padding-bottom: 20px
+
+.message-btn
+  border: 1px solid #747C89
+  color: #747C89
+  background-color: transparent
+  padding: 15px 30px
+  font-size: 17px
+  &:hover
+    background-color: #FECE1A
+
+.contact-info
+  text-align: center
+  font-size: 18px
+
+.info-mail
+  border: 1px solid white
+  width: 100%
+  margin: 0 auto
+  padding: 15px
+  color: #181A1C
+
+.black
+  color: #181A1C
