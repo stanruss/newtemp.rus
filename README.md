@@ -21,3 +21,4 @@ Pluton team&skiils done.<br>
 Pluton clients say done.<br>
 Pluton clients carousel done.<br>
 Pluton price done.<br>
+Pluton newsletter done.<br>
