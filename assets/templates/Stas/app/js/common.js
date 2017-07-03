@@ -16,7 +16,7 @@ $(function() {
 	}).bind('closed', function () {
 		$('.hamburger').removeClass('is-active');
 	});
-$(".owl-carousel").owlCarousel({
+$(".main-carousel").owlCarousel({
   	animateOut: 'fadeOut',
   	animateIn: 'fadeIn',
     nav: true,

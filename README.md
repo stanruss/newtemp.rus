@@ -19,3 +19,4 @@ Pluton Carousel migx done.<br>
 Pluton animate menu css fixed.<br>
 Pluton team&skiils done.<br>
 Pluton clients say done.<br>
+Pluton clients carousel done.<br>
