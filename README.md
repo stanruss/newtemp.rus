@@ -23,3 +23,4 @@ Pluton clients carousel done.<br>
 Pluton price done.<br>
 Pluton newsletter done.<br>
 Pluton contact done.<br>
+Pluton footer done.

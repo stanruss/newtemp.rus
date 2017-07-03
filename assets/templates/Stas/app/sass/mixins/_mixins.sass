@@ -25,17 +25,42 @@
 @mixin border-radius($br, $position)
 	@if $position == 'all'
 		border-radius: $br
+		-webkit-border-radius: $br
+  	-moz-border-radius: $br
 	@else if $position == 'left-top'
 		border-top-left-radius: $br
+		-webkit-border-top-left-radius: $br
+  	-moz-border-top-left-radius: $br
 	@else if $position == 'left-bottom'
 		border-bottom-left-radius: $br
+		-webkit-border-bottom-left-radius: $br
+  	-moz-border-bottom-left-radius: $br
 	@else if $position == 'right-top'
 		border-top-right-radius: $br
+		-webkit-border-top-right-radius: $br
+  	-moz-border-top-right-radius: $br
 	@else if $position == 'right-bottom'
 		border-bottom-right-radius: $br
+		-webkit-border-bottom-right-radius: $br
+  	-moz-border-bottom-right-radius: $br
 	@else if $position == 'right-left-top'
 		border-top-left-radius: $br
+		-webkit-border-top-left-radius: $br
+  	-moz-border-top-left-radius: $br
 		border-top-right-radius: $br
+		-webkit-border-top-right-radius: $br
+  	-moz-border-top-right-radius: $br
 	@else if $position == 'right-left-bottom'
 		border-bottom-left-radius: $br
+		-webkit-border-bottom-left-radius: $br
+  	-moz-border-bottom-left-radius: $br
 		border-bottom-right-radius: $br
+		-webkit-border-bottom-right-radius: $br
+  	-moz-border-bottom-right-radius: $br
+
+@mixin transition($tr)
+	-webkit-transition: all $tr ease-out
+	-moz-transition: all $tr ease-out
+	-o-transition: all $tr ease-out
+	-ms-transition: all $tr ease-out
+	transition: all $tr ease-out
