@@ -1,7 +1,7 @@
 @import "fonts"
 @import "vars"
 @import "mixins/mixins"
-
+@import "mixins/mixin"
 
 [class^="icon-"]:before, [class*=" icon-"]:before
 	font-family: "porta"
@@ -695,8 +695,6 @@
 
 .map-wrapper
 	position: relative
-	
-
 
 .contact .social
 	@include margin(0, left)
@@ -737,7 +735,6 @@
 .contact-info
 	text-align: center
 	font-size: 18px
-
 .info-mail
 	@include border(1px, $white, 'all')
 	width: 100%

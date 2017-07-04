@@ -1,6 +1,7 @@
 @import "fonts"
 @import "vars"
 @import "mixins/mixins"
+@import "mixins/mixin"
 
 *::-webkit-input-placeholder
 	color: #666
@@ -36,6 +37,7 @@ body
 		
 header
 	width: 100%
+	z-index: z('site-header')
 	.top
 		color: $white $main-color
 		.hamburger 
@@ -380,6 +382,7 @@ input
 	width: 120px
 	bottom: 80px
 	right: -40px
+	z-index: z('upbutton')
 	background-color: $pgrey
 	cursor: pointer
 	display: none
