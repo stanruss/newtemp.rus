@@ -8,16 +8,16 @@
 		header
 			.top-line
 				.Logo
-					margin-right: 30px
+					@include margin(30px, right)
 				.my-menu
 					li
-						margin-right: 20px
+						@include margin(20px, right)
 				.social
-					padding-left: 17px
+					@include padding(17px, left)
 					p
 						display: none
 					.fa
-						margin-right: 10px
+						@include margin(10px, right)
 					
 
 
@@ -31,9 +31,9 @@
 			.top-line
 				.my-menu
 					li
-						margin-right: 10px
+						@include margin(10px, right)
 				.Logo
-					margin-right: 0
+					@include margin(0, right)
 				.social
 					display: none
 					
@@ -95,28 +95,31 @@
 					height: 320px
 					width: 40px
 					img
-						padding-top: 140px
+						@include padding(140px, top)
 				.owl-next
 					height: 320px
 					width: 40px
 					img
-						padding-top: 140px
+						@include padding(140px, top)
 		.main-login
 			.loginLoginFieldset
 				min-width: 240px
 				width: 240px
-				margin: 0 auto
+				@include push-auto
+				@include border(1px, $white, all)
+				@include border-radius(9px, all)
+				@include margin(25px, top-bottom)
 				float: none
 				.forg	
 					float: none
+					line-height: 25px
 				.loginUsernameLabel, .loginPasswordLabel, .loginLoginButton, .forg
 					display: block
 					width: 220px
-					margin: 0 auto
-					margin-bottom: 5px
-					margin-top: 5px
+					@include push-auto
+					@include margin(5px, top-bottom)
 					button
 						position: relative
 						left: 50%
-						margin-left: -37px
-						margin-top: 10px
+						@include margin(-37px, left)
+						

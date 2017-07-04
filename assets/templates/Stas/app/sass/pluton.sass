@@ -222,7 +222,7 @@
 
 *
 	@include margin(0, all)
-	padding: 0
+	@include padding(0, all)
 	box-sizing: border-box
 
 
@@ -239,7 +239,8 @@
 	position: relative
 	float: left
 	width: 100%
-	padding: 0 20px
+	@include padding(0, top-bottom)
+	@include padding(20px, right-left)
 	background: $white
 	list-style: none
 	ul
@@ -252,7 +253,8 @@
 		display: block
 		position: relative
 		z-index: 10
-		padding: 13px 20px 13px 20px
+		@include padding(13px, top-bottom)
+		@include padding(20px, right-left)
 		text-decoration: none
 		line-height: 1
 		font-size: 12px
@@ -269,7 +271,7 @@
 			left: 0
 			z-index: 1
 			width: 200px
-			padding: 0
+			@include padding(0, all)
 			opacity: 0
 			visibility: hidden
 			background: transparent
@@ -277,7 +279,8 @@
 			transform-origin: 50% 0%
 		&:hover ul
 			position: relative
-			padding: 15px 0
+			@include padding(15px, top-bottom)
+			@include padding(0, right-left)
 			background: $main-color
 			opacity: 1
 			visibility: visible
@@ -285,7 +288,7 @@
 			animation-duration: 1s
 			animation-timing-function: ease
 		li a
-			padding-left: 15px
+			@include padding(15px, left)
 			font-weight: 400
 			color: $white
 			text-shadow: none
@@ -314,11 +317,12 @@
 
 .service
 	@include margin(20px, top)
-	padding-top: 15px
+	@include padding(15px, top)
 	h2
-		padding-top: 15px
+		@include padding(15px, top)
 	p
-		padding: 0px 50px
+		@include padding(0, top-bottom)
+		@include padding(50px, right-left)
 	img
 		width: 150px
 		height: 150px
@@ -341,7 +345,7 @@
 	box-sizing: border-box
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
-	padding: 10px
+	@include padding(10px, all)
 	@include border(1px, $white, 'all')
 	&:hover .social
 		z-index: 5
@@ -361,7 +365,7 @@
 .about-text
 	@include margin(30px, top)
 	p
-		padding: 0
+		@include padding(0, all)
 		font-size: 16px
 
 .skills
@@ -372,11 +376,11 @@
 		@include margin(30px, bottom)
 		background: $white
 		height: 40px
-		padding: 1px
+		@include padding(1px, all)
 		h3
 			position: relative
 			font-size: 15px
-			padding: 0
+			@include padding(0, all)
 			@include margin(0, all)
 			left: 10px
 			z-index: 1
@@ -391,7 +395,8 @@
 	@include border(1px, $main-color, 'all')
 	color: $main-color
 	background-color: transparent
-	padding: 15px 30px
+	@include padding(15px, top-bottom)
+	@include padding(30px, right-left)
 	font-size: 17px
 	line-height: auto
 	&:visited, &:focus
@@ -399,7 +404,8 @@
 		@include border(1px, $main-color, 'all')
 		color: $main-color
 		background-color: transparent
-		padding: 15px 30px
+		@include padding(15px, top-bottom)
+		@include padding(30px, right-left)
 		font-size: 17px
 		line-height: auto
 	&:hover, &:active
@@ -433,7 +439,7 @@
 .thumbnail
 	width: 100%
 	height: 100%
-	padding: 0
+	@include padding(0, all)
 	overflow: hidden
 	position: relative
 	border: 0
@@ -464,7 +470,7 @@
 		@include hardware
 	h3, p
 		@include margin(0, all)
-		padding: 0
+		@include padding(0, all)
 		position: relative
 		z-index: 4
 	h3
@@ -472,7 +478,7 @@
 		@include margin(10px, top)
 		font-size: 20px
 	> p
-		padding-bottom: 20px
+		@include padding(20px, bottom)
 	.mask
 		opacity: 0.85
 		filter: alpha(opacity = 85)
@@ -499,10 +505,11 @@
 		line-height: 32px
 		font-family: 'Porta'
 		font-size: 32px
-		padding: 0 5px
+		@include padding(0, top-bottom)
+		@include padding(5px, right-left)
 		a
 			@include margin(0, all)
-			padding: 0
+			@include padding(0, all)
 			width: 32px
 			height: 32px
 			color: $accent
@@ -524,7 +531,7 @@
 		@include margin(10px, left)
 		a
 			display: inherit
-			padding: 5px
+			@include padding(5px, all)
 			background: $accent
 			@include border-radius(3px, 'all')
 			width: 30px
@@ -533,11 +540,11 @@
 			&:hover
 				background: $main-color
 .third-section
-	padding-bottom: 70px
+	@include padding(70px, bottom)
 	background: $main-color url(../libs/pluton/images/brand-bg.png) no-repeat center
 	@include border(6px, $accent, 'top')
 	.container
-		padding-top: 20px
+		@include padding(20px, top)
 		position: relative
 	.title
 		@include border(1px, $sgrey, 'bottom')
@@ -550,7 +557,7 @@
 	p
 		color: $main-color
 		background: $accent
-		padding: 15px
+		@include padding(15px, all)
 		@include margin(0, all)
 	.arrow
 		@include margin(10px, left)
@@ -568,7 +575,7 @@
 		strong
 			float: left
 			@include margin(10px, top)
-			padding-left: 10px
+			@include padding(10px, left)
 		small
 			display: block
 			font-size: 12px
@@ -589,7 +596,7 @@
 .price-column
 	background-color: $white
 	@include border-radius(10px, 'all')
-	padding-bottom: 20px
+	@include padding(20px, bottom)
 	@include margin(0, top-bottom)
 	@include margin(auto, right-left)
 	text-align: center
@@ -598,7 +605,8 @@
 		text-transform: uppercase
 		text-align: center
 		color: $accent
-		padding: 40px 0px
+		@include padding(40px, top-bottom)
+		@include padding(0, right-left)
 		font-size: 36px
 		@include margin(0, top)
 		@include border-radius(10px, 'right-left-top')
@@ -612,7 +620,8 @@
 			color: $mgrey
 			font-size: 20px
 			@include border(1px, $mgrey, 'bottom')
-			padding: 25px 0px
+			@include padding(25px, top-bottom)
+			@include padding(0, right-left)
 			&.price
 				text-align: center
 				font-size: 31px
@@ -631,13 +640,13 @@
 		color: $white
 	.title h2
 		text-align: left
-		padding: 0
+		@include padding(0, all)
 		@include margin(0, all)
 	form
 		text-align: right
 	input
 		@include margin(10px, top)
-		padding: 15px
+		@include padding(15px, all)
 		height: auto
 	button
 		margin: 0 0 0 20px
@@ -653,7 +662,7 @@
 	h1, h2, h3, h4, h5, h6, .section .title > p, .social > li > a
 		color: $main-color
 	textarea
-		padding: 10px
+		@include padding(10px, all)
 		line-height: 20px
 		height: auto
 		width: 100%
@@ -693,7 +702,7 @@
 	@include margin(0, left)
 	li
 		line-height: 32px
-		padding: 10px 10px
+		@include padding(10px, all)
 		font-family: 'Porta'
 		font-size: 50px
 		transition: margin 0.4s
@@ -710,16 +719,17 @@
 	z-index: 110
 	position: relative
 	@include margin(0, top)
-	padding: 20px
+	@include padding(20px, all)
 	h3
 		color: $tgrey
-		padding-bottom: 20px
+		@include padding(20px, bottom)
 
 .message-btn
 	border: 1px solid $mgrey
 	color: $mgrey
 	background-color: transparent
-	padding: 15px 30px
+	@include padding(15px, top-bottom)
+	@include padding(30px, right-left)
 	font-size: 17px
 	&:hover
 		background-color: $accent
@@ -733,7 +743,7 @@
 	width: 100%
 	@include margin(0, top-bottom)
 	@include margin(auto, right-left)
-	padding: 15px
+	@include padding(15px, all)
 	color: $main-color
 
 .black

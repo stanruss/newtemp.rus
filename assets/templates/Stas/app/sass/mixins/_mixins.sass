@@ -32,6 +32,23 @@
 	@else if $position == 'top-bottom'
 		margin-top: $size
 		margin-bottom: $size
+@mixin padding($size, $position)
+	@if $position == 'all'
+		padding: $size
+	@else if $position == 'top'
+		padding-top: $size
+	@else if $position == 'bottom'
+		padding-bottom: $size
+	@else if $position == 'right'
+		padding-right: $size
+	@else if $position == 'left'
+		padding-left: $size
+	@else if $position == 'right-left'
+		padding-left: $size
+		padding-right: $size
+	@else if $position == 'top-bottom'
+		padding-top: $size
+		padding-bottom: $size
 @mixin transform-rotate ($rot)
 	transform: rotate($rot) //браузеры без префексов
 	-webkit-transform: rotate($rot) //Chrome, Safari

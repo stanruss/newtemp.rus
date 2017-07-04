@@ -39,8 +39,8 @@ header
 	.top
 		color: $white $main-color
 		.hamburger 
-			padding-top: 20px
-			padding-bottom: 18px
+			@include padding(20px, top)
+			@include padding(18px, bottom)
 		.Logo
 			height: 71px
 			display: block
@@ -100,7 +100,8 @@ header
 				a
 					color: $white
 					font-size: 12px
-					padding: 29px 0
+					@include padding(29px, top-bottom)
+					@include padding(0, right-left)
 					text-transform: uppercase
 					font-family: RobotoBold
 					text-decoration: none
@@ -128,7 +129,7 @@ header
 					@include margin(0, bottom)
 		.social
 			color: $white $accent
-			padding-right: 2px
+			@include padding(2px, right)
 			height: 71px
 			p
 				line-height: 71px	
@@ -194,7 +195,7 @@ header
 			&:hover
 				opacity: 0.7
 			img
-				padding-top: 262px
+				@include padding(262px, top)
 		.owl-next
 			position: absolute
 			height: 564px
@@ -208,7 +209,7 @@ header
 			&:hover
 				opacity: 0.7
 			img
-				padding-top: 262px
+				@include padding(262px, top)
 
 .mm-navbar
 	img
@@ -255,7 +256,7 @@ section
 				display: block
 			input
 				width: 80%
-				padding-left: 10px
+				@include padding(10px, left)
 				@include margin(3px, top)
 				font-size: 13px
 			p
@@ -286,7 +287,7 @@ section
 				width: 80%
 				@include margin(0, top-bottom)
 				@include margin(30px, right-left)
-				padding-left: 10px
+				@include padding(10px, left)
 				font-size: 13px
 				color: $dgreen  
 			.sub
@@ -299,7 +300,8 @@ section
 		color: $white
 		background-color: $main-color
 		.sisea-search-form
-			padding: 5px 0
+			@include padding(5px, top-bottom)
+			@include padding(0, right-left)
 			.fa
 				@include margin(10px, right)
 		.sisea-result a
@@ -308,7 +310,8 @@ section
 	&.search
 		@include border (1px, $white, 'top-bottom')
 		.sisea-search-form
-			padding: 5px 0
+			@include padding(5px, top-bottom)
+			@include padding(0, right-left)
 			.fa
 				@include margin(10px, right)
 			
