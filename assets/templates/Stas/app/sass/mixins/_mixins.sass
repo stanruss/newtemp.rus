@@ -15,52 +15,128 @@
 	@else if $position == 'top-bottom'
 		border-top: $size solid $color
 		border-bottom: $size solid $color
-@mixin rotate ($rot)
+@mixin margin($size, $position)
+	@if $position == 'all'
+		margin: $size
+	@else if $position == 'top'
+		margin-top: $size
+	@else if $position == 'bottom'
+		margin-bottom: $size
+	@else if $position == 'right'
+		margin-right: $size
+	@else if $position == 'left'
+		margin-left: $size
+	@else if $position == 'right-left'
+		margin-left: $size
+		margin-right: $size
+	@else if $position == 'top-bottom'
+		margin-top: $size
+		margin-bottom: $size
+@mixin transform-rotate ($rot)
+	transform: rotate($rot) //браузеры без префексов
 	-webkit-transform: rotate($rot) //Chrome, Safari
 	-moz-transform: rotate($rot) //Firefox
 	-o-transform: rotate($rot) //Opera
 	-ms-transform: rotate($rot) //IE
-	transform: rotate($rot) //браузеры без префексов
+@mixin transform-scale ($scl)
+	transform: scale($scl) //браузеры без префексов
+	-webkit-transform: scale($scl) //Chrome, Safari
+	-moz-transform: scale($scl) //Firefox
+	-o-transform: scale($scl) //Opera
+	-ms-transform: scale($scl) //IE	
 
 @mixin border-radius($br, $position)
 	@if $position == 'all'
 		border-radius: $br
 		-webkit-border-radius: $br
-  	-moz-border-radius: $br
+		-moz-border-radius: $br
 	@else if $position == 'left-top'
 		border-top-left-radius: $br
 		-webkit-border-top-left-radius: $br
-  	-moz-border-top-left-radius: $br
+		-moz-border-top-left-radius: $br
 	@else if $position == 'left-bottom'
 		border-bottom-left-radius: $br
 		-webkit-border-bottom-left-radius: $br
-  	-moz-border-bottom-left-radius: $br
+		-moz-border-bottom-left-radius: $br
 	@else if $position == 'right-top'
 		border-top-right-radius: $br
 		-webkit-border-top-right-radius: $br
-  	-moz-border-top-right-radius: $br
+		-moz-border-top-right-radius: $br
 	@else if $position == 'right-bottom'
 		border-bottom-right-radius: $br
 		-webkit-border-bottom-right-radius: $br
-  	-moz-border-bottom-right-radius: $br
+		-moz-border-bottom-right-radius: $br
 	@else if $position == 'right-left-top'
 		border-top-left-radius: $br
 		-webkit-border-top-left-radius: $br
-  	-moz-border-top-left-radius: $br
+		-moz-border-top-left-radius: $br
 		border-top-right-radius: $br
 		-webkit-border-top-right-radius: $br
-  	-moz-border-top-right-radius: $br
+		-moz-border-top-right-radius: $br
 	@else if $position == 'right-left-bottom'
 		border-bottom-left-radius: $br
 		-webkit-border-bottom-left-radius: $br
-  	-moz-border-bottom-left-radius: $br
+		-moz-border-bottom-left-radius: $br
 		border-bottom-right-radius: $br
 		-webkit-border-bottom-right-radius: $br
-  	-moz-border-bottom-right-radius: $br
+		-moz-border-bottom-right-radius: $br
 
-@mixin transition($tr)
-	-webkit-transition: all $tr ease-out
-	-moz-transition: all $tr ease-out
-	-o-transition: all $tr ease-out
-	-ms-transition: all $tr ease-out
-	transition: all $tr ease-out
+@mixin transition($pos, $tr, $ease)
+	transition: $pos $tr $ease
+	-webkit-transition: $pos $tr $ease
+	-moz-transition: $pos $tr $ease
+	-o-transition: $pos $tr $ease
+	-ms-transition: $pos $tr $ease
+@mixin pseudo($display: block, $pos: absolute, $content: '')
+	content: $content
+	display: $display
+	position: $pos
+@mixin push-auto 
+	margin: 
+	 left: auto
+	 right: auto
+@mixin responsive-ratio($x,$y, $pseudo: false) 
+	$padding: unquote( ( $y / $x ) * 100 + '%' )
+	@if $pseudo 
+		&:before 
+		@include pseudo($pos: relative)
+		width: 100%
+		padding-top: $padding
+	@else
+		padding-top: $padding
+@mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false)
+	@include pseudo($pos: $position)
+	width: 0
+	height: 0
+	@if $round 
+		border-radius: 3px
+	@if $direction == down
+		border-left: $size solid transparent
+		border-right: $size solid transparent
+		border-top: $size solid $color
+		margin-top: 0 - round( $size / 2.5 )
+	@else if $direction == up
+		border-left: $size solid transparent
+		border-right: $size solid transparent
+		border-bottom: $size solid $color
+		margin-bottom: 0 - round( $size / 2.5 )
+	@else if $direction == right 
+		border-top: $size solid transparent
+		border-bottom: $size solid transparent
+		border-left: $size solid $color
+		margin-right: -$size
+	@else if  $direction == left
+		border-top: $size solid transparent
+		border-bottom: $size solid transparent
+		border-right: $size solid $color
+		margin-left: -$size
+@mixin input-placeholder($content)
+	&.placeholder $content
+	&:-moz-placeholder $content
+	&::-moz-placeholder $content
+	&:-ms-input-placeholder $content
+	&::-webkit-input-placeholder $content
+@mixin hardware($backface: true, $perspective: 1000)
+	@if $backface
+	backface-visibility: hidden
+	perspective: $perspective

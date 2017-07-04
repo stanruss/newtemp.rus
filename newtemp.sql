@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июл 03 2017 г., 16:36
+-- Время создания: Июл 04 2017 г., 10:47
 -- Версия сервера: 5.5.53
 -- Версия PHP: 5.5.38
 
@@ -3573,7 +3573,22 @@ INSERT INTO `new_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `
 (2118, 1, '2017-07-03 15:26:14', 'propertyset_update_from_element', 'modChunk', '46'),
 (2119, 1, '2017-07-03 15:27:01', 'chunk_create', 'modChunk', '63'),
 (2120, 1, '2017-07-03 15:27:51', 'chunk_update', 'modChunk', '63'),
-(2121, 1, '2017-07-03 15:27:51', 'propertyset_update_from_element', 'modChunk', '63');
+(2121, 1, '2017-07-03 15:27:51', 'propertyset_update_from_element', 'modChunk', '63'),
+(2122, 1, '2017-07-03 19:01:45', 'login', 'modContext', 'mgr'),
+(2123, 1, '2017-07-03 19:36:47', 'login', 'modContext', 'mgr'),
+(2124, 1, '2017-07-03 19:36:59', 'login', 'modContext', 'web'),
+(2125, 1, '2017-07-04 07:40:22', 'login', 'modContext', 'mgr'),
+(2126, 1, '2017-07-04 07:41:34', 'login', 'modContext', 'mgr'),
+(2127, 1, '2017-07-04 07:42:26', 'login', 'modContext', 'web'),
+(2128, 1, '2017-07-04 07:48:21', 'login', 'modContext', 'web'),
+(2129, 1, '2017-07-04 09:03:08', 'chunk_update', 'modChunk', '63'),
+(2130, 1, '2017-07-04 09:03:08', 'propertyset_update_from_element', 'modChunk', '63'),
+(2131, 1, '2017-07-04 09:14:33', 'chunk_update', 'modChunk', '63'),
+(2132, 1, '2017-07-04 09:14:33', 'propertyset_update_from_element', 'modChunk', '63'),
+(2133, 1, '2017-07-04 09:55:38', 'chunk_update', 'modChunk', '63'),
+(2134, 1, '2017-07-04 09:55:39', 'propertyset_update_from_element', 'modChunk', '63'),
+(2135, 1, '2017-07-04 10:01:51', 'chunk_update', 'modChunk', '63'),
+(2136, 1, '2017-07-04 10:01:51', 'propertyset_update_from_element', 'modChunk', '63');
 
 -- --------------------------------------------------------
 
@@ -4094,7 +4109,14 @@ INSERT INTO `new_session` (`id`, `access`, `data`) VALUES
 ('31ek9rpsg8uqvk46pnglb2un60', 1498890642, 'modx.user.contextTokens|a:2:{s:3:\"mgr\";i:1;s:3:\"web\";i:1;}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}modx.mgr.user.token|s:52:\"modx58de58ab522034.60981441_159574130026121.88487384\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}modx.web.user.token|s:52:\"modx58de58ab522034.60981441_159574191b3c506.06623750\";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}'),
 ('4nliuilt5m7nm211arjccakpr5', 1499060267, 'modx.user.contextTokens|a:0:{}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}'),
 ('oet4sa1fvqkfvgtk5pmophhtu1', 1499065086, 'modx.user.contextTokens|a:2:{s:3:\"mgr\";i:1;s:3:\"web\";i:1;}modx.mgr.user.token|s:52:\"modx58de58ab522034.60981441_15959d827c4acb5.17115517\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}modx.web.user.token|s:52:\"modx58de58ab522034.60981441_15959d837d96830.84605887\";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}newResourceTokens|a:7:{i:0;s:23:\"5959e5afe992d4.74202040\";i:1;s:23:\"5959e7fdcd6f01.03361989\";i:2;s:23:\"5959e8f42a5ea1.30263048\";i:3;s:23:\"5959e936e16e40.31036525\";i:4;s:23:\"5959ea57186061.65644516\";i:5;s:23:\"5959eac7ad68f4.26276857\";i:6;s:23:\"5959eafe433d08.29121216\";}'),
-('4ojs55sk5v3brmnttphqkg8nk6', 1499075424, 'modx.user.contextTokens|a:2:{s:3:\"mgr\";i:1;s:3:\"web\";i:1;}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}modx.mgr.user.token|s:52:\"modx58de58ab522034.60981441_1595a07fce1cee6.17720459\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}newResourceTokens|a:2:{i:0;s:23:\"595a0d27ef2807.73478272\";i:1;s:23:\"595a0d87c12184.67441137\";}modx.web.user.token|s:52:\"modx58de58ab522034.60981441_1595a135ff35220.91004568\";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}');
+('4ojs55sk5v3brmnttphqkg8nk6', 1499075424, 'modx.user.contextTokens|a:2:{s:3:\"mgr\";i:1;s:3:\"web\";i:1;}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}modx.mgr.user.token|s:52:\"modx58de58ab522034.60981441_1595a07fce1cee6.17720459\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}newResourceTokens|a:2:{i:0;s:23:\"595a0d27ef2807.73478272\";i:1;s:23:\"595a0d87c12184.67441137\";}modx.web.user.token|s:52:\"modx58de58ab522034.60981441_1595a135ff35220.91004568\";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}'),
+('mmb83ugs28trhib9gfs01tjnl6', 1499097655, 'modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}modx.user.contextTokens|a:0:{}'),
+('0bhsjre08au62mkmkmtihmhuj1', 1499097709, 'modx.user.contextTokens|a:1:{s:3:\"mgr\";i:1;}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}modx.mgr.user.token|s:52:\"modx58de58ab522034.60981441_1595a6a69458a80.97863804\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}'),
+('ub1n932p7u29ilg1he5m9lrs06', 1499099819, 'modx.user.contextTokens|a:2:{s:3:\"mgr\";i:1;s:3:\"web\";i:1;}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}modx.mgr.user.token|s:52:\"modx58de58ab522034.60981441_1595a729fb10641.25520201\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}modx.web.user.token|s:52:\"modx58de58ab522034.60981441_1595a72ab552557.26709537\";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}'),
+('4rs8oh2pb630stpsjugeoi5na0', 1499143227, 'modx.user.contextTokens|a:0:{}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}'),
+('164ak5v0rh8oja89vqa84ucdo2', 1499143701, 'modx.user.contextTokens|a:2:{s:3:\"mgr\";i:1;s:3:\"web\";i:1;}modx.mgr.user.token|s:52:\"modx58de58ab522034.60981441_1595b1c36096339.04794080\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}modx.web.user.token|s:52:\"modx58de58ab522034.60981441_1595b1e1518ddc4.23501124\";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}'),
+('stqcvgfch5hgpri0bst470c5l5', 1499143255, 'modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}modx.user.contextTokens|a:0:{}'),
+('nl1f3osmph0ps3ed80u26uq6m6', 1499143346, 'modx.user.contextTokens|a:2:{s:3:\"mgr\";i:1;s:3:\"web\";i:1;}modx.mgr.user.token|s:52:\"modx58de58ab522034.60981441_1595b1c7e3fdce1.48345087\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}modx.web.user.token|s:52:\"modx58de58ab522034.60981441_1595b1cb2751514.03865198\";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}');
 
 -- --------------------------------------------------------
 
@@ -5517,7 +5539,7 @@ CREATE TABLE `new_user_attributes` (
 --
 
 INSERT INTO `new_user_attributes` (`id`, `internalKey`, `fullname`, `email`, `phone`, `mobilephone`, `blocked`, `blockeduntil`, `blockedafter`, `logincount`, `lastlogin`, `thislogin`, `failedlogincount`, `sessionid`, `dob`, `gender`, `address`, `country`, `city`, `state`, `zip`, `fax`, `photo`, `comment`, `website`, `extended`) VALUES
-(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 161, 1499072527, 1499075423, 0, '4ojs55sk5v3brmnttphqkg8nk6', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
+(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 168, 1499143346, 1499143701, 0, '164ak5v0rh8oja89vqa84ucdo2', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
 (3, 3, '', 'platonov_stan@mail.ru', '', '', 0, 0, 0, 7, 1491287477, 1491302110, 0, 'pinq7vkq5q6r7f8adtj2m64550', 0, 0, '', '', '', '', '', '', '', '', '', '[]');
 
 -- --------------------------------------------------------
@@ -6654,7 +6676,7 @@ ALTER TABLE `new_lexicon_entries`
 -- AUTO_INCREMENT для таблицы `new_manager_log`
 --
 ALTER TABLE `new_manager_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2122;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2137;
 --
 -- AUTO_INCREMENT для таблицы `new_media_sources`
 --

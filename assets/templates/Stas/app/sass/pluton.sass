@@ -258,7 +258,8 @@
 		line-height: 1
 		font-size: 12px
 		background: transparent
-		transition: all .25s ease-in-out
+		@include transition(all, .25s, ease-in-out)
+		@include hardware
 	> li:hover > a
 		background: $main-color
 		color: $white
@@ -289,7 +290,8 @@
 			font-weight: 400
 			color: $white
 			text-shadow: none
-			transition: all .15s linear
+			@include transition (all, .15s, linear)
+			@include hardware
 			&:hover
 				color: $main-color
 				background: $white
@@ -312,7 +314,7 @@
 		animation-timing-function: ease-in-out
 
 .service
-	margin-top: 20px
+	@include margin(20px, top)
 	padding-top: 15px
 	h2
 		padding-top: 15px
@@ -322,25 +324,15 @@
 		width: 150px
 		height: 150px
 .centered, .center
-	margin-left: auto
-	margin-right: auto
+	@include margin(auto, right-left)
 	float: none
 	text-align: center
 .zoom-in
-	-webkit-transform: scale(1, 1)
-	-moz-transform: scale(1, 1)
-	-o-transform: scale(1, 1)
-	-ms-transform: scale(1, 1)
-	-webkit-transition: all 250ms ease
-	-moz-transition: all 250ms ease
-	-o-transition: all 250ms ease
-	-ms-transition: all 250ms ease
-	transition: all 250ms ease
+	@include transform-scale(1)
+	@include transition(all, 250ms, ease)
+	@include hardware
 	&:hover
-		-webkit-transform: scale(1.1, 1.1)
-		-moz-transform: scale(1.1, 1.1)
-		-o-transform: scale(1.1, 1.1)
-		-ms-transform: scale(1.1, 1.1)
+		@include transform-scale(1.1)
 .primary-section
 	background-color: $white
 	h1, p
@@ -351,7 +343,7 @@
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
 	padding: 10px
-	border: 1px solid $white
+	@include border(1px, $white, 'all')
 	&:hover .social
 		z-index: 5
 		a
@@ -359,7 +351,7 @@
 	.mask
 		background: $accent
 		h2
-			margin-top: 20%
+			@include margin(20%, top)
 		color: $grey
 		h3, p
 			color: $grey
@@ -368,7 +360,7 @@
 			color: $grey
 
 .about-text
-	margin-top: 30px
+	@include margin(30px, top)
 	p
 		padding: 0
 		font-size: 16px
@@ -376,9 +368,9 @@
 .skills
 	list-style-type: none
 	position: relative
-	margin: 0px
+	@include margin(0, all)
 	li
-		margin-bottom: 30px
+		@include margin(30px, bottom)
 		background: $white
 		height: 40px
 		padding: 1px
@@ -386,7 +378,7 @@
 			position: relative
 			font-size: 15px
 			padding: 0
-			margin: 0
+			@include margin(0, all)
 			left: 10px
 			z-index: 1
 			color: $main-color
@@ -397,7 +389,7 @@
 
 .button
 	display: inline-block
-	border: 1px solid $main-color
+	@include border(1px, $main-color, 'all')
 	color: $main-color
 	background-color: transparent
 	padding: 15px 30px
@@ -405,7 +397,7 @@
 	line-height: auto
 	&:visited, &:focus
 		display: inline-block
-		border: 1px solid $main-color
+		@include border(1px, $main-color, 'all')
 		color: $main-color
 		background-color: transparent
 		padding: 15px 30px
@@ -457,7 +449,7 @@
 		top: -100px
 		left: 50%
 		margin: 0 auto
-		margin-left: -41px
+		@include margin(-41px, left)
 		width: 80px
 		height: 80px
 		font-size: 40px
@@ -467,16 +459,17 @@
 		text-align: center
 	&:hover .more
 		top: 40%
-		margin-top: -40px
-		@include transition (0.3s)
+		@include margin(-40px, top)
+		@include transition(all, 0.3s, ease-out)
+		@include hardware
 	h3, p
-		margin: 0
+		@include margin(0, all)
 		padding: 0
 		position: relative
 		z-index: 4
 	h3
 		color: $accent
-		margin-top: 10px
+		@include margin(10px, top)
 		font-size: 20px
 	> p
 		padding-bottom: 20px
@@ -489,11 +482,8 @@
 		height: 100%
 		background: $main-color
 		position: absolute
-		-webkit-transition: all 0.2s ease-out
-		-moz-transition: all 0.2s ease-out
-		-o-transition: all 0.2 s ease-out
-		-ms-transition: all 0.2s ease-out
-		transition: all 0.2s ease-out
+		@include transition(all, 0.2s, ease-out)
+		@include hardware
 	&:hover .mask
 		top: 0
 .pluton-social
@@ -510,7 +500,7 @@
 		font-size: 32px
 		padding: 0 5px
 		a
-			margin: 0
+			@include margin(0, all)
 			padding: 0
 			width: 32px
 			height: 32px
@@ -519,63 +509,64 @@
 				color: $main-color
 
 .client-slider img
-	border: 1px solid white
+	@include border(1px, $white, 'all')
 	&:hover
 		background-color: $accent
 
 .client-nav
 	list-style: none
-	margin-top: 10px
-	margin-right: 50px
+	@include margin(10px, top)
+	@include margin(50px, right)
 	li
 		float: left
 		display: block
-		margin-left: 10px
+		@include margin(10px, left)
 		a
 			display: inherit
 			padding: 5px
 			background: $accent
-			border-radius: 3px
+			@include border-radius(3px, 'all')
 			width: 30px
 			height: 30px
 			font-size: 14px
 			&:hover
 				background: $main-color
 .third-section
-  padding-bottom: 70px
-  background: $main-color url(../libs/pluton/images/brand-bg.png) no-repeat center
-  border-top: 6px solid $accent
-  .container
-    padding-top: 20px
-    position: relative
-  .title
-    border-bottom: 1px solid $sgrey
-    color: $accent
+	padding-bottom: 70px
+	background: $main-color url(../libs/pluton/images/brand-bg.png) no-repeat center
+	@include border(6px, $accent, 'top')
+	.container
+		padding-top: 20px
+		position: relative
+	.title
+		@include border(1px, $sgrey, 'bottom')
+		color: $accent
+		@include margin(18px, bottom)
 .sub-section
 	h3
-		margin-left: 50px
+		@include margin(50px, left)
 .testimonial
 	p
 		color: $main-color
 		background: $accent
 		padding: 15px
-		margin: 0
+		@include margin(0, all)
 	.arrow
-		margin-left: 10px
+		@include margin(10px, left)
 		width: 0
-		border-top: 10px solid $accent
-		border-left: 20px outset transparent
-		border-right: 20px outset transparent
+		@include border (10px, $accent, 'top')
+		@include border (20px, outset transparent, 'right-left')
+		
 	.whopic
 		display: inline-block
 		img
-			margin-top: 10px
+			@include margin(10px, top)
 			width: 50px
 			height: 50px
 			float: left
 		strong
 			float: left
-			margin-top: 10px
+			@include margin(10px, top)
 			padding-left: 10px
 		small
 			display: block
@@ -586,171 +577,168 @@
 	font-size: 22px
 	text-align: center
 	margin: 0 auto
-	margin-top: 30px
+	@include margin(30px, top)
 	width: 70%
 	line-height: 1.3em
 .price-table
-  margin-top: 70px
-  margin-bottom: 20px
+	@include margin(70px, top)
+	@include margin(20px, bottom)
 
 .price-column
-  background-color: $white
-  @include border-radius(10px, 'all')
-  padding-bottom: 20px
-  margin: 0 auto
-  text-align: center
-  h3
-    background-color: $main-color
-    text-transform: uppercase
-    text-align: center
-    color: $accent
-    padding: 40px 0px
-    font-size: 36px
-    margin-top: 0px
-    @include border-radius(10px, 'right-left-top')
-    @include border-radius(0, 'right-left-bottom')
-  .list
-    list-style: none
-    margin: 20px 50px
-    li
-      font-weight: lighter
-      color: $mgrey
-      font-size: 20px
-      @include border(1px, $mgrey, 'bottom')
-      padding: 25px 0px
-      &.price
-        text-align: center
-        font-size: 31px
-        background-color: white
-        color: $mgrey
-        margin-top: 25px
+	background-color: $white
+	@include border-radius(10px, 'all')
+	padding-bottom: 20px
+	margin: 0 auto
+	text-align: center
+	h3
+		background-color: $main-color
+		text-transform: uppercase
+		text-align: center
+		color: $accent
+		padding: 40px 0px
+		font-size: 36px
+		@include margin(0, top)
+		@include border-radius(10px, 'right-left-top')
+		@include border-radius(0, 'right-left-bottom')
+	.list
+		list-style: none
+		margin: 20px 50px
+		li
+			font-weight: lighter
+			color: $mgrey
+			font-size: 20px
+			@include border(1px, $mgrey, 'bottom')
+			padding: 25px 0px
+			&.price
+				text-align: center
+				font-size: 31px
+				background-color: $white
+				color: $mgrey
+				@include margin(25px, top)
 
 .price-text
-  margin: 30px 0 20px
-  font-size: 20px
-  color: $main-color
-  font-weight: normal
+	margin: 30px 0 20px
+	font-size: 20px
+	color: $main-color
+	font-weight: normal
 .newsletter
-  color: $white
-  h2
-    color: $white
-  .title h2
-    text-align: left
-    padding: 0
-    margin: 0
-  form
-    text-align: right
-  input
-    margin-top: 10px
-    padding: 15px
-    height: auto
-  button
-    margin: 0 0 0 20px
-  .button-sp
-    &:hover, &:active
-      background-color: $white
-      color: $main-color
+	color: $white
+	h2
+		color: $white
+	.title h2
+		text-align: left
+		padding: 0
+		@include margin(0, all)
+	form
+		text-align: right
+	input
+		@include margin(10px, top)
+		padding: 15px
+		height: auto
+	button
+		margin: 0 0 0 20px
+	.button-sp
+		&:hover, &:active
+			background-color: $white
+			color: $main-color
 .error
-  color: red
-  display: none
+	color: $red
+	display: none
 .contact
-  background: $accent
-  h1, h2, h3, h4, h5, h6, .section .title > p, .social > li > a
-    color: $main-color
-  textarea
-    padding: 10px
-    line-height: 20px
-    height: auto
-    width: 100%
-  input
-    &[type="text"], &[type="email"]
-      width: 100%
-      line-height: 20px
-      height: auto
-  textarea
-    height: 120px
+	background: $accent
+	h1, h2, h3, h4, h5, h6, .section .title > p, .social > li > a
+		color: $main-color
+	textarea
+		padding: 10px
+		line-height: 20px
+		height: auto
+		width: 100%
+	input
+		&[type="text"], &[type="email"]
+			width: 100%
+			line-height: 20px
+			height: auto
+	textarea
+		height: 120px
 
 .contacts, .contact .social
-  color: $white
-  list-style: none
-  margin-left: 10px
+	color: $white
+	list-style: none
+	@include margin(10px, left)
 
 .contacts > li
-  margin-top: 15px
-  > a
-    color: $white
+	@include margin(15px, top)
+	> a
+		color: $white
 
 .contact-info
-  margin-top: 10px
-  margin-bottom: 10px
-  p
-    font-weight: normal
-  .icon
-    margin: 10px auto
-    font-size: 30px
+	@include margin(10px, top-bottom)
+	p
+		font-weight: normal
+	.icon
+		margin: 10px auto
+		font-size: 30px
 
 .map-wrapper
-  position: relative
-  height: 400px
-
+	position: relative
+	
 
 
 .contact .social
-  
-  margin-left: 0
-  li
-    line-height: 32px
-    padding: 10px 10px
-    font-family: 'Porta'
-    font-size: 50px
-    transition: margin 0.4s
-    -webkit-transition: margin 0.4s
-    display: inline-block
-    a
-      color: $white
-      &:hover
-        color: $main-color
+	@include margin(0, left)
+	li
+		line-height: 32px
+		padding: 10px 10px
+		font-family: 'Porta'
+		font-size: 50px
+		transition: margin 0.4s
+		-webkit-transition: margin 0.4s
+		display: inline-block
+		a
+			color: $white
+			&:hover
+				color: $main-color
 
 .contact-form
-  background: $white
-  background: rgba(255, 255, 255, 0.9)
-  z-index: 110
-  position: relative
-  margin-top: 0
-  padding: 20px
-  h3
-    color: $tgrey
-    padding-bottom: 20px
+	background: $white
+	background: rgba(255, 255, 255, 0.9)
+	z-index: 110
+	position: relative
+	@include margin(0, top)
+	padding: 20px
+	h3
+		color: $tgrey
+		padding-bottom: 20px
 
 .message-btn
-  border: 1px solid $mgrey
-  color: $mgrey
-  background-color: transparent
-  padding: 15px 30px
-  font-size: 17px
-  &:hover
-    background-color: $accent
+	border: 1px solid $mgrey
+	color: $mgrey
+	background-color: transparent
+	padding: 15px 30px
+	font-size: 17px
+	&:hover
+		background-color: $accent
 
 .contact-info
-  text-align: center
-  font-size: 18px
+	text-align: center
+	font-size: 18px
 
 .info-mail
-  border: 1px solid $white
-  width: 100%
-  margin: 0 auto
-  padding: 15px
-  color: $main-color
+	@include border(1px, $white, 'all')
+	width: 100%
+	margin: 0 auto
+	padding: 15px
+	color: $main-color
 
 .black
-  color: $main-color
+	color: $main-color
 .footer
-  background: $main-color
-  text-align: center
-  > p
-    color: $white
-    margin: 0
-  a
-    color: $accent
-    &:hover, &:focus
-      text-decoration: underline
+	background: $main-color
+	text-align: center
+	> p
+		color: $white
+		@include margin(0, all)
+	a
+		color: darken($accent, 0%)
+		&:hover, &:focus
+			text-decoration: underline
