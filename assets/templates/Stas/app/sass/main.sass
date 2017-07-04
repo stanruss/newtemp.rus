@@ -48,13 +48,13 @@ header
 			text-transform: uppercase
 			font-size: 15px
 			font-family: RobotoBold
-			margin-right: 80px
-			margin-left: 13px
+			@include margin(80px, right)
+			@include margin(13px, left)
 			.fa
 				font-size: 40px
 				float: left
 				line-height: 71px
-				margin-right: 13px
+				@include margin(13px, right)
 	.top-line
 		color: $white $main-color
 		height: 71px
@@ -67,11 +67,11 @@ header
 			text-transform: uppercase
 			font-size: 15px
 			font-family: RobotoBold
-			margin-left: 13px
+			@include margin(13px, left)
 			.fa
 				font-size: 40px
 				line-height: 71px
-				margin-right: 13px
+				@include margin(13px, right)
 		.center
 			size: 580px 71px
 
@@ -81,9 +81,9 @@ header
 				li
 					position: relative
 					text-align: center
-					margin-right: 35px
+					@include margin(35px, right)
 					&:last-child
-						margin-right: 0
+						@include margin(0, right)
 					&:after
 						display: block
 						left: 0
@@ -125,23 +125,22 @@ header
 				.list-inline
 					height: 71px
 					line-height: 71px
-					margin-bottom: 0
+					@include margin(0, bottom)
 		.social
 			color: $white $accent
 			padding-right: 2px
 			height: 71px
 			p
 				line-height: 71px	
-				margin-bottom: 0	
-				margin-right: 25px
-				margin-left: 25px
+				@include margin(0, bottom)
+				@include margin(25px, right-left)
 				text-transform: uppercase
 				font-size: 13px
 				font-family: RobotoBold
 			.fa
 				float: left
 				line-height: 71px
-				margin-right: 15px
+				@include margin(15px, right)
 		
 	.carousel-main
 		size: 100% 564px
@@ -179,8 +178,7 @@ header
 			display: inline-block
 			background: $accent
 			opacity: 0.5
-			margin-left: 5px
-			margin-right: 5px
+			@include margin(5px, right-left)
 			&.active
 				background: $main-color
 		.owl-prev
@@ -228,7 +226,7 @@ section
 			color: $white
 		span
 			color: $white
-			margin-right: 20px
+			@include margin(20px, right)
 			font-size: 12px
 			& a
 				color: $white
@@ -241,27 +239,28 @@ section
 				float: right
 				line-height: 39px
 			span
-				margin-right: 0
-				margin-left: 10px
+				@include margin(0, right)
+				@include margin(10px, left)
 		.loginUsernameLabel, .loginPasswordLabel, .loginLoginButton
-			margin-top: 3px
+			@include margin(3px, top)
 
 	&.forgot
 		@include border (1px, $white, 'top-bottom')
 		.loginFP
 			min-width: 300px
 			max-width: 700px
-			margin: 30px auto
+			@include margin(30px, top-bottom)
+			@include margin(auto, right-left)
 			label
 				display: block
 			input
 				width: 80%
 				padding-left: 10px
-				margin-top: 3px
+				@include margin(3px, top)
 				font-size: 13px
 			p
 				text-align: center
-				margin-top: 30px
+				@include margin(30px, top)
 			.loginFPLegend
 				text-align: center
 				font-size: 16px
@@ -269,26 +268,29 @@ section
 				text-align: center
 				span.loginFPButton input
 					width: 300px
-					margin: 30px auto
+					@include margin(30px, top-bottom)
+					@include margin(auto, right-left)
 					color: $dgreen
 
 	&.reg
 		.register
 			min-width: 300px
 			max-width: 700px
-			margin: 30px auto
+			@include margin(30px, top-bottom)
+			@include margin(auto, right-left)
 			label
 				display: block
 				margin: 20px 0 3px 30px
 				font-size: 13px
 			input
 				width: 80%
-				margin: 0 30px
+				@include margin(0, top-bottom)
+				@include margin(30px, right-left)
 				padding-left: 10px
 				font-size: 13px
 				color: $dgreen  
 			.sub
-				margin-top: 30px
+				@include margin(30px, top)
 		h3
 			text-align: center
 
@@ -299,7 +301,7 @@ section
 		.sisea-search-form
 			padding: 5px 0
 			.fa
-				margin-right: 10px
+				@include margin(10px, right)
 		.sisea-result a
 			color: $orange
 				
@@ -308,7 +310,7 @@ section
 		.sisea-search-form
 			padding: 5px 0
 			.fa
-				margin-right: 10px
+				@include margin(10px, right)
 			
 	&.dropdown
 		@include border (1px, $pgrey, 'top-bottom')
@@ -383,10 +385,10 @@ input
 	color: $accent
 	opacity: 1
 	span
-		margin-left: 10px
+		@include margin(10px, left)
 		font-size: 22px
 	.fa
-		margin-left: 12px
+		@include margin(12px, left)
 		font-size: 20px
 	@include border-radius(8px, 'right-left-top')	
 	@include transform-rotate(-90deg)

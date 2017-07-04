@@ -221,7 +221,7 @@
 ''
 
 *
-	margin: 0
+	@include margin(0, all)
 	padding: 0
 	box-sizing: border-box
 
@@ -229,7 +229,6 @@
 
 #container
 	position: relative
-	width: 940px
 	&:after
 		content: ""
 		display: block
@@ -448,7 +447,8 @@
 		position: absolute
 		top: -100px
 		left: 50%
-		margin: 0 auto
+		@include margin(0, top-bottom)
+		@include margin(auto, right-left)
 		@include margin(-41px, left)
 		width: 80px
 		height: 80px
@@ -492,7 +492,8 @@
 	list-style: none
 	float: none
 	position: relative
-	margin: 5px auto
+	@include margin(5px, top-bottom)
+	@include margin(auto, right-left)
 	li
 		display: inline-block
 		line-height: 32px
@@ -576,7 +577,8 @@
 	display: block
 	font-size: 22px
 	text-align: center
-	margin: 0 auto
+	@include margin(0, top-bottom)
+	@include margin(auto, right-left)
 	@include margin(30px, top)
 	width: 70%
 	line-height: 1.3em
@@ -588,7 +590,8 @@
 	background-color: $white
 	@include border-radius(10px, 'all')
 	padding-bottom: 20px
-	margin: 0 auto
+	@include margin(0, top-bottom)
+	@include margin(auto, right-left)
 	text-align: center
 	h3
 		background-color: $main-color
@@ -602,7 +605,8 @@
 		@include border-radius(0, 'right-left-bottom')
 	.list
 		list-style: none
-		margin: 20px 50px
+		@include margin(20px, top-bottom)
+		@include margin(50px, right-left)
 		li
 			font-weight: lighter
 			color: $mgrey
@@ -676,7 +680,8 @@
 	p
 		font-weight: normal
 	.icon
-		margin: 10px auto
+		@include margin(10px, top-bottom)
+		@include margin(auto, right-left)
 		font-size: 30px
 
 .map-wrapper
@@ -726,7 +731,8 @@
 .info-mail
 	@include border(1px, $white, 'all')
 	width: 100%
-	margin: 0 auto
+	@include margin(0, top-bottom)
+	@include margin(auto, right-left)
 	padding: 15px
 	color: $main-color
 
