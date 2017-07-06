@@ -755,3 +755,36 @@
 		color: darken($accent, 0%)
 		&:hover, &:focus
 			text-decoration: underline
+
+
+.bs-docs-section
+	margin-top: 0
+	position: relative
+.bs-component
+	position: relative
+	.modal
+		position: relative
+		top: auto
+		right: auto
+		left: auto
+		bottom: auto
+		z-index: 10000
+		display: block
+	.modal-dialog
+		width: 90%
+	.popover
+		position: relative
+		display: inline-block
+		width: 220px
+		margin: 20px
+
+#source-button
+	position: absolute
+	top: 0
+	right: 0
+	z-index: 100
+	font-weight: 700
+.modal-backdrop
+	z-index: 0
+.modal-dialog
+	top: 10%

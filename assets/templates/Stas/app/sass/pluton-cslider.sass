@@ -1,3 +1,8 @@
+@import "fonts"
+@import "vars"
+@import "mixins/mixins"
+@import "mixins/mixin"
+
 .da-slider
 	width: 100%
 	min-width: 320px
@@ -8,11 +13,8 @@
 	background: transparent url(../libs/pluton/images/Slider.png) repeat-x 0% center
 	Replace with your background image
 	background-size: auto 100%
-	-webkit-transition: background-position 1s ease-out 0.3s
-	-moz-transition: background-position 1s ease-out 0.3s
-	-o-transition: background-position 1s ease-out 0.3s
-	-ms-transition: background-position 1s ease-out 0.3s
-	transition: background-position 1s ease-out 0.3s
+	@include transition(background-position, 1s 0.3s, ease-out)
+	
 	.triangle
 		clear: none
 		top: 0
