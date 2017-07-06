@@ -26,3 +26,5 @@ Pluton contact done.<br>
 Pluton footer done.<br>
 
 Mixins start.<br>
+
+Bs-component done.<br>
