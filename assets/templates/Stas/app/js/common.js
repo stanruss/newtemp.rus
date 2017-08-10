@@ -105,7 +105,9 @@ $(window).scroll(function() {
     return lines;
   };
 
-
+$(function() {
+        baguetteBox.run('.gallery');
+    });
 
 })();
 

@@ -24,7 +24,6 @@ Pluton price done.<br>
 Pluton newsletter done.<br>
 Pluton contact done.<br>
 Pluton footer done.<br>
-
 Mixins start.<br>
-
-Bs-component done.<br>
+Bs-component done.<br><br>
+Anet start gallery. <br>
