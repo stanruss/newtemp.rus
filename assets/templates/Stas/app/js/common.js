@@ -111,6 +111,11 @@ $(function() {
 
 })();
 
+(function () {
 
-
-
+    'use strict';
+    $(window).on('load', function (e){
+        $('#preloader').fadeOut('slow',function(){$(this).remove();});
+    });
+    
+})(jQuery)

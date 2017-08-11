@@ -27,3 +27,4 @@ Pluton footer done.<br>
 Mixins start.<br>
 Bs-component done.<br><br>
 Anet start gallery. <br>
+Anet navbar, breadcrumbs done. <br>
