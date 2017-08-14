@@ -29,3 +29,4 @@ Bs-component done.<br><br>
 Anet start gallery. <br>
 Anet navbar, breadcrumbs done. <br>
 Anet gallery-page done. <br>
+Anet gallery-page Migx done. <br>
