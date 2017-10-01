@@ -30,3 +30,4 @@ Anet start gallery. <br>
 Anet navbar, breadcrumbs done. <br>
 Anet gallery-page done. <br>
 Anet gallery-page Migx done. <br>
+Grid section done. <br>

@@ -43,7 +43,6 @@ gulp.task('sass', function() {
 });
 gulp.task('watch', ['sass', 'browser-sync'], function() {
 	gulp.watch('assets/templates/Stas/app/sass/**/*.sass', ['sass']);
-	gulp.watch(['assets/templates/Stas/libs/**/*.js', 'app/js/common.js'], ['scripts']);
-	gulp.watch('assets/templates/Stas/app/*.php', browserSync.reload);
+	gulp.watch('*.php', browserSync.reload);
 });
 gulp.task('default', ['watch', 'sass']);
