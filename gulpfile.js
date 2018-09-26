@@ -4,6 +4,8 @@ var	postcss      = require('gulp-postcss');
 var	assets       = require('postcss-assets');
 var	nested       = require('postcss-nested');
 var	short        = require('postcss-short');
+var concat       = require('gulp-concat');
+var	uglify       = require('gulp-uglify');
 var	cssnano      = require('gulp-cssnano');
 var	cssnext      = require('postcss-cssnext');
 var	autoprefixer = require('gulp-autoprefixer');
@@ -24,10 +26,10 @@ gulp.task('sass', function() {
 			short,
 			nested,
 			cssnext,
-			assets({
-				loadPaths: ['assets/templates/Stas/app/'],
-				relativeTo: 'assets/templates/Stas/app/css/'
-			})
+			// assets({
+			// 	loadPaths: ['assets/templates/Stas/app/'],
+			// 	relativeTo: 'assets/templates/Stas/app/css/'
+			// })
 		];
 	return gulp.src('assets/templates/Stas/app/sass/**/*.sass')
 	.pipe(sass().on("error", notify.onError()))
@@ -41,7 +43,18 @@ gulp.task('sass', function() {
 	.pipe(gulp.dest('assets/templates/Stas/app/css'))
 	.pipe(browserSync.reload({stream: true}));
 });
-gulp.task('watch', ['sass', 'browser-sync'], function() {
+gulp.task('libs', function() {
+	return gulp.src([
+		'assets/templates/Stas/app/libs/jquery/dist/jquery.min.js',
+		'assets/templates/Stas/app/libs/bootstrap/dist/js/bootstrap.js',
+		'assets/templates/Stas/app/libs/bootstrap/popper/popper.js',
+		'assets/templates/Stas/app/js/common.js'
+		])
+		.pipe(concat('libs.min.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('assets/templates/Stas/app/js'));
+});
+gulp.task('watch', ['sass', 'libs','browser-sync'], function() {
 	gulp.watch('assets/templates/Stas/app/sass/**/*.sass', ['sass']);
 	gulp.watch('*.php', browserSync.reload);
 });
