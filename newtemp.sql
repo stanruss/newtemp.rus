@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 27 2018 г., 13:25
+-- Время создания: Сен 27 2018 г., 19:04
 -- Версия сервера: 5.5.53
 -- Версия PHP: 5.5.38
 
@@ -960,7 +960,8 @@ CREATE TABLE `new_collection_settings` (
 --
 
 INSERT INTO `new_collection_settings` (`id`, `collection`, `template`) VALUES
-(1, 2, 0);
+(1, 2, 0),
+(2, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -4151,7 +4152,341 @@ INSERT INTO `new_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `
 (2656, 1, '2018-09-27 13:18:15', 'resource_create', 'modDocument', '17'),
 (2657, 1, '2018-09-27 13:19:27', 'resource_create', 'modDocument', '18'),
 (2658, 1, '2018-09-27 13:21:14', 'resource_create', 'modDocument', '19'),
-(2659, 1, '2018-09-27 13:23:06', 'resource_create', 'modDocument', '20');
+(2659, 1, '2018-09-27 13:23:06', 'resource_create', 'modDocument', '20'),
+(2660, 1, '2018-09-27 13:59:43', 'chunk_update', 'modChunk', '22'),
+(2661, 1, '2018-09-27 13:59:44', 'propertyset_update_from_element', 'modChunk', '22'),
+(2662, 1, '2018-09-27 14:01:02', 'chunk_update', 'modChunk', '22'),
+(2663, 1, '2018-09-27 14:01:02', 'propertyset_update_from_element', 'modChunk', '22'),
+(2664, 1, '2018-09-27 14:03:43', 'chunk_update', 'modChunk', '93'),
+(2665, 1, '2018-09-27 14:03:43', 'propertyset_update_from_element', 'modChunk', '93'),
+(2666, 1, '2018-09-27 14:07:12', 'template_update', 'modTemplate', '1'),
+(2667, 1, '2018-09-27 14:07:12', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2668, 1, '2018-09-27 14:07:32', 'template_update', 'modTemplate', '1'),
+(2669, 1, '2018-09-27 14:07:32', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2670, 1, '2018-09-27 14:08:13', 'chunk_update', 'modChunk', '93'),
+(2671, 1, '2018-09-27 14:08:13', 'propertyset_update_from_element', 'modChunk', '93'),
+(2672, 1, '2018-09-27 14:10:57', 'chunk_update', 'modChunk', '93'),
+(2673, 1, '2018-09-27 14:10:58', 'propertyset_update_from_element', 'modChunk', '93'),
+(2674, 1, '2018-09-27 14:17:33', 'template_update', 'modTemplate', '1'),
+(2675, 1, '2018-09-27 14:17:33', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2676, 1, '2018-09-27 14:19:48', 'template_update', 'modTemplate', '1'),
+(2677, 1, '2018-09-27 14:19:48', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2678, 1, '2018-09-27 14:24:57', 'resource_create', 'modDocument', '21'),
+(2679, 1, '2018-09-27 14:26:33', 'template_update', 'modTemplate', '1'),
+(2680, 1, '2018-09-27 14:26:33', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2681, 1, '2018-09-27 14:29:57', 'template_update', 'modTemplate', '1'),
+(2682, 1, '2018-09-27 14:29:57', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2683, 1, '2018-09-27 14:32:11', 'template_update', 'modTemplate', '1'),
+(2684, 1, '2018-09-27 14:32:11', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2685, 1, '2018-09-27 14:32:39', 'template_update', 'modTemplate', '1'),
+(2686, 1, '2018-09-27 14:32:39', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2687, 1, '2018-09-27 14:32:56', 'template_update', 'modTemplate', '1'),
+(2688, 1, '2018-09-27 14:32:57', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2689, 1, '2018-09-27 14:33:02', 'template_update', 'modTemplate', '1'),
+(2690, 1, '2018-09-27 14:33:02', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2691, 1, '2018-09-27 14:38:47', 'template_update', 'modTemplate', '1'),
+(2692, 1, '2018-09-27 14:38:47', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2693, 1, '2018-09-27 14:41:44', 'template_update', 'modTemplate', '1');
+INSERT INTO `new_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `item`) VALUES
+(2694, 1, '2018-09-27 14:41:44', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2695, 1, '2018-09-27 14:43:34', 'template_update', 'modTemplate', '1'),
+(2696, 1, '2018-09-27 14:43:34', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2697, 1, '2018-09-27 14:49:29', 'template_update', 'modTemplate', '1'),
+(2698, 1, '2018-09-27 14:49:29', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2699, 1, '2018-09-27 14:57:47', 'template_update', 'modTemplate', '1'),
+(2700, 1, '2018-09-27 14:57:47', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2701, 1, '2018-09-27 14:59:20', 'template_update', 'modTemplate', '1'),
+(2702, 1, '2018-09-27 14:59:20', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2703, 1, '2018-09-27 14:59:37', 'template_update', 'modTemplate', '1'),
+(2704, 1, '2018-09-27 14:59:37', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2705, 1, '2018-09-27 15:00:58', 'template_update', 'modTemplate', '1'),
+(2706, 1, '2018-09-27 15:00:58', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2707, 1, '2018-09-27 15:01:49', 'template_update', 'modTemplate', '1'),
+(2708, 1, '2018-09-27 15:01:49', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2709, 1, '2018-09-27 15:05:42', 'template_update', 'modTemplate', '1'),
+(2710, 1, '2018-09-27 15:05:42', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2711, 1, '2018-09-27 15:06:03', 'template_update', 'modTemplate', '1'),
+(2712, 1, '2018-09-27 15:06:03', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2713, 1, '2018-09-27 15:09:47', 'template_update', 'modTemplate', '1'),
+(2714, 1, '2018-09-27 15:09:47', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2715, 1, '2018-09-27 15:10:11', 'template_update', 'modTemplate', '1'),
+(2716, 1, '2018-09-27 15:10:11', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2717, 1, '2018-09-27 15:10:36', 'template_update', 'modTemplate', '1'),
+(2718, 1, '2018-09-27 15:10:37', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2719, 1, '2018-09-27 15:13:45', 'template_update', 'modTemplate', '1'),
+(2720, 1, '2018-09-27 15:13:45', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2721, 1, '2018-09-27 15:14:34', 'template_update', 'modTemplate', '1'),
+(2722, 1, '2018-09-27 15:14:34', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2723, 1, '2018-09-27 15:15:37', 'template_update', 'modTemplate', '1'),
+(2724, 1, '2018-09-27 15:15:37', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2725, 1, '2018-09-27 15:16:48', 'template_update', 'modTemplate', '1'),
+(2726, 1, '2018-09-27 15:16:48', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2727, 1, '2018-09-27 15:17:21', 'template_update', 'modTemplate', '1'),
+(2728, 1, '2018-09-27 15:17:21', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2729, 1, '2018-09-27 15:17:46', 'template_update', 'modTemplate', '1'),
+(2730, 1, '2018-09-27 15:17:46', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2731, 1, '2018-09-27 15:18:43', 'template_update', 'modTemplate', '1'),
+(2732, 1, '2018-09-27 15:18:43', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2733, 1, '2018-09-27 15:19:21', 'template_update', 'modTemplate', '1'),
+(2734, 1, '2018-09-27 15:19:21', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2735, 1, '2018-09-27 15:28:46', 'chunk_update', 'modChunk', '21'),
+(2736, 1, '2018-09-27 15:28:46', 'propertyset_update_from_element', 'modChunk', '21'),
+(2737, 1, '2018-09-27 15:43:31', 'chunk_update', 'modChunk', '93'),
+(2738, 1, '2018-09-27 15:43:32', 'propertyset_update_from_element', 'modChunk', '93'),
+(2739, 1, '2018-09-27 15:48:38', 'chunk_update', 'modChunk', '93'),
+(2740, 1, '2018-09-27 15:48:38', 'propertyset_update_from_element', 'modChunk', '93'),
+(2741, 1, '2018-09-27 15:51:31', 'chunk_update', 'modChunk', '93'),
+(2742, 1, '2018-09-27 15:51:31', 'propertyset_update_from_element', 'modChunk', '93'),
+(2743, 1, '2018-09-27 15:52:06', 'chunk_update', 'modChunk', '93'),
+(2744, 1, '2018-09-27 15:52:06', 'propertyset_update_from_element', 'modChunk', '93'),
+(2745, 1, '2018-09-27 15:52:58', 'chunk_update', 'modChunk', '93'),
+(2746, 1, '2018-09-27 15:52:58', 'propertyset_update_from_element', 'modChunk', '93'),
+(2747, 1, '2018-09-27 16:00:26', 'chunk_update', 'modChunk', '93'),
+(2748, 1, '2018-09-27 16:00:26', 'propertyset_update_from_element', 'modChunk', '93'),
+(2749, 1, '2018-09-27 16:01:46', 'chunk_update', 'modChunk', '93'),
+(2750, 1, '2018-09-27 16:01:46', 'propertyset_update_from_element', 'modChunk', '93'),
+(2751, 1, '2018-09-27 16:03:16', 'chunk_update', 'modChunk', '93'),
+(2752, 1, '2018-09-27 16:03:16', 'propertyset_update_from_element', 'modChunk', '93'),
+(2753, 1, '2018-09-27 16:04:09', 'chunk_update', 'modChunk', '93'),
+(2754, 1, '2018-09-27 16:04:09', 'propertyset_update_from_element', 'modChunk', '93'),
+(2755, 1, '2018-09-27 16:07:34', 'chunk_update', 'modChunk', '93'),
+(2756, 1, '2018-09-27 16:07:34', 'propertyset_update_from_element', 'modChunk', '93'),
+(2757, 1, '2018-09-27 16:07:57', 'chunk_update', 'modChunk', '93'),
+(2758, 1, '2018-09-27 16:07:58', 'propertyset_update_from_element', 'modChunk', '93'),
+(2759, 1, '2018-09-27 16:11:16', 'chunk_update', 'modChunk', '93'),
+(2760, 1, '2018-09-27 16:11:17', 'propertyset_update_from_element', 'modChunk', '93'),
+(2761, 1, '2018-09-27 16:14:35', 'tv_create', 'modTemplateVar', '16'),
+(2762, 1, '2018-09-27 16:15:15', 'resource_update', 'modResource', '21'),
+(2763, 1, '2018-09-27 16:15:51', 'resource_update', 'modResource', '21'),
+(2764, 1, '2018-09-27 16:19:04', 'chunk_update', 'modChunk', '93'),
+(2765, 1, '2018-09-27 16:19:05', 'propertyset_update_from_element', 'modChunk', '93'),
+(2766, 1, '2018-09-27 16:19:18', 'chunk_update', 'modChunk', '93'),
+(2767, 1, '2018-09-27 16:19:18', 'propertyset_update_from_element', 'modChunk', '93'),
+(2768, 1, '2018-09-27 16:21:00', 'chunk_update', 'modChunk', '93'),
+(2769, 1, '2018-09-27 16:21:00', 'propertyset_update_from_element', 'modChunk', '93'),
+(2770, 1, '2018-09-27 16:24:33', 'chunk_update', 'modChunk', '93'),
+(2771, 1, '2018-09-27 16:24:33', 'propertyset_update_from_element', 'modChunk', '93'),
+(2772, 1, '2018-09-27 16:27:49', 'chunk_update', 'modChunk', '93'),
+(2773, 1, '2018-09-27 16:27:49', 'propertyset_update_from_element', 'modChunk', '93'),
+(2774, 1, '2018-09-27 16:28:14', 'chunk_update', 'modChunk', '93'),
+(2775, 1, '2018-09-27 16:28:15', 'propertyset_update_from_element', 'modChunk', '93'),
+(2776, 1, '2018-09-27 16:28:42', 'chunk_update', 'modChunk', '93'),
+(2777, 1, '2018-09-27 16:28:42', 'propertyset_update_from_element', 'modChunk', '93'),
+(2778, 1, '2018-09-27 16:30:09', 'template_update', 'modTemplate', '1'),
+(2779, 1, '2018-09-27 16:30:09', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2780, 1, '2018-09-27 16:31:16', 'template_update', 'modTemplate', '1'),
+(2781, 1, '2018-09-27 16:31:16', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2782, 1, '2018-09-27 16:31:39', 'chunk_update', 'modChunk', '93'),
+(2783, 1, '2018-09-27 16:31:39', 'propertyset_update_from_element', 'modChunk', '93'),
+(2784, 1, '2018-09-27 16:32:21', 'chunk_update', 'modChunk', '93'),
+(2785, 1, '2018-09-27 16:32:21', 'propertyset_update_from_element', 'modChunk', '93'),
+(2786, 1, '2018-09-27 16:32:34', 'chunk_update', 'modChunk', '93'),
+(2787, 1, '2018-09-27 16:32:34', 'propertyset_update_from_element', 'modChunk', '93'),
+(2788, 1, '2018-09-27 16:32:59', 'chunk_update', 'modChunk', '93'),
+(2789, 1, '2018-09-27 16:32:59', 'propertyset_update_from_element', 'modChunk', '93'),
+(2790, 1, '2018-09-27 16:34:42', 'snippet_update', 'modSnippet', '77'),
+(2791, 1, '2018-09-27 16:34:43', 'propertyset_update_from_element', 'modSnippet', '77'),
+(2792, 1, '2018-09-27 16:36:10', 'tv_update', 'modTemplateVar', '16'),
+(2793, 1, '2018-09-27 16:36:10', 'propertyset_update_from_element', 'modTemplateVar', '16'),
+(2794, 1, '2018-09-27 16:37:42', 'snippet_update', 'modSnippet', '77'),
+(2795, 1, '2018-09-27 16:37:42', 'propertyset_update_from_element', 'modSnippet', '77'),
+(2796, 1, '2018-09-27 16:40:02', 'resource_update', 'modResource', '20'),
+(2797, 1, '2018-09-27 16:41:38', 'resource_update', 'modResource', '20'),
+(2798, 1, '2018-09-27 16:42:15', 'resource_update', 'modResource', '20'),
+(2799, 1, '2018-09-27 16:49:50', 'resource_update', 'modResource', '20'),
+(2800, 1, '2018-09-27 16:51:10', 'resource_update', 'modResource', '20'),
+(2801, 1, '2018-09-27 16:53:35', 'template_update', 'modTemplate', '1'),
+(2802, 1, '2018-09-27 16:53:35', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2803, 1, '2018-09-27 16:55:41', 'snippet_update', 'modSnippet', '77'),
+(2804, 1, '2018-09-27 16:55:41', 'propertyset_update_from_element', 'modSnippet', '77'),
+(2805, 1, '2018-09-27 16:56:42', 'resource_update', 'modResource', '21'),
+(2806, 1, '2018-09-27 17:00:26', 'snippet_update', 'modSnippet', '77'),
+(2807, 1, '2018-09-27 17:00:26', 'propertyset_update_from_element', 'modSnippet', '77'),
+(2808, 1, '2018-09-27 17:01:58', 'template_update', 'modTemplate', '1'),
+(2809, 1, '2018-09-27 17:01:58', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2810, 1, '2018-09-27 17:04:16', 'chunk_update', 'modChunk', '93'),
+(2811, 1, '2018-09-27 17:04:16', 'propertyset_update_from_element', 'modChunk', '93'),
+(2812, 1, '2018-09-27 17:05:38', 'template_update', 'modTemplate', '1'),
+(2813, 1, '2018-09-27 17:05:38', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2814, 1, '2018-09-27 17:06:32', 'template_update', 'modTemplate', '1'),
+(2815, 1, '2018-09-27 17:06:32', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2816, 1, '2018-09-27 17:06:49', 'template_update', 'modTemplate', '1'),
+(2817, 1, '2018-09-27 17:06:49', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2818, 1, '2018-09-27 17:07:15', 'snippet_update', 'modSnippet', '77'),
+(2819, 1, '2018-09-27 17:07:15', 'propertyset_update_from_element', 'modSnippet', '77'),
+(2820, 1, '2018-09-27 17:07:44', 'snippet_update', 'modSnippet', '77'),
+(2821, 1, '2018-09-27 17:07:44', 'propertyset_update_from_element', 'modSnippet', '77'),
+(2822, 1, '2018-09-27 17:09:48', 'template_update', 'modTemplate', '1'),
+(2823, 1, '2018-09-27 17:09:48', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2824, 1, '2018-09-27 17:10:14', 'template_update', 'modTemplate', '1'),
+(2825, 1, '2018-09-27 17:10:14', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2826, 1, '2018-09-27 17:11:08', 'template_update', 'modTemplate', '1'),
+(2827, 1, '2018-09-27 17:11:08', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2828, 1, '2018-09-27 17:12:17', 'template_update', 'modTemplate', '1'),
+(2829, 1, '2018-09-27 17:12:17', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2830, 1, '2018-09-27 17:12:29', 'template_update', 'modTemplate', '1'),
+(2831, 1, '2018-09-27 17:12:30', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2832, 1, '2018-09-27 17:18:44', 'template_update', 'modTemplate', '1'),
+(2833, 1, '2018-09-27 17:18:44', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2834, 1, '2018-09-27 17:20:15', 'template_update', 'modTemplate', '1'),
+(2835, 1, '2018-09-27 17:20:15', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2836, 1, '2018-09-27 17:24:10', 'template_update', 'modTemplate', '1'),
+(2837, 1, '2018-09-27 17:24:10', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2838, 1, '2018-09-27 17:24:26', 'template_update', 'modTemplate', '1'),
+(2839, 1, '2018-09-27 17:24:27', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2840, 1, '2018-09-27 17:25:11', 'template_update', 'modTemplate', '1'),
+(2841, 1, '2018-09-27 17:25:11', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2842, 1, '2018-09-27 17:26:07', 'template_update', 'modTemplate', '1'),
+(2843, 1, '2018-09-27 17:26:07', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2844, 1, '2018-09-27 17:26:40', 'template_update', 'modTemplate', '1'),
+(2845, 1, '2018-09-27 17:26:40', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2846, 1, '2018-09-27 17:27:06', 'template_update', 'modTemplate', '1'),
+(2847, 1, '2018-09-27 17:27:06', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2848, 1, '2018-09-27 17:27:26', 'template_update', 'modTemplate', '1'),
+(2849, 1, '2018-09-27 17:27:26', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2850, 1, '2018-09-27 17:28:15', 'template_update', 'modTemplate', '1'),
+(2851, 1, '2018-09-27 17:28:15', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2852, 1, '2018-09-27 17:28:37', 'template_update', 'modTemplate', '1'),
+(2853, 1, '2018-09-27 17:28:37', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2854, 1, '2018-09-27 17:28:58', 'template_update', 'modTemplate', '1'),
+(2855, 1, '2018-09-27 17:28:58', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2856, 1, '2018-09-27 17:29:11', 'template_update', 'modTemplate', '1'),
+(2857, 1, '2018-09-27 17:29:11', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2858, 1, '2018-09-27 17:29:35', 'template_update', 'modTemplate', '1'),
+(2859, 1, '2018-09-27 17:29:36', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2860, 1, '2018-09-27 17:30:22', 'template_update', 'modTemplate', '1'),
+(2861, 1, '2018-09-27 17:30:23', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2862, 1, '2018-09-27 17:30:42', 'template_update', 'modTemplate', '1'),
+(2863, 1, '2018-09-27 17:30:42', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2864, 1, '2018-09-27 17:31:04', 'template_update', 'modTemplate', '1'),
+(2865, 1, '2018-09-27 17:31:04', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2866, 1, '2018-09-27 17:31:23', 'template_update', 'modTemplate', '1'),
+(2867, 1, '2018-09-27 17:31:24', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2868, 1, '2018-09-27 17:31:57', 'template_update', 'modTemplate', '1'),
+(2869, 1, '2018-09-27 17:31:58', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2870, 1, '2018-09-27 17:32:07', 'template_update', 'modTemplate', '1'),
+(2871, 1, '2018-09-27 17:32:07', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2872, 1, '2018-09-27 17:35:26', 'template_update', 'modTemplate', '1'),
+(2873, 1, '2018-09-27 17:35:26', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2874, 1, '2018-09-27 17:36:00', 'template_update', 'modTemplate', '1'),
+(2875, 1, '2018-09-27 17:36:01', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2876, 1, '2018-09-27 17:36:42', 'template_update', 'modTemplate', '1'),
+(2877, 1, '2018-09-27 17:36:42', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2878, 1, '2018-09-27 17:39:15', 'template_update', 'modTemplate', '1'),
+(2879, 1, '2018-09-27 17:39:15', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2880, 1, '2018-09-27 17:39:43', 'template_update', 'modTemplate', '1'),
+(2881, 1, '2018-09-27 17:39:43', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2882, 1, '2018-09-27 17:40:08', 'template_update', 'modTemplate', '1'),
+(2883, 1, '2018-09-27 17:40:08', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2884, 1, '2018-09-27 17:40:34', 'template_update', 'modTemplate', '1'),
+(2885, 1, '2018-09-27 17:40:34', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2886, 1, '2018-09-27 17:41:08', 'template_update', 'modTemplate', '1'),
+(2887, 1, '2018-09-27 17:41:08', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2888, 1, '2018-09-27 17:41:49', 'template_update', 'modTemplate', '1'),
+(2889, 1, '2018-09-27 17:41:49', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2890, 1, '2018-09-27 17:42:56', 'tv_update', 'modTemplateVar', '14'),
+(2891, 1, '2018-09-27 17:42:56', 'propertyset_update_from_element', 'modTemplateVar', '14'),
+(2892, 1, '2018-09-27 17:45:22', 'tv_update', 'modTemplateVar', '11'),
+(2893, 1, '2018-09-27 17:45:22', 'propertyset_update_from_element', 'modTemplateVar', '11'),
+(2894, 1, '2018-09-27 17:46:02', 'resource_update', 'modResource', '17'),
+(2895, 1, '2018-09-27 17:47:22', 'resource_update', 'modResource', '17'),
+(2896, 1, '2018-09-27 17:48:07', 'template_update', 'modTemplate', '1'),
+(2897, 1, '2018-09-27 17:48:08', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2898, 1, '2018-09-27 17:49:59', 'tv_update', 'modTemplateVar', '11'),
+(2899, 1, '2018-09-27 17:49:59', 'propertyset_update_from_element', 'modTemplateVar', '11'),
+(2900, 1, '2018-09-27 17:51:06', 'resource_update', 'modResource', '17'),
+(2901, 1, '2018-09-27 17:52:00', 'tv_update', 'modTemplateVar', '11'),
+(2902, 1, '2018-09-27 17:52:00', 'propertyset_update_from_element', 'modTemplateVar', '11'),
+(2903, 1, '2018-09-27 17:52:39', 'resource_update', 'modResource', '18'),
+(2904, 1, '2018-09-27 17:53:16', 'resource_update', 'modResource', '18'),
+(2905, 1, '2018-09-27 17:53:57', 'tv_update', 'modTemplateVar', '11'),
+(2906, 1, '2018-09-27 17:53:58', 'propertyset_update_from_element', 'modTemplateVar', '11'),
+(2907, 1, '2018-09-27 17:55:09', 'tv_update', 'modTemplateVar', '11'),
+(2908, 1, '2018-09-27 17:55:09', 'propertyset_update_from_element', 'modTemplateVar', '11'),
+(2909, 1, '2018-09-27 17:56:50', 'tv_update', 'modTemplateVar', '11'),
+(2910, 1, '2018-09-27 17:56:50', 'propertyset_update_from_element', 'modTemplateVar', '11'),
+(2911, 1, '2018-09-27 17:58:46', 'tv_update', 'modTemplateVar', '11'),
+(2912, 1, '2018-09-27 17:58:47', 'propertyset_update_from_element', 'modTemplateVar', '11'),
+(2913, 1, '2018-09-27 17:59:27', 'resource_update', 'modResource', '17'),
+(2914, 1, '2018-09-27 18:00:00', 'resource_update', 'modResource', '17'),
+(2915, 1, '2018-09-27 18:00:42', 'resource_update', 'modResource', '17'),
+(2916, 1, '2018-09-27 18:01:30', 'tv_update', 'modTemplateVar', '11'),
+(2917, 1, '2018-09-27 18:01:30', 'propertyset_update_from_element', 'modTemplateVar', '11'),
+(2918, 1, '2018-09-27 18:05:36', 'resource_update', 'modResource', '17'),
+(2919, 1, '2018-09-27 18:07:22', 'tv_update', 'modTemplateVar', '11'),
+(2920, 1, '2018-09-27 18:07:22', 'propertyset_update_from_element', 'modTemplateVar', '11'),
+(2921, 1, '2018-09-27 18:07:51', 'resource_update', 'modResource', '17'),
+(2922, 1, '2018-09-27 18:09:19', 'chunk_update', 'modChunk', '93'),
+(2923, 1, '2018-09-27 18:09:19', 'propertyset_update_from_element', 'modChunk', '93'),
+(2924, 1, '2018-09-27 18:11:53', 'template_update', 'modTemplate', '1'),
+(2925, 1, '2018-09-27 18:11:53', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2926, 1, '2018-09-27 18:14:52', 'template_update', 'modTemplate', '1'),
+(2927, 1, '2018-09-27 18:14:52', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2928, 1, '2018-09-27 18:15:13', 'template_update', 'modTemplate', '1'),
+(2929, 1, '2018-09-27 18:15:13', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2930, 1, '2018-09-27 18:16:40', 'template_update', 'modTemplate', '1'),
+(2931, 1, '2018-09-27 18:16:41', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2932, 1, '2018-09-27 18:17:18', 'template_update', 'modTemplate', '1'),
+(2933, 1, '2018-09-27 18:17:18', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2934, 1, '2018-09-27 18:22:07', 'tv_update', 'modTemplateVar', '11'),
+(2935, 1, '2018-09-27 18:22:08', 'propertyset_update_from_element', 'modTemplateVar', '11'),
+(2936, 1, '2018-09-27 18:22:24', 'resource_update', 'modResource', '17'),
+(2937, 1, '2018-09-27 18:23:22', 'template_update', 'modTemplate', '1'),
+(2938, 1, '2018-09-27 18:23:22', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2939, 1, '2018-09-27 18:23:51', 'template_update', 'modTemplate', '1'),
+(2940, 1, '2018-09-27 18:23:51', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2941, 1, '2018-09-27 18:24:27', 'resource_update', 'modResource', '18'),
+(2942, 1, '2018-09-27 18:24:41', 'resource_update', 'modResource', '17'),
+(2943, 1, '2018-09-27 18:27:26', 'tv_update', 'modTemplateVar', '11'),
+(2944, 1, '2018-09-27 18:27:26', 'propertyset_update_from_element', 'modTemplateVar', '11'),
+(2945, 1, '2018-09-27 18:27:57', 'tv_update', 'modTemplateVar', '11'),
+(2946, 1, '2018-09-27 18:27:57', 'propertyset_update_from_element', 'modTemplateVar', '11'),
+(2947, 1, '2018-09-27 18:34:56', 'template_update', 'modTemplate', '1'),
+(2948, 1, '2018-09-27 18:34:56', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2949, 1, '2018-09-27 18:36:22', 'duplicate_resource', 'modDocument', '22'),
+(2950, 1, '2018-09-27 18:36:49', 'duplicate_resource', 'modDocument', '23'),
+(2951, 1, '2018-09-27 18:36:59', 'resource_update', 'modResource', '22'),
+(2952, 1, '2018-09-27 18:37:13', 'duplicate_resource', 'modDocument', '24'),
+(2953, 1, '2018-09-27 18:37:25', 'duplicate_resource', 'modDocument', '25'),
+(2954, 1, '2018-09-27 18:37:36', 'duplicate_resource', 'modDocument', '26'),
+(2955, 1, '2018-09-27 18:37:47', 'duplicate_resource', 'modDocument', '27'),
+(2956, 1, '2018-09-27 18:38:03', 'resource_update', 'modResource', '1'),
+(2957, 1, '2018-09-27 18:38:12', 'resource_update', 'modResource', '17'),
+(2958, 1, '2018-09-27 18:38:27', 'resource_update', 'modResource', '18'),
+(2959, 1, '2018-09-27 18:38:44', 'resource_update', 'modResource', '19'),
+(2960, 1, '2018-09-27 18:38:55', 'resource_update', 'modResource', '20'),
+(2961, 1, '2018-09-27 18:39:08', 'resource_update', 'modResource', '21'),
+(2962, 1, '2018-09-27 18:39:20', 'resource_update', 'modResource', '22'),
+(2963, 1, '2018-09-27 18:39:31', 'resource_update', 'modResource', '23'),
+(2964, 1, '2018-09-27 18:39:45', 'resource_update', 'modResource', '24'),
+(2965, 1, '2018-09-27 18:39:57', 'resource_update', 'modResource', '25'),
+(2966, 1, '2018-09-27 18:40:09', 'resource_update', 'modResource', '26'),
+(2967, 1, '2018-09-27 18:40:23', 'resource_update', 'modResource', '27'),
+(2968, 1, '2018-09-27 18:41:55', 'resource_update', 'modResource', '20'),
+(2969, 1, '2018-09-27 18:47:57', 'template_update', 'modTemplate', '1'),
+(2970, 1, '2018-09-27 18:47:57', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2971, 1, '2018-09-27 18:48:20', 'template_update', 'modTemplate', '1'),
+(2972, 1, '2018-09-27 18:48:20', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2973, 1, '2018-09-27 18:49:15', 'template_update', 'modTemplate', '1'),
+(2974, 1, '2018-09-27 18:49:15', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2975, 1, '2018-09-27 18:49:54', 'template_update', 'modTemplate', '1'),
+(2976, 1, '2018-09-27 18:49:55', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2977, 1, '2018-09-27 18:52:41', 'template_update', 'modTemplate', '1'),
+(2978, 1, '2018-09-27 18:52:41', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2979, 1, '2018-09-27 18:52:54', 'template_update', 'modTemplate', '1'),
+(2980, 1, '2018-09-27 18:52:55', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2981, 1, '2018-09-27 18:53:31', 'template_update', 'modTemplate', '1'),
+(2982, 1, '2018-09-27 18:53:32', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2983, 1, '2018-09-27 18:55:16', 'template_update', 'modTemplate', '1'),
+(2984, 1, '2018-09-27 18:55:17', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2985, 1, '2018-09-27 18:55:58', 'template_update', 'modTemplate', '1'),
+(2986, 1, '2018-09-27 18:55:58', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2987, 1, '2018-09-27 18:56:30', 'template_update', 'modTemplate', '1'),
+(2988, 1, '2018-09-27 18:56:30', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2989, 1, '2018-09-27 18:58:06', 'chunk_update', 'modChunk', '93'),
+(2990, 1, '2018-09-27 18:58:06', 'propertyset_update_from_element', 'modChunk', '93'),
+(2991, 1, '2018-09-27 18:59:36', 'chunk_update', 'modChunk', '93'),
+(2992, 1, '2018-09-27 18:59:37', 'propertyset_update_from_element', 'modChunk', '93');
 
 -- --------------------------------------------------------
 
@@ -4217,7 +4552,8 @@ INSERT INTO `new_media_sources_elements` (`source`, `object_class`, `object`, `c
 (1, 'modTemplateVar', 12, 'web'),
 (1, 'modTemplateVar', 13, 'web'),
 (1, 'modTemplateVar', 14, 'web'),
-(1, 'modTemplateVar', 15, 'web');
+(1, 'modTemplateVar', 15, 'web'),
+(1, 'modTemplateVar', 16, 'web');
 
 -- --------------------------------------------------------
 
@@ -4668,7 +5004,7 @@ CREATE TABLE `new_session` (
 INSERT INTO `new_session` (`id`, `access`, `data`) VALUES
 ('o00t3ju8d1k9301jo7ranj51f2', 1537972528, 'modx.user.contextTokens|a:2:{s:3:\"mgr\";i:1;s:3:\"web\";i:1;}modx.mgr.user.token|s:52:\"modx5bab97619c07d8.37432727_15bab9789cda472.28052841\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}newResourceTokens|a:5:{i:0;s:23:\"5bab987baa3a70.29816560\";i:1;s:23:\"5bab98a2e3bb68.17064745\";i:2;s:23:\"5bab98c462b156.40656779\";i:3;s:23:\"5bab98d4b851e9.25394739\";i:4;s:23:\"5bab9930725e86.62324270\";}modx.web.user.token|s:52:\"modx5bab97619c07d8.37432727_15bab98ef9e00f0.31681632\";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}'),
 ('pahjfg1rdnsbaoglluak93ehg6', 1537980477, 'modx.user.contextTokens|a:0:{}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}'),
-('iskjn4tfl52kosr6loamobdsk6', 1538043787, 'modx.user.0.resourceGroups|a:1:{s:3:\"mgr\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"mgr\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}modx.user.contextTokens|a:1:{s:3:\"mgr\";i:1;}modx.mgr.user.token|s:52:\"modx5bab97619c07d8.37432727_15bacabe6d8bd71.62670452\";modx.mgr.session.cookie.lifetime|i:604800;modx.mgr.user.config|a:0:{}newResourceTokens|a:13:{i:0;s:23:\"5bacae09d06704.29258284\";i:1;s:23:\"5bacae24ed2101.74128976\";i:2;s:23:\"5bacae37616e18.71585504\";i:3;s:23:\"5bacae68cf0131.33485288\";i:4;s:23:\"5bacae8b72f106.42066756\";i:5;s:23:\"5bacae8f137ea7.11230345\";i:6;s:23:\"5bacaeb128ae02.54412164\";i:7;s:23:\"5bacaef55c36b0.53610883\";i:8;s:23:\"5bacaef8d6f805.54250252\";i:9;s:23:\"5bacaf1b7e3ec0.91889648\";i:10;s:23:\"5bacaf695b2866.60432819\";i:11;s:23:\"5bacaf6d034011.06526800\";i:12;s:23:\"5bacaf8bdeacd9.95716129\";}modx.user.1.userGroups|a:1:{i:0;i:1;}');
+('iskjn4tfl52kosr6loamobdsk6', 1538062908, 'modx.user.0.resourceGroups|a:1:{s:3:\"mgr\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"mgr\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}modx.user.contextTokens|a:1:{s:3:\"mgr\";i:1;}modx.mgr.user.token|s:52:\"modx5bab97619c07d8.37432727_15bacabe6d8bd71.62670452\";modx.mgr.session.cookie.lifetime|i:604800;modx.mgr.user.config|a:0:{}newResourceTokens|a:73:{i:0;s:23:\"5bacae09d06704.29258284\";i:1;s:23:\"5bacae24ed2101.74128976\";i:2;s:23:\"5bacae37616e18.71585504\";i:3;s:23:\"5bacae68cf0131.33485288\";i:4;s:23:\"5bacae8b72f106.42066756\";i:5;s:23:\"5bacae8f137ea7.11230345\";i:6;s:23:\"5bacaeb128ae02.54412164\";i:7;s:23:\"5bacaef55c36b0.53610883\";i:8;s:23:\"5bacaef8d6f805.54250252\";i:9;s:23:\"5bacaf1b7e3ec0.91889648\";i:10;s:23:\"5bacaf695b2866.60432819\";i:11;s:23:\"5bacaf6d034011.06526800\";i:12;s:23:\"5bacaf8bdeacd9.95716129\";i:13;s:23:\"5bacb7bebab1e2.87504276\";i:14;s:23:\"5bacbde34f6427.65349373\";i:15;s:23:\"5bacbde7029735.36994723\";i:16;s:23:\"5bacbe0b4b61a6.59690125\";i:17;s:23:\"5bacd7c7552865.28449776\";i:18;s:23:\"5bacd7cc46ac64.50061483\";i:19;s:23:\"5bacdda230ac23.66260833\";i:20;s:23:\"5bacdda763a767.52226776\";i:21;s:23:\"5bace18aac5c43.76367415\";i:22;s:23:\"5bace18fbaa040.79832214\";i:23;s:23:\"5bacec9d1a9019.54489634\";i:24;s:23:\"5baceca1b95694.30831498\";i:25;s:23:\"5baced13064d24.57084414\";i:26;s:23:\"5baced19b4f117.60109598\";i:27;s:23:\"5bacee4234b3e0.03635767\";i:28;s:23:\"5bacee46ecf747.44961355\";i:29;s:23:\"5baceea84121d0.16913375\";i:30;s:23:\"5baceead93f886.06670563\";i:31;s:23:\"5bacefc63b05c2.78011201\";i:32;s:23:\"5bacefe1f28116.04544709\";i:33;s:23:\"5bacf041565680.31749781\";i:34;s:23:\"5bacf044d56bc8.04011531\";i:35;s:23:\"5bacf1b94563e8.06007001\";i:36;s:23:\"5bacf23e597a44.96880019\";i:37;s:23:\"5bacf2426d8752.82211568\";i:38;s:23:\"5bacf49f7b36e1.41135504\";i:39;s:23:\"5bacf4a32c7d84.36709113\";i:40;s:23:\"5bacf5a4cdd758.57681557\";i:41;s:23:\"5bacf5a8744db5.66410604\";i:42;s:23:\"5bacf61f7017e0.47215694\";i:43;s:23:\"5bacf624048ee3.24084157\";i:44;s:23:\"5bacf62f396f64.07603683\";i:45;s:23:\"5bacf63229bd49.53661973\";i:46;s:23:\"5bacf70ef24cc0.89929056\";i:47;s:23:\"5bacf8e41f4307.71788978\";i:48;s:23:\"5bacf914bc4031.55427520\";i:49;s:23:\"5bacf91d39d7d6.35809390\";i:50;s:23:\"5bacf95f4518e5.65791284\";i:51;s:23:\"5bacf966952678.14062538\";i:52;s:23:\"5bacf96e645a31.33805079\";i:53;s:23:\"5bacf974f41735.79334473\";i:54;s:23:\"5bacf9799f0fb1.61070361\";i:55;s:23:\"5bacf9869e6c38.85164760\";i:56;s:23:\"5bacf98a1f5d77.58782687\";i:57;s:23:\"5bacf991c8f744.17584847\";i:58;s:23:\"5bacf997340c03.75070855\";i:59;s:23:\"5bacf99f255636.18006912\";i:60;s:23:\"5bacf9a35f7fa6.83135921\";i:61;s:23:\"5bacf9ab5a3d38.21725326\";i:62;s:23:\"5bacf9aeb59f08.01491876\";i:63;s:23:\"5bacf9b5524cf5.12384555\";i:64;s:23:\"5bacf9baa9d9b9.26338747\";i:65;s:23:\"5bacf9c43bcb67.16061990\";i:66;s:23:\"5bacf9c7cf04f5.13230775\";i:67;s:23:\"5bacf9cfd36e12.74027138\";i:68;s:23:\"5bacf9d3d3def4.72544657\";i:69;s:23:\"5bacf9dd4cbe63.86023118\";i:70;s:23:\"5bacf9e1024f25.81555164\";i:71;s:23:\"5bacfa3677d576.81707495\";i:72;s:23:\"5bacfa3c01a531.37023509\";}modx.user.1.userGroups|a:1:{i:0;i:1;}');
 
 -- --------------------------------------------------------
 
@@ -4727,7 +5063,7 @@ CREATE TABLE `new_site_content` (
 --
 
 INSERT INTO `new_site_content` (`id`, `type`, `contentType`, `pagetitle`, `longtitle`, `description`, `alias`, `link_attributes`, `published`, `pub_date`, `unpub_date`, `parent`, `isfolder`, `introtext`, `content`, `richtext`, `template`, `menuindex`, `searchable`, `cacheable`, `createdby`, `createdon`, `editedby`, `editedon`, `deleted`, `deletedon`, `deletedby`, `publishedon`, `publishedby`, `menutitle`, `donthit`, `privateweb`, `privatemgr`, `content_dispo`, `hidemenu`, `class_key`, `context_key`, `content_type`, `uri`, `uri_override`, `hide_children_in_tree`, `show_in_tree`, `properties`) VALUES
-(1, 'document', 'text/html', 'Каталог', 'Поздравляем!', '', 'index', '', 1, 0, 0, 0, 1, '', '<p>You have successfully installed MODX Revolution&nbsp;[[++settings_version]]!</p>\r\n<p>Now that MODX is installed you can login to the manager to create your templates, manage content and install third party extras to add functionality to your&nbsp;website.</p>\r\n<h2>New to&nbsp;MODX?</h2>\r\n<p>Pages on a MODX site are called <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/resources\">Resources</a>, and are visible on the left-hand side of the manager in the Resources tab. Resources can be nested under other resources, making it easy to create a tree of resources. There are different types of resources for different use&nbsp;cases.</p>\r\n<p>Building your website is done through a combination of <strong>Templates</strong>, <strong>Template Variables</strong>, <strong>Chunks</strong>, <strong>Snippets</strong> and <strong>Plugins</strong>. Collectively these are known as <strong>Elements</strong>, and can also be found in the left-hand side of the manager, in the Elements&nbsp;tab.</p>\r\n<p><a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/templates\">Templates</a> contain the outer markup of any page. Each resource can only be assigned to a single template at a time. By adding <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/customizing-content/template-variables\">Template Variables</a> to a template, you can add custom fields for any resource using that particular&nbsp;template.</p>\r\n<p>With <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/chunks\">Chunks</a> you can share parts of the markup, such as a header, across different templates. <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/using-snippets\">Snippets</a> are pieces of PHP that return dynamic content, such as summaries of other resources or the current date. With snippets, you will often use Chunks to mark up the pieces of content it returns, instead of mixing the PHP and&nbsp;HTML.</p>\r\n<p>Finally, <a href=\"https://rtfm.modx.com/revolution/2.x/developing-in-modx/basic-development/plugins\">Plugins</a> enable more advanced features by hooking into the extensive events system provided by&nbsp;MODX.</p>\r\n<p>To learn more about MODX, be sure to check out the <a href=\"https://rtfm.modx.com/revolution/2.x/getting-started\">Getting Started</a> section in the official&nbsp;documentation.</p>', 1, 1, 0, 1, 1, 1, 1490966703, 1, 1538043427, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 'CollectionContainer', 'web', 1, 'index/', 0, 0, 1, NULL),
+(1, 'document', 'text/html', 'Каталог', 'Поздравляем!', '', 'index', '', 1, 0, 0, 0, 1, '', '<p>You have successfully installed MODX Revolution&nbsp;[[++settings_version]]!</p>\r\n<p>Now that MODX is installed you can login to the manager to create your templates, manage content and install third party extras to add functionality to your&nbsp;website.</p>\r\n<h2>New to&nbsp;MODX?</h2>\r\n<p>Pages on a MODX site are called <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/resources\">Resources</a>, and are visible on the left-hand side of the manager in the Resources tab. Resources can be nested under other resources, making it easy to create a tree of resources. There are different types of resources for different use&nbsp;cases.</p>\r\n<p>Building your website is done through a combination of <strong>Templates</strong>, <strong>Template Variables</strong>, <strong>Chunks</strong>, <strong>Snippets</strong> and <strong>Plugins</strong>. Collectively these are known as <strong>Elements</strong>, and can also be found in the left-hand side of the manager, in the Elements&nbsp;tab.</p>\r\n<p><a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/templates\">Templates</a> contain the outer markup of any page. Each resource can only be assigned to a single template at a time. By adding <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/customizing-content/template-variables\">Template Variables</a> to a template, you can add custom fields for any resource using that particular&nbsp;template.</p>\r\n<p>With <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/chunks\">Chunks</a> you can share parts of the markup, such as a header, across different templates. <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/using-snippets\">Snippets</a> are pieces of PHP that return dynamic content, such as summaries of other resources or the current date. With snippets, you will often use Chunks to mark up the pieces of content it returns, instead of mixing the PHP and&nbsp;HTML.</p>\r\n<p>Finally, <a href=\"https://rtfm.modx.com/revolution/2.x/developing-in-modx/basic-development/plugins\">Plugins</a> enable more advanced features by hooking into the extensive events system provided by&nbsp;MODX.</p>\r\n<p>To learn more about MODX, be sure to check out the <a href=\"https://rtfm.modx.com/revolution/2.x/getting-started\">Getting Started</a> section in the official&nbsp;documentation.</p>', 1, 1, 0, 1, 1, 1, 1490966703, 1, 1538062683, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 'CollectionContainer', 'web', 1, 'index/', 0, 0, 1, NULL),
 (2, 'document', 'text/html', 'Сервисы', '', 'Demo blog container page for Blogit.', 'blog', '', 0, 0, 0, 0, 1, '', '<h1>Blog overview</h1>', 1, 2, 2, 1, 1, 1, 1490968787, 1, 1537972381, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 1, 'CollectionContainer', 'web', 1, 'blog/', 0, 0, 1, NULL),
 (3, 'document', 'text/html', 'Post 1', '', 'Demo post 1 for the BlogIt extra.', 'post-1', '', 1, 0, 0, 2, 0, 'Demo summary of post 2 for the BlogIt extra.', '<p>Demo content of post 2 for the BlogIt extra.</p>', 1, 3, 0, 1, 1, 1, 1490968787, 1, 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 'modDocument', 'web', 1, 'post-1.html', 0, 0, 0, NULL),
 (4, 'document', 'text/html', 'Post 2', '', 'Demo post 2 for the BlogIt extra.', 'post-2', '', 1, 0, 0, 2, 0, 'Demo summary of post 2 for the BlogIt extra.', '<p>Demo content of post 2 for the BlogIt extra.</p>', 1, 3, 1, 1, 1, 1, 1490968787, 1, 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 'modDocument', 'web', 1, 'post-2.html', 0, 0, 0, NULL),
@@ -4743,10 +5079,17 @@ INSERT INTO `new_site_content` (`id`, `type`, `contentType`, `pagetitle`, `longt
 (14, 'document', 'text/html', 'Gallery', '', '', 'anet', '', 0, 0, 0, 0, 0, '', '', 1, 12, 11, 1, 1, 1, 1496655536, 1, 1537972427, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'anet.html', 0, 0, 1, NULL),
 (15, 'document', 'text/html', 'Grid', '', '', 'grid', '', 0, 0, 0, 0, 0, '', '', 1, 13, 12, 1, 1, 1, 1496655562, 1, 1537972441, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'grid.html', 0, 0, 1, NULL),
 (16, 'document', 'text/html', 'Результаты поиска', '', '', 'result-search', '', 1, 0, 0, 0, 0, '', '', 1, 8, 13, 1, 1, 1, 1498046307, 1, 1498047163, 0, 0, 0, 1498046280, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'result-search.html', 0, 0, 1, NULL),
-(17, 'document', 'text/html', 'Товар 1', '', '', 'tovar-1', '', 1, 0, 0, 1, 0, '', '', 1, 1, 0, 1, 1, 1, 1538043495, 0, 0, 0, 0, 0, 1538043495, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-1.html', 0, 0, 0, NULL),
-(18, 'document', 'text/html', 'Товар 2', '', '', 'tovar-2', '', 1, 0, 0, 1, 0, '', '', 1, 1, 1, 1, 1, 1, 1538043567, 0, 0, 0, 0, 0, 1538043567, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-2.html', 0, 0, 0, NULL),
-(19, 'document', 'text/html', 'Товар 3', '', '', 'tovar-3', '', 1, 0, 0, 1, 0, '', '', 1, 1, 2, 1, 1, 1, 1538043674, 0, 0, 0, 0, 0, 1538043674, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-3.html', 0, 0, 0, NULL),
-(20, 'document', 'text/html', 'Товар 4', '', '', 'tovar-4', '', 1, 0, 0, 1, 0, '', '', 1, 1, 3, 1, 1, 1, 1538043786, 0, 0, 0, 0, 0, 1538043786, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-4.html', 0, 0, 0, NULL);
+(17, 'document', 'text/html', 'Товар 1', '', '', 'tovar-1', '', 1, 0, 0, 1, 0, '', '', 1, 1, 0, 1, 1, 1, 1538043495, 1, 1538062692, 0, 0, 0, 1538043480, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-1.html', 0, 0, 0, NULL),
+(18, 'document', 'text/html', 'Товар 2', '', '', 'tovar-2', '', 1, 0, 0, 1, 0, '', '', 1, 1, 1, 1, 1, 1, 1538043567, 1, 1538062706, 0, 0, 0, 1538043540, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-2.html', 0, 0, 0, NULL),
+(19, 'document', 'text/html', 'Товар 3', '', '', 'tovar-3', '', 1, 0, 0, 1, 0, '', '', 1, 1, 2, 1, 1, 1, 1538043674, 1, 1538062724, 0, 0, 0, 1538043660, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-3.html', 0, 0, 0, NULL),
+(20, 'document', 'text/html', 'Товар 4', '', '', 'tovar-4', '', 1, 0, 0, 1, 0, '', '', 1, 1, 3, 1, 1, 1, 1538043786, 1, 1538062915, 0, 0, 0, 1538043780, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-4.html', 0, 0, 0, NULL),
+(21, 'document', 'text/html', 'Товар 5', '', '', 'tovar-5', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538047497, 1, 1538062748, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-5.html', 0, 0, 0, NULL),
+(22, 'document', 'text/html', 'Товар 6', '', '', 'kopiya-tovar-6', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538062582, 1, 1538062760, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'kopiya-tovar-6.html', 0, 0, 0, NULL),
+(23, 'document', 'text/html', 'Товар 7', '', '', 'tovar-7', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538062609, 1, 1538062771, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-7.html', 0, 0, 0, NULL),
+(24, 'document', 'text/html', 'Товар 8', '', '', 'tovar-8', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538062633, 1, 1538062785, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-8.html', 0, 0, 0, NULL),
+(25, 'document', 'text/html', 'Товар 9', '', '', 'tovar-9', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538062645, 1, 1538062797, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-9.html', 0, 0, 0, NULL),
+(26, 'document', 'text/html', 'Товар 10', '', '', 'tovar-10', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538062656, 1, 1538062809, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-10.html', 0, 0, 0, NULL),
+(27, 'document', 'text/html', 'Товар 11', '', '', 'tovar-11', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538062667, 1, 1538062822, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-11.html', 0, 0, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -4795,8 +5138,8 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (18, 0, 0, 'lgnActiveUser', '', 0, 12, 0, '<li>[[+username]]</li>', 0, 'a:0:{}', 0, ''),
 (19, 0, 0, 'lgnResetPassChangePassTpl', '', 0, 12, 0, '[[!+logcp.error_message:notempty=`<p style=\"color: red;\">[[+logcp.error_message]]</p>`]]\n\n<form class=\"form inline\" action=\"\" method=\"post\">\n    <input type=\"hidden\" name=\"nospam:blank\" value=\"\" />\n\n    <div class=\"ff\">\n        <label for=\"password_new\">[[!%login.password_new]]\n            <span class=\"error\">[[+logcp.error.password_new]]</span>\n        </label>\n        <input type=\"password\" name=\"password_new:required\" id=\"password_new\" value=\"[[+logcp.password_new]]\" />\n    </div>\n\n    <div class=\"ff\">\n        <label for=\"password_new_confirm\">[[!%login.password_new_confirm]]\n            <span class=\"error\">[[+logcp.error.password_new_confirm]]</span>\n        </label>\n        <input type=\"password\" name=\"password_new_confirm:required\" id=\"password_new_confirm\" value=\"[[+logcp.password_new_confirm]]\" />\n    </div>\n\n    <br class=\"clear\" />\n\n    <div class=\"form-buttons\">\n        <input type=\"submit\" name=\"logcp-submit\" value=\"[[!%login.change_password]]\" />\n    </div>\n</form>', 0, 'a:0:{}', 0, ''),
 (20, 0, 0, 'lgnExpiredTpl', '', 0, 12, 0, '<style>\n body{background-color:#f8e6c0}   \nsection.pwofbad{width:300px;margin:40px auto;}\nsection.pwofbad p{font-size: 18px}\n</style>\n        \n<section class=\"pwofbad\">\n<p class=\"center\"><strong>Информация по сбросу пароля</strong></p>\n<p class=\"center\">Ваш пароль уже был сброшен или ссылка не актуальна. Если вы желаете сбросить пароль снова, нажмите <a href=\"http://[[+sname]]/forgot-password.html\">здесь</a>.</p>\n</section>\n\n', 0, 'a:0:{}', 0, ''),
-(21, 1, 0, 'Head', '', 0, 21, 0, '<!DOCTYPE html>\n<html lang=\"ru\">\n\n<head>\n    \n    <base href=\"[[++site_url]]\" />\n	<meta charset=\"[[++modx_charset]]\" />\n\n	<title>[[*longtitle:default=`[[*pagetitle]]`]] - [[++site_url]]</title>\n	<meta name=\"description\" content=\"\">\n\n	<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">\n\n	<meta property=\"og:image\" content=\"path/to/image.jpg\">\n	<link rel=\"shortcut icon\" href=\"[[++assets_url]]templates/Stas/app/img/favicon/favicon.ico\" type=\"image/x-icon\">\n	<link rel=\"apple-touch-icon\" href=\"[[++assets_url]]templates/Stas/app/img/favicon/apple-touch-icon.png\">\n	<link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"[[++assets_url]]templates/Stas/app/img/favicon/apple-touch-icon-72x72.png\">\n	<link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"[[++assets_url]]templates/Stas/app/img/favicon/apple-touch-icon-114x114.png\">\n\n	<!-- Chrome, Firefox OS and Opera -->\n	<meta name=\"theme-color\" content=\"#000\">\n	<!-- Windows Phone -->\n	<meta name=\"msapplication-navbutton-color\" content=\"#000\">\n	<!-- iOS Safari -->\n	<meta name=\"apple-mobile-web-app-status-bar-style\" content=\"#000\">\n\n	<!--<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #151515; }</style>-->\n\n</head>\n<body class=\"[[+bodyClass]]\">', 0, 'a:1:{s:9:\"bodyClass\";a:7:{s:4:\"name\";s:9:\"bodyClass\";s:4:\"desc\";s:0:\"\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";a:0:{}s:5:\"value\";s:8:\"isNoHome\";s:7:\"lexicon\";N;s:4:\"area\";s:0:\"\";}}', 0, ''),
-(22, 1, 0, 'Scripts', '', 0, 21, 0, '<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/css/main.min.css\">\n\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/font-awesome/css/font-awesome.min.css\">\n\n    \n<script src=\"[[++assets_url]]templates/Stas/app/js/libs.min.js\"></script>\n\n \n<script src=\"[[++assets_url]]templates/Stas/app/js/common.js\"></script>\n', 0, 'a:0:{}', 0, ''),
+(21, 1, 0, 'Head', '', 0, 21, 0, '<!DOCTYPE html>\n<html lang=\"ru\">\n\n<head>\n    \n    <base href=\"[[++site_url]]\" />\n	<meta charset=\"[[++modx_charset]]\" />\n\n	<title>[[*longtitle:default=`[[*pagetitle]]`]] - [[++site_url]]</title>\n	<meta name=\"description\" content=\"\">\n\n	<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n\n	<meta property=\"og:image\" content=\"path/to/image.jpg\">\n	<link rel=\"shortcut icon\" href=\"[[++assets_url]]templates/Stas/app/img/favicon/favicon.ico\" type=\"image/x-icon\">\n	<link rel=\"apple-touch-icon\" href=\"[[++assets_url]]templates/Stas/app/img/favicon/apple-touch-icon.png\">\n	<link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"[[++assets_url]]templates/Stas/app/img/favicon/apple-touch-icon-72x72.png\">\n	<link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"[[++assets_url]]templates/Stas/app/img/favicon/apple-touch-icon-114x114.png\">\n\n	<!-- Chrome, Firefox OS and Opera -->\n	<meta name=\"theme-color\" content=\"#000\">\n	<!-- Windows Phone -->\n	<meta name=\"msapplication-navbutton-color\" content=\"#000\">\n	<!-- iOS Safari -->\n	<meta name=\"apple-mobile-web-app-status-bar-style\" content=\"#000\">\n\n	<!--<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #151515; }</style>-->\n\n</head>\n<body class=\"[[+bodyClass]]\">', 0, 'a:1:{s:9:\"bodyClass\";a:7:{s:4:\"name\";s:9:\"bodyClass\";s:4:\"desc\";s:0:\"\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";a:0:{}s:5:\"value\";s:8:\"isNoHome\";s:7:\"lexicon\";N;s:4:\"area\";s:0:\"\";}}', 0, ''),
+(22, 1, 0, 'Scripts', '', 0, 21, 0, '<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/css/main.min.css\">\n\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/font-awesome/css/font-awesome.min.css\">\n\n    \n<script src=\"[[++assets_url]]templates/Stas/app/js/libs.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/js/filter.js\"></script>\n \n<script src=\"[[++assets_url]]templates/Stas/app/js/common.js\"></script>\n', 0, 'a:0:{}', 0, ''),
 (23, 1, 0, 'Header', '', 0, 21, 0, '\n\n			\n			<header class=\"site-header\">\n				\n				<div class=\"top\">\n<div class=\"Logo pull-right visible-xs\"><i class=\"fa fa-free-code-camp\" aria-hidden=\"true\"></i>Logotype</div>\n					<a href=\"#my-menu\" class=\"hamburger hamburger--emphatic visible-xs\">\n						<span class=\"hamburger-box\"><span class=\"hamburger-inner\"></span></span>\n					</a>\n					<nav id=\"my-menu\">\n						[[Wayfinder?\n						&startId=`0`\n						&level=`1`\n						&outerTpl=`tpl.Wayfinder.outer`\n						&parentRowTpl=`tpl.Wayfinder.row.parent`\n						&innerRowTpl=`tpl.Wayfinder.row.inner`\n						&rowTpl=`tpl.Wayfinder.row`\n						\n					]]\n					</nav>\n					\n				</div>\n\n				\n				\n\n				\n\n			</header>\n\n		', 0, 'a:0:{}', 0, ''),
 (24, 1, 0, 'Content', '', 0, 21, 0, '[[!Personalize?\n    &yesChunk=`Main unreg`\n    &noChunk=`Main`\n    &ph=`personalize.name`\n]]\n\n', 0, 'a:0:{}', 0, ''),
 (25, 0, 0, 'Navbar', '', 0, 21, 0, '<section class=\"sec-navbar\">\n<header>\n    \n    <div class=\"top-line hidden-xs\">\n        <div class=\"container\">\n            <div class=\"row\">\n               <div class=\"col-lg-3 col-md-3 col-sm-3\">\n                   <div class=\"Logo\"><i class=\"fa fa-free-code-camp pull-left\" aria-hidden=\"true\"></i>Logotype</div>\n               </div>\n               <div class=\"col-lg-6 col-md-7 col-sm-9\">\n                   <div class=\"center\">\n                    <nav class=\"my-menu center-block\">\n						[[Wayfinder?\n						&startId=`0`\n						&level=`1`\n						&outerTpl=`tpl.Wayfinder.outer`\n						&parentRowTpl=`tpl.Wayfinder.row.parent`\n						&innerRowTpl=`tpl.Wayfinder.row.inner`\n						&rowTpl=`tpl.Wayfinder.row`\n						&outerClass=`list-inline`\n					    ]]\n					</nav>\n				</div>\n			</div>\n					\n					<div class=\"col-lg-3 col-md-2 col-sm-hidden\">\n					    <div class=\"social\">\n					         <p class=\"pull-left\"> Соц. сети</p>\n					   <i class=\"fa fa-vk\" aria-hidden=\"true\"></i>\n                    <i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>\n<i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i>\n<i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>\n\n					    \n					    </div>\n					   \n					</div>\n	        </div> \n        </div>\n    </div>\n    \n[[$Carousel]]\n   \n</header></section>', 0, 'a:0:{}', 0, ''),
@@ -4869,7 +5212,7 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (90, 0, 0, 'GridScripts', '', 0, 24, 0, '<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/css/bootstrap.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/css/bootstrap-theme.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/font-awesome/css/font-awesome.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/mmenu/css/jquery.mmenu.all.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/css-hamburgers/hamburgers.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/animate/animate.css\">\n<link href=\"[[++assets_url]]templates/Stas/app/libs/baguetteBox/baguetteBox.min.css\" rel=\"stylesheet\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/OwlCarousel/dist/assets/owl.carousel.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/OwlCarousel/dist/assets/owl.theme.default.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/css/jquery.bxslider.css\">\n\n    \n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/css/grid.min.css\">\n    \n<script src=\"[[++assets_url]]templates/Stas/app/libs/jquery/dist/jquery.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/animate/animate-css.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/animate/waypoints.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/js/bootstrap.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/mmenu/js/jquery.mmenu.all.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/OwlCarousel/dist/owl.carousel.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/baguetteBox/baguetteBox.min.js\"></script>\n \n<script src=\"[[++assets_url]]templates/Stas/app/js/common.js\"></script>\n', 0, 'a:0:{}', 0, ''),
 (91, 1, 0, 'GridLogin', '', 0, 24, 0, '<div class=\"clearfix\"></div>\n<section class=\"main-login\">\n    <div class=\"container clearfix\">\n        <div class=\"row\">\n            <div class=\"col-xs-12\">[[!Login? &loginTpl=`lgnLoginTpl` &logoutTpl=`GridlgnLogoutTpl` &errTpl=`lgnErrTpl` &loginResourceId=`1` &logoutResourceId=`1`]]</div>\n        </div>\n    </div>\n    \n\n</section>', 0, 'a:0:{}', 0, ''),
 (92, 0, 0, 'GridlgnLogoutTpl', '', 0, 24, 0, '<div class=\"loginMessage\">[[+errors]]</div>\n\n<div class=\"loginLogin\">\n    <div class=\"loginRegister pull-right\">\n        <div class=\"butt\"><a href=\"[[+logoutUrl]]\" title=\"[[+actionMsg]]\"><button class=\"btn-sm btn-primary out\" type=\"submit\">Выйти</button></a>\n       <span> Добро пожаловать <b>[[+modx.user.id:userinfo=`username`]]</b></span></div>\n        \n    </div>\n</div>', 0, 'a:0:{}', 0, ''),
-(93, 1, 0, 'tplCatItem', '', 0, 0, 0, '<div class=\"ajax-item\">\r\n    <img src=\"[[+tv.image]]\" alt=\"[[+pagetitle]]\">\r\n    <h4>[[+pagetitle]]</h4>\r\n    <table>\r\n        <tr>\r\n            <td>Этаж</td>\r\n            <td>[[+tv.floor]]</td>\r\n        </tr>\r\n        [[+tv.area:isnot=``:then=`\r\n        <tr>\r\n            <td>Площадь</td>\r\n            <td>[[+tv.area]] кв.м.</td>\r\n        </tr>\r\n        `]]\r\n        <tr>\r\n            <td>Гараж</td>\r\n            <td>[[+tv.garage:is=`1`:then=`Есть`:else=`Нет`]]</td>\r\n        </tr>\r\n        <tr>\r\n            <td>Цена:</td>\r\n            <td>[[+tv.price]]</td>\r\n        </tr>\r\n    </table> \r\n</div>', 0, 'a:0:{}', 0, '');
+(93, 1, 0, 'tplCatItem', '', 0, 0, 0, '<div class=\"ajax-item col-sm-4 text-center\">\n    <img src=\"[[+tv.image]]\" alt=\"[[+pagetitle]]\" class=\"img-thumbnail\">\n    <h4>[[+pagetitle]]</h4>\n    <table class=\"table table-bordered\">\n   <tbody>\n    <!--<tr>-->\n    <!--  <th scope=\"row\">Калибр:</th>-->\n    <!--        <td>[[+tv.floor]]</td>-->\n    <!--    </tr>-->\n  \n  \n        [[+tv.area:isnot=``:then=`\n        <tr>\n      <th scope=\"row\">Залпов</th>\n           <td>[[+tv.area]]</td>\n        </tr>\n        `]]\n        <!--<tr>-->\n        <!--    <th scope=\"row\">Наличие:</th>-->\n        <!--    <td>[[+tv.garage:is=`1`:then=`Есть`:else=`Нет`]]</td>-->\n        <!--</tr>-->\n        \n         <tr>\n            <th scope=\"row\">Цена:</th>\n            <td>[[+tv.price]]</td>\n        </tr>\n        </tbody>\n</table>\n   \n</div>', 0, 'a:0:{}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -5103,7 +5446,7 @@ INSERT INTO `new_site_snippets` (`id`, `source`, `property_preprocess`, `name`, 
 (74, 0, 0, 'SimpleSearchElasticIndexSetup_default', 'Setup snippet for ElasticSearch index', 0, 18, 0, '$indexSetup = array(\n    \'number_of_shards\' => 5,\n    \'number_of_replicas\' => 1,\n    \'analysis\' => array(\n        \'analyzer\' => array(\n            \'default_index\' => array(\n                \"type\" => \"custom\",\n                \"tokenizer\" => \"whitespace\",\n                \"filter\" => array(\n                    \"asciifolding\",\n                    \"standard\",\n                    \"lowercase\",\n                    \"haystack_edgengram\"\n                )\n            ),\n            \'default_search\' => array(\n                \"type\" => \"custom\",\n                \"tokenizer\" => \"whitespace\",\n                \"filter\" => array(\n                    \"asciifolding\",\n                    \"standard\",\n                    \"lowercase\"\n                )\n            )\n        ),\n        \"filter\" => array(\n            \"haystack_ngram\" => array(\n                \"type\" => \"nGram\",\n                \"min_gram\" => 2,\n                \"max_gram\" => 30,\n            ),\n            \"haystack_edgengram\" => array(\n                \"type\" => \"edgeNGram\",\n                \"min_gram\" => 2,\n                \"max_gram\" => 30,\n            )\n        )\n    )\n);\n\nreturn $modx->toJSON($indexSetup);', 0, NULL, '', 0, ''),
 (75, 0, 0, 'Wayfinder', 'Wayfinder for MODx Revolution 2.0.0-beta-5 and later.', 0, 0, 0, '/**\n * Wayfinder Snippet to build site navigation menus\n *\n * Totally refactored from original DropMenu nav builder to make it easier to\n * create custom navigation by using chunks as output templates. By using\n * templates, many of the paramaters are no longer needed for flexible output\n * including tables, unordered- or ordered-lists (ULs or OLs), definition lists\n * (DLs) or in any other format you desire.\n *\n * @version 2.1.1-beta5\n * @author Garry Nutting (collabpad.com)\n * @author Kyle Jaebker (muddydogpaws.com)\n * @author Ryan Thrash (modx.com)\n * @author Shaun McCormick (modx.com)\n * @author Jason Coward (modx.com)\n *\n * @example [[Wayfinder? &startId=`0`]]\n *\n * @var modX $modx\n * @var array $scriptProperties\n * \n * @package wayfinder\n */\n$wayfinder_base = $modx->getOption(\'wayfinder.core_path\',$scriptProperties,$modx->getOption(\'core_path\').\'components/wayfinder/\');\n\n/* include a custom config file if specified */\nif (isset($scriptProperties[\'config\'])) {\n    $scriptProperties[\'config\'] = str_replace(\'../\',\'\',$scriptProperties[\'config\']);\n    $scriptProperties[\'config\'] = $wayfinder_base.\'configs/\'.$scriptProperties[\'config\'].\'.config.php\';\n} else {\n    $scriptProperties[\'config\'] = $wayfinder_base.\'configs/default.config.php\';\n}\nif (file_exists($scriptProperties[\'config\'])) {\n    include $scriptProperties[\'config\'];\n}\n\n/* include wayfinder class */\ninclude_once $wayfinder_base.\'wayfinder.class.php\';\nif (!$modx->loadClass(\'Wayfinder\',$wayfinder_base,true,true)) {\n    return \'error: Wayfinder class not found\';\n}\n$wf = new Wayfinder($modx,$scriptProperties);\n\n/* get user class definitions\n * TODO: eventually move these into config parameters */\n$wf->_css = array(\n    \'first\' => isset($firstClass) ? $firstClass : \'\',\n    \'last\' => isset($lastClass) ? $lastClass : \'last\',\n    \'here\' => isset($hereClass) ? $hereClass : \'active\',\n    \'parent\' => isset($parentClass) ? $parentClass : \'\',\n    \'row\' => isset($rowClass) ? $rowClass : \'\',\n    \'outer\' => isset($outerClass) ? $outerClass : \'\',\n    \'inner\' => isset($innerClass) ? $innerClass : \'\',\n    \'level\' => isset($levelClass) ? $levelClass: \'\',\n    \'self\' => isset($selfClass) ? $selfClass : \'\',\n    \'weblink\' => isset($webLinkClass) ? $webLinkClass : \'\'\n);\n\n/* get user templates\n * TODO: eventually move these into config parameters */\n$wf->_templates = array(\n    \'outerTpl\' => isset($outerTpl) ? $outerTpl : \'\',\n    \'rowTpl\' => isset($rowTpl) ? $rowTpl : \'\',\n    \'parentRowTpl\' => isset($parentRowTpl) ? $parentRowTpl : \'\',\n    \'parentRowHereTpl\' => isset($parentRowHereTpl) ? $parentRowHereTpl : \'\',\n    \'hereTpl\' => isset($hereTpl) ? $hereTpl : \'\',\n    \'innerTpl\' => isset($innerTpl) ? $innerTpl : \'\',\n    \'innerRowTpl\' => isset($innerRowTpl) ? $innerRowTpl : \'\',\n    \'innerHereTpl\' => isset($innerHereTpl) ? $innerHereTpl : \'\',\n    \'activeParentRowTpl\' => isset($activeParentRowTpl) ? $activeParentRowTpl : \'\',\n    \'categoryFoldersTpl\' => isset($categoryFoldersTpl) ? $categoryFoldersTpl : \'\',\n    \'startItemTpl\' => isset($startItemTpl) ? $startItemTpl : \'\'\n);\n\n/* process Wayfinder */\n$output = $wf->run();\nif ($wf->_config[\'debug\']) {\n    $output .= $wf->renderDebugOutput();\n}\n\n/* output results */\nif ($wf->_config[\'ph\']) {\n    $modx->setPlaceholder($wf->_config[\'ph\'],$output);\n} else {\n    return $output;\n}', 0, 'a:48:{s:5:\"level\";a:6:{s:4:\"name\";s:5:\"level\";s:4:\"desc\";s:25:\"prop_wayfinder.level_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:1:\"0\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:11:\"includeDocs\";a:6:{s:4:\"name\";s:11:\"includeDocs\";s:4:\"desc\";s:31:\"prop_wayfinder.includeDocs_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:1:\"0\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:11:\"excludeDocs\";a:6:{s:4:\"name\";s:11:\"excludeDocs\";s:4:\"desc\";s:31:\"prop_wayfinder.excludeDocs_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:1:\"0\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:8:\"contexts\";a:6:{s:4:\"name\";s:8:\"contexts\";s:4:\"desc\";s:28:\"prop_wayfinder.contexts_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"cacheResults\";a:6:{s:4:\"name\";s:12:\"cacheResults\";s:4:\"desc\";s:32:\"prop_wayfinder.cacheResults_desc\";s:4:\"type\";s:13:\"combo-boolean\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:1;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:9:\"cacheTime\";a:6:{s:4:\"name\";s:9:\"cacheTime\";s:4:\"desc\";s:29:\"prop_wayfinder.cacheTime_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";i:3600;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:2:\"ph\";a:6:{s:4:\"name\";s:2:\"ph\";s:4:\"desc\";s:22:\"prop_wayfinder.ph_desc\";s:4:\"type\";s:13:\"combo-boolean\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:5:\"debug\";a:6:{s:4:\"name\";s:5:\"debug\";s:4:\"desc\";s:25:\"prop_wayfinder.debug_desc\";s:4:\"type\";s:13:\"combo-boolean\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"ignoreHidden\";a:6:{s:4:\"name\";s:12:\"ignoreHidden\";s:4:\"desc\";s:32:\"prop_wayfinder.ignoreHidden_desc\";s:4:\"type\";s:13:\"combo-boolean\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"hideSubMenus\";a:6:{s:4:\"name\";s:12:\"hideSubMenus\";s:4:\"desc\";s:32:\"prop_wayfinder.hideSubMenus_desc\";s:4:\"type\";s:13:\"combo-boolean\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:13:\"useWeblinkUrl\";a:6:{s:4:\"name\";s:13:\"useWeblinkUrl\";s:4:\"desc\";s:33:\"prop_wayfinder.useWeblinkUrl_desc\";s:4:\"type\";s:13:\"combo-boolean\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:1;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:8:\"fullLink\";a:6:{s:4:\"name\";s:8:\"fullLink\";s:4:\"desc\";s:28:\"prop_wayfinder.fullLink_desc\";s:4:\"type\";s:13:\"combo-boolean\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:6:\"scheme\";a:6:{s:4:\"name\";s:6:\"scheme\";s:4:\"desc\";s:26:\"prop_wayfinder.scheme_desc\";s:4:\"type\";s:4:\"list\";s:7:\"options\";a:3:{i:0;a:2:{s:4:\"text\";s:23:\"prop_wayfinder.relative\";s:5:\"value\";s:0:\"\";}i:1;a:2:{s:4:\"text\";s:23:\"prop_wayfinder.absolute\";s:5:\"value\";s:3:\"abs\";}i:2;a:2:{s:4:\"text\";s:19:\"prop_wayfinder.full\";s:5:\"value\";s:4:\"full\";}}s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:9:\"sortOrder\";a:6:{s:4:\"name\";s:9:\"sortOrder\";s:4:\"desc\";s:29:\"prop_wayfinder.sortOrder_desc\";s:4:\"type\";s:4:\"list\";s:7:\"options\";a:2:{i:0;a:2:{s:4:\"text\";s:24:\"prop_wayfinder.ascending\";s:5:\"value\";s:3:\"ASC\";}i:1;a:2:{s:4:\"text\";s:25:\"prop_wayfinder.descending\";s:5:\"value\";s:4:\"DESC\";}}s:5:\"value\";s:3:\"ASC\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:6:\"sortBy\";a:6:{s:4:\"name\";s:6:\"sortBy\";s:4:\"desc\";s:26:\"prop_wayfinder.sortBy_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:9:\"menuindex\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:5:\"limit\";a:6:{s:4:\"name\";s:5:\"limit\";s:4:\"desc\";s:25:\"prop_wayfinder.limit_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:1:\"0\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:6:\"cssTpl\";a:6:{s:4:\"name\";s:6:\"cssTpl\";s:4:\"desc\";s:26:\"prop_wayfinder.cssTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:5:\"jsTpl\";a:6:{s:4:\"name\";s:5:\"jsTpl\";s:4:\"desc\";s:25:\"prop_wayfinder.jsTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:11:\"rowIdPrefix\";a:6:{s:4:\"name\";s:11:\"rowIdPrefix\";s:4:\"desc\";s:31:\"prop_wayfinder.rowIdPrefix_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:11:\"textOfLinks\";a:6:{s:4:\"name\";s:11:\"textOfLinks\";s:4:\"desc\";s:31:\"prop_wayfinder.textOfLinks_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:9:\"menutitle\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"titleOfLinks\";a:6:{s:4:\"name\";s:12:\"titleOfLinks\";s:4:\"desc\";s:32:\"prop_wayfinder.titleOfLinks_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:9:\"pagetitle\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"displayStart\";a:6:{s:4:\"name\";s:12:\"displayStart\";s:4:\"desc\";s:32:\"prop_wayfinder.displayStart_desc\";s:4:\"type\";s:13:\"combo-boolean\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:10:\"firstClass\";a:6:{s:4:\"name\";s:10:\"firstClass\";s:4:\"desc\";s:30:\"prop_wayfinder.firstClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:5:\"first\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:9:\"lastClass\";a:6:{s:4:\"name\";s:9:\"lastClass\";s:4:\"desc\";s:29:\"prop_wayfinder.lastClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:4:\"last\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:9:\"hereClass\";a:6:{s:4:\"name\";s:9:\"hereClass\";s:4:\"desc\";s:29:\"prop_wayfinder.hereClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:6:\"active\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:11:\"parentClass\";a:6:{s:4:\"name\";s:11:\"parentClass\";s:4:\"desc\";s:31:\"prop_wayfinder.parentClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:8:\"rowClass\";a:6:{s:4:\"name\";s:8:\"rowClass\";s:4:\"desc\";s:28:\"prop_wayfinder.rowClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:10:\"outerClass\";a:6:{s:4:\"name\";s:10:\"outerClass\";s:4:\"desc\";s:30:\"prop_wayfinder.outerClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:10:\"innerClass\";a:6:{s:4:\"name\";s:10:\"innerClass\";s:4:\"desc\";s:30:\"prop_wayfinder.innerClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:10:\"levelClass\";a:6:{s:4:\"name\";s:10:\"levelClass\";s:4:\"desc\";s:30:\"prop_wayfinder.levelClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:9:\"selfClass\";a:6:{s:4:\"name\";s:9:\"selfClass\";s:4:\"desc\";s:29:\"prop_wayfinder.selfClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"webLinkClass\";a:6:{s:4:\"name\";s:12:\"webLinkClass\";s:4:\"desc\";s:32:\"prop_wayfinder.webLinkClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:8:\"outerTpl\";a:6:{s:4:\"name\";s:8:\"outerTpl\";s:4:\"desc\";s:28:\"prop_wayfinder.outerTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:6:\"rowTpl\";a:6:{s:4:\"name\";s:6:\"rowTpl\";s:4:\"desc\";s:26:\"prop_wayfinder.rowTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"parentRowTpl\";a:6:{s:4:\"name\";s:12:\"parentRowTpl\";s:4:\"desc\";s:32:\"prop_wayfinder.parentRowTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:16:\"parentRowHereTpl\";a:6:{s:4:\"name\";s:16:\"parentRowHereTpl\";s:4:\"desc\";s:36:\"prop_wayfinder.parentRowHereTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:7:\"hereTpl\";a:6:{s:4:\"name\";s:7:\"hereTpl\";s:4:\"desc\";s:27:\"prop_wayfinder.hereTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:8:\"innerTpl\";a:6:{s:4:\"name\";s:8:\"innerTpl\";s:4:\"desc\";s:28:\"prop_wayfinder.innerTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:11:\"innerRowTpl\";a:6:{s:4:\"name\";s:11:\"innerRowTpl\";s:4:\"desc\";s:31:\"prop_wayfinder.innerRowTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"innerHereTpl\";a:6:{s:4:\"name\";s:12:\"innerHereTpl\";s:4:\"desc\";s:32:\"prop_wayfinder.innerHereTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:18:\"activeParentRowTpl\";a:6:{s:4:\"name\";s:18:\"activeParentRowTpl\";s:4:\"desc\";s:38:\"prop_wayfinder.activeParentRowTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:18:\"categoryFoldersTpl\";a:6:{s:4:\"name\";s:18:\"categoryFoldersTpl\";s:4:\"desc\";s:38:\"prop_wayfinder.categoryFoldersTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"startItemTpl\";a:6:{s:4:\"name\";s:12:\"startItemTpl\";s:4:\"desc\";s:32:\"prop_wayfinder.startItemTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:11:\"permissions\";a:6:{s:4:\"name\";s:11:\"permissions\";s:4:\"desc\";s:31:\"prop_wayfinder.permissions_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:4:\"list\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:6:\"hereId\";a:6:{s:4:\"name\";s:6:\"hereId\";s:4:\"desc\";s:26:\"prop_wayfinder.hereId_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:5:\"where\";a:6:{s:4:\"name\";s:5:\"where\";s:4:\"desc\";s:25:\"prop_wayfinder.where_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:9:\"templates\";a:6:{s:4:\"name\";s:9:\"templates\";s:4:\"desc\";s:29:\"prop_wayfinder.templates_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:18:\"previewUnpublished\";a:6:{s:4:\"name\";s:18:\"previewUnpublished\";s:4:\"desc\";s:38:\"prop_wayfinder.previewunpublished_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}}', '', 0, ''),
 (76, 1, 0, 'Host', '', 0, 0, 0, 'echo $_SERVER[\'HTTP_HOST\'];', 0, 'a:0:{}', '', 0, ''),
-(77, 1, 0, 'catalogFilter', '', 0, 0, 0, '//Filter Fields Settings\n$filter = array();\n\n//Radio, Select & Text Fields Type\nif($_GET[\'floor\']) {\n    $filter[] = \'floor=\'.$_GET[\'floor\'];\n}\n\n//Two Text Fields From To\nif($_GET[\'area_from\']) {\n    $filter[] = \'area>=\'.$_GET[\'area_from\'];\n}\nif($_GET[\'area_to\']) {\n    $filter[] = \'area<=\'.$_GET[\'area_to\'];\n}\n\n//Checkbox Type\nif($_GET[\'garage\']) {\n    $filter[] = \'garage=1\';\n}\n\n//End Settings\n\n//Sort\nif($_GET[\'sortby\']) {\n    $sortby = $_GET[\'sortby\'];\n} else {\n    $sortby = \'pagetitle\';\n}\nif($_GET[\'sortdir\']) {\n    $sortdir = $_GET[\'sortdir\'];\n} else {\n    $sortdir = \'asc\';\n}\n//End Sort\n\n//Offset\n$offset = 0;\nif($_GET[\'offset\']){\n    $offset = $_GET[\'offset\'];\n}\n\nif($filter) {\n    $where = $modx->toJSON(array($filter));\n} else {\n    $where = \'\';\n}\n\n$params_count = array(\n    \'parents\' => $parents,\n    \'limit\' => 0,\n    \'tpl\' => \'@INLINE ,\',\n    \'select\' => \'id\',\n    \'includeTVs\' => $fields,\n    \'showHidden\' => \'1\',\n    \'where\' => $where\n);\n\n$count = $modx->runSnippet(\'pdoResources\',$params_count);\n$count = count(explode(\',\',$count))-1;\n$modx->setPlaceholder(\'count\',$count);\n\n$params = array(\n    \'parents\' => $parents,\n    \'limit\' => $limit,\n    \'offset\' => $offset,\n    \'tpl\' => $tpl,\n    \'select\' => \'id,pagetitle,introtext,content\',\n    \'includeTVs\' => $fields,\n    \'showHidden\' => \'1\',\n    \'sortby\' => $sortby,\n    \'sortdir\' => $sortdir,\n    \'where\' => $where\n);\n\n$more = $count - $offset - $limit;\n$lim = $more > $limit ? $limit : $more;\n\n$button = \'\';\nif($more > 0){\n    $button = \'<div class=\"ajax-filter-count\" data-count=\"\'.$count.\'\"><a href=\"#\" class=\"ajax-more\">Загрузить еще \'.$lim.\' из \'.$more.\'</a></div>\';\n}\n\nreturn $modx->runSnippet(\'pdoResources\',$params).$button;', 0, 'a:0:{}', '', 0, '');
+(77, 1, 0, 'catalogFilter', '', 0, 0, 0, '//Filter Fields Settings\n$filter = array();\n\n//Radio, Select & Text Fields Type\nif($_GET[\'floor\']) {\n    $filter[] = \'floor=\'.$_GET[\'floor\'];\n}\n\n//Two Text Fields From To\n// if($_GET[\'area_from\']) {\n//     $filter[] = \'area>=\'.$_GET[\'area_from\'];\n// }\n// if($_GET[\'area_to\']) {\n//     $filter[] = \'area<=\'.$_GET[\'area_to\'];\n// }\n\nif($_GET[\'price_from\']) {\n    $filter[] = \'price>=\'.$_GET[\'price_from\'];\n}\nif($_GET[\'price_to\']) {\n    $filter[] = \'price<=\'.$_GET[\'price_to\'];\n}\n\n//Checkbox Type\nif($_GET[\'garage\']) {\n    $filter[] = \'garage=1\';\n}\n\n//End Settings\n\n//Sort\nif($_GET[\'sortby\']) {\n    $sortby = $_GET[\'sortby\'];\n} else {\n    $sortby = \'pagetitle\';\n}\nif($_GET[\'sortdir\']) {\n    $sortdir = $_GET[\'sortdir\'];\n} else {\n    $sortdir = \'asc\';\n}\n//End Sort\n\n//Offset\n$offset = 0;\nif($_GET[\'offset\']){\n    $offset = $_GET[\'offset\'];\n}\n\nif($filter) {\n    $where = $modx->toJSON(array($filter));\n} else {\n    $where = \'\';\n}\n\n$params_count = array(\n    \'parents\' => $parents,\n    \'limit\' => 0,\n    \'tpl\' => \'@INLINE ,\',\n    \'select\' => \'id\',\n    \'includeTVs\' => $fields,\n    \'showHidden\' => \'1\',\n    \'where\' => $where\n);\n\n$count = $modx->runSnippet(\'pdoResources\',$params_count);\n$count = count(explode(\',\',$count))-1;\n$modx->setPlaceholder(\'count\',$count);\n\n$params = array(\n    \'parents\' => $parents,\n    \'limit\' => $limit,\n    \'offset\' => $offset,\n    \'tpl\' => $tpl,\n    \'select\' => \'id,pagetitle,introtext,content\',\n    \'includeTVs\' => $fields,\n    \'showHidden\' => \'1\',\n    \'sortby\' => $sortby,\n    \'sortdir\' => $sortdir,\n    \'where\' => $where\n);\n\n$more = $count - $offset - $limit;\n$lim = $more > $limit ? $limit : $more;\n\n$button = \'\';\nif($more > 0){\n    $button = \'<div class=\"ajax-filter-count\" data-count=\"\'.$count.\'\"><a href=\"#\" class=\"ajax-more\">Загрузить еще \'.$lim.\' из \'.$more.\'</a></div>\';\n}\n\nreturn $modx->runSnippet(\'pdoResources\',$params).$button;', 0, 'a:0:{}', '', 0, '');
 
 -- --------------------------------------------------------
 
@@ -5133,7 +5476,7 @@ CREATE TABLE `new_site_templates` (
 --
 
 INSERT INTO `new_site_templates` (`id`, `source`, `property_preprocess`, `templatename`, `description`, `editor_type`, `category`, `icon`, `template_type`, `content`, `locked`, `properties`, `static`, `static_file`) VALUES
-(1, 0, 0, 'Начальный шаблон', '', 0, 0, '', 0, '[[$Head? &bodyClass=`isHome`]]\n\n<div id=\"my-page\">\n   <form class=\"ajax-form\">\n\n		<!-- Sort Fields -->\n		<input type=\"hidden\" name=\"sortby\" value=\"pagetitle\">\n		<input type=\"hidden\" name=\"sortdir\" value=\"asc\">\n		<!-- Sort End -->\n\n		<label>\n			<input type=\"checkbox\" name=\"garage\"> Checkbox\n		</label>\n\n		<label>\n			<input name=\"floor\" value=\"0\" checked=\"\" type=\"radio\">\n			<input name=\"floor\" value=\"1\" type=\"radio\">\n			<input name=\"floor\" value=\"2\" type=\"radio\">\n		</label>\n\n		<label><input type=\"text\" name=\"price\"></label>\n\n	</form>\n\n	<!-- Пример создания кнопок сортировки -->\n	Сортировать по цене: <button data-sort-by=\"price\">По возрастанию</button>\n\n	<!-- Вывод сниппета в шаблоне категории -->\n	<div class=\"ajax-container\">\n		[[!catalogFilter?\n		&tpl=`tplCatItem`\n		&limit=`3`\n		&parents=`1`\n		&fields=`image,area,floor,garage,price`]]\n	</div>\n\n\n</div>\n \n\n\n[[$Scripts]]\n</body>\n</html>\n', 0, 'a:0:{}', 0, ''),
+(1, 0, 0, 'Начальный шаблон', '', 0, 0, '', 0, '[[$Head? &bodyClass=`isHome`]]\n\n<div id=\"my-page\">\n    <div class=\"left-column px-3\">\n        <div class=\"panel panel-primary\">\n   <form class=\" panel-body ajax-form\">\n\n		<!-- Sort Fields -->\n		<input type=\"hidden\" name=\"sortby\" value=\"pagetitle\">\n		<input type=\"hidden\" name=\"sortdir\" value=\"asc\">\n		<!-- Sort End -->\n<div class=\"form-group\">\n    <label for=\"formGroupExampleInput\" class=\"float-left mr-2 mb-3\">В наличии:</label>\n		<div class=\"form-check float-left\">\n		<input class=\"form-check-input\" type=\"checkbox\" id=\"blankCheckbox\" name=\"garage\">\n		</div>\n		</div>\n		<div class=\"clearfix\"></div>\n		<table class=\"table\">\n  <thead>\n    <tr>\n      <th scope=\"col\">Калибр</th></tr></thead></table>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"0\" checked>\n  <label class=\"form-check-label\" for=\"floor\">\n   Все \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"1\">\n  <label class=\"form-check-label\" for=\"floor\">\n   0.8 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"2\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"3\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.1 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"4\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.2 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"5\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.25\n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"6\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.5 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"7\">\n  <label class=\"form-check-label\" for=\"floor\">\n   2 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"8\">\n  <label class=\"form-check-label\" for=\"floor\">\n   0.8-1.2 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"9\">\n  <label class=\"form-check-label\" for=\"floor\">\n   0.8-1-1.2 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"10\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1-1.2 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"11\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1-1.2-1.5 \n  </label>\n</div>\n		<!--<label>-->\n		<!--	<input name=\"floor\" value=\"0\" checked=\"\" type=\"radio\">-->\n		<!--	<input name=\"floor\" value=\"1\" type=\"radio\">-->\n		<!--	<input name=\"floor\" value=\"2\" type=\"radio\">-->\n		<!--	<input name=\"floor\" value=\"3\" type=\"radio\">-->\n		<!--</label>-->\n<!--<div class=\"form-group\"><label for=\"area_from\" class=\"control-label\"></label>-->\n<!--<div class=\"col-sm-12\"><input type=\"text\" id=\"area_from\" name=\"area_from\" placeholder=\"Залпы От\" class=\"form-control\"></div>-->\n<!--</div>-->\n<!--<div class=\"form-group\"><label for=\"area_to\" class=\"control-label\"></label>-->\n<!--<div class=\"col-sm-12\"><input type=\"text\" id=\"area_to\" name=\"area_to\" placeholder=\"Залпы До\" class=\"form-control\"></div>-->\n<!--</div>-->\n\n<div class=\"form-group\"><label for=\"price_from\" class=\"control-label\"></label>\n<div class=\"col-sm-12\"><input type=\"text\" id=\"price_from\" name=\"price_from\" placeholder=\"Цена От\" class=\"form-control form-control-sm\"></div>\n</div>\n<div class=\"form-group\"><label for=\"price_to\" class=\"control-label\"></label>\n<div class=\"col-sm-12\"><input type=\"text\" id=\"price_to\" name=\"price_to\" placeholder=\"Цена До\" class=\"form-control form-control-sm\"></div>\n</div>\n\n		<label><input type=\"hidden\" name=\"price\"></label>\n<button class=\"ajax-start btn btn-success btn-sm btn-block w-100 my-3\">Подобрать</button>\n<button class=\"ajax-reset btn btn-danger btn-sm btn-block w-100 my-3\">Сбросить</button>\n	</form>\n	</div>\n	</div>\n<div class=\"container right-column\">\n    <div class=\"row\">\n        <div class=\"col-sm-12 my-3\">\n	<!-- Пример создания кнопок сортировки -->\n	Сортировать по цене: <button data-sort-by=\"price\" class=\"ml-3\">По возрастанию</button>\n<h2> Найдено объектов: <span class=\"ajax-count\"></span></h2> \n</div></div>\n	<!-- Вывод сниппета в шаблоне категории -->\n	<div class=\"ajax-container row\">\n		[[!catalogFilter?\n		&tpl=`tplCatItem`\n		&limit=`300`\n		&parents=`1`\n		&fields=`image,area,floor,garage,price`]]\n	</div>\n</div>\n\n</div>\n \n\n\n[[$Scripts]]\n</body>\n</html>\n', 0, 'a:0:{}', 0, ''),
 (2, 0, 0, 'Blogit container', 'Blogit - Created by MPThemes http://mpthemes.com', 0, 7, '', 0, '<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n	<base href=\"[[++site_url]]\" />\r\n        <meta charset=\"[[++modx_charset:lcase]]\" />\r\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\r\n        <title>[[*longtitle:strip_tags:empty=`[[*pagetitle:strip_tags]]`]] | [[++site_name:strip_tags]]</title>\r\n        <meta name=\"description\" content=\"[[*description:notempty=`[[*description]]`:default=`[[+content:ellipsis=`155`]]`]]\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n</head>\r\n<body>\r\n	[[*content]]\r\n	<!-- BlogIt - This chunk grabs all children of the resource. -->\r\n	[[$blogit.get_posts]]\r\n	<!-- BlogIt - This chunk grabs all uses Tagger tags used in posts -->\r\n	[[$blogit.taglist]]\r\n</body>\r\n</html>', 0, NULL, 0, ''),
 (3, 0, 0, 'Blogit post', 'Blogit - Created by MPThemes http://mpthemes.com', 0, 7, '', 0, '<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n	<base href=\"[[++site_url]]\" />\r\n        <meta charset=\"[[++modx_charset:lcase]]\" />\r\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\r\n        <title>[[*longtitle:strip_tags:empty=`[[*pagetitle:strip_tags]]`]] | [[++site_name:strip_tags]]</title>\r\n        <meta name=\"description\" content=\"[[*description:notempty=`[[*description]]`:default=`[[+content:ellipsis=`155`]]`]]\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n</head>\r\n<body>\r\n	[[blogit.lexicon_load]]\r\n	<p><a href=\"[[~[[*parent]]]]\">[[%blogit.back_to_overview]]</a></p>\r\n	<article>\r\n		<header>\r\n			<h1>[[*longtitle:strip_tags:empty=`[[*pagetitle:strip_tags]]`]]</h1>\r\n		</header>\r\n		[[*blogit.post_main_image:isnot=``:then=`<img src=\"[[*blogit.post_main_image:phpthumbof=`w=[[++blogit.main_image_width]]`]]\" alt=\"[[*blogit.post_main_image_alt]]\">`]]\r\n		[[*content]]\r\n		<footer>\r\n			<small>[[%blogit.published_on]]: <time datetime=\"[[*publishedon:strtotime:date=`%y-%m-%d`]]\">[[*publishedon:strtotime:date=`%b %d %Y`]]</time></small><br>\r\n			<small>[[%blogit.created_by]]: [[*createdby:userinfo=`username`]]</small><br>\r\n			[[++blogit.use_tags:isequalto=`1`:then=`\r\n			<small>Tags: [[!TaggerGetTags? &resources=`[[*id]]` &rowTpl=`blogit.tag_links_tpl` &separator=`, ` &target=`[[++blogit.blog_container_id]]`]]</small>\r\n			`]]\r\n		</footer>\r\n	</article>\r\n</body>\r\n</html>', 0, NULL, 0, ''),
 (4, 1, 0, 'Forgot Password', '', 0, 20, '', 0, '[[$Head]]\n<body>\n    <div id=\"my-page\">\n[[$Header]]\n        <div id=\"my-content\">\n            [[$Navbar]]\n		    [[$Forgp]]\n        </div>\n\n		<div id=\"my-footer\">\n			[[$Footer]]\n		</div>\n\n\n</div>\n[[$Scripts]]\n</body>\n</html>\n\n      	\n  ', 0, 'a:0:{}', 0, ''),
@@ -5188,11 +5531,12 @@ INSERT INTO `new_site_tmplvars` (`id`, `source`, `property_preprocess`, `type`, 
 (8, 1, 0, 'migx', 'PlutonClientsCarouselItem', '', '', 0, 22, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:7:\"configs\";s:0:\"\";s:8:\"formtabs\";s:101:\"[\n{\"caption\":\"Tab Title\", \"fields\": [\n{\"field\":\"image\",\"caption\":\"Image\",\"inputTVtype\":\"image\"}\n\n]}\n]\";s:7:\"columns\";s:112:\"[\n{\"header\": \"Image\", \"width\": \"50\", \"sortable\": \"false\", \"dataIndex\": \"image\",\"renderer\": \"this.renderImage\"}\n]\";s:7:\"btntext\";s:0:\"\";s:10:\"previewurl\";s:0:\"\";s:10:\"jsonvarkey\";s:0:\"\";s:19:\"autoResourceFolders\";s:5:\"false\";}', 'a:0:{}', 0, ''),
 (9, 0, 0, 'migx', 'PlutonPriceItem', '', '', 0, 22, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:7:\"configs\";s:0:\"\";s:8:\"formtabs\";s:229:\"[\n{\"caption\":\"Tab Title\", \"fields\": [\n{\"field\":\"h3\",\"caption\":\"h3\"},\n{\"field\":\"price\",\"caption\":\"price\"},\n{\"field\":\"setup\",\"caption\":\"setup\"},\n{\"field\":\"support\",\"caption\":\"support\"},\n{\"field\":\"storage\",\"caption\":\"storage\"}\n\n]}\n]\";s:7:\"columns\";s:321:\"[\n\n{\"header\": \"h3\", \"sortable\": \"true\", \"dataIndex\": \"h3\"},\n{\"header\": \"price\", \"sortable\": \"true\", \"dataIndex\": \"price\"},\n{\"header\": \"setup\", \"sortable\": \"true\", \"dataIndex\": \"setup\"},\n{\"header\": \"support\", \"sortable\": \"true\", \"dataIndex\": \"support\"},\n{\"header\": \"storage\", \"sortable\": \"true\", \"dataIndex\": \"storage\"}\n\n]\";s:7:\"btntext\";s:0:\"\";s:10:\"previewurl\";s:0:\"\";s:10:\"jsonvarkey\";s:0:\"\";s:19:\"autoResourceFolders\";s:5:\"false\";}', 'a:0:{}', 0, ''),
 (10, 1, 0, 'migx', 'Anet-GalleryItem', 'Копия ', '', 0, 23, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:7:\"configs\";s:0:\"\";s:8:\"formtabs\";s:135:\"[\n{\"caption\":\"Tab Title\", \"fields\": [\n{\"field\":\"name\",\"caption\":\"name\"},\n{\"field\":\"image\",\"caption\":\"Image\",\"inputTVtype\":\"image\"}\n]}\n]\";s:7:\"columns\";s:173:\"[\n{\"header\": \"name\", \"sortable\": \"true\", \"dataIndex\": \"name\"},\n{\"header\": \"Image\", \"width\": \"50\", \"sortable\": \"false\", \"dataIndex\": \"image\",\"renderer\": \"this.renderImage\"}\n]\";s:7:\"btntext\";s:0:\"\";s:10:\"previewurl\";s:0:\"\";s:10:\"jsonvarkey\";s:0:\"\";s:19:\"autoResourceFolders\";s:5:\"false\";}', 'a:0:{}', 0, ''),
-(11, 1, 0, 'option', 'floor', '', '', 0, 0, 0, 'Первый==1||Второй==2||Третий==3', 0, 'default', '', 'a:0:{}', 'a:2:{s:10:\"allowBlank\";s:4:\"true\";s:7:\"columns\";s:1:\"1\";}', 'a:0:{}', 0, ''),
+(11, 1, 0, 'option', 'floor', '', '', 0, 0, 0, '0.8==1||1==2||1.1==3||1.2==4||1.25==5||1.5==6||2==7||0.8-1.2==8||0.8-1-1.2==9||1-1.2==10||1-1.2-1.5==11', 0, 'default', '', 'a:0:{}', 'a:2:{s:10:\"allowBlank\";s:4:\"true\";s:7:\"columns\";s:1:\"1\";}', 'a:0:{}', 0, ''),
 (12, 1, 0, 'number', 'price', '', '', 0, 0, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:10:\"allowBlank\";s:4:\"true\";s:13:\"allowDecimals\";s:4:\"Да\";s:13:\"allowNegative\";s:4:\"Да\";s:16:\"decimalPrecision\";s:1:\"2\";s:16:\"decimalSeparator\";s:1:\".\";s:8:\"maxValue\";s:0:\"\";s:8:\"minValue\";s:0:\"\";}', 'a:0:{}', 0, ''),
 (13, 1, 0, 'image', 'image', '', '', 0, 0, 0, '', 0, 'default', '', 'a:0:{}', 'a:0:{}', 'a:0:{}', 0, ''),
-(14, 1, 0, 'number', 'area', 'Площадь ', '', 0, 0, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:10:\"allowBlank\";s:4:\"true\";s:13:\"allowDecimals\";s:4:\"Да\";s:13:\"allowNegative\";s:4:\"Да\";s:16:\"decimalPrecision\";s:1:\"2\";s:16:\"decimalSeparator\";s:1:\".\";s:8:\"maxValue\";s:0:\"\";s:8:\"minValue\";s:0:\"\";}', 'a:0:{}', 0, ''),
-(15, 1, 0, 'checkbox', 'garage', '', '', 0, 0, 0, 'Есть==1', 0, 'default', '', 'a:0:{}', 'a:2:{s:10:\"allowBlank\";s:4:\"true\";s:7:\"columns\";s:1:\"1\";}', 'a:0:{}', 0, '');
+(14, 1, 0, 'number', 'area', 'Залпы', '', 0, 0, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:10:\"allowBlank\";s:4:\"true\";s:13:\"allowDecimals\";s:4:\"Да\";s:13:\"allowNegative\";s:4:\"Да\";s:16:\"decimalPrecision\";s:1:\"2\";s:16:\"decimalSeparator\";s:1:\".\";s:8:\"maxValue\";s:0:\"\";s:8:\"minValue\";s:0:\"\";}', 'a:0:{}', 0, ''),
+(15, 1, 0, 'checkbox', 'garage', '', '', 0, 0, 0, 'Есть==1', 0, 'default', '', 'a:0:{}', 'a:2:{s:10:\"allowBlank\";s:4:\"true\";s:7:\"columns\";s:1:\"1\";}', 'a:0:{}', 0, ''),
+(16, 1, 0, 'number', 'time', 'Время ', '', 0, 0, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:10:\"allowBlank\";s:4:\"true\";s:13:\"allowDecimals\";s:4:\"Да\";s:13:\"allowNegative\";s:4:\"Да\";s:16:\"decimalPrecision\";s:1:\"2\";s:16:\"decimalSeparator\";s:1:\".\";s:8:\"maxValue\";s:0:\"\";s:8:\"minValue\";s:0:\"\";}', 'a:0:{}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -5248,11 +5592,52 @@ INSERT INTO `new_site_tmplvar_contentvalues` (`id`, `tmplvarid`, `contentid`, `v
 (22, 12, 19, '300'),
 (23, 13, 19, 'assets/gallery/2/4.jpg'),
 (24, 14, 19, '300'),
-(25, 11, 20, '2'),
-(26, 12, 20, '400'),
+(25, 11, 20, '4'),
+(26, 12, 20, '200'),
 (27, 13, 20, 'assets/gallery/2/6.jpg'),
-(28, 14, 20, '400'),
-(29, 15, 20, '1');
+(36, 14, 20, '25'),
+(30, 11, 21, '5'),
+(31, 12, 21, '600'),
+(32, 13, 21, 'assets/gallery/2/7.jpg'),
+(33, 14, 21, '5'),
+(34, 15, 21, '1'),
+(35, 16, 21, '15'),
+(38, 12, 22, '600'),
+(37, 11, 22, '6'),
+(39, 13, 22, 'assets/gallery/2/7.jpg'),
+(40, 14, 22, '5'),
+(41, 15, 22, '1'),
+(42, 16, 22, '15'),
+(43, 12, 23, '600'),
+(44, 11, 23, '7'),
+(45, 13, 23, 'assets/gallery/2/7.jpg'),
+(46, 14, 23, '5'),
+(47, 15, 23, '1'),
+(48, 16, 23, '15'),
+(49, 11, 24, '8'),
+(50, 12, 24, '600'),
+(51, 13, 24, 'assets/gallery/2/7.jpg'),
+(52, 14, 24, '5'),
+(53, 15, 24, '1'),
+(54, 16, 24, '15'),
+(55, 11, 25, '9'),
+(56, 12, 25, '600'),
+(57, 13, 25, 'assets/gallery/2/7.jpg'),
+(58, 14, 25, '5'),
+(59, 15, 25, '1'),
+(60, 16, 25, '15'),
+(61, 11, 26, '10'),
+(62, 12, 26, '600'),
+(63, 13, 26, 'assets/gallery/2/7.jpg'),
+(64, 14, 26, '5'),
+(65, 15, 26, '1'),
+(66, 16, 26, '15'),
+(67, 11, 27, '11'),
+(68, 12, 27, '600'),
+(69, 13, 27, 'assets/gallery/2/7.jpg'),
+(70, 14, 27, '5'),
+(71, 15, 27, '1'),
+(72, 16, 27, '15');
 
 -- --------------------------------------------------------
 
@@ -5292,7 +5677,8 @@ INSERT INTO `new_site_tmplvar_templates` (`tmplvarid`, `templateid`, `rank`) VAL
 (12, 1, 0),
 (13, 1, 0),
 (14, 1, 0),
-(15, 1, 0);
+(15, 1, 0),
+(16, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -7215,7 +7601,7 @@ ALTER TABLE `new_clientconfig_setting`
 -- AUTO_INCREMENT для таблицы `new_collection_settings`
 --
 ALTER TABLE `new_collection_settings`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT для таблицы `new_collection_templates`
 --
@@ -7305,7 +7691,7 @@ ALTER TABLE `new_lexicon_entries`
 -- AUTO_INCREMENT для таблицы `new_manager_log`
 --
 ALTER TABLE `new_manager_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2660;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2993;
 --
 -- AUTO_INCREMENT для таблицы `new_media_sources`
 --
@@ -7375,7 +7761,7 @@ ALTER TABLE `new_register_topics`
 -- AUTO_INCREMENT для таблицы `new_site_content`
 --
 ALTER TABLE `new_site_content`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 --
 -- AUTO_INCREMENT для таблицы `new_site_htmlsnippets`
 --
@@ -7400,7 +7786,7 @@ ALTER TABLE `new_site_templates`
 -- AUTO_INCREMENT для таблицы `new_site_tmplvars`
 --
 ALTER TABLE `new_site_tmplvars`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT для таблицы `new_site_tmplvar_access`
 --
@@ -7410,7 +7796,7 @@ ALTER TABLE `new_site_tmplvar_access`
 -- AUTO_INCREMENT для таблицы `new_site_tmplvar_contentvalues`
 --
 ALTER TABLE `new_site_tmplvar_contentvalues`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
 --
 -- AUTO_INCREMENT для таблицы `new_tagger_groups`
 --
