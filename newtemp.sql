@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 26 2018 г., 19:56
+-- Время создания: Сен 27 2018 г., 13:25
 -- Версия сервера: 5.5.53
 -- Версия PHP: 5.5.38
 
@@ -4135,7 +4135,23 @@ INSERT INTO `new_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `
 (2640, 1, '2018-09-26 19:29:06', 'propertyset_update_from_element', 'modChunk', '22'),
 (2641, 1, '2018-09-26 19:52:20', 'snippet_create', 'modSnippet', '77'),
 (2642, 1, '2018-09-26 19:52:27', 'snippet_update', 'modSnippet', '77'),
-(2643, 1, '2018-09-26 19:52:27', 'propertyset_update_from_element', 'modSnippet', '77');
+(2643, 1, '2018-09-26 19:52:27', 'propertyset_update_from_element', 'modSnippet', '77'),
+(2644, 1, '2018-09-27 13:07:34', 'login', 'modContext', 'mgr'),
+(2645, 1, '2018-09-27 13:08:48', 'chunk_create', 'modChunk', '93'),
+(2646, 1, '2018-09-27 13:09:36', 'template_update', 'modTemplate', '1'),
+(2647, 1, '2018-09-27 13:09:36', 'propertyset_update_from_element', 'modTemplate', '1'),
+(2648, 1, '2018-09-27 13:11:01', 'tv_create', 'modTemplateVar', '11'),
+(2649, 1, '2018-09-27 13:11:30', 'tv_create', 'modTemplateVar', '12'),
+(2650, 1, '2018-09-27 13:11:52', 'tv_create', 'modTemplateVar', '13'),
+(2651, 1, '2018-09-27 13:14:49', 'tv_create', 'modTemplateVar', '14'),
+(2652, 1, '2018-09-27 13:15:36', 'tv_create', 'modTemplateVar', '15'),
+(2653, 1, '2018-09-27 13:15:44', 'tv_update', 'modTemplateVar', '15'),
+(2654, 1, '2018-09-27 13:15:44', 'propertyset_update_from_element', 'modTemplateVar', '15'),
+(2655, 1, '2018-09-27 13:17:08', 'resource_update', 'modResource', '1'),
+(2656, 1, '2018-09-27 13:18:15', 'resource_create', 'modDocument', '17'),
+(2657, 1, '2018-09-27 13:19:27', 'resource_create', 'modDocument', '18'),
+(2658, 1, '2018-09-27 13:21:14', 'resource_create', 'modDocument', '19'),
+(2659, 1, '2018-09-27 13:23:06', 'resource_create', 'modDocument', '20');
 
 -- --------------------------------------------------------
 
@@ -4196,7 +4212,12 @@ INSERT INTO `new_media_sources_elements` (`source`, `object_class`, `object`, `c
 (1, 'modTemplateVar', 7, 'web'),
 (1, 'modTemplateVar', 8, 'web'),
 (1, 'modTemplateVar', 9, 'web'),
-(1, 'modTemplateVar', 10, 'web');
+(1, 'modTemplateVar', 10, 'web'),
+(1, 'modTemplateVar', 11, 'web'),
+(1, 'modTemplateVar', 12, 'web'),
+(1, 'modTemplateVar', 13, 'web'),
+(1, 'modTemplateVar', 14, 'web'),
+(1, 'modTemplateVar', 15, 'web');
 
 -- --------------------------------------------------------
 
@@ -4646,7 +4667,8 @@ CREATE TABLE `new_session` (
 
 INSERT INTO `new_session` (`id`, `access`, `data`) VALUES
 ('o00t3ju8d1k9301jo7ranj51f2', 1537972528, 'modx.user.contextTokens|a:2:{s:3:\"mgr\";i:1;s:3:\"web\";i:1;}modx.mgr.user.token|s:52:\"modx5bab97619c07d8.37432727_15bab9789cda472.28052841\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}newResourceTokens|a:5:{i:0;s:23:\"5bab987baa3a70.29816560\";i:1;s:23:\"5bab98a2e3bb68.17064745\";i:2;s:23:\"5bab98c462b156.40656779\";i:3;s:23:\"5bab98d4b851e9.25394739\";i:4;s:23:\"5bab9930725e86.62324270\";}modx.web.user.token|s:52:\"modx5bab97619c07d8.37432727_15bab98ef9e00f0.31681632\";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}'),
-('pahjfg1rdnsbaoglluak93ehg6', 1537980477, 'modx.user.contextTokens|a:0:{}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}');
+('pahjfg1rdnsbaoglluak93ehg6', 1537980477, 'modx.user.contextTokens|a:0:{}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}'),
+('iskjn4tfl52kosr6loamobdsk6', 1538043787, 'modx.user.0.resourceGroups|a:1:{s:3:\"mgr\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"mgr\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}modx.user.contextTokens|a:1:{s:3:\"mgr\";i:1;}modx.mgr.user.token|s:52:\"modx5bab97619c07d8.37432727_15bacabe6d8bd71.62670452\";modx.mgr.session.cookie.lifetime|i:604800;modx.mgr.user.config|a:0:{}newResourceTokens|a:13:{i:0;s:23:\"5bacae09d06704.29258284\";i:1;s:23:\"5bacae24ed2101.74128976\";i:2;s:23:\"5bacae37616e18.71585504\";i:3;s:23:\"5bacae68cf0131.33485288\";i:4;s:23:\"5bacae8b72f106.42066756\";i:5;s:23:\"5bacae8f137ea7.11230345\";i:6;s:23:\"5bacaeb128ae02.54412164\";i:7;s:23:\"5bacaef55c36b0.53610883\";i:8;s:23:\"5bacaef8d6f805.54250252\";i:9;s:23:\"5bacaf1b7e3ec0.91889648\";i:10;s:23:\"5bacaf695b2866.60432819\";i:11;s:23:\"5bacaf6d034011.06526800\";i:12;s:23:\"5bacaf8bdeacd9.95716129\";}modx.user.1.userGroups|a:1:{i:0;i:1;}');
 
 -- --------------------------------------------------------
 
@@ -4705,7 +4727,7 @@ CREATE TABLE `new_site_content` (
 --
 
 INSERT INTO `new_site_content` (`id`, `type`, `contentType`, `pagetitle`, `longtitle`, `description`, `alias`, `link_attributes`, `published`, `pub_date`, `unpub_date`, `parent`, `isfolder`, `introtext`, `content`, `richtext`, `template`, `menuindex`, `searchable`, `cacheable`, `createdby`, `createdon`, `editedby`, `editedon`, `deleted`, `deletedon`, `deletedby`, `publishedon`, `publishedby`, `menutitle`, `donthit`, `privateweb`, `privatemgr`, `content_dispo`, `hidemenu`, `class_key`, `context_key`, `content_type`, `uri`, `uri_override`, `hide_children_in_tree`, `show_in_tree`, `properties`) VALUES
-(1, 'document', 'text/html', 'Bootstrap', 'Поздравляем!', '', 'index', '', 1, 0, 0, 0, 0, '', '<p>You have successfully installed MODX Revolution&nbsp;[[++settings_version]]!</p>\r\n<p>Now that MODX is installed you can login to the manager to create your templates, manage content and install third party extras to add functionality to your&nbsp;website.</p>\r\n<h2>New to&nbsp;MODX?</h2>\r\n<p>Pages on a MODX site are called <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/resources\">Resources</a>, and are visible on the left-hand side of the manager in the Resources tab. Resources can be nested under other resources, making it easy to create a tree of resources. There are different types of resources for different use&nbsp;cases.</p>\r\n<p>Building your website is done through a combination of <strong>Templates</strong>, <strong>Template Variables</strong>, <strong>Chunks</strong>, <strong>Snippets</strong> and <strong>Plugins</strong>. Collectively these are known as <strong>Elements</strong>, and can also be found in the left-hand side of the manager, in the Elements&nbsp;tab.</p>\r\n<p><a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/templates\">Templates</a> contain the outer markup of any page. Each resource can only be assigned to a single template at a time. By adding <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/customizing-content/template-variables\">Template Variables</a> to a template, you can add custom fields for any resource using that particular&nbsp;template.</p>\r\n<p>With <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/chunks\">Chunks</a> you can share parts of the markup, such as a header, across different templates. <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/using-snippets\">Snippets</a> are pieces of PHP that return dynamic content, such as summaries of other resources or the current date. With snippets, you will often use Chunks to mark up the pieces of content it returns, instead of mixing the PHP and&nbsp;HTML.</p>\r\n<p>Finally, <a href=\"https://rtfm.modx.com/revolution/2.x/developing-in-modx/basic-development/plugins\">Plugins</a> enable more advanced features by hooking into the extensive events system provided by&nbsp;MODX.</p>\r\n<p>To learn more about MODX, be sure to check out the <a href=\"https://rtfm.modx.com/revolution/2.x/getting-started\">Getting Started</a> section in the official&nbsp;documentation.</p>', 1, 1, 0, 1, 1, 1, 1490966703, 1, 1498296915, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 'modDocument', 'web', 1, 'index.html', 0, 0, 1, NULL),
+(1, 'document', 'text/html', 'Каталог', 'Поздравляем!', '', 'index', '', 1, 0, 0, 0, 1, '', '<p>You have successfully installed MODX Revolution&nbsp;[[++settings_version]]!</p>\r\n<p>Now that MODX is installed you can login to the manager to create your templates, manage content and install third party extras to add functionality to your&nbsp;website.</p>\r\n<h2>New to&nbsp;MODX?</h2>\r\n<p>Pages on a MODX site are called <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/resources\">Resources</a>, and are visible on the left-hand side of the manager in the Resources tab. Resources can be nested under other resources, making it easy to create a tree of resources. There are different types of resources for different use&nbsp;cases.</p>\r\n<p>Building your website is done through a combination of <strong>Templates</strong>, <strong>Template Variables</strong>, <strong>Chunks</strong>, <strong>Snippets</strong> and <strong>Plugins</strong>. Collectively these are known as <strong>Elements</strong>, and can also be found in the left-hand side of the manager, in the Elements&nbsp;tab.</p>\r\n<p><a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/templates\">Templates</a> contain the outer markup of any page. Each resource can only be assigned to a single template at a time. By adding <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/customizing-content/template-variables\">Template Variables</a> to a template, you can add custom fields for any resource using that particular&nbsp;template.</p>\r\n<p>With <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/chunks\">Chunks</a> you can share parts of the markup, such as a header, across different templates. <a href=\"https://rtfm.modx.com/revolution/2.x/making-sites-with-modx/structuring-your-site/using-snippets\">Snippets</a> are pieces of PHP that return dynamic content, such as summaries of other resources or the current date. With snippets, you will often use Chunks to mark up the pieces of content it returns, instead of mixing the PHP and&nbsp;HTML.</p>\r\n<p>Finally, <a href=\"https://rtfm.modx.com/revolution/2.x/developing-in-modx/basic-development/plugins\">Plugins</a> enable more advanced features by hooking into the extensive events system provided by&nbsp;MODX.</p>\r\n<p>To learn more about MODX, be sure to check out the <a href=\"https://rtfm.modx.com/revolution/2.x/getting-started\">Getting Started</a> section in the official&nbsp;documentation.</p>', 1, 1, 0, 1, 1, 1, 1490966703, 1, 1538043427, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 'CollectionContainer', 'web', 1, 'index/', 0, 0, 1, NULL),
 (2, 'document', 'text/html', 'Сервисы', '', 'Demo blog container page for Blogit.', 'blog', '', 0, 0, 0, 0, 1, '', '<h1>Blog overview</h1>', 1, 2, 2, 1, 1, 1, 1490968787, 1, 1537972381, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 1, 'CollectionContainer', 'web', 1, 'blog/', 0, 0, 1, NULL),
 (3, 'document', 'text/html', 'Post 1', '', 'Demo post 1 for the BlogIt extra.', 'post-1', '', 1, 0, 0, 2, 0, 'Demo summary of post 2 for the BlogIt extra.', '<p>Demo content of post 2 for the BlogIt extra.</p>', 1, 3, 0, 1, 1, 1, 1490968787, 1, 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 'modDocument', 'web', 1, 'post-1.html', 0, 0, 0, NULL),
 (4, 'document', 'text/html', 'Post 2', '', 'Demo post 2 for the BlogIt extra.', 'post-2', '', 1, 0, 0, 2, 0, 'Demo summary of post 2 for the BlogIt extra.', '<p>Demo content of post 2 for the BlogIt extra.</p>', 1, 3, 1, 1, 1, 1, 1490968787, 1, 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 'modDocument', 'web', 1, 'post-2.html', 0, 0, 0, NULL),
@@ -4720,7 +4742,11 @@ INSERT INTO `new_site_content` (`id`, `type`, `contentType`, `pagetitle`, `longt
 (13, 'document', 'text/html', 'Pluton', '', '', 'pluton', '', 0, 0, 0, 0, 0, '', '', 1, 11, 10, 1, 1, 1, 1496655305, 1, 1537972396, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'pluton.html', 0, 0, 1, NULL),
 (14, 'document', 'text/html', 'Gallery', '', '', 'anet', '', 0, 0, 0, 0, 0, '', '', 1, 12, 11, 1, 1, 1, 1496655536, 1, 1537972427, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'anet.html', 0, 0, 1, NULL),
 (15, 'document', 'text/html', 'Grid', '', '', 'grid', '', 0, 0, 0, 0, 0, '', '', 1, 13, 12, 1, 1, 1, 1496655562, 1, 1537972441, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'grid.html', 0, 0, 1, NULL),
-(16, 'document', 'text/html', 'Результаты поиска', '', '', 'result-search', '', 1, 0, 0, 0, 0, '', '', 1, 8, 13, 1, 1, 1, 1498046307, 1, 1498047163, 0, 0, 0, 1498046280, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'result-search.html', 0, 0, 1, NULL);
+(16, 'document', 'text/html', 'Результаты поиска', '', '', 'result-search', '', 1, 0, 0, 0, 0, '', '', 1, 8, 13, 1, 1, 1, 1498046307, 1, 1498047163, 0, 0, 0, 1498046280, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'result-search.html', 0, 0, 1, NULL),
+(17, 'document', 'text/html', 'Товар 1', '', '', 'tovar-1', '', 1, 0, 0, 1, 0, '', '', 1, 1, 0, 1, 1, 1, 1538043495, 0, 0, 0, 0, 0, 1538043495, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-1.html', 0, 0, 0, NULL),
+(18, 'document', 'text/html', 'Товар 2', '', '', 'tovar-2', '', 1, 0, 0, 1, 0, '', '', 1, 1, 1, 1, 1, 1, 1538043567, 0, 0, 0, 0, 0, 1538043567, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-2.html', 0, 0, 0, NULL),
+(19, 'document', 'text/html', 'Товар 3', '', '', 'tovar-3', '', 1, 0, 0, 1, 0, '', '', 1, 1, 2, 1, 1, 1, 1538043674, 0, 0, 0, 0, 0, 1538043674, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-3.html', 0, 0, 0, NULL),
+(20, 'document', 'text/html', 'Товар 4', '', '', 'tovar-4', '', 1, 0, 0, 1, 0, '', '', 1, 1, 3, 1, 1, 1, 1538043786, 0, 0, 0, 0, 0, 1538043786, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-4.html', 0, 0, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -4842,7 +4868,8 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (89, 0, 0, 'GridFooter', '', 0, 24, 0, '<footer class=\"main-footer grid\">\n  <div class=\"footer-logo grid\">we are<span>creators</span></div>\n  <div class=\"copyright\">~<i class=\"fa fa-copyright\" aria-hidden=\"true\"></i>~</div>\n</footer>', 0, 'a:0:{}', 0, ''),
 (90, 0, 0, 'GridScripts', '', 0, 24, 0, '<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/css/bootstrap.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/css/bootstrap-theme.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/font-awesome/css/font-awesome.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/mmenu/css/jquery.mmenu.all.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/css-hamburgers/hamburgers.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/animate/animate.css\">\n<link href=\"[[++assets_url]]templates/Stas/app/libs/baguetteBox/baguetteBox.min.css\" rel=\"stylesheet\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/OwlCarousel/dist/assets/owl.carousel.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/OwlCarousel/dist/assets/owl.theme.default.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/css/jquery.bxslider.css\">\n\n    \n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/css/grid.min.css\">\n    \n<script src=\"[[++assets_url]]templates/Stas/app/libs/jquery/dist/jquery.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/animate/animate-css.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/animate/waypoints.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/js/bootstrap.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/mmenu/js/jquery.mmenu.all.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/OwlCarousel/dist/owl.carousel.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/baguetteBox/baguetteBox.min.js\"></script>\n \n<script src=\"[[++assets_url]]templates/Stas/app/js/common.js\"></script>\n', 0, 'a:0:{}', 0, ''),
 (91, 1, 0, 'GridLogin', '', 0, 24, 0, '<div class=\"clearfix\"></div>\n<section class=\"main-login\">\n    <div class=\"container clearfix\">\n        <div class=\"row\">\n            <div class=\"col-xs-12\">[[!Login? &loginTpl=`lgnLoginTpl` &logoutTpl=`GridlgnLogoutTpl` &errTpl=`lgnErrTpl` &loginResourceId=`1` &logoutResourceId=`1`]]</div>\n        </div>\n    </div>\n    \n\n</section>', 0, 'a:0:{}', 0, ''),
-(92, 0, 0, 'GridlgnLogoutTpl', '', 0, 24, 0, '<div class=\"loginMessage\">[[+errors]]</div>\n\n<div class=\"loginLogin\">\n    <div class=\"loginRegister pull-right\">\n        <div class=\"butt\"><a href=\"[[+logoutUrl]]\" title=\"[[+actionMsg]]\"><button class=\"btn-sm btn-primary out\" type=\"submit\">Выйти</button></a>\n       <span> Добро пожаловать <b>[[+modx.user.id:userinfo=`username`]]</b></span></div>\n        \n    </div>\n</div>', 0, 'a:0:{}', 0, '');
+(92, 0, 0, 'GridlgnLogoutTpl', '', 0, 24, 0, '<div class=\"loginMessage\">[[+errors]]</div>\n\n<div class=\"loginLogin\">\n    <div class=\"loginRegister pull-right\">\n        <div class=\"butt\"><a href=\"[[+logoutUrl]]\" title=\"[[+actionMsg]]\"><button class=\"btn-sm btn-primary out\" type=\"submit\">Выйти</button></a>\n       <span> Добро пожаловать <b>[[+modx.user.id:userinfo=`username`]]</b></span></div>\n        \n    </div>\n</div>', 0, 'a:0:{}', 0, ''),
+(93, 1, 0, 'tplCatItem', '', 0, 0, 0, '<div class=\"ajax-item\">\r\n    <img src=\"[[+tv.image]]\" alt=\"[[+pagetitle]]\">\r\n    <h4>[[+pagetitle]]</h4>\r\n    <table>\r\n        <tr>\r\n            <td>Этаж</td>\r\n            <td>[[+tv.floor]]</td>\r\n        </tr>\r\n        [[+tv.area:isnot=``:then=`\r\n        <tr>\r\n            <td>Площадь</td>\r\n            <td>[[+tv.area]] кв.м.</td>\r\n        </tr>\r\n        `]]\r\n        <tr>\r\n            <td>Гараж</td>\r\n            <td>[[+tv.garage:is=`1`:then=`Есть`:else=`Нет`]]</td>\r\n        </tr>\r\n        <tr>\r\n            <td>Цена:</td>\r\n            <td>[[+tv.price]]</td>\r\n        </tr>\r\n    </table> \r\n</div>', 0, 'a:0:{}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -5106,7 +5133,7 @@ CREATE TABLE `new_site_templates` (
 --
 
 INSERT INTO `new_site_templates` (`id`, `source`, `property_preprocess`, `templatename`, `description`, `editor_type`, `category`, `icon`, `template_type`, `content`, `locked`, `properties`, `static`, `static_file`) VALUES
-(1, 0, 0, 'Начальный шаблон', '', 0, 0, '', 0, '[[$Head? &bodyClass=`isHome`]]\n\n<div id=\"my-page\">\n   <form class=\"ajax-form\">\n\n		<!-- Sort Fields -->\n		<input type=\"hidden\" name=\"sortby\" value=\"pagetitle\">\n		<input type=\"hidden\" name=\"sortdir\" value=\"asc\">\n		<!-- Sort End -->\n\n		<label>\n			<input type=\"checkbox\" name=\"garage\"> Checkbox\n		</label>\n\n		<label>\n			<input name=\"floor\" value=\"0\" checked=\"\" type=\"radio\">\n			<input name=\"floor\" value=\"1\" type=\"radio\">\n			<input name=\"floor\" value=\"2\" type=\"radio\">\n		</label>\n\n		<label><input type=\"text\" name=\"price\"></label>\n\n	</form>\n\n	<!-- Пример создания кнопок сортировки -->\n	Сортировать по цене: <button data-sort-by=\"price\">По возрастанию</button>\n\n	<!-- Вывод сниппета в шаблоне категории -->\n	<div class=\"ajax-container\">\n		[[!catalogFilter?\n		&tpl=`tplCatItem`\n		&limit=`3`\n		&parents=`5`\n		&fields=`image,area,floor,garage,price`]]\n	</div>\n\n	<p>Пример чанка <strong>tplCatItem</strong></p>\n\n	<div class=\"ajax-item\">\n		<img src=\"[[+tv.image]]\" alt=\"[[+pagetitle]]\">\n		<h4>[[+pagetitle]]</h4>\n		<table>\n			<tr>\n				<td>Этаж</td>\n				<td>[[+tv.floor]]</td>\n			</tr>\n			[[+tv.area:isnot=``:then=`\n			<tr>\n				<td>Площадь</td>\n				<td>[[+tv.area]] кв.м.</td>\n			</tr>\n			`]]\n			<tr>\n				<td>Гараж</td>\n				<td>[[+tv.garage:is=`1`:then=`Есть`:else=`Нет`]]</td>\n			</tr>\n			<tr>\n				<td>Цена:</td>\n				<td>[[+tv.price]]</td>\n			</tr>\n		</table> \n	</div>\n</div>\n \n\n\n[[$Scripts]]\n</body>\n</html>\n', 0, 'a:0:{}', 0, ''),
+(1, 0, 0, 'Начальный шаблон', '', 0, 0, '', 0, '[[$Head? &bodyClass=`isHome`]]\n\n<div id=\"my-page\">\n   <form class=\"ajax-form\">\n\n		<!-- Sort Fields -->\n		<input type=\"hidden\" name=\"sortby\" value=\"pagetitle\">\n		<input type=\"hidden\" name=\"sortdir\" value=\"asc\">\n		<!-- Sort End -->\n\n		<label>\n			<input type=\"checkbox\" name=\"garage\"> Checkbox\n		</label>\n\n		<label>\n			<input name=\"floor\" value=\"0\" checked=\"\" type=\"radio\">\n			<input name=\"floor\" value=\"1\" type=\"radio\">\n			<input name=\"floor\" value=\"2\" type=\"radio\">\n		</label>\n\n		<label><input type=\"text\" name=\"price\"></label>\n\n	</form>\n\n	<!-- Пример создания кнопок сортировки -->\n	Сортировать по цене: <button data-sort-by=\"price\">По возрастанию</button>\n\n	<!-- Вывод сниппета в шаблоне категории -->\n	<div class=\"ajax-container\">\n		[[!catalogFilter?\n		&tpl=`tplCatItem`\n		&limit=`3`\n		&parents=`1`\n		&fields=`image,area,floor,garage,price`]]\n	</div>\n\n\n</div>\n \n\n\n[[$Scripts]]\n</body>\n</html>\n', 0, 'a:0:{}', 0, ''),
 (2, 0, 0, 'Blogit container', 'Blogit - Created by MPThemes http://mpthemes.com', 0, 7, '', 0, '<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n	<base href=\"[[++site_url]]\" />\r\n        <meta charset=\"[[++modx_charset:lcase]]\" />\r\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\r\n        <title>[[*longtitle:strip_tags:empty=`[[*pagetitle:strip_tags]]`]] | [[++site_name:strip_tags]]</title>\r\n        <meta name=\"description\" content=\"[[*description:notempty=`[[*description]]`:default=`[[+content:ellipsis=`155`]]`]]\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n</head>\r\n<body>\r\n	[[*content]]\r\n	<!-- BlogIt - This chunk grabs all children of the resource. -->\r\n	[[$blogit.get_posts]]\r\n	<!-- BlogIt - This chunk grabs all uses Tagger tags used in posts -->\r\n	[[$blogit.taglist]]\r\n</body>\r\n</html>', 0, NULL, 0, ''),
 (3, 0, 0, 'Blogit post', 'Blogit - Created by MPThemes http://mpthemes.com', 0, 7, '', 0, '<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n	<base href=\"[[++site_url]]\" />\r\n        <meta charset=\"[[++modx_charset:lcase]]\" />\r\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\r\n        <title>[[*longtitle:strip_tags:empty=`[[*pagetitle:strip_tags]]`]] | [[++site_name:strip_tags]]</title>\r\n        <meta name=\"description\" content=\"[[*description:notempty=`[[*description]]`:default=`[[+content:ellipsis=`155`]]`]]\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n</head>\r\n<body>\r\n	[[blogit.lexicon_load]]\r\n	<p><a href=\"[[~[[*parent]]]]\">[[%blogit.back_to_overview]]</a></p>\r\n	<article>\r\n		<header>\r\n			<h1>[[*longtitle:strip_tags:empty=`[[*pagetitle:strip_tags]]`]]</h1>\r\n		</header>\r\n		[[*blogit.post_main_image:isnot=``:then=`<img src=\"[[*blogit.post_main_image:phpthumbof=`w=[[++blogit.main_image_width]]`]]\" alt=\"[[*blogit.post_main_image_alt]]\">`]]\r\n		[[*content]]\r\n		<footer>\r\n			<small>[[%blogit.published_on]]: <time datetime=\"[[*publishedon:strtotime:date=`%y-%m-%d`]]\">[[*publishedon:strtotime:date=`%b %d %Y`]]</time></small><br>\r\n			<small>[[%blogit.created_by]]: [[*createdby:userinfo=`username`]]</small><br>\r\n			[[++blogit.use_tags:isequalto=`1`:then=`\r\n			<small>Tags: [[!TaggerGetTags? &resources=`[[*id]]` &rowTpl=`blogit.tag_links_tpl` &separator=`, ` &target=`[[++blogit.blog_container_id]]`]]</small>\r\n			`]]\r\n		</footer>\r\n	</article>\r\n</body>\r\n</html>', 0, NULL, 0, ''),
 (4, 1, 0, 'Forgot Password', '', 0, 20, '', 0, '[[$Head]]\n<body>\n    <div id=\"my-page\">\n[[$Header]]\n        <div id=\"my-content\">\n            [[$Navbar]]\n		    [[$Forgp]]\n        </div>\n\n		<div id=\"my-footer\">\n			[[$Footer]]\n		</div>\n\n\n</div>\n[[$Scripts]]\n</body>\n</html>\n\n      	\n  ', 0, 'a:0:{}', 0, ''),
@@ -5160,7 +5187,12 @@ INSERT INTO `new_site_tmplvars` (`id`, `source`, `property_preprocess`, `type`, 
 (7, 0, 0, 'migx', '4sectItems', '', '', 0, 22, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:7:\"configs\";s:0:\"\";s:8:\"formtabs\";s:204:\"[\n{\"caption\":\"Tab Title\", \"fields\": [\n{\"field\":\"image\",\"caption\":\"Image\",\"inputTVtype\":\"image\"},\n{\"field\":\"p\",\"caption\":\"p\"},\n{\"field\":\"name\",\"caption\":\"name\"},\n{\"field\":\"client\",\"caption\":\"client\"}\n\n]}\n]\";s:7:\"columns\";s:294:\"[\n{\"header\": \"Image\", \"width\": \"50\", \"sortable\": \"false\", \"dataIndex\": \"image\",\"renderer\": \"this.renderImage\"},\n{\"header\": \"p\", \"sortable\": \"true\", \"dataIndex\": \"p\"},\n{\"header\": \"name\", \"sortable\": \"true\", \"dataIndex\": \"name\"},\n{\"header\": \"client\", \"sortable\": \"true\", \"dataIndex\": \"client\"}\n\n]\";s:7:\"btntext\";s:0:\"\";s:10:\"previewurl\";s:0:\"\";s:10:\"jsonvarkey\";s:0:\"\";s:19:\"autoResourceFolders\";s:5:\"false\";}', 'a:0:{}', 0, ''),
 (8, 1, 0, 'migx', 'PlutonClientsCarouselItem', '', '', 0, 22, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:7:\"configs\";s:0:\"\";s:8:\"formtabs\";s:101:\"[\n{\"caption\":\"Tab Title\", \"fields\": [\n{\"field\":\"image\",\"caption\":\"Image\",\"inputTVtype\":\"image\"}\n\n]}\n]\";s:7:\"columns\";s:112:\"[\n{\"header\": \"Image\", \"width\": \"50\", \"sortable\": \"false\", \"dataIndex\": \"image\",\"renderer\": \"this.renderImage\"}\n]\";s:7:\"btntext\";s:0:\"\";s:10:\"previewurl\";s:0:\"\";s:10:\"jsonvarkey\";s:0:\"\";s:19:\"autoResourceFolders\";s:5:\"false\";}', 'a:0:{}', 0, ''),
 (9, 0, 0, 'migx', 'PlutonPriceItem', '', '', 0, 22, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:7:\"configs\";s:0:\"\";s:8:\"formtabs\";s:229:\"[\n{\"caption\":\"Tab Title\", \"fields\": [\n{\"field\":\"h3\",\"caption\":\"h3\"},\n{\"field\":\"price\",\"caption\":\"price\"},\n{\"field\":\"setup\",\"caption\":\"setup\"},\n{\"field\":\"support\",\"caption\":\"support\"},\n{\"field\":\"storage\",\"caption\":\"storage\"}\n\n]}\n]\";s:7:\"columns\";s:321:\"[\n\n{\"header\": \"h3\", \"sortable\": \"true\", \"dataIndex\": \"h3\"},\n{\"header\": \"price\", \"sortable\": \"true\", \"dataIndex\": \"price\"},\n{\"header\": \"setup\", \"sortable\": \"true\", \"dataIndex\": \"setup\"},\n{\"header\": \"support\", \"sortable\": \"true\", \"dataIndex\": \"support\"},\n{\"header\": \"storage\", \"sortable\": \"true\", \"dataIndex\": \"storage\"}\n\n]\";s:7:\"btntext\";s:0:\"\";s:10:\"previewurl\";s:0:\"\";s:10:\"jsonvarkey\";s:0:\"\";s:19:\"autoResourceFolders\";s:5:\"false\";}', 'a:0:{}', 0, ''),
-(10, 1, 0, 'migx', 'Anet-GalleryItem', 'Копия ', '', 0, 23, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:7:\"configs\";s:0:\"\";s:8:\"formtabs\";s:135:\"[\n{\"caption\":\"Tab Title\", \"fields\": [\n{\"field\":\"name\",\"caption\":\"name\"},\n{\"field\":\"image\",\"caption\":\"Image\",\"inputTVtype\":\"image\"}\n]}\n]\";s:7:\"columns\";s:173:\"[\n{\"header\": \"name\", \"sortable\": \"true\", \"dataIndex\": \"name\"},\n{\"header\": \"Image\", \"width\": \"50\", \"sortable\": \"false\", \"dataIndex\": \"image\",\"renderer\": \"this.renderImage\"}\n]\";s:7:\"btntext\";s:0:\"\";s:10:\"previewurl\";s:0:\"\";s:10:\"jsonvarkey\";s:0:\"\";s:19:\"autoResourceFolders\";s:5:\"false\";}', 'a:0:{}', 0, '');
+(10, 1, 0, 'migx', 'Anet-GalleryItem', 'Копия ', '', 0, 23, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:7:\"configs\";s:0:\"\";s:8:\"formtabs\";s:135:\"[\n{\"caption\":\"Tab Title\", \"fields\": [\n{\"field\":\"name\",\"caption\":\"name\"},\n{\"field\":\"image\",\"caption\":\"Image\",\"inputTVtype\":\"image\"}\n]}\n]\";s:7:\"columns\";s:173:\"[\n{\"header\": \"name\", \"sortable\": \"true\", \"dataIndex\": \"name\"},\n{\"header\": \"Image\", \"width\": \"50\", \"sortable\": \"false\", \"dataIndex\": \"image\",\"renderer\": \"this.renderImage\"}\n]\";s:7:\"btntext\";s:0:\"\";s:10:\"previewurl\";s:0:\"\";s:10:\"jsonvarkey\";s:0:\"\";s:19:\"autoResourceFolders\";s:5:\"false\";}', 'a:0:{}', 0, ''),
+(11, 1, 0, 'option', 'floor', '', '', 0, 0, 0, 'Первый==1||Второй==2||Третий==3', 0, 'default', '', 'a:0:{}', 'a:2:{s:10:\"allowBlank\";s:4:\"true\";s:7:\"columns\";s:1:\"1\";}', 'a:0:{}', 0, ''),
+(12, 1, 0, 'number', 'price', '', '', 0, 0, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:10:\"allowBlank\";s:4:\"true\";s:13:\"allowDecimals\";s:4:\"Да\";s:13:\"allowNegative\";s:4:\"Да\";s:16:\"decimalPrecision\";s:1:\"2\";s:16:\"decimalSeparator\";s:1:\".\";s:8:\"maxValue\";s:0:\"\";s:8:\"minValue\";s:0:\"\";}', 'a:0:{}', 0, ''),
+(13, 1, 0, 'image', 'image', '', '', 0, 0, 0, '', 0, 'default', '', 'a:0:{}', 'a:0:{}', 'a:0:{}', 0, ''),
+(14, 1, 0, 'number', 'area', 'Площадь ', '', 0, 0, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:10:\"allowBlank\";s:4:\"true\";s:13:\"allowDecimals\";s:4:\"Да\";s:13:\"allowNegative\";s:4:\"Да\";s:16:\"decimalPrecision\";s:1:\"2\";s:16:\"decimalSeparator\";s:1:\".\";s:8:\"maxValue\";s:0:\"\";s:8:\"minValue\";s:0:\"\";}', 'a:0:{}', 0, ''),
+(15, 1, 0, 'checkbox', 'garage', '', '', 0, 0, 0, 'Есть==1', 0, 'default', '', 'a:0:{}', 'a:2:{s:10:\"allowBlank\";s:4:\"true\";s:7:\"columns\";s:1:\"1\";}', 'a:0:{}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -5202,7 +5234,25 @@ INSERT INTO `new_site_tmplvar_contentvalues` (`id`, `tmplvarid`, `contentid`, `v
 (8, 8, 13, '[{\"MIGX_id\":\"1\",\"image\":\"assets\\/templates\\/Stas\\/app\\/libs\\/pluton\\/images\\/clients\\/ClientLogo01.png\"},{\"MIGX_id\":\"2\",\"image\":\"\\/assets\\/templates\\/Stas\\/app\\/libs\\/pluton\\/images\\/clients\\/ClientLogo02.png\"},{\"MIGX_id\":\"3\",\"image\":\"\\/assets\\/templates\\/Stas\\/app\\/libs\\/pluton\\/images\\/clients\\/ClientLogo03.png\"},{\"MIGX_id\":\"4\",\"image\":\"\\/assets\\/templates\\/Stas\\/app\\/libs\\/pluton\\/images\\/clients\\/ClientLogo04.png\"},{\"MIGX_id\":\"5\",\"image\":\"\\/assets\\/templates\\/Stas\\/app\\/libs\\/pluton\\/images\\/clients\\/ClientLogo05.png\"}]'),
 (9, 9, 13, '[{\"MIGX_id\":\"1\",\"h3\":\"BASIC\",\"price\":\"$19,99\",\"setup\":\"<strong>Free <\\/strong>Setup\",\"support\":\"<strong>24\\/7 <\\/strong>Support\",\"storage\":\"<strong>5 GB <\\/strong>File Storage\"},{\"MIGX_id\":\"2\",\"h3\":\"PRO\",\"price\":\"$39,99\",\"setup\":\"<strong>Free <\\/strong>Setup\",\"support\":\"<strong>24\\/7<\\/strong> Support\",\"storage\":\"<strong>25 GB <\\/strong>File Storage\"},{\"MIGX_id\":\"3\",\"h3\":\"PREMIUM\",\"price\":\"$79,99\",\"setup\":\"<strong>Free<\\/strong> Setup\",\"support\":\"<strong>24\\/7 <\\/strong>Support\",\"storage\":\"<strong>50 GB<\\/strong> File Storage\"}]'),
 (10, 10, 13, '[{\"MIGX_id\":\"1\",\"1sectH3\":\"Modern Design\",\"1sectP\":\"We Create Modern And Clean Theme For Your Business Company.\",\"image\":\"assets\\/templates\\/Stas\\/app\\/libs\\/pluton\\/images\\/Service1.png\"},{\"MIGX_id\":\"2\",\"1sectH3\":\"Powerfull Theme\",\"1sectP\":\"We Create Modern And Powerful Theme With Lots Animation And Features\",\"image\":\"assets\\/templates\\/Stas\\/app\\/libs\\/pluton\\/images\\/Service2.png\"},{\"MIGX_id\":\"3\",\"1sectH3\":\"Clean Code\",\"1sectP\":\"We Create Modern And Powerful Html5 And CSS3 Code Easy For Read And Customize.\",\"image\":\"assets\\/templates\\/Stas\\/app\\/libs\\/pluton\\/images\\/Service3.png\"}]'),
-(11, 10, 14, '[{\"MIGX_id\":\"1\",\"name\":\"web\",\"image\":\"assets\\/templates\\/Anet\\/assets\\/img\\/g-10.jpg\"},{\"MIGX_id\":\"2\",\"name\":\"design\",\"image\":\"assets\\/templates\\/Anet\\/assets\\/img\\/g-11.jpg\"},{\"MIGX_id\":\"3\",\"name\":\"web\",\"image\":\"assets\\/templates\\/Anet\\/assets\\/img\\/g-12.jpg\"},{\"MIGX_id\":\"4\",\"name\":\"web\",\"image\":\"assets\\/templates\\/Anet\\/assets\\/img\\/g-13.jpg\"},{\"MIGX_id\":\"5\",\"name\":\"design\",\"image\":\"assets\\/templates\\/Anet\\/assets\\/img\\/g-14.jpg\"}]');
+(11, 10, 14, '[{\"MIGX_id\":\"1\",\"name\":\"web\",\"image\":\"assets\\/templates\\/Anet\\/assets\\/img\\/g-10.jpg\"},{\"MIGX_id\":\"2\",\"name\":\"design\",\"image\":\"assets\\/templates\\/Anet\\/assets\\/img\\/g-11.jpg\"},{\"MIGX_id\":\"3\",\"name\":\"web\",\"image\":\"assets\\/templates\\/Anet\\/assets\\/img\\/g-12.jpg\"},{\"MIGX_id\":\"4\",\"name\":\"web\",\"image\":\"assets\\/templates\\/Anet\\/assets\\/img\\/g-13.jpg\"},{\"MIGX_id\":\"5\",\"name\":\"design\",\"image\":\"assets\\/templates\\/Anet\\/assets\\/img\\/g-14.jpg\"}]'),
+(12, 11, 17, '1'),
+(13, 12, 17, '100'),
+(14, 13, 17, 'assets/gallery/2/2.jpg'),
+(15, 14, 17, '100'),
+(16, 15, 17, '1'),
+(17, 11, 18, '2'),
+(18, 12, 18, '200'),
+(19, 13, 18, 'assets/gallery/2/3.jpg'),
+(20, 14, 18, '200'),
+(21, 11, 19, '3'),
+(22, 12, 19, '300'),
+(23, 13, 19, 'assets/gallery/2/4.jpg'),
+(24, 14, 19, '300'),
+(25, 11, 20, '2'),
+(26, 12, 20, '400'),
+(27, 13, 20, 'assets/gallery/2/6.jpg'),
+(28, 14, 20, '400'),
+(29, 15, 20, '1');
 
 -- --------------------------------------------------------
 
@@ -5237,7 +5287,12 @@ INSERT INTO `new_site_tmplvar_templates` (`tmplvarid`, `templateid`, `rank`) VAL
 (7, 12, 0),
 (8, 12, 0),
 (9, 12, 0),
-(10, 12, 0);
+(10, 12, 0),
+(11, 1, 0),
+(12, 1, 0),
+(13, 1, 0),
+(14, 1, 0),
+(15, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -6113,7 +6168,7 @@ CREATE TABLE `new_user_attributes` (
 --
 
 INSERT INTO `new_user_attributes` (`id`, `internalKey`, `fullname`, `email`, `phone`, `mobilephone`, `blocked`, `blockeduntil`, `blockedafter`, `logincount`, `lastlogin`, `thislogin`, `failedlogincount`, `sessionid`, `dob`, `gender`, `address`, `country`, `city`, `state`, `zip`, `fax`, `photo`, `comment`, `website`, `extended`) VALUES
-(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 200, 1537972105, 1537972463, 0, 'o00t3ju8d1k9301jo7ranj51f2', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
+(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 201, 1537972463, 1538042854, 0, 'iskjn4tfl52kosr6loamobdsk6', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
 (3, 3, '', 'platonov_stan@mail.ru', '', '', 0, 0, 0, 7, 1491287477, 1491302110, 0, 'pinq7vkq5q6r7f8adtj2m64550', 0, 0, '', '', '', '', '', '', '', '', '', '[]');
 
 -- --------------------------------------------------------
@@ -7250,7 +7305,7 @@ ALTER TABLE `new_lexicon_entries`
 -- AUTO_INCREMENT для таблицы `new_manager_log`
 --
 ALTER TABLE `new_manager_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2644;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2660;
 --
 -- AUTO_INCREMENT для таблицы `new_media_sources`
 --
@@ -7320,12 +7375,12 @@ ALTER TABLE `new_register_topics`
 -- AUTO_INCREMENT для таблицы `new_site_content`
 --
 ALTER TABLE `new_site_content`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT для таблицы `new_site_htmlsnippets`
 --
 ALTER TABLE `new_site_htmlsnippets`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=93;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
 --
 -- AUTO_INCREMENT для таблицы `new_site_plugins`
 --
@@ -7345,7 +7400,7 @@ ALTER TABLE `new_site_templates`
 -- AUTO_INCREMENT для таблицы `new_site_tmplvars`
 --
 ALTER TABLE `new_site_tmplvars`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT для таблицы `new_site_tmplvar_access`
 --
@@ -7355,7 +7410,7 @@ ALTER TABLE `new_site_tmplvar_access`
 -- AUTO_INCREMENT для таблицы `new_site_tmplvar_contentvalues`
 --
 ALTER TABLE `new_site_tmplvar_contentvalues`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 --
 -- AUTO_INCREMENT для таблицы `new_tagger_groups`
 --
