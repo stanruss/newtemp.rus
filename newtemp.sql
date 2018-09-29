@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
+-- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 27 2018 г., 19:04
--- Версия сервера: 5.5.53
+-- Время создания: Сен 29 2018 г., 18:59
+-- Версия сервера: 5.6.38
 -- Версия PHP: 5.5.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -4486,7 +4488,147 @@ INSERT INTO `new_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `
 (2989, 1, '2018-09-27 18:58:06', 'chunk_update', 'modChunk', '93'),
 (2990, 1, '2018-09-27 18:58:06', 'propertyset_update_from_element', 'modChunk', '93'),
 (2991, 1, '2018-09-27 18:59:36', 'chunk_update', 'modChunk', '93'),
-(2992, 1, '2018-09-27 18:59:37', 'propertyset_update_from_element', 'modChunk', '93');
+(2992, 1, '2018-09-27 18:59:37', 'propertyset_update_from_element', 'modChunk', '93'),
+(2993, 1, '2018-09-28 09:30:15', 'login', 'modContext', 'mgr'),
+(2994, 1, '2018-09-29 17:35:05', 'login', 'modContext', 'mgr'),
+(2995, 1, '2018-09-29 17:36:06', 'resource_update', 'modResource', '21'),
+(2996, 1, '2018-09-29 17:36:52', 'chunk_update', 'modChunk', '93'),
+(2997, 1, '2018-09-29 17:36:53', 'propertyset_update_from_element', 'modChunk', '93'),
+(2998, 1, '2018-09-29 17:38:37', 'chunk_update', 'modChunk', '93'),
+(2999, 1, '2018-09-29 17:38:37', 'propertyset_update_from_element', 'modChunk', '93'),
+(3000, 1, '2018-09-29 17:39:32', 'chunk_update', 'modChunk', '93'),
+(3001, 1, '2018-09-29 17:39:32', 'propertyset_update_from_element', 'modChunk', '93'),
+(3002, 1, '2018-09-29 17:41:22', 'chunk_update', 'modChunk', '93'),
+(3003, 1, '2018-09-29 17:41:22', 'propertyset_update_from_element', 'modChunk', '93'),
+(3004, 1, '2018-09-29 17:41:49', 'chunk_update', 'modChunk', '93'),
+(3005, 1, '2018-09-29 17:41:49', 'propertyset_update_from_element', 'modChunk', '93'),
+(3006, 1, '2018-09-29 17:42:08', 'chunk_update', 'modChunk', '93'),
+(3007, 1, '2018-09-29 17:42:08', 'propertyset_update_from_element', 'modChunk', '93'),
+(3008, 1, '2018-09-29 17:48:51', 'snippet_update', 'modSnippet', '77'),
+(3009, 1, '2018-09-29 17:48:51', 'propertyset_update_from_element', 'modSnippet', '77'),
+(3010, 1, '2018-09-29 17:50:39', 'template_update', 'modTemplate', '1'),
+(3011, 1, '2018-09-29 17:50:39', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3012, 1, '2018-09-29 17:51:34', 'template_update', 'modTemplate', '1'),
+(3013, 1, '2018-09-29 17:51:34', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3014, 1, '2018-09-29 17:52:12', 'template_update', 'modTemplate', '1'),
+(3015, 1, '2018-09-29 17:52:12', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3016, 1, '2018-09-29 17:53:29', 'tv_duplicate', 'modTemplateVar', '17'),
+(3017, 1, '2018-09-29 17:54:35', 'template_update', 'modTemplate', '1'),
+(3018, 1, '2018-09-29 17:54:35', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3019, 1, '2018-09-29 17:55:39', 'tv_update', 'modTemplateVar', '17'),
+(3020, 1, '2018-09-29 17:55:40', 'propertyset_update_from_element', 'modTemplateVar', '17'),
+(3021, 1, '2018-09-29 17:56:10', 'resource_update', 'modResource', '23'),
+(3022, 1, '2018-09-29 17:56:57', 'resource_update', 'modResource', '17'),
+(3023, 1, '2018-09-29 17:58:33', 'duplicate_resource', 'modDocument', '28'),
+(3024, 1, '2018-09-29 17:58:49', 'resource_update', 'modResource', '28'),
+(3025, 1, '2018-09-29 18:03:53', 'template_update', 'modTemplate', '1'),
+(3026, 1, '2018-09-29 18:03:53', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3027, 1, '2018-09-29 18:05:17', 'template_update', 'modTemplate', '1'),
+(3028, 1, '2018-09-29 18:05:18', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3029, 1, '2018-09-29 18:07:02', 'template_update', 'modTemplate', '1'),
+(3030, 1, '2018-09-29 18:07:03', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3031, 1, '2018-09-29 18:07:41', 'template_update', 'modTemplate', '1'),
+(3032, 1, '2018-09-29 18:07:41', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3033, 1, '2018-09-29 18:08:28', 'template_update', 'modTemplate', '1'),
+(3034, 1, '2018-09-29 18:08:28', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3035, 1, '2018-09-29 18:11:55', 'template_update', 'modTemplate', '1'),
+(3036, 1, '2018-09-29 18:11:55', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3037, 1, '2018-09-29 18:13:30', 'template_update', 'modTemplate', '1'),
+(3038, 1, '2018-09-29 18:13:30', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3039, 1, '2018-09-29 18:16:23', 'template_update', 'modTemplate', '1'),
+(3040, 1, '2018-09-29 18:16:23', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3041, 1, '2018-09-29 18:18:19', 'template_update', 'modTemplate', '1'),
+(3042, 1, '2018-09-29 18:18:19', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3043, 1, '2018-09-29 18:19:00', 'template_update', 'modTemplate', '1'),
+(3044, 1, '2018-09-29 18:19:00', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3045, 1, '2018-09-29 18:19:43', 'template_update', 'modTemplate', '1'),
+(3046, 1, '2018-09-29 18:19:43', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3047, 1, '2018-09-29 18:20:32', 'template_update', 'modTemplate', '1'),
+(3048, 1, '2018-09-29 18:20:32', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3049, 1, '2018-09-29 18:21:23', 'template_update', 'modTemplate', '1'),
+(3050, 1, '2018-09-29 18:21:23', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3051, 1, '2018-09-29 18:22:47', 'template_update', 'modTemplate', '1'),
+(3052, 1, '2018-09-29 18:22:47', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3053, 1, '2018-09-29 18:23:40', 'template_update', 'modTemplate', '1'),
+(3054, 1, '2018-09-29 18:23:40', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3055, 1, '2018-09-29 18:26:10', 'template_update', 'modTemplate', '1'),
+(3056, 1, '2018-09-29 18:26:10', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3057, 1, '2018-09-29 18:27:07', 'template_update', 'modTemplate', '1'),
+(3058, 1, '2018-09-29 18:27:07', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3059, 1, '2018-09-29 18:27:39', 'template_update', 'modTemplate', '1'),
+(3060, 1, '2018-09-29 18:27:39', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3061, 1, '2018-09-29 18:28:36', 'template_update', 'modTemplate', '1'),
+(3062, 1, '2018-09-29 18:28:37', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3063, 1, '2018-09-29 18:30:02', 'template_update', 'modTemplate', '1'),
+(3064, 1, '2018-09-29 18:30:02', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3065, 1, '2018-09-29 18:30:22', 'template_update', 'modTemplate', '1'),
+(3066, 1, '2018-09-29 18:30:22', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3067, 1, '2018-09-29 18:31:21', 'template_update', 'modTemplate', '1'),
+(3068, 1, '2018-09-29 18:31:21', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3069, 1, '2018-09-29 18:33:06', 'template_update', 'modTemplate', '1'),
+(3070, 1, '2018-09-29 18:33:06', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3071, 1, '2018-09-29 18:33:52', 'template_update', 'modTemplate', '1'),
+(3072, 1, '2018-09-29 18:33:52', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3073, 1, '2018-09-29 18:34:20', 'template_update', 'modTemplate', '1'),
+(3074, 1, '2018-09-29 18:34:20', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3075, 1, '2018-09-29 18:34:42', 'template_update', 'modTemplate', '1'),
+(3076, 1, '2018-09-29 18:34:42', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3077, 1, '2018-09-29 18:35:50', 'template_update', 'modTemplate', '1'),
+(3078, 1, '2018-09-29 18:35:51', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3079, 1, '2018-09-29 18:38:17', 'template_update', 'modTemplate', '1'),
+(3080, 1, '2018-09-29 18:38:17', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3081, 1, '2018-09-29 18:38:43', 'template_update', 'modTemplate', '1'),
+(3082, 1, '2018-09-29 18:38:43', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3083, 1, '2018-09-29 18:39:06', 'template_update', 'modTemplate', '1'),
+(3084, 1, '2018-09-29 18:39:06', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3085, 1, '2018-09-29 18:39:47', 'template_update', 'modTemplate', '1'),
+(3086, 1, '2018-09-29 18:39:48', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3087, 1, '2018-09-29 18:40:35', 'template_update', 'modTemplate', '1'),
+(3088, 1, '2018-09-29 18:40:35', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3089, 1, '2018-09-29 18:41:03', 'template_update', 'modTemplate', '1'),
+(3090, 1, '2018-09-29 18:41:04', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3091, 1, '2018-09-29 18:41:21', 'template_update', 'modTemplate', '1'),
+(3092, 1, '2018-09-29 18:41:21', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3093, 1, '2018-09-29 18:42:24', 'template_update', 'modTemplate', '1'),
+(3094, 1, '2018-09-29 18:42:24', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3095, 1, '2018-09-29 18:42:36', 'template_update', 'modTemplate', '1'),
+(3096, 1, '2018-09-29 18:42:36', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3097, 1, '2018-09-29 18:42:51', 'template_update', 'modTemplate', '1'),
+(3098, 1, '2018-09-29 18:42:51', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3099, 1, '2018-09-29 18:43:19', 'template_update', 'modTemplate', '1'),
+(3100, 1, '2018-09-29 18:43:19', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3101, 1, '2018-09-29 18:43:41', 'template_update', 'modTemplate', '1'),
+(3102, 1, '2018-09-29 18:43:41', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3103, 1, '2018-09-29 18:44:32', 'template_update', 'modTemplate', '1'),
+(3104, 1, '2018-09-29 18:44:33', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3105, 1, '2018-09-29 18:46:28', 'template_update', 'modTemplate', '1'),
+(3106, 1, '2018-09-29 18:46:28', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3107, 1, '2018-09-29 18:46:58', 'template_update', 'modTemplate', '1'),
+(3108, 1, '2018-09-29 18:46:58', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3109, 1, '2018-09-29 18:47:40', 'template_update', 'modTemplate', '1'),
+(3110, 1, '2018-09-29 18:47:40', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3111, 1, '2018-09-29 18:47:51', 'template_update', 'modTemplate', '1'),
+(3112, 1, '2018-09-29 18:47:51', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3113, 1, '2018-09-29 18:48:06', 'template_update', 'modTemplate', '1'),
+(3114, 1, '2018-09-29 18:48:06', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3115, 1, '2018-09-29 18:48:43', 'template_update', 'modTemplate', '1'),
+(3116, 1, '2018-09-29 18:48:44', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3117, 1, '2018-09-29 18:49:25', 'template_update', 'modTemplate', '1'),
+(3118, 1, '2018-09-29 18:49:25', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3119, 1, '2018-09-29 18:49:48', 'template_update', 'modTemplate', '1'),
+(3120, 1, '2018-09-29 18:49:48', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3121, 1, '2018-09-29 18:50:00', 'template_update', 'modTemplate', '1'),
+(3122, 1, '2018-09-29 18:50:01', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3123, 1, '2018-09-29 18:50:17', 'template_update', 'modTemplate', '1'),
+(3124, 1, '2018-09-29 18:50:17', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3125, 1, '2018-09-29 18:51:52', 'template_update', 'modTemplate', '1'),
+(3126, 1, '2018-09-29 18:51:52', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3127, 1, '2018-09-29 18:52:44', 'template_update', 'modTemplate', '1'),
+(3128, 1, '2018-09-29 18:52:44', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3129, 1, '2018-09-29 18:53:46', 'template_update', 'modTemplate', '1'),
+(3130, 1, '2018-09-29 18:53:46', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3131, 1, '2018-09-29 18:54:27', 'template_update', 'modTemplate', '1'),
+(3132, 1, '2018-09-29 18:54:27', 'propertyset_update_from_element', 'modTemplate', '1');
 
 -- --------------------------------------------------------
 
@@ -4553,7 +4695,8 @@ INSERT INTO `new_media_sources_elements` (`source`, `object_class`, `object`, `c
 (1, 'modTemplateVar', 13, 'web'),
 (1, 'modTemplateVar', 14, 'web'),
 (1, 'modTemplateVar', 15, 'web'),
-(1, 'modTemplateVar', 16, 'web');
+(1, 'modTemplateVar', 16, 'web'),
+(1, 'modTemplateVar', 17, 'web');
 
 -- --------------------------------------------------------
 
@@ -5002,9 +5145,7 @@ CREATE TABLE `new_session` (
 --
 
 INSERT INTO `new_session` (`id`, `access`, `data`) VALUES
-('o00t3ju8d1k9301jo7ranj51f2', 1537972528, 'modx.user.contextTokens|a:2:{s:3:\"mgr\";i:1;s:3:\"web\";i:1;}modx.mgr.user.token|s:52:\"modx5bab97619c07d8.37432727_15bab9789cda472.28052841\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}newResourceTokens|a:5:{i:0;s:23:\"5bab987baa3a70.29816560\";i:1;s:23:\"5bab98a2e3bb68.17064745\";i:2;s:23:\"5bab98c462b156.40656779\";i:3;s:23:\"5bab98d4b851e9.25394739\";i:4;s:23:\"5bab9930725e86.62324270\";}modx.web.user.token|s:52:\"modx5bab97619c07d8.37432727_15bab98ef9e00f0.31681632\";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}'),
-('pahjfg1rdnsbaoglluak93ehg6', 1537980477, 'modx.user.contextTokens|a:0:{}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}'),
-('iskjn4tfl52kosr6loamobdsk6', 1538062908, 'modx.user.0.resourceGroups|a:1:{s:3:\"mgr\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"mgr\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}modx.user.contextTokens|a:1:{s:3:\"mgr\";i:1;}modx.mgr.user.token|s:52:\"modx5bab97619c07d8.37432727_15bacabe6d8bd71.62670452\";modx.mgr.session.cookie.lifetime|i:604800;modx.mgr.user.config|a:0:{}newResourceTokens|a:73:{i:0;s:23:\"5bacae09d06704.29258284\";i:1;s:23:\"5bacae24ed2101.74128976\";i:2;s:23:\"5bacae37616e18.71585504\";i:3;s:23:\"5bacae68cf0131.33485288\";i:4;s:23:\"5bacae8b72f106.42066756\";i:5;s:23:\"5bacae8f137ea7.11230345\";i:6;s:23:\"5bacaeb128ae02.54412164\";i:7;s:23:\"5bacaef55c36b0.53610883\";i:8;s:23:\"5bacaef8d6f805.54250252\";i:9;s:23:\"5bacaf1b7e3ec0.91889648\";i:10;s:23:\"5bacaf695b2866.60432819\";i:11;s:23:\"5bacaf6d034011.06526800\";i:12;s:23:\"5bacaf8bdeacd9.95716129\";i:13;s:23:\"5bacb7bebab1e2.87504276\";i:14;s:23:\"5bacbde34f6427.65349373\";i:15;s:23:\"5bacbde7029735.36994723\";i:16;s:23:\"5bacbe0b4b61a6.59690125\";i:17;s:23:\"5bacd7c7552865.28449776\";i:18;s:23:\"5bacd7cc46ac64.50061483\";i:19;s:23:\"5bacdda230ac23.66260833\";i:20;s:23:\"5bacdda763a767.52226776\";i:21;s:23:\"5bace18aac5c43.76367415\";i:22;s:23:\"5bace18fbaa040.79832214\";i:23;s:23:\"5bacec9d1a9019.54489634\";i:24;s:23:\"5baceca1b95694.30831498\";i:25;s:23:\"5baced13064d24.57084414\";i:26;s:23:\"5baced19b4f117.60109598\";i:27;s:23:\"5bacee4234b3e0.03635767\";i:28;s:23:\"5bacee46ecf747.44961355\";i:29;s:23:\"5baceea84121d0.16913375\";i:30;s:23:\"5baceead93f886.06670563\";i:31;s:23:\"5bacefc63b05c2.78011201\";i:32;s:23:\"5bacefe1f28116.04544709\";i:33;s:23:\"5bacf041565680.31749781\";i:34;s:23:\"5bacf044d56bc8.04011531\";i:35;s:23:\"5bacf1b94563e8.06007001\";i:36;s:23:\"5bacf23e597a44.96880019\";i:37;s:23:\"5bacf2426d8752.82211568\";i:38;s:23:\"5bacf49f7b36e1.41135504\";i:39;s:23:\"5bacf4a32c7d84.36709113\";i:40;s:23:\"5bacf5a4cdd758.57681557\";i:41;s:23:\"5bacf5a8744db5.66410604\";i:42;s:23:\"5bacf61f7017e0.47215694\";i:43;s:23:\"5bacf624048ee3.24084157\";i:44;s:23:\"5bacf62f396f64.07603683\";i:45;s:23:\"5bacf63229bd49.53661973\";i:46;s:23:\"5bacf70ef24cc0.89929056\";i:47;s:23:\"5bacf8e41f4307.71788978\";i:48;s:23:\"5bacf914bc4031.55427520\";i:49;s:23:\"5bacf91d39d7d6.35809390\";i:50;s:23:\"5bacf95f4518e5.65791284\";i:51;s:23:\"5bacf966952678.14062538\";i:52;s:23:\"5bacf96e645a31.33805079\";i:53;s:23:\"5bacf974f41735.79334473\";i:54;s:23:\"5bacf9799f0fb1.61070361\";i:55;s:23:\"5bacf9869e6c38.85164760\";i:56;s:23:\"5bacf98a1f5d77.58782687\";i:57;s:23:\"5bacf991c8f744.17584847\";i:58;s:23:\"5bacf997340c03.75070855\";i:59;s:23:\"5bacf99f255636.18006912\";i:60;s:23:\"5bacf9a35f7fa6.83135921\";i:61;s:23:\"5bacf9ab5a3d38.21725326\";i:62;s:23:\"5bacf9aeb59f08.01491876\";i:63;s:23:\"5bacf9b5524cf5.12384555\";i:64;s:23:\"5bacf9baa9d9b9.26338747\";i:65;s:23:\"5bacf9c43bcb67.16061990\";i:66;s:23:\"5bacf9c7cf04f5.13230775\";i:67;s:23:\"5bacf9cfd36e12.74027138\";i:68;s:23:\"5bacf9d3d3def4.72544657\";i:69;s:23:\"5bacf9dd4cbe63.86023118\";i:70;s:23:\"5bacf9e1024f25.81555164\";i:71;s:23:\"5bacfa3677d576.81707495\";i:72;s:23:\"5bacfa3c01a531.37023509\";}modx.user.1.userGroups|a:1:{i:0;i:1;}');
+('cvekvsponp6pdtbpllo4nk2310', 1538236683, 'modx.user.contextTokens|a:0:{}');
 
 -- --------------------------------------------------------
 
@@ -5079,17 +5220,18 @@ INSERT INTO `new_site_content` (`id`, `type`, `contentType`, `pagetitle`, `longt
 (14, 'document', 'text/html', 'Gallery', '', '', 'anet', '', 0, 0, 0, 0, 0, '', '', 1, 12, 11, 1, 1, 1, 1496655536, 1, 1537972427, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'anet.html', 0, 0, 1, NULL),
 (15, 'document', 'text/html', 'Grid', '', '', 'grid', '', 0, 0, 0, 0, 0, '', '', 1, 13, 12, 1, 1, 1, 1496655562, 1, 1537972441, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'grid.html', 0, 0, 1, NULL),
 (16, 'document', 'text/html', 'Результаты поиска', '', '', 'result-search', '', 1, 0, 0, 0, 0, '', '', 1, 8, 13, 1, 1, 1, 1498046307, 1, 1498047163, 0, 0, 0, 1498046280, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'result-search.html', 0, 0, 1, NULL),
-(17, 'document', 'text/html', 'Товар 1', '', '', 'tovar-1', '', 1, 0, 0, 1, 0, '', '', 1, 1, 0, 1, 1, 1, 1538043495, 1, 1538062692, 0, 0, 0, 1538043480, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-1.html', 0, 0, 0, NULL),
+(17, 'document', 'text/html', 'Товар 1', '', '', 'tovar-1', '', 1, 0, 0, 1, 0, '', '', 1, 1, 0, 1, 1, 1, 1538043495, 1, 1538233017, 0, 0, 0, 1538043480, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-1.html', 0, 0, 0, NULL),
 (18, 'document', 'text/html', 'Товар 2', '', '', 'tovar-2', '', 1, 0, 0, 1, 0, '', '', 1, 1, 1, 1, 1, 1, 1538043567, 1, 1538062706, 0, 0, 0, 1538043540, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-2.html', 0, 0, 0, NULL),
 (19, 'document', 'text/html', 'Товар 3', '', '', 'tovar-3', '', 1, 0, 0, 1, 0, '', '', 1, 1, 2, 1, 1, 1, 1538043674, 1, 1538062724, 0, 0, 0, 1538043660, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-3.html', 0, 0, 0, NULL),
 (20, 'document', 'text/html', 'Товар 4', '', '', 'tovar-4', '', 1, 0, 0, 1, 0, '', '', 1, 1, 3, 1, 1, 1, 1538043786, 1, 1538062915, 0, 0, 0, 1538043780, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-4.html', 0, 0, 0, NULL),
-(21, 'document', 'text/html', 'Товар 5', '', '', 'tovar-5', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538047497, 1, 1538062748, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-5.html', 0, 0, 0, NULL),
+(21, 'document', 'text/html', 'Товар 5', '', '', 'tovar-5', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538047497, 1, 1538231766, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-5.html', 0, 0, 0, NULL),
 (22, 'document', 'text/html', 'Товар 6', '', '', 'kopiya-tovar-6', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538062582, 1, 1538062760, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'kopiya-tovar-6.html', 0, 0, 0, NULL),
-(23, 'document', 'text/html', 'Товар 7', '', '', 'tovar-7', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538062609, 1, 1538062771, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-7.html', 0, 0, 0, NULL),
+(23, 'document', 'text/html', 'Товар 7', '', '', 'tovar-7', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538062609, 1, 1538232970, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-7.html', 0, 0, 0, NULL),
 (24, 'document', 'text/html', 'Товар 8', '', '', 'tovar-8', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538062633, 1, 1538062785, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-8.html', 0, 0, 0, NULL),
 (25, 'document', 'text/html', 'Товар 9', '', '', 'tovar-9', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538062645, 1, 1538062797, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-9.html', 0, 0, 0, NULL),
 (26, 'document', 'text/html', 'Товар 10', '', '', 'tovar-10', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538062656, 1, 1538062809, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-10.html', 0, 0, 0, NULL),
-(27, 'document', 'text/html', 'Товар 11', '', '', 'tovar-11', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538062667, 1, 1538062822, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-11.html', 0, 0, 0, NULL);
+(27, 'document', 'text/html', 'Товар 11', '', '', 'tovar-11', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538062667, 1, 1538062822, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-11.html', 0, 0, 0, NULL),
+(28, 'document', 'text/html', 'Товар 12', '', '', 'tovar-12', '', 1, 0, 0, 1, 0, '', '', 1, 1, 4, 1, 1, 1, 1538233113, 1, 1538233129, 0, 0, 0, 1538047440, 1, '', 0, 0, 0, 0, 1, 'modDocument', 'web', 1, 'tovar-12.html', 0, 0, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -5212,7 +5354,7 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (90, 0, 0, 'GridScripts', '', 0, 24, 0, '<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/css/bootstrap.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/css/bootstrap-theme.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/font-awesome/css/font-awesome.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/mmenu/css/jquery.mmenu.all.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/css-hamburgers/hamburgers.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/animate/animate.css\">\n<link href=\"[[++assets_url]]templates/Stas/app/libs/baguetteBox/baguetteBox.min.css\" rel=\"stylesheet\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/OwlCarousel/dist/assets/owl.carousel.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/libs/OwlCarousel/dist/assets/owl.theme.default.min.css\">\n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/css/jquery.bxslider.css\">\n\n    \n<link rel=\"stylesheet\" href=\"[[++assets_url]]templates/Stas/app/css/grid.min.css\">\n    \n<script src=\"[[++assets_url]]templates/Stas/app/libs/jquery/dist/jquery.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/animate/animate-css.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/animate/waypoints.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/bootstrap/dist/js/bootstrap.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/mmenu/js/jquery.mmenu.all.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/OwlCarousel/dist/owl.carousel.min.js\"></script>\n<script src=\"[[++assets_url]]templates/Stas/app/libs/baguetteBox/baguetteBox.min.js\"></script>\n \n<script src=\"[[++assets_url]]templates/Stas/app/js/common.js\"></script>\n', 0, 'a:0:{}', 0, ''),
 (91, 1, 0, 'GridLogin', '', 0, 24, 0, '<div class=\"clearfix\"></div>\n<section class=\"main-login\">\n    <div class=\"container clearfix\">\n        <div class=\"row\">\n            <div class=\"col-xs-12\">[[!Login? &loginTpl=`lgnLoginTpl` &logoutTpl=`GridlgnLogoutTpl` &errTpl=`lgnErrTpl` &loginResourceId=`1` &logoutResourceId=`1`]]</div>\n        </div>\n    </div>\n    \n\n</section>', 0, 'a:0:{}', 0, ''),
 (92, 0, 0, 'GridlgnLogoutTpl', '', 0, 24, 0, '<div class=\"loginMessage\">[[+errors]]</div>\n\n<div class=\"loginLogin\">\n    <div class=\"loginRegister pull-right\">\n        <div class=\"butt\"><a href=\"[[+logoutUrl]]\" title=\"[[+actionMsg]]\"><button class=\"btn-sm btn-primary out\" type=\"submit\">Выйти</button></a>\n       <span> Добро пожаловать <b>[[+modx.user.id:userinfo=`username`]]</b></span></div>\n        \n    </div>\n</div>', 0, 'a:0:{}', 0, ''),
-(93, 1, 0, 'tplCatItem', '', 0, 0, 0, '<div class=\"ajax-item col-sm-4 text-center\">\n    <img src=\"[[+tv.image]]\" alt=\"[[+pagetitle]]\" class=\"img-thumbnail\">\n    <h4>[[+pagetitle]]</h4>\n    <table class=\"table table-bordered\">\n   <tbody>\n    <!--<tr>-->\n    <!--  <th scope=\"row\">Калибр:</th>-->\n    <!--        <td>[[+tv.floor]]</td>-->\n    <!--    </tr>-->\n  \n  \n        [[+tv.area:isnot=``:then=`\n        <tr>\n      <th scope=\"row\">Залпов</th>\n           <td>[[+tv.area]]</td>\n        </tr>\n        `]]\n        <!--<tr>-->\n        <!--    <th scope=\"row\">Наличие:</th>-->\n        <!--    <td>[[+tv.garage:is=`1`:then=`Есть`:else=`Нет`]]</td>-->\n        <!--</tr>-->\n        \n         <tr>\n            <th scope=\"row\">Цена:</th>\n            <td>[[+tv.price]]</td>\n        </tr>\n        </tbody>\n</table>\n   \n</div>', 0, 'a:0:{}', 0, '');
+(93, 1, 0, 'tplCatItem', '', 0, 0, 0, '<div class=\"ajax-item col-sm-4 text-center\">\n   \n   \n    <table class=\"table table-bordered\">\n   <tbody>\n    <!--<tr>-->\n    <!--  <th scope=\"row\">Калибр:</th>-->\n    <!--        <td>[[+tv.floor]]</td>-->\n    <!--    </tr>-->\n  \n  <tr>\n    <th scope=\"row\" colspan=\"2\"><h4>[[+pagetitle]]</h4></th\n         \n      </tr>\n        [[+tv.area:isnot=``:then=`\n        <tr>\n      <th scope=\"row\">Залпов</th>\n           <td>[[+tv.area]]</td>\n        </tr>\n        `]]\n        <!--<tr>-->\n        <!--    <th scope=\"row\">Наличие:</th>-->\n        <!--    <td>[[+tv.garage:is=`1`:then=`Есть`:else=`Нет`]]</td>-->\n        <!--</tr>-->\n        \n         <tr>\n            <th scope=\"row\">Цена:</th>\n            <td>[[+tv.price]]</td>\n        </tr>\n        </tbody>\n</table>\n   \n</div>', 0, 'a:0:{}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -5446,7 +5588,7 @@ INSERT INTO `new_site_snippets` (`id`, `source`, `property_preprocess`, `name`, 
 (74, 0, 0, 'SimpleSearchElasticIndexSetup_default', 'Setup snippet for ElasticSearch index', 0, 18, 0, '$indexSetup = array(\n    \'number_of_shards\' => 5,\n    \'number_of_replicas\' => 1,\n    \'analysis\' => array(\n        \'analyzer\' => array(\n            \'default_index\' => array(\n                \"type\" => \"custom\",\n                \"tokenizer\" => \"whitespace\",\n                \"filter\" => array(\n                    \"asciifolding\",\n                    \"standard\",\n                    \"lowercase\",\n                    \"haystack_edgengram\"\n                )\n            ),\n            \'default_search\' => array(\n                \"type\" => \"custom\",\n                \"tokenizer\" => \"whitespace\",\n                \"filter\" => array(\n                    \"asciifolding\",\n                    \"standard\",\n                    \"lowercase\"\n                )\n            )\n        ),\n        \"filter\" => array(\n            \"haystack_ngram\" => array(\n                \"type\" => \"nGram\",\n                \"min_gram\" => 2,\n                \"max_gram\" => 30,\n            ),\n            \"haystack_edgengram\" => array(\n                \"type\" => \"edgeNGram\",\n                \"min_gram\" => 2,\n                \"max_gram\" => 30,\n            )\n        )\n    )\n);\n\nreturn $modx->toJSON($indexSetup);', 0, NULL, '', 0, ''),
 (75, 0, 0, 'Wayfinder', 'Wayfinder for MODx Revolution 2.0.0-beta-5 and later.', 0, 0, 0, '/**\n * Wayfinder Snippet to build site navigation menus\n *\n * Totally refactored from original DropMenu nav builder to make it easier to\n * create custom navigation by using chunks as output templates. By using\n * templates, many of the paramaters are no longer needed for flexible output\n * including tables, unordered- or ordered-lists (ULs or OLs), definition lists\n * (DLs) or in any other format you desire.\n *\n * @version 2.1.1-beta5\n * @author Garry Nutting (collabpad.com)\n * @author Kyle Jaebker (muddydogpaws.com)\n * @author Ryan Thrash (modx.com)\n * @author Shaun McCormick (modx.com)\n * @author Jason Coward (modx.com)\n *\n * @example [[Wayfinder? &startId=`0`]]\n *\n * @var modX $modx\n * @var array $scriptProperties\n * \n * @package wayfinder\n */\n$wayfinder_base = $modx->getOption(\'wayfinder.core_path\',$scriptProperties,$modx->getOption(\'core_path\').\'components/wayfinder/\');\n\n/* include a custom config file if specified */\nif (isset($scriptProperties[\'config\'])) {\n    $scriptProperties[\'config\'] = str_replace(\'../\',\'\',$scriptProperties[\'config\']);\n    $scriptProperties[\'config\'] = $wayfinder_base.\'configs/\'.$scriptProperties[\'config\'].\'.config.php\';\n} else {\n    $scriptProperties[\'config\'] = $wayfinder_base.\'configs/default.config.php\';\n}\nif (file_exists($scriptProperties[\'config\'])) {\n    include $scriptProperties[\'config\'];\n}\n\n/* include wayfinder class */\ninclude_once $wayfinder_base.\'wayfinder.class.php\';\nif (!$modx->loadClass(\'Wayfinder\',$wayfinder_base,true,true)) {\n    return \'error: Wayfinder class not found\';\n}\n$wf = new Wayfinder($modx,$scriptProperties);\n\n/* get user class definitions\n * TODO: eventually move these into config parameters */\n$wf->_css = array(\n    \'first\' => isset($firstClass) ? $firstClass : \'\',\n    \'last\' => isset($lastClass) ? $lastClass : \'last\',\n    \'here\' => isset($hereClass) ? $hereClass : \'active\',\n    \'parent\' => isset($parentClass) ? $parentClass : \'\',\n    \'row\' => isset($rowClass) ? $rowClass : \'\',\n    \'outer\' => isset($outerClass) ? $outerClass : \'\',\n    \'inner\' => isset($innerClass) ? $innerClass : \'\',\n    \'level\' => isset($levelClass) ? $levelClass: \'\',\n    \'self\' => isset($selfClass) ? $selfClass : \'\',\n    \'weblink\' => isset($webLinkClass) ? $webLinkClass : \'\'\n);\n\n/* get user templates\n * TODO: eventually move these into config parameters */\n$wf->_templates = array(\n    \'outerTpl\' => isset($outerTpl) ? $outerTpl : \'\',\n    \'rowTpl\' => isset($rowTpl) ? $rowTpl : \'\',\n    \'parentRowTpl\' => isset($parentRowTpl) ? $parentRowTpl : \'\',\n    \'parentRowHereTpl\' => isset($parentRowHereTpl) ? $parentRowHereTpl : \'\',\n    \'hereTpl\' => isset($hereTpl) ? $hereTpl : \'\',\n    \'innerTpl\' => isset($innerTpl) ? $innerTpl : \'\',\n    \'innerRowTpl\' => isset($innerRowTpl) ? $innerRowTpl : \'\',\n    \'innerHereTpl\' => isset($innerHereTpl) ? $innerHereTpl : \'\',\n    \'activeParentRowTpl\' => isset($activeParentRowTpl) ? $activeParentRowTpl : \'\',\n    \'categoryFoldersTpl\' => isset($categoryFoldersTpl) ? $categoryFoldersTpl : \'\',\n    \'startItemTpl\' => isset($startItemTpl) ? $startItemTpl : \'\'\n);\n\n/* process Wayfinder */\n$output = $wf->run();\nif ($wf->_config[\'debug\']) {\n    $output .= $wf->renderDebugOutput();\n}\n\n/* output results */\nif ($wf->_config[\'ph\']) {\n    $modx->setPlaceholder($wf->_config[\'ph\'],$output);\n} else {\n    return $output;\n}', 0, 'a:48:{s:5:\"level\";a:6:{s:4:\"name\";s:5:\"level\";s:4:\"desc\";s:25:\"prop_wayfinder.level_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:1:\"0\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:11:\"includeDocs\";a:6:{s:4:\"name\";s:11:\"includeDocs\";s:4:\"desc\";s:31:\"prop_wayfinder.includeDocs_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:1:\"0\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:11:\"excludeDocs\";a:6:{s:4:\"name\";s:11:\"excludeDocs\";s:4:\"desc\";s:31:\"prop_wayfinder.excludeDocs_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:1:\"0\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:8:\"contexts\";a:6:{s:4:\"name\";s:8:\"contexts\";s:4:\"desc\";s:28:\"prop_wayfinder.contexts_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"cacheResults\";a:6:{s:4:\"name\";s:12:\"cacheResults\";s:4:\"desc\";s:32:\"prop_wayfinder.cacheResults_desc\";s:4:\"type\";s:13:\"combo-boolean\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:1;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:9:\"cacheTime\";a:6:{s:4:\"name\";s:9:\"cacheTime\";s:4:\"desc\";s:29:\"prop_wayfinder.cacheTime_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";i:3600;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:2:\"ph\";a:6:{s:4:\"name\";s:2:\"ph\";s:4:\"desc\";s:22:\"prop_wayfinder.ph_desc\";s:4:\"type\";s:13:\"combo-boolean\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:5:\"debug\";a:6:{s:4:\"name\";s:5:\"debug\";s:4:\"desc\";s:25:\"prop_wayfinder.debug_desc\";s:4:\"type\";s:13:\"combo-boolean\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"ignoreHidden\";a:6:{s:4:\"name\";s:12:\"ignoreHidden\";s:4:\"desc\";s:32:\"prop_wayfinder.ignoreHidden_desc\";s:4:\"type\";s:13:\"combo-boolean\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"hideSubMenus\";a:6:{s:4:\"name\";s:12:\"hideSubMenus\";s:4:\"desc\";s:32:\"prop_wayfinder.hideSubMenus_desc\";s:4:\"type\";s:13:\"combo-boolean\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:13:\"useWeblinkUrl\";a:6:{s:4:\"name\";s:13:\"useWeblinkUrl\";s:4:\"desc\";s:33:\"prop_wayfinder.useWeblinkUrl_desc\";s:4:\"type\";s:13:\"combo-boolean\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:1;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:8:\"fullLink\";a:6:{s:4:\"name\";s:8:\"fullLink\";s:4:\"desc\";s:28:\"prop_wayfinder.fullLink_desc\";s:4:\"type\";s:13:\"combo-boolean\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:6:\"scheme\";a:6:{s:4:\"name\";s:6:\"scheme\";s:4:\"desc\";s:26:\"prop_wayfinder.scheme_desc\";s:4:\"type\";s:4:\"list\";s:7:\"options\";a:3:{i:0;a:2:{s:4:\"text\";s:23:\"prop_wayfinder.relative\";s:5:\"value\";s:0:\"\";}i:1;a:2:{s:4:\"text\";s:23:\"prop_wayfinder.absolute\";s:5:\"value\";s:3:\"abs\";}i:2;a:2:{s:4:\"text\";s:19:\"prop_wayfinder.full\";s:5:\"value\";s:4:\"full\";}}s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:9:\"sortOrder\";a:6:{s:4:\"name\";s:9:\"sortOrder\";s:4:\"desc\";s:29:\"prop_wayfinder.sortOrder_desc\";s:4:\"type\";s:4:\"list\";s:7:\"options\";a:2:{i:0;a:2:{s:4:\"text\";s:24:\"prop_wayfinder.ascending\";s:5:\"value\";s:3:\"ASC\";}i:1;a:2:{s:4:\"text\";s:25:\"prop_wayfinder.descending\";s:5:\"value\";s:4:\"DESC\";}}s:5:\"value\";s:3:\"ASC\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:6:\"sortBy\";a:6:{s:4:\"name\";s:6:\"sortBy\";s:4:\"desc\";s:26:\"prop_wayfinder.sortBy_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:9:\"menuindex\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:5:\"limit\";a:6:{s:4:\"name\";s:5:\"limit\";s:4:\"desc\";s:25:\"prop_wayfinder.limit_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:1:\"0\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:6:\"cssTpl\";a:6:{s:4:\"name\";s:6:\"cssTpl\";s:4:\"desc\";s:26:\"prop_wayfinder.cssTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:5:\"jsTpl\";a:6:{s:4:\"name\";s:5:\"jsTpl\";s:4:\"desc\";s:25:\"prop_wayfinder.jsTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:11:\"rowIdPrefix\";a:6:{s:4:\"name\";s:11:\"rowIdPrefix\";s:4:\"desc\";s:31:\"prop_wayfinder.rowIdPrefix_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:11:\"textOfLinks\";a:6:{s:4:\"name\";s:11:\"textOfLinks\";s:4:\"desc\";s:31:\"prop_wayfinder.textOfLinks_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:9:\"menutitle\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"titleOfLinks\";a:6:{s:4:\"name\";s:12:\"titleOfLinks\";s:4:\"desc\";s:32:\"prop_wayfinder.titleOfLinks_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:9:\"pagetitle\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"displayStart\";a:6:{s:4:\"name\";s:12:\"displayStart\";s:4:\"desc\";s:32:\"prop_wayfinder.displayStart_desc\";s:4:\"type\";s:13:\"combo-boolean\";s:7:\"options\";s:0:\"\";s:5:\"value\";b:0;s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:10:\"firstClass\";a:6:{s:4:\"name\";s:10:\"firstClass\";s:4:\"desc\";s:30:\"prop_wayfinder.firstClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:5:\"first\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:9:\"lastClass\";a:6:{s:4:\"name\";s:9:\"lastClass\";s:4:\"desc\";s:29:\"prop_wayfinder.lastClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:4:\"last\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:9:\"hereClass\";a:6:{s:4:\"name\";s:9:\"hereClass\";s:4:\"desc\";s:29:\"prop_wayfinder.hereClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:6:\"active\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:11:\"parentClass\";a:6:{s:4:\"name\";s:11:\"parentClass\";s:4:\"desc\";s:31:\"prop_wayfinder.parentClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:8:\"rowClass\";a:6:{s:4:\"name\";s:8:\"rowClass\";s:4:\"desc\";s:28:\"prop_wayfinder.rowClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:10:\"outerClass\";a:6:{s:4:\"name\";s:10:\"outerClass\";s:4:\"desc\";s:30:\"prop_wayfinder.outerClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:10:\"innerClass\";a:6:{s:4:\"name\";s:10:\"innerClass\";s:4:\"desc\";s:30:\"prop_wayfinder.innerClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:10:\"levelClass\";a:6:{s:4:\"name\";s:10:\"levelClass\";s:4:\"desc\";s:30:\"prop_wayfinder.levelClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:9:\"selfClass\";a:6:{s:4:\"name\";s:9:\"selfClass\";s:4:\"desc\";s:29:\"prop_wayfinder.selfClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"webLinkClass\";a:6:{s:4:\"name\";s:12:\"webLinkClass\";s:4:\"desc\";s:32:\"prop_wayfinder.webLinkClass_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:8:\"outerTpl\";a:6:{s:4:\"name\";s:8:\"outerTpl\";s:4:\"desc\";s:28:\"prop_wayfinder.outerTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:6:\"rowTpl\";a:6:{s:4:\"name\";s:6:\"rowTpl\";s:4:\"desc\";s:26:\"prop_wayfinder.rowTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"parentRowTpl\";a:6:{s:4:\"name\";s:12:\"parentRowTpl\";s:4:\"desc\";s:32:\"prop_wayfinder.parentRowTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:16:\"parentRowHereTpl\";a:6:{s:4:\"name\";s:16:\"parentRowHereTpl\";s:4:\"desc\";s:36:\"prop_wayfinder.parentRowHereTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:7:\"hereTpl\";a:6:{s:4:\"name\";s:7:\"hereTpl\";s:4:\"desc\";s:27:\"prop_wayfinder.hereTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:8:\"innerTpl\";a:6:{s:4:\"name\";s:8:\"innerTpl\";s:4:\"desc\";s:28:\"prop_wayfinder.innerTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:11:\"innerRowTpl\";a:6:{s:4:\"name\";s:11:\"innerRowTpl\";s:4:\"desc\";s:31:\"prop_wayfinder.innerRowTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"innerHereTpl\";a:6:{s:4:\"name\";s:12:\"innerHereTpl\";s:4:\"desc\";s:32:\"prop_wayfinder.innerHereTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:18:\"activeParentRowTpl\";a:6:{s:4:\"name\";s:18:\"activeParentRowTpl\";s:4:\"desc\";s:38:\"prop_wayfinder.activeParentRowTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:18:\"categoryFoldersTpl\";a:6:{s:4:\"name\";s:18:\"categoryFoldersTpl\";s:4:\"desc\";s:38:\"prop_wayfinder.categoryFoldersTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:12:\"startItemTpl\";a:6:{s:4:\"name\";s:12:\"startItemTpl\";s:4:\"desc\";s:32:\"prop_wayfinder.startItemTpl_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:11:\"permissions\";a:6:{s:4:\"name\";s:11:\"permissions\";s:4:\"desc\";s:31:\"prop_wayfinder.permissions_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:4:\"list\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:6:\"hereId\";a:6:{s:4:\"name\";s:6:\"hereId\";s:4:\"desc\";s:26:\"prop_wayfinder.hereId_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:5:\"where\";a:6:{s:4:\"name\";s:5:\"where\";s:4:\"desc\";s:25:\"prop_wayfinder.where_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:9:\"templates\";a:6:{s:4:\"name\";s:9:\"templates\";s:4:\"desc\";s:29:\"prop_wayfinder.templates_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}s:18:\"previewUnpublished\";a:6:{s:4:\"name\";s:18:\"previewUnpublished\";s:4:\"desc\";s:38:\"prop_wayfinder.previewunpublished_desc\";s:4:\"type\";s:9:\"textfield\";s:7:\"options\";s:0:\"\";s:5:\"value\";s:0:\"\";s:7:\"lexicon\";s:20:\"wayfinder:properties\";}}', '', 0, ''),
 (76, 1, 0, 'Host', '', 0, 0, 0, 'echo $_SERVER[\'HTTP_HOST\'];', 0, 'a:0:{}', '', 0, ''),
-(77, 1, 0, 'catalogFilter', '', 0, 0, 0, '//Filter Fields Settings\n$filter = array();\n\n//Radio, Select & Text Fields Type\nif($_GET[\'floor\']) {\n    $filter[] = \'floor=\'.$_GET[\'floor\'];\n}\n\n//Two Text Fields From To\n// if($_GET[\'area_from\']) {\n//     $filter[] = \'area>=\'.$_GET[\'area_from\'];\n// }\n// if($_GET[\'area_to\']) {\n//     $filter[] = \'area<=\'.$_GET[\'area_to\'];\n// }\n\nif($_GET[\'price_from\']) {\n    $filter[] = \'price>=\'.$_GET[\'price_from\'];\n}\nif($_GET[\'price_to\']) {\n    $filter[] = \'price<=\'.$_GET[\'price_to\'];\n}\n\n//Checkbox Type\nif($_GET[\'garage\']) {\n    $filter[] = \'garage=1\';\n}\n\n//End Settings\n\n//Sort\nif($_GET[\'sortby\']) {\n    $sortby = $_GET[\'sortby\'];\n} else {\n    $sortby = \'pagetitle\';\n}\nif($_GET[\'sortdir\']) {\n    $sortdir = $_GET[\'sortdir\'];\n} else {\n    $sortdir = \'asc\';\n}\n//End Sort\n\n//Offset\n$offset = 0;\nif($_GET[\'offset\']){\n    $offset = $_GET[\'offset\'];\n}\n\nif($filter) {\n    $where = $modx->toJSON(array($filter));\n} else {\n    $where = \'\';\n}\n\n$params_count = array(\n    \'parents\' => $parents,\n    \'limit\' => 0,\n    \'tpl\' => \'@INLINE ,\',\n    \'select\' => \'id\',\n    \'includeTVs\' => $fields,\n    \'showHidden\' => \'1\',\n    \'where\' => $where\n);\n\n$count = $modx->runSnippet(\'pdoResources\',$params_count);\n$count = count(explode(\',\',$count))-1;\n$modx->setPlaceholder(\'count\',$count);\n\n$params = array(\n    \'parents\' => $parents,\n    \'limit\' => $limit,\n    \'offset\' => $offset,\n    \'tpl\' => $tpl,\n    \'select\' => \'id,pagetitle,introtext,content\',\n    \'includeTVs\' => $fields,\n    \'showHidden\' => \'1\',\n    \'sortby\' => $sortby,\n    \'sortdir\' => $sortdir,\n    \'where\' => $where\n);\n\n$more = $count - $offset - $limit;\n$lim = $more > $limit ? $limit : $more;\n\n$button = \'\';\nif($more > 0){\n    $button = \'<div class=\"ajax-filter-count\" data-count=\"\'.$count.\'\"><a href=\"#\" class=\"ajax-more\">Загрузить еще \'.$lim.\' из \'.$more.\'</a></div>\';\n}\n\nreturn $modx->runSnippet(\'pdoResources\',$params).$button;', 0, 'a:0:{}', '', 0, '');
+(77, 1, 0, 'catalogFilter', '', 0, 0, 0, '//Filter Fields Settings\n$filter = array();\n\n//Radio, Select & Text Fields Type\nif($_GET[\'floor\']) {\n    $filter[] = \'floor=\'.$_GET[\'floor\'];\n}\nif($_GET[\'option-get\']) {\n    $filter[] = \'option-get=\'.$_GET[\'option-get\'];\n}\n\n//Two Text Fields From To\n// if($_GET[\'area_from\']) {\n//     $filter[] = \'area>=\'.$_GET[\'area_from\'];\n// }\n// if($_GET[\'area_to\']) {\n//     $filter[] = \'area<=\'.$_GET[\'area_to\'];\n// }\n\nif($_GET[\'price_from\']) {\n    $filter[] = \'price>=\'.$_GET[\'price_from\'];\n}\nif($_GET[\'price_to\']) {\n    $filter[] = \'price<=\'.$_GET[\'price_to\'];\n}\n\n//Checkbox Type\nif($_GET[\'garage\']) {\n    $filter[] = \'garage=1\';\n}\n\n//End Settings\n\n//Sort\nif($_GET[\'sortby\']) {\n    $sortby = $_GET[\'sortby\'];\n} else {\n    $sortby = \'pagetitle\';\n}\nif($_GET[\'sortdir\']) {\n    $sortdir = $_GET[\'sortdir\'];\n} else {\n    $sortdir = \'asc\';\n}\n//End Sort\n\n//Offset\n$offset = 0;\nif($_GET[\'offset\']){\n    $offset = $_GET[\'offset\'];\n}\n\nif($filter) {\n    $where = $modx->toJSON(array($filter));\n} else {\n    $where = \'\';\n}\n\n$params_count = array(\n    \'parents\' => $parents,\n    \'limit\' => 0,\n    \'tpl\' => \'@INLINE ,\',\n    \'select\' => \'id\',\n    \'includeTVs\' => $fields,\n    \'showHidden\' => \'1\',\n    \'where\' => $where\n);\n\n$count = $modx->runSnippet(\'pdoResources\',$params_count);\n$count = count(explode(\',\',$count))-1;\n$modx->setPlaceholder(\'count\',$count);\n\n$params = array(\n    \'parents\' => $parents,\n    \'limit\' => $limit,\n    \'offset\' => $offset,\n    \'tpl\' => $tpl,\n    \'select\' => \'id,pagetitle,introtext,content\',\n    \'includeTVs\' => $fields,\n    \'showHidden\' => \'1\',\n    \'sortby\' => $sortby,\n    \'sortdir\' => $sortdir,\n    \'where\' => $where\n);\n\n$more = $count - $offset - $limit;\n$lim = $more > $limit ? $limit : $more;\n\n$button = \'\';\nif($more > 0){\n    $button = \'<div class=\"ajax-filter-count\" data-count=\"\'.$count.\'\"><a href=\"#\" class=\"ajax-more\">Загрузить еще \'.$lim.\' из \'.$more.\'</a></div>\';\n}\n\nreturn $modx->runSnippet(\'pdoResources\',$params).$button;', 0, 'a:0:{}', '', 0, '');
 
 -- --------------------------------------------------------
 
@@ -5476,7 +5618,7 @@ CREATE TABLE `new_site_templates` (
 --
 
 INSERT INTO `new_site_templates` (`id`, `source`, `property_preprocess`, `templatename`, `description`, `editor_type`, `category`, `icon`, `template_type`, `content`, `locked`, `properties`, `static`, `static_file`) VALUES
-(1, 0, 0, 'Начальный шаблон', '', 0, 0, '', 0, '[[$Head? &bodyClass=`isHome`]]\n\n<div id=\"my-page\">\n    <div class=\"left-column px-3\">\n        <div class=\"panel panel-primary\">\n   <form class=\" panel-body ajax-form\">\n\n		<!-- Sort Fields -->\n		<input type=\"hidden\" name=\"sortby\" value=\"pagetitle\">\n		<input type=\"hidden\" name=\"sortdir\" value=\"asc\">\n		<!-- Sort End -->\n<div class=\"form-group\">\n    <label for=\"formGroupExampleInput\" class=\"float-left mr-2 mb-3\">В наличии:</label>\n		<div class=\"form-check float-left\">\n		<input class=\"form-check-input\" type=\"checkbox\" id=\"blankCheckbox\" name=\"garage\">\n		</div>\n		</div>\n		<div class=\"clearfix\"></div>\n		<table class=\"table\">\n  <thead>\n    <tr>\n      <th scope=\"col\">Калибр</th></tr></thead></table>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"0\" checked>\n  <label class=\"form-check-label\" for=\"floor\">\n   Все \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"1\">\n  <label class=\"form-check-label\" for=\"floor\">\n   0.8 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"2\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"3\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.1 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"4\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.2 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"5\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.25\n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"6\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.5 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"7\">\n  <label class=\"form-check-label\" for=\"floor\">\n   2 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"8\">\n  <label class=\"form-check-label\" for=\"floor\">\n   0.8-1.2 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"9\">\n  <label class=\"form-check-label\" for=\"floor\">\n   0.8-1-1.2 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"10\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1-1.2 \n  </label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"11\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1-1.2-1.5 \n  </label>\n</div>\n		<!--<label>-->\n		<!--	<input name=\"floor\" value=\"0\" checked=\"\" type=\"radio\">-->\n		<!--	<input name=\"floor\" value=\"1\" type=\"radio\">-->\n		<!--	<input name=\"floor\" value=\"2\" type=\"radio\">-->\n		<!--	<input name=\"floor\" value=\"3\" type=\"radio\">-->\n		<!--</label>-->\n<!--<div class=\"form-group\"><label for=\"area_from\" class=\"control-label\"></label>-->\n<!--<div class=\"col-sm-12\"><input type=\"text\" id=\"area_from\" name=\"area_from\" placeholder=\"Залпы От\" class=\"form-control\"></div>-->\n<!--</div>-->\n<!--<div class=\"form-group\"><label for=\"area_to\" class=\"control-label\"></label>-->\n<!--<div class=\"col-sm-12\"><input type=\"text\" id=\"area_to\" name=\"area_to\" placeholder=\"Залпы До\" class=\"form-control\"></div>-->\n<!--</div>-->\n\n<div class=\"form-group\"><label for=\"price_from\" class=\"control-label\"></label>\n<div class=\"col-sm-12\"><input type=\"text\" id=\"price_from\" name=\"price_from\" placeholder=\"Цена От\" class=\"form-control form-control-sm\"></div>\n</div>\n<div class=\"form-group\"><label for=\"price_to\" class=\"control-label\"></label>\n<div class=\"col-sm-12\"><input type=\"text\" id=\"price_to\" name=\"price_to\" placeholder=\"Цена До\" class=\"form-control form-control-sm\"></div>\n</div>\n\n		<label><input type=\"hidden\" name=\"price\"></label>\n<button class=\"ajax-start btn btn-success btn-sm btn-block w-100 my-3\">Подобрать</button>\n<button class=\"ajax-reset btn btn-danger btn-sm btn-block w-100 my-3\">Сбросить</button>\n	</form>\n	</div>\n	</div>\n<div class=\"container right-column\">\n    <div class=\"row\">\n        <div class=\"col-sm-12 my-3\">\n	<!-- Пример создания кнопок сортировки -->\n	Сортировать по цене: <button data-sort-by=\"price\" class=\"ml-3\">По возрастанию</button>\n<h2> Найдено объектов: <span class=\"ajax-count\"></span></h2> \n</div></div>\n	<!-- Вывод сниппета в шаблоне категории -->\n	<div class=\"ajax-container row\">\n		[[!catalogFilter?\n		&tpl=`tplCatItem`\n		&limit=`300`\n		&parents=`1`\n		&fields=`image,area,floor,garage,price`]]\n	</div>\n</div>\n\n</div>\n \n\n\n[[$Scripts]]\n</body>\n</html>\n', 0, 'a:0:{}', 0, ''),
+(1, 0, 0, 'Начальный шаблон', '', 0, 0, '', 0, '[[$Head? &bodyClass=`isHome`]]\n\n<div id=\"my-page\">\n    <div class=\"left-column px-3\">\n        \n   <form class=\"ajax-form\">\n\n		<!-- Sort Fields -->\n		<input type=\"hidden\" name=\"sortby\" value=\"pagetitle\">\n		<input type=\"hidden\" name=\"sortdir\" value=\"asc\">\n		<!-- Sort End -->\n		<table class=\"table mb-0\">\n		    <thead>\n    <tr>\n      <th scope=\"col\" class=\"p-0\"><div class=\"form-group\">\n    <label for=\"formGroupExampleInput\" class=\"float-left mr-4 mb-3\">В наличии:</label>\n		<div class=\"form-check\">\n		<input class=\"form-check-input\" type=\"checkbox\" id=\"blankCheckbox\" name=\"garage\">\n		</div>\n		</div></th>\n      <th scope=\"col\" class=\"p-0\"><button class=\"ajax-reset btn btn-danger btn-sm btn-block my-3\">Сбросить</button></th>\n    </tr>\n  </thead>\n\n		\n		<div class=\"clearfix\"></div>\n		\n  <thead>\n    <tr>\n      <th scope=\"col\">Калибр</th>\n      <th scope=\"col\">Характер...</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"0\" checked>\n  <label class=\"form-check-label\" for=\"floor\">\n   Все \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"0\" checked>\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n     \n    </tr>\n    <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"1\">\n  <label class=\"form-check-label\" for=\"floor\">\n   0.8 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"1\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   С фонтаном \n  </label>\n</div></td>\n      \n    </tr>\n    <tr>\n     \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"2\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"2\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n     \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"3\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.1 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"3\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"4\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.2 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"4\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"5\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.25 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"5\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"6\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.5 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"6\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"7\">\n  <label class=\"form-check-label\" for=\"floor\">\n   2 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"7\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"8\">\n  <label class=\"form-check-label\" for=\"floor\">\n   0.8-1.2 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"8\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"9\">\n  <label class=\"form-check-label\" for=\"floor\">\n   0.8-1-1.2 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"9\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"10\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1-1.2 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"10\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"11\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1-1.2-1.5 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"11\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n  </tbody>\n  </table>\n\n\n\n\n\n\n		<!--<label>-->\n		<!--	<input name=\"floor\" value=\"0\" checked=\"\" type=\"radio\">-->\n		<!--	<input name=\"floor\" value=\"1\" type=\"radio\">-->\n		<!--	<input name=\"floor\" value=\"2\" type=\"radio\">-->\n		<!--	<input name=\"floor\" value=\"3\" type=\"radio\">-->\n		<!--</label>-->\n<!--<div class=\"form-group\"><label for=\"area_from\" class=\"control-label\"></label>-->\n<!--<div class=\"col-sm-12\"><input type=\"text\" id=\"area_from\" name=\"area_from\" placeholder=\"Залпы От\" class=\"form-control\"></div>-->\n<!--</div>-->\n<!--<div class=\"form-group\"><label for=\"area_to\" class=\"control-label\"></label>-->\n<!--<div class=\"col-sm-12\"><input type=\"text\" id=\"area_to\" name=\"area_to\" placeholder=\"Залпы До\" class=\"form-control\"></div>-->\n<!--</div>-->\n\n<div class=\"form-group\"><label for=\"price_from\" class=\"control-label\"></label>\n<div class=\"col-sm-12\"><input type=\"text\" id=\"price_from\" name=\"price_from\" placeholder=\"Цена От\" class=\"form-control form-control-sm\"></div>\n</div>\n<div class=\"form-group\"><label for=\"price_to\" class=\"control-label\"></label>\n<div class=\"col-sm-12\"><input type=\"text\" id=\"price_to\" name=\"price_to\" placeholder=\"Цена До\" class=\"form-control form-control-sm\"></div>\n</div>\n\n		<label><input type=\"hidden\" name=\"price\"></label>\n<button class=\"ajax-start btn btn-success btn-sm btn-block w-100 my-3\">Подобрать</button>\n\n	</form>\n	</div>\n	</div>\n<div class=\"container right-column\">\n    <div class=\"row\">\n        <div class=\"col-sm-12 my-3\">\n	<!-- Пример создания кнопок сортировки -->\n	Сортировать по цене: <button data-sort-by=\"price\" class=\"ml-3\">По возрастанию</button>\n<h2> Найдено объектов: <span class=\"ajax-count\"></span></h2> \n</div></div>\n	<!-- Вывод сниппета в шаблоне категории -->\n	<div class=\"ajax-container row\">\n		[[!catalogFilter?\n		&tpl=`tplCatItem`\n		&limit=`300`\n		&parents=`1`\n		&fields=`image,area,floor,option-get,garage,price`]]\n	</div>\n\n\n</div>\n \n\n\n[[$Scripts]]\n</body>\n</html>\n', 0, 'a:0:{}', 0, ''),
 (2, 0, 0, 'Blogit container', 'Blogit - Created by MPThemes http://mpthemes.com', 0, 7, '', 0, '<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n	<base href=\"[[++site_url]]\" />\r\n        <meta charset=\"[[++modx_charset:lcase]]\" />\r\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\r\n        <title>[[*longtitle:strip_tags:empty=`[[*pagetitle:strip_tags]]`]] | [[++site_name:strip_tags]]</title>\r\n        <meta name=\"description\" content=\"[[*description:notempty=`[[*description]]`:default=`[[+content:ellipsis=`155`]]`]]\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n</head>\r\n<body>\r\n	[[*content]]\r\n	<!-- BlogIt - This chunk grabs all children of the resource. -->\r\n	[[$blogit.get_posts]]\r\n	<!-- BlogIt - This chunk grabs all uses Tagger tags used in posts -->\r\n	[[$blogit.taglist]]\r\n</body>\r\n</html>', 0, NULL, 0, ''),
 (3, 0, 0, 'Blogit post', 'Blogit - Created by MPThemes http://mpthemes.com', 0, 7, '', 0, '<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n	<base href=\"[[++site_url]]\" />\r\n        <meta charset=\"[[++modx_charset:lcase]]\" />\r\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\r\n        <title>[[*longtitle:strip_tags:empty=`[[*pagetitle:strip_tags]]`]] | [[++site_name:strip_tags]]</title>\r\n        <meta name=\"description\" content=\"[[*description:notempty=`[[*description]]`:default=`[[+content:ellipsis=`155`]]`]]\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n</head>\r\n<body>\r\n	[[blogit.lexicon_load]]\r\n	<p><a href=\"[[~[[*parent]]]]\">[[%blogit.back_to_overview]]</a></p>\r\n	<article>\r\n		<header>\r\n			<h1>[[*longtitle:strip_tags:empty=`[[*pagetitle:strip_tags]]`]]</h1>\r\n		</header>\r\n		[[*blogit.post_main_image:isnot=``:then=`<img src=\"[[*blogit.post_main_image:phpthumbof=`w=[[++blogit.main_image_width]]`]]\" alt=\"[[*blogit.post_main_image_alt]]\">`]]\r\n		[[*content]]\r\n		<footer>\r\n			<small>[[%blogit.published_on]]: <time datetime=\"[[*publishedon:strtotime:date=`%y-%m-%d`]]\">[[*publishedon:strtotime:date=`%b %d %Y`]]</time></small><br>\r\n			<small>[[%blogit.created_by]]: [[*createdby:userinfo=`username`]]</small><br>\r\n			[[++blogit.use_tags:isequalto=`1`:then=`\r\n			<small>Tags: [[!TaggerGetTags? &resources=`[[*id]]` &rowTpl=`blogit.tag_links_tpl` &separator=`, ` &target=`[[++blogit.blog_container_id]]`]]</small>\r\n			`]]\r\n		</footer>\r\n	</article>\r\n</body>\r\n</html>', 0, NULL, 0, ''),
 (4, 1, 0, 'Forgot Password', '', 0, 20, '', 0, '[[$Head]]\n<body>\n    <div id=\"my-page\">\n[[$Header]]\n        <div id=\"my-content\">\n            [[$Navbar]]\n		    [[$Forgp]]\n        </div>\n\n		<div id=\"my-footer\">\n			[[$Footer]]\n		</div>\n\n\n</div>\n[[$Scripts]]\n</body>\n</html>\n\n      	\n  ', 0, 'a:0:{}', 0, ''),
@@ -5536,7 +5678,8 @@ INSERT INTO `new_site_tmplvars` (`id`, `source`, `property_preprocess`, `type`, 
 (13, 1, 0, 'image', 'image', '', '', 0, 0, 0, '', 0, 'default', '', 'a:0:{}', 'a:0:{}', 'a:0:{}', 0, ''),
 (14, 1, 0, 'number', 'area', 'Залпы', '', 0, 0, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:10:\"allowBlank\";s:4:\"true\";s:13:\"allowDecimals\";s:4:\"Да\";s:13:\"allowNegative\";s:4:\"Да\";s:16:\"decimalPrecision\";s:1:\"2\";s:16:\"decimalSeparator\";s:1:\".\";s:8:\"maxValue\";s:0:\"\";s:8:\"minValue\";s:0:\"\";}', 'a:0:{}', 0, ''),
 (15, 1, 0, 'checkbox', 'garage', '', '', 0, 0, 0, 'Есть==1', 0, 'default', '', 'a:0:{}', 'a:2:{s:10:\"allowBlank\";s:4:\"true\";s:7:\"columns\";s:1:\"1\";}', 'a:0:{}', 0, ''),
-(16, 1, 0, 'number', 'time', 'Время ', '', 0, 0, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:10:\"allowBlank\";s:4:\"true\";s:13:\"allowDecimals\";s:4:\"Да\";s:13:\"allowNegative\";s:4:\"Да\";s:16:\"decimalPrecision\";s:1:\"2\";s:16:\"decimalSeparator\";s:1:\".\";s:8:\"maxValue\";s:0:\"\";s:8:\"minValue\";s:0:\"\";}', 'a:0:{}', 0, '');
+(16, 1, 0, 'number', 'time', 'Время ', '', 0, 0, 0, '', 0, 'default', '', 'a:0:{}', 'a:7:{s:10:\"allowBlank\";s:4:\"true\";s:13:\"allowDecimals\";s:4:\"Да\";s:13:\"allowNegative\";s:4:\"Да\";s:16:\"decimalPrecision\";s:1:\"2\";s:16:\"decimalSeparator\";s:1:\".\";s:8:\"maxValue\";s:0:\"\";s:8:\"minValue\";s:0:\"\";}', 'a:0:{}', 0, ''),
+(17, 1, 0, 'option', 'option-get', 'options', '', 0, 0, 0, 'С Фонтаном==1||1==2||1.1==3||1.2==4||1.25==5||1.5==6||2==7||0.8-1.2==8||0.8-1-1.2==9||1-1.2==10||1-1.2-1.5==11', 0, 'default', '', 'a:0:{}', 'a:2:{s:10:\"allowBlank\";s:4:\"true\";s:7:\"columns\";s:1:\"1\";}', 'a:0:{}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -5598,7 +5741,7 @@ INSERT INTO `new_site_tmplvar_contentvalues` (`id`, `tmplvarid`, `contentid`, `v
 (36, 14, 20, '25'),
 (30, 11, 21, '5'),
 (31, 12, 21, '600'),
-(32, 13, 21, 'assets/gallery/2/7.jpg'),
+(73, 17, 17, '3'),
 (33, 14, 21, '5'),
 (34, 15, 21, '1'),
 (35, 16, 21, '15'),
@@ -5637,7 +5780,24 @@ INSERT INTO `new_site_tmplvar_contentvalues` (`id`, `tmplvarid`, `contentid`, `v
 (69, 13, 27, 'assets/gallery/2/7.jpg'),
 (70, 14, 27, '5'),
 (71, 15, 27, '1'),
-(72, 16, 27, '15');
+(72, 16, 27, '15'),
+(74, 17, 18, '2'),
+(75, 17, 19, '3'),
+(76, 17, 20, '4'),
+(77, 17, 21, '5'),
+(78, 17, 22, '6'),
+(79, 17, 23, '1'),
+(80, 17, 24, '8'),
+(81, 17, 25, '9'),
+(82, 17, 26, '10'),
+(83, 17, 27, '11'),
+(84, 12, 28, '600'),
+(85, 11, 28, '5'),
+(86, 13, 28, 'assets/gallery/2/7.jpg'),
+(87, 14, 28, '5'),
+(88, 15, 28, '1'),
+(89, 16, 28, '15'),
+(90, 17, 28, '1');
 
 -- --------------------------------------------------------
 
@@ -5678,7 +5838,8 @@ INSERT INTO `new_site_tmplvar_templates` (`tmplvarid`, `templateid`, `rank`) VAL
 (13, 1, 0),
 (14, 1, 0),
 (15, 1, 0),
-(16, 1, 0);
+(16, 1, 0),
+(17, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -6554,7 +6715,7 @@ CREATE TABLE `new_user_attributes` (
 --
 
 INSERT INTO `new_user_attributes` (`id`, `internalKey`, `fullname`, `email`, `phone`, `mobilephone`, `blocked`, `blockeduntil`, `blockedafter`, `logincount`, `lastlogin`, `thislogin`, `failedlogincount`, `sessionid`, `dob`, `gender`, `address`, `country`, `city`, `state`, `zip`, `fax`, `photo`, `comment`, `website`, `extended`) VALUES
-(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 201, 1537972463, 1538042854, 0, 'iskjn4tfl52kosr6loamobdsk6', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
+(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 203, 1538116215, 1538231705, 0, '1ijd7216fe4ph6avdl7kqqkoo3', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
 (3, 3, '', 'platonov_stan@mail.ru', '', '', 0, 0, 0, 7, 1491287477, 1491302110, 0, 'pinq7vkq5q6r7f8adtj2m64550', 0, 0, '', '', '', '', '', '', '', '', '', '[]');
 
 -- --------------------------------------------------------
@@ -7492,356 +7653,428 @@ ALTER TABLE `new_workspaces`
 --
 ALTER TABLE `new_access_actiondom`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_access_actions`
 --
 ALTER TABLE `new_access_actions`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_access_category`
 --
 ALTER TABLE `new_access_category`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_access_context`
 --
 ALTER TABLE `new_access_context`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
 -- AUTO_INCREMENT для таблицы `new_access_elements`
 --
 ALTER TABLE `new_access_elements`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_access_media_source`
 --
 ALTER TABLE `new_access_media_source`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
 --
 -- AUTO_INCREMENT для таблицы `new_access_menus`
 --
 ALTER TABLE `new_access_menus`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_access_namespace`
 --
 ALTER TABLE `new_access_namespace`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_access_permissions`
 --
 ALTER TABLE `new_access_permissions`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=231;
+
 --
 -- AUTO_INCREMENT для таблицы `new_access_policies`
 --
 ALTER TABLE `new_access_policies`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
 --
 -- AUTO_INCREMENT для таблицы `new_access_policy_templates`
 --
 ALTER TABLE `new_access_policy_templates`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
 --
 -- AUTO_INCREMENT для таблицы `new_access_policy_template_groups`
 --
 ALTER TABLE `new_access_policy_template_groups`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
 -- AUTO_INCREMENT для таблицы `new_access_resources`
 --
 ALTER TABLE `new_access_resources`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_access_resource_groups`
 --
 ALTER TABLE `new_access_resource_groups`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT для таблицы `new_access_templatevars`
 --
 ALTER TABLE `new_access_templatevars`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_actiondom`
 --
 ALTER TABLE `new_actiondom`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_actions`
 --
 ALTER TABLE `new_actions`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
 --
 -- AUTO_INCREMENT для таблицы `new_actions_fields`
 --
 ALTER TABLE `new_actions_fields`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=153;
+
 --
 -- AUTO_INCREMENT для таблицы `new_categories`
 --
 ALTER TABLE `new_categories`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
 --
 -- AUTO_INCREMENT для таблицы `new_class_map`
 --
 ALTER TABLE `new_class_map`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
 --
 -- AUTO_INCREMENT для таблицы `new_clientconfig_group`
 --
 ALTER TABLE `new_clientconfig_group`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT для таблицы `new_clientconfig_setting`
 --
 ALTER TABLE `new_clientconfig_setting`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
 -- AUTO_INCREMENT для таблицы `new_collection_settings`
 --
 ALTER TABLE `new_collection_settings`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT для таблицы `new_collection_templates`
 --
 ALTER TABLE `new_collection_templates`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT для таблицы `new_collection_template_columns`
 --
 ALTER TABLE `new_collection_template_columns`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
 --
 -- AUTO_INCREMENT для таблицы `new_content_type`
 --
 ALTER TABLE `new_content_type`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
 --
 -- AUTO_INCREMENT для таблицы `new_dashboard`
 --
 ALTER TABLE `new_dashboard`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT для таблицы `new_dashboard_widget`
 --
 ALTER TABLE `new_dashboard_widget`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
 --
 -- AUTO_INCREMENT для таблицы `new_documentgroup_names`
 --
 ALTER TABLE `new_documentgroup_names`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT для таблицы `new_document_groups`
 --
 ALTER TABLE `new_document_groups`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
 -- AUTO_INCREMENT для таблицы `new_extension_packages`
 --
 ALTER TABLE `new_extension_packages`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_fc_profiles`
 --
 ALTER TABLE `new_fc_profiles`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_fc_sets`
 --
 ALTER TABLE `new_fc_sets`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_formit_forms`
 --
 ALTER TABLE `new_formit_forms`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_gallery_albums`
 --
 ALTER TABLE `new_gallery_albums`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT для таблицы `new_gallery_album_contexts`
 --
 ALTER TABLE `new_gallery_album_contexts`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_gallery_album_items`
 --
 ALTER TABLE `new_gallery_album_items`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
 --
 -- AUTO_INCREMENT для таблицы `new_gallery_items`
 --
 ALTER TABLE `new_gallery_items`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
 --
 -- AUTO_INCREMENT для таблицы `new_gallery_tags`
 --
 ALTER TABLE `new_gallery_tags`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_lexicon_entries`
 --
 ALTER TABLE `new_lexicon_entries`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_manager_log`
 --
 ALTER TABLE `new_manager_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2993;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3133;
+
 --
 -- AUTO_INCREMENT для таблицы `new_media_sources`
 --
 ALTER TABLE `new_media_sources`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT для таблицы `new_membergroup_names`
 --
 ALTER TABLE `new_membergroup_names`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT для таблицы `new_member_groups`
 --
 ALTER TABLE `new_member_groups`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
 -- AUTO_INCREMENT для таблицы `new_migx_configs`
 --
 ALTER TABLE `new_migx_configs`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_migx_config_elements`
 --
 ALTER TABLE `new_migx_config_elements`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_migx_elements`
 --
 ALTER TABLE `new_migx_elements`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_migx_formtabs`
 --
 ALTER TABLE `new_migx_formtabs`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_migx_formtab_fields`
 --
 ALTER TABLE `new_migx_formtab_fields`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_property_set`
 --
 ALTER TABLE `new_property_set`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_quip_comments`
 --
 ALTER TABLE `new_quip_comments`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_quip_comment_notify`
 --
 ALTER TABLE `new_quip_comment_notify`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_register_queues`
 --
 ALTER TABLE `new_register_queues`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT для таблицы `new_register_topics`
 --
 ALTER TABLE `new_register_topics`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT для таблицы `new_site_content`
 --
 ALTER TABLE `new_site_content`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+
 --
 -- AUTO_INCREMENT для таблицы `new_site_htmlsnippets`
 --
 ALTER TABLE `new_site_htmlsnippets`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
+
 --
 -- AUTO_INCREMENT для таблицы `new_site_plugins`
 --
 ALTER TABLE `new_site_plugins`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
 --
 -- AUTO_INCREMENT для таблицы `new_site_snippets`
 --
 ALTER TABLE `new_site_snippets`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
+
 --
 -- AUTO_INCREMENT для таблицы `new_site_templates`
 --
 ALTER TABLE `new_site_templates`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
 --
 -- AUTO_INCREMENT для таблицы `new_site_tmplvars`
 --
 ALTER TABLE `new_site_tmplvars`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
 --
 -- AUTO_INCREMENT для таблицы `new_site_tmplvar_access`
 --
 ALTER TABLE `new_site_tmplvar_access`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_site_tmplvar_contentvalues`
 --
 ALTER TABLE `new_site_tmplvar_contentvalues`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
+
 --
 -- AUTO_INCREMENT для таблицы `new_tagger_groups`
 --
 ALTER TABLE `new_tagger_groups`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_tagger_tags`
 --
 ALTER TABLE `new_tagger_tags`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_thumb_images`
 --
 ALTER TABLE `new_thumb_images`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_transport_providers`
 --
 ALTER TABLE `new_transport_providers`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT для таблицы `new_users`
 --
 ALTER TABLE `new_users`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
 --
 -- AUTO_INCREMENT для таблицы `new_user_attributes`
 --
 ALTER TABLE `new_user_attributes`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
 --
 -- AUTO_INCREMENT для таблицы `new_user_group_roles`
 --
 ALTER TABLE `new_user_group_roles`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT для таблицы `new_user_messages`
 --
 ALTER TABLE `new_user_messages`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT для таблицы `new_workspaces`
 --
 ALTER TABLE `new_workspaces`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
