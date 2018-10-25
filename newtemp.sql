@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 29 2018 г., 18:59
--- Версия сервера: 5.6.38
+-- Время создания: Окт 25 2018 г., 10:19
+-- Версия сервера: 5.5.53
 -- Версия PHP: 5.5.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -4628,7 +4626,10 @@ INSERT INTO `new_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `
 (3129, 1, '2018-09-29 18:53:46', 'template_update', 'modTemplate', '1'),
 (3130, 1, '2018-09-29 18:53:46', 'propertyset_update_from_element', 'modTemplate', '1'),
 (3131, 1, '2018-09-29 18:54:27', 'template_update', 'modTemplate', '1'),
-(3132, 1, '2018-09-29 18:54:27', 'propertyset_update_from_element', 'modTemplate', '1');
+(3132, 1, '2018-09-29 18:54:27', 'propertyset_update_from_element', 'modTemplate', '1'),
+(3133, 1, '2018-10-02 15:19:02', 'login', 'modContext', 'mgr'),
+(3134, 1, '2018-10-02 15:24:11', 'template_update', 'modTemplate', '1'),
+(3135, 1, '2018-10-02 15:24:11', 'propertyset_update_from_element', 'modTemplate', '1');
 
 -- --------------------------------------------------------
 
@@ -5145,7 +5146,10 @@ CREATE TABLE `new_session` (
 --
 
 INSERT INTO `new_session` (`id`, `access`, `data`) VALUES
-('cvekvsponp6pdtbpllo4nk2310', 1538236683, 'modx.user.contextTokens|a:0:{}');
+('cvekvsponp6pdtbpllo4nk2310', 1538236683, 'modx.user.contextTokens|a:0:{}'),
+('5vq3uidacj4oddnf5jqojasvc3', 1538482743, 'modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}modx.user.contextTokens|a:1:{s:3:\"mgr\";i:1;}modx.mgr.user.token|s:52:\"modx5bab97619c07d8.37432727_15bb36236850d66.74256062\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}'),
+('pahjfg1rdnsbaoglluak93ehg6', 1538482753, 'modx.user.contextTokens|a:0:{}modx.user.0.resourceGroups|a:1:{s:3:\"web\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"web\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}'),
+('do5aia6a1246bhgdl9heeefq67', 1540451853, 'modx.user.contextTokens|a:0:{}');
 
 -- --------------------------------------------------------
 
@@ -5618,7 +5622,7 @@ CREATE TABLE `new_site_templates` (
 --
 
 INSERT INTO `new_site_templates` (`id`, `source`, `property_preprocess`, `templatename`, `description`, `editor_type`, `category`, `icon`, `template_type`, `content`, `locked`, `properties`, `static`, `static_file`) VALUES
-(1, 0, 0, 'Начальный шаблон', '', 0, 0, '', 0, '[[$Head? &bodyClass=`isHome`]]\n\n<div id=\"my-page\">\n    <div class=\"left-column px-3\">\n        \n   <form class=\"ajax-form\">\n\n		<!-- Sort Fields -->\n		<input type=\"hidden\" name=\"sortby\" value=\"pagetitle\">\n		<input type=\"hidden\" name=\"sortdir\" value=\"asc\">\n		<!-- Sort End -->\n		<table class=\"table mb-0\">\n		    <thead>\n    <tr>\n      <th scope=\"col\" class=\"p-0\"><div class=\"form-group\">\n    <label for=\"formGroupExampleInput\" class=\"float-left mr-4 mb-3\">В наличии:</label>\n		<div class=\"form-check\">\n		<input class=\"form-check-input\" type=\"checkbox\" id=\"blankCheckbox\" name=\"garage\">\n		</div>\n		</div></th>\n      <th scope=\"col\" class=\"p-0\"><button class=\"ajax-reset btn btn-danger btn-sm btn-block my-3\">Сбросить</button></th>\n    </tr>\n  </thead>\n\n		\n		<div class=\"clearfix\"></div>\n		\n  <thead>\n    <tr>\n      <th scope=\"col\">Калибр</th>\n      <th scope=\"col\">Характер...</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"0\" checked>\n  <label class=\"form-check-label\" for=\"floor\">\n   Все \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"0\" checked>\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n     \n    </tr>\n    <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"1\">\n  <label class=\"form-check-label\" for=\"floor\">\n   0.8 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"1\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   С фонтаном \n  </label>\n</div></td>\n      \n    </tr>\n    <tr>\n     \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"2\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"2\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n     \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"3\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.1 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"3\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"4\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.2 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"4\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"5\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.25 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"5\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"6\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.5 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"6\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"7\">\n  <label class=\"form-check-label\" for=\"floor\">\n   2 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"7\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"8\">\n  <label class=\"form-check-label\" for=\"floor\">\n   0.8-1.2 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"8\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"9\">\n  <label class=\"form-check-label\" for=\"floor\">\n   0.8-1-1.2 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"9\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"10\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1-1.2 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"10\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"11\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1-1.2-1.5 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"11\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n  </tbody>\n  </table>\n\n\n\n\n\n\n		<!--<label>-->\n		<!--	<input name=\"floor\" value=\"0\" checked=\"\" type=\"radio\">-->\n		<!--	<input name=\"floor\" value=\"1\" type=\"radio\">-->\n		<!--	<input name=\"floor\" value=\"2\" type=\"radio\">-->\n		<!--	<input name=\"floor\" value=\"3\" type=\"radio\">-->\n		<!--</label>-->\n<!--<div class=\"form-group\"><label for=\"area_from\" class=\"control-label\"></label>-->\n<!--<div class=\"col-sm-12\"><input type=\"text\" id=\"area_from\" name=\"area_from\" placeholder=\"Залпы От\" class=\"form-control\"></div>-->\n<!--</div>-->\n<!--<div class=\"form-group\"><label for=\"area_to\" class=\"control-label\"></label>-->\n<!--<div class=\"col-sm-12\"><input type=\"text\" id=\"area_to\" name=\"area_to\" placeholder=\"Залпы До\" class=\"form-control\"></div>-->\n<!--</div>-->\n\n<div class=\"form-group\"><label for=\"price_from\" class=\"control-label\"></label>\n<div class=\"col-sm-12\"><input type=\"text\" id=\"price_from\" name=\"price_from\" placeholder=\"Цена От\" class=\"form-control form-control-sm\"></div>\n</div>\n<div class=\"form-group\"><label for=\"price_to\" class=\"control-label\"></label>\n<div class=\"col-sm-12\"><input type=\"text\" id=\"price_to\" name=\"price_to\" placeholder=\"Цена До\" class=\"form-control form-control-sm\"></div>\n</div>\n\n		<label><input type=\"hidden\" name=\"price\"></label>\n<button class=\"ajax-start btn btn-success btn-sm btn-block w-100 my-3\">Подобрать</button>\n\n	</form>\n	</div>\n	</div>\n<div class=\"container right-column\">\n    <div class=\"row\">\n        <div class=\"col-sm-12 my-3\">\n	<!-- Пример создания кнопок сортировки -->\n	Сортировать по цене: <button data-sort-by=\"price\" class=\"ml-3\">По возрастанию</button>\n<h2> Найдено объектов: <span class=\"ajax-count\"></span></h2> \n</div></div>\n	<!-- Вывод сниппета в шаблоне категории -->\n	<div class=\"ajax-container row\">\n		[[!catalogFilter?\n		&tpl=`tplCatItem`\n		&limit=`300`\n		&parents=`1`\n		&fields=`image,area,floor,option-get,garage,price`]]\n	</div>\n\n\n</div>\n \n\n\n[[$Scripts]]\n</body>\n</html>\n', 0, 'a:0:{}', 0, ''),
+(1, 0, 0, 'Начальный шаблон', '', 0, 0, '', 0, '[[$Head? &bodyClass=`isHome`]]\n\n<div id=\"my-page\">\n    <div class=\"left-column px-3\">\n        \n   <form class=\"ajax-form\">\n\n		<!-- Sort Fields -->\n		<input type=\"hidden\" name=\"sortby\" value=\"pagetitle\">\n		<input type=\"hidden\" name=\"sortdir\" value=\"asc\">\n		<!-- Sort End -->\n		<table class=\"table mb-0\">\n		    <thead>\n    <tr>\n      <th scope=\"col\" class=\"p-0\"><div class=\"form-group\">\n    <label for=\"formGroupExampleInput\" class=\"float-left mr-4 mb-3\">В наличии:</label>\n		<div class=\"form-check\">\n		<input class=\"form-check-input\" type=\"checkbox\" id=\"blankCheckbox\" name=\"garage\">\n		</div>\n		</div></th>\n      <th scope=\"col\" class=\"p-0\"></th>\n    </tr>\n  </thead>\n\n		\n		<div class=\"clearfix\"></div>\n		\n  <thead>\n    <tr>\n      <th scope=\"col\">Калибр</th>\n      <th scope=\"col\">Характер...</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"0\" checked>\n  <label class=\"form-check-label\" for=\"floor\">\n   Все \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"0\" checked>\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n     \n    </tr>\n    <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"1\">\n  <label class=\"form-check-label\" for=\"floor\">\n   0.8 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"1\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   С фонтаном \n  </label>\n</div></td>\n      \n    </tr>\n    <tr>\n     \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"2\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"2\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n     \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"3\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.1 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"3\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"4\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.2 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"4\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"5\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.25 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"5\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"6\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1.5 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"6\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"7\">\n  <label class=\"form-check-label\" for=\"floor\">\n   2 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"7\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"8\">\n  <label class=\"form-check-label\" for=\"floor\">\n   0.8-1.2 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"8\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"9\">\n  <label class=\"form-check-label\" for=\"floor\">\n   0.8-1-1.2 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"9\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"10\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1-1.2 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"10\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n     <tr>\n      \n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"floor\" id=\"exampleRadios1\" value=\"11\">\n  <label class=\"form-check-label\" for=\"floor\">\n   1-1.2-1.5 \n  </label>\n</div></td>\n      <td><div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"option-get\" id=\"exampleRadios1\" value=\"11\">\n  <label class=\"form-check-label\" for=\"option-get\">\n   Все \n  </label>\n</div></td>\n      \n    </tr>\n  </tbody>\n  </table>\n\n\n\n\n\n\n		<!--<label>-->\n		<!--	<input name=\"floor\" value=\"0\" checked=\"\" type=\"radio\">-->\n		<!--	<input name=\"floor\" value=\"1\" type=\"radio\">-->\n		<!--	<input name=\"floor\" value=\"2\" type=\"radio\">-->\n		<!--	<input name=\"floor\" value=\"3\" type=\"radio\">-->\n		<!--</label>-->\n<!--<div class=\"form-group\"><label for=\"area_from\" class=\"control-label\"></label>-->\n<!--<div class=\"col-sm-12\"><input type=\"text\" id=\"area_from\" name=\"area_from\" placeholder=\"Залпы От\" class=\"form-control\"></div>-->\n<!--</div>-->\n<!--<div class=\"form-group\"><label for=\"area_to\" class=\"control-label\"></label>-->\n<!--<div class=\"col-sm-12\"><input type=\"text\" id=\"area_to\" name=\"area_to\" placeholder=\"Залпы До\" class=\"form-control\"></div>-->\n<!--</div>-->\n\n<div class=\"form-group\"><label for=\"price_from\" class=\"control-label\"></label>\n<div class=\"col-sm-12\"><input type=\"text\" id=\"price_from\" name=\"price_from\" placeholder=\"Цена От\" class=\"form-control form-control-sm\"></div>\n</div>\n<div class=\"form-group\"><label for=\"price_to\" class=\"control-label\"></label>\n<div class=\"col-sm-12\"><input type=\"text\" id=\"price_to\" name=\"price_to\" placeholder=\"Цена До\" class=\"form-control form-control-sm\"></div>\n</div>\n\n		<label><input type=\"hidden\" name=\"price\"></label>\n<button class=\"ajax-start btn btn-success btn-sm btn-block w-100 my-3\">Подобрать</button>\n<button class=\"ajax-reset btn btn-danger btn-sm btn-block my-3\">Сбросить</button>\n	</form>\n	</div>\n	</div>\n<div class=\"container right-column\">\n    <div class=\"row\">\n        <div class=\"col-sm-12 my-3\">\n	<!-- Пример создания кнопок сортировки -->\n	Сортировать по цене: <button data-sort-by=\"price\" class=\"ml-3\">По возрастанию</button>\n<h2> Найдено объектов: <span class=\"ajax-count\"></span></h2> \n</div></div>\n	<!-- Вывод сниппета в шаблоне категории -->\n	<div class=\"ajax-container row\">\n		[[!catalogFilter?\n		&tpl=`tplCatItem`\n		&limit=`300`\n		&parents=`1`\n		&fields=`image,area,floor,option-get,garage,price`]]\n	</div>\n\n\n</div>\n \n\n\n[[$Scripts]]\n</body>\n</html>\n', 0, 'a:0:{}', 0, ''),
 (2, 0, 0, 'Blogit container', 'Blogit - Created by MPThemes http://mpthemes.com', 0, 7, '', 0, '<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n	<base href=\"[[++site_url]]\" />\r\n        <meta charset=\"[[++modx_charset:lcase]]\" />\r\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\r\n        <title>[[*longtitle:strip_tags:empty=`[[*pagetitle:strip_tags]]`]] | [[++site_name:strip_tags]]</title>\r\n        <meta name=\"description\" content=\"[[*description:notempty=`[[*description]]`:default=`[[+content:ellipsis=`155`]]`]]\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n</head>\r\n<body>\r\n	[[*content]]\r\n	<!-- BlogIt - This chunk grabs all children of the resource. -->\r\n	[[$blogit.get_posts]]\r\n	<!-- BlogIt - This chunk grabs all uses Tagger tags used in posts -->\r\n	[[$blogit.taglist]]\r\n</body>\r\n</html>', 0, NULL, 0, ''),
 (3, 0, 0, 'Blogit post', 'Blogit - Created by MPThemes http://mpthemes.com', 0, 7, '', 0, '<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n	<base href=\"[[++site_url]]\" />\r\n        <meta charset=\"[[++modx_charset:lcase]]\" />\r\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\r\n        <title>[[*longtitle:strip_tags:empty=`[[*pagetitle:strip_tags]]`]] | [[++site_name:strip_tags]]</title>\r\n        <meta name=\"description\" content=\"[[*description:notempty=`[[*description]]`:default=`[[+content:ellipsis=`155`]]`]]\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n</head>\r\n<body>\r\n	[[blogit.lexicon_load]]\r\n	<p><a href=\"[[~[[*parent]]]]\">[[%blogit.back_to_overview]]</a></p>\r\n	<article>\r\n		<header>\r\n			<h1>[[*longtitle:strip_tags:empty=`[[*pagetitle:strip_tags]]`]]</h1>\r\n		</header>\r\n		[[*blogit.post_main_image:isnot=``:then=`<img src=\"[[*blogit.post_main_image:phpthumbof=`w=[[++blogit.main_image_width]]`]]\" alt=\"[[*blogit.post_main_image_alt]]\">`]]\r\n		[[*content]]\r\n		<footer>\r\n			<small>[[%blogit.published_on]]: <time datetime=\"[[*publishedon:strtotime:date=`%y-%m-%d`]]\">[[*publishedon:strtotime:date=`%b %d %Y`]]</time></small><br>\r\n			<small>[[%blogit.created_by]]: [[*createdby:userinfo=`username`]]</small><br>\r\n			[[++blogit.use_tags:isequalto=`1`:then=`\r\n			<small>Tags: [[!TaggerGetTags? &resources=`[[*id]]` &rowTpl=`blogit.tag_links_tpl` &separator=`, ` &target=`[[++blogit.blog_container_id]]`]]</small>\r\n			`]]\r\n		</footer>\r\n	</article>\r\n</body>\r\n</html>', 0, NULL, 0, ''),
 (4, 1, 0, 'Forgot Password', '', 0, 20, '', 0, '[[$Head]]\n<body>\n    <div id=\"my-page\">\n[[$Header]]\n        <div id=\"my-content\">\n            [[$Navbar]]\n		    [[$Forgp]]\n        </div>\n\n		<div id=\"my-footer\">\n			[[$Footer]]\n		</div>\n\n\n</div>\n[[$Scripts]]\n</body>\n</html>\n\n      	\n  ', 0, 'a:0:{}', 0, ''),
@@ -6715,7 +6719,7 @@ CREATE TABLE `new_user_attributes` (
 --
 
 INSERT INTO `new_user_attributes` (`id`, `internalKey`, `fullname`, `email`, `phone`, `mobilephone`, `blocked`, `blockeduntil`, `blockedafter`, `logincount`, `lastlogin`, `thislogin`, `failedlogincount`, `sessionid`, `dob`, `gender`, `address`, `country`, `city`, `state`, `zip`, `fax`, `photo`, `comment`, `website`, `extended`) VALUES
-(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 203, 1538116215, 1538231705, 0, '1ijd7216fe4ph6avdl7kqqkoo3', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
+(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 204, 1538231705, 1538482742, 0, '5vq3uidacj4oddnf5jqojasvc3', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
 (3, 3, '', 'platonov_stan@mail.ru', '', '', 0, 0, 0, 7, 1491287477, 1491302110, 0, 'pinq7vkq5q6r7f8adtj2m64550', 0, 0, '', '', '', '', '', '', '', '', '', '[]');
 
 -- --------------------------------------------------------
@@ -7653,428 +7657,356 @@ ALTER TABLE `new_workspaces`
 --
 ALTER TABLE `new_access_actiondom`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_access_actions`
 --
 ALTER TABLE `new_access_actions`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_access_category`
 --
 ALTER TABLE `new_access_category`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_access_context`
 --
 ALTER TABLE `new_access_context`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
 --
 -- AUTO_INCREMENT для таблицы `new_access_elements`
 --
 ALTER TABLE `new_access_elements`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_access_media_source`
 --
 ALTER TABLE `new_access_media_source`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
 --
 -- AUTO_INCREMENT для таблицы `new_access_menus`
 --
 ALTER TABLE `new_access_menus`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_access_namespace`
 --
 ALTER TABLE `new_access_namespace`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_access_permissions`
 --
 ALTER TABLE `new_access_permissions`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=231;
-
 --
 -- AUTO_INCREMENT для таблицы `new_access_policies`
 --
 ALTER TABLE `new_access_policies`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
 --
 -- AUTO_INCREMENT для таблицы `new_access_policy_templates`
 --
 ALTER TABLE `new_access_policy_templates`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
 --
 -- AUTO_INCREMENT для таблицы `new_access_policy_template_groups`
 --
 ALTER TABLE `new_access_policy_template_groups`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
 --
 -- AUTO_INCREMENT для таблицы `new_access_resources`
 --
 ALTER TABLE `new_access_resources`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_access_resource_groups`
 --
 ALTER TABLE `new_access_resource_groups`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
 --
 -- AUTO_INCREMENT для таблицы `new_access_templatevars`
 --
 ALTER TABLE `new_access_templatevars`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_actiondom`
 --
 ALTER TABLE `new_actiondom`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_actions`
 --
 ALTER TABLE `new_actions`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
 --
 -- AUTO_INCREMENT для таблицы `new_actions_fields`
 --
 ALTER TABLE `new_actions_fields`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=153;
-
 --
 -- AUTO_INCREMENT для таблицы `new_categories`
 --
 ALTER TABLE `new_categories`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
-
 --
 -- AUTO_INCREMENT для таблицы `new_class_map`
 --
 ALTER TABLE `new_class_map`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
 --
 -- AUTO_INCREMENT для таблицы `new_clientconfig_group`
 --
 ALTER TABLE `new_clientconfig_group`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT для таблицы `new_clientconfig_setting`
 --
 ALTER TABLE `new_clientconfig_setting`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
 --
 -- AUTO_INCREMENT для таблицы `new_collection_settings`
 --
 ALTER TABLE `new_collection_settings`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT для таблицы `new_collection_templates`
 --
 ALTER TABLE `new_collection_templates`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT для таблицы `new_collection_template_columns`
 --
 ALTER TABLE `new_collection_template_columns`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
 --
 -- AUTO_INCREMENT для таблицы `new_content_type`
 --
 ALTER TABLE `new_content_type`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
 --
 -- AUTO_INCREMENT для таблицы `new_dashboard`
 --
 ALTER TABLE `new_dashboard`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT для таблицы `new_dashboard_widget`
 --
 ALTER TABLE `new_dashboard_widget`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
 --
 -- AUTO_INCREMENT для таблицы `new_documentgroup_names`
 --
 ALTER TABLE `new_documentgroup_names`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT для таблицы `new_document_groups`
 --
 ALTER TABLE `new_document_groups`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
 --
 -- AUTO_INCREMENT для таблицы `new_extension_packages`
 --
 ALTER TABLE `new_extension_packages`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_fc_profiles`
 --
 ALTER TABLE `new_fc_profiles`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_fc_sets`
 --
 ALTER TABLE `new_fc_sets`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_formit_forms`
 --
 ALTER TABLE `new_formit_forms`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_gallery_albums`
 --
 ALTER TABLE `new_gallery_albums`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT для таблицы `new_gallery_album_contexts`
 --
 ALTER TABLE `new_gallery_album_contexts`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_gallery_album_items`
 --
 ALTER TABLE `new_gallery_album_items`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
 --
 -- AUTO_INCREMENT для таблицы `new_gallery_items`
 --
 ALTER TABLE `new_gallery_items`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
 --
 -- AUTO_INCREMENT для таблицы `new_gallery_tags`
 --
 ALTER TABLE `new_gallery_tags`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_lexicon_entries`
 --
 ALTER TABLE `new_lexicon_entries`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_manager_log`
 --
 ALTER TABLE `new_manager_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3133;
-
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3136;
 --
 -- AUTO_INCREMENT для таблицы `new_media_sources`
 --
 ALTER TABLE `new_media_sources`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT для таблицы `new_membergroup_names`
 --
 ALTER TABLE `new_membergroup_names`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
 --
 -- AUTO_INCREMENT для таблицы `new_member_groups`
 --
 ALTER TABLE `new_member_groups`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
 --
 -- AUTO_INCREMENT для таблицы `new_migx_configs`
 --
 ALTER TABLE `new_migx_configs`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_migx_config_elements`
 --
 ALTER TABLE `new_migx_config_elements`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_migx_elements`
 --
 ALTER TABLE `new_migx_elements`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_migx_formtabs`
 --
 ALTER TABLE `new_migx_formtabs`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_migx_formtab_fields`
 --
 ALTER TABLE `new_migx_formtab_fields`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_property_set`
 --
 ALTER TABLE `new_property_set`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_quip_comments`
 --
 ALTER TABLE `new_quip_comments`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_quip_comment_notify`
 --
 ALTER TABLE `new_quip_comment_notify`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_register_queues`
 --
 ALTER TABLE `new_register_queues`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT для таблицы `new_register_topics`
 --
 ALTER TABLE `new_register_topics`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT для таблицы `new_site_content`
 --
 ALTER TABLE `new_site_content`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
-
 --
 -- AUTO_INCREMENT для таблицы `new_site_htmlsnippets`
 --
 ALTER TABLE `new_site_htmlsnippets`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
-
 --
 -- AUTO_INCREMENT для таблицы `new_site_plugins`
 --
 ALTER TABLE `new_site_plugins`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
 --
 -- AUTO_INCREMENT для таблицы `new_site_snippets`
 --
 ALTER TABLE `new_site_snippets`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
-
 --
 -- AUTO_INCREMENT для таблицы `new_site_templates`
 --
 ALTER TABLE `new_site_templates`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
-
 --
 -- AUTO_INCREMENT для таблицы `new_site_tmplvars`
 --
 ALTER TABLE `new_site_tmplvars`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
-
 --
 -- AUTO_INCREMENT для таблицы `new_site_tmplvar_access`
 --
 ALTER TABLE `new_site_tmplvar_access`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_site_tmplvar_contentvalues`
 --
 ALTER TABLE `new_site_tmplvar_contentvalues`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
-
 --
 -- AUTO_INCREMENT для таблицы `new_tagger_groups`
 --
 ALTER TABLE `new_tagger_groups`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_tagger_tags`
 --
 ALTER TABLE `new_tagger_tags`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_thumb_images`
 --
 ALTER TABLE `new_thumb_images`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_transport_providers`
 --
 ALTER TABLE `new_transport_providers`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT для таблицы `new_users`
 --
 ALTER TABLE `new_users`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
 --
 -- AUTO_INCREMENT для таблицы `new_user_attributes`
 --
 ALTER TABLE `new_user_attributes`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
 --
 -- AUTO_INCREMENT для таблицы `new_user_group_roles`
 --
 ALTER TABLE `new_user_group_roles`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT для таблицы `new_user_messages`
 --
 ALTER TABLE `new_user_messages`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `new_workspaces`
 --
 ALTER TABLE `new_workspaces`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-COMMIT;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
